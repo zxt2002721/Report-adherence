@@ -1,0 +1,166 @@
+{
+  "sample_id": "sample_0b389f61f90fcf6da613e08c64e06fdbaf05758cdd9e6b5ae730f1b8a8a654e4_20240405_exercise_22c41b",
+  "patient_id": "0b389f61f90fcf6da613e08c64e06fdbaf05758cdd9e6b5ae730f1b8a8a654e4",
+  "task_name": "adherence_identification",
+  "sample_data": {
+    "dialogue_piece": [
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "关注患者睡眠和心理压力管理，识别情感障碍。",
+          "analysis": "患者情绪波动影响生活习惯。",
+          "diagnosis": "情感层面压力较大，影响整体依从。",
+          "planning": "引导放松练习，缓解压力。",
+          "evaluation": "准备针对性干预。"
+        },
+        "message": "您好，睡眠和压力管理也很重要，您最近睡眠怎么样？会不会感到特别焦虑或者烦躁？",
+        "timestamp": "2024-04-05T09:00:00Z",
+        "message_type": "确认",
+        "emotional_tone": "中性"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "说实话，晚上睡得不踏实，老做梦，醒来还心慌，可能是担心病吧。",
+        "timestamp": "2024-04-05T09:01:30Z",
+        "message_type": "回应",
+        "emotional_tone": "焦虑"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "患者情绪影响睡眠，存在焦虑问题。",
+          "analysis": "认知和情感层面压力交织。",
+          "diagnosis": "睡眠障碍与心理压力有关。",
+          "planning": "介绍简单的放松练习。",
+          "evaluation": "引导患者尝试缓解压力方法。"
+        },
+        "message": "您这样很辛苦，担心病情会让人心里难受。每天做些放松练习，比如简单的深呼吸或者轻柔的瑜伽，能帮助改善睡眠。您想试试吗？",
+        "timestamp": "2024-04-05T09:03:00Z",
+        "message_type": "教育",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "听着不错，就是我老是忘记，没个固定时间，家里也没人提醒。",
+        "timestamp": "2024-04-05T09:04:30Z",
+        "message_type": "回应",
+        "emotional_tone": "困惑"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "行为习惯难养成，社会支持缺失。",
+          "analysis": "患者缺乏固定习惯和外部支持。",
+          "diagnosis": "行为和社会层面不遵从。",
+          "planning": "建议结合已有偏好，安排固定时间。",
+          "evaluation": "准备结合习惯建立方案。"
+        },
+        "message": "您可以试着在晚上睡前半小时做这些放松动作，比如在看书或看电影前做几分钟。这样逐渐形成习惯。要是能和孩子说说，让他们提醒您会更好。",
+        "timestamp": "2024-04-05T09:06:00Z",
+        "message_type": "提醒",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "跟孩子说说倒是没试过，怕他们烦。",
+        "timestamp": "2024-04-05T09:07:30Z",
+        "message_type": "回应",
+        "emotional_tone": "焦虑"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "情感障碍仍存，患者害怕麻烦家人。",
+          "analysis": "负罪感阻碍沟通。",
+          "diagnosis": "情感和社会层面交织。",
+          "planning": "鼓励小步沟通，减轻心理负担。",
+          "evaluation": "继续提供情感支持。"
+        },
+        "message": "这很正常，怕麻烦家人说明您很顾虑他们。或许您可以先发条微信，告诉他们您最近睡眠不好，想试着放松，问问他们能不能帮忙提醒。您看这样行吗？",
+        "timestamp": "2024-04-05T09:09:00Z",
+        "message_type": "提醒",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "嗯，微信发个消息倒是不难，我试试。",
+        "timestamp": "2024-04-05T09:10:30Z",
+        "message_type": "回应",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "引导患者正面应对焦虑，识别认知误区。",
+          "analysis": "患者可能对病情恐惧过度。",
+          "diagnosis": "认知层面焦虑。",
+          "planning": "介绍疾病控制好可减少风险。",
+          "evaluation": "缓解认知焦虑。"
+        },
+        "message": "关于病情，您知道吗？坚持服药和调整生活方式，血糖和血压控制好了，心脏病的风险会大大降低，这样可以减少您的担心。您觉得这信息对您有帮助吗？",
+        "timestamp": "2024-04-05T09:12:00Z",
+        "message_type": "教育",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "知道是知道，就是做起来难，特别是有时候心里烦躁。",
+        "timestamp": "2024-04-05T09:13:30Z",
+        "message_type": "回应",
+        "emotional_tone": "焦虑"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "识别患者情绪阻力，准备挫折应对。",
+          "analysis": "情绪波动影响依从。",
+          "diagnosis": "情感层面依从受阻。",
+          "planning": "鼓励逐步调整，避免完美主义。",
+          "evaluation": "建立支持耐心机制。"
+        },
+        "message": "这很正常，改变习惯不容易，您不必要求自己一下子做到完美。我们一起慢慢来，每次坚持一点点就是进步。您有什么想法或者困难可以随时告诉我。",
+        "timestamp": "2024-04-05T09:15:00Z",
+        "message_type": "教育",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "谢谢你，我会尽量努力。",
+        "timestamp": "2024-04-05T09:16:30Z",
+        "message_type": "回应",
+        "emotional_tone": "合作"
+      }
+    ],
+    "prescription": {
+      "medications": [],
+      "lifestyle": [
+        {
+          "recommendation_type": "运动",
+          "description": "每周5次适度运动，如步行30分钟。"
+        }
+      ],
+      "next_followup_date": "2024-06-01",
+      "physician_notes": "注意血糖和血压的监测，增加家庭支持对于其依从性的提高有益。"
+    },
+    "adherence_category": "运动",
+    "session_date": "2024-04-05"
+  },
+  "pre_annotation": {
+    "adherence_check": [
+      {
+        "date": "2024-04-05",
+        "category": "运动",
+        "overall_status": "部分遵从",
+        "reason": "患者有意愿尝试放松练习改善睡眠，但因缺乏固定时间和提醒，执行不够规律。",
+        "details": "建议患者睡前半小时做深呼吸或瑜伽放松，患者表示“老是忘记，没个固定时间”，计划尚未完全落实。",
+        "dialogue_date": "2024-04-05"
+      }
+    ]
+  }
+}

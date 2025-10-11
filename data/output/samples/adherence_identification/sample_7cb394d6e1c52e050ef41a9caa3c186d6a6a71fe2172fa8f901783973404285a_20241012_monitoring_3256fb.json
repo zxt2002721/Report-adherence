@@ -1,0 +1,73 @@
+{
+  "sample_id": "sample_7cb394d6e1c52e050ef41a9caa3c186d6a6a71fe2172fa8f901783973404285a_20241012_monitoring_3256fb",
+  "patient_id": "7cb394d6e1c52e050ef41a9caa3c186d6a6a71fe2172fa8f901783973404285a",
+  "task_name": "adherence_identification",
+  "sample_data": {
+    "dialogue_piece": [
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "询问患者昨日血压监测和运动尝试情况，评估执行力和障碍。",
+          "analysis": "患者面临技术障碍和情感阻碍，行为执行力有波动。",
+          "diagnosis": "行为层面执行困难，情感支持需加强。",
+          "planning": "鼓励小步尝试，缓解技术难题。",
+          "evaluation": "关注执行细节。"
+        },
+        "message": "您好，昨天您尝试测血压和做伸展操了吗？感觉怎么样？",
+        "timestamp": "2024-10-12T09:00:00+08:00",
+        "message_type": "提醒",
+        "emotional_tone": "中性"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "昨天我早上测了血压，女儿在旁边帮忙，看着数字我心里还是慌，担心太高。伸展操只做了两分钟就累了，后来就没做。",
+        "timestamp": "2024-10-12T09:02:00+08:00",
+        "message_type": "回应",
+        "emotional_tone": "焦虑"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "患者技术依赖家人，情感焦虑明显，运动耐受低。",
+          "analysis": "技术和情感障碍阻碍行为执行，身体耐受限制运动量。",
+          "diagnosis": "技术依赖，情感焦虑，身体耐受低。",
+          "planning": "持续技术指导和情绪安抚，建议循序渐进运动。",
+          "evaluation": "需多维干预。"
+        },
+        "message": "有家人帮忙真好，血压数字让您紧张是正常的，您可以把每天数字告诉我，我们一起观察。伸展操不急，慢慢增加时间，每天多做一点点就好。",
+        "timestamp": "2024-10-12T09:05:00+08:00",
+        "message_type": "教育",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "我告诉你吧，数字有时160多，有时140多，反正我就担心出事。",
+        "timestamp": "2024-10-12T09:07:00+08:00",
+        "message_type": "回应",
+        "emotional_tone": "焦虑"
+      }
+    ],
+    "prescription": {
+      "medications": [],
+      "lifestyle": [],
+      "next_followup_date": "2025-01-02",
+      "physician_notes": "当前药物治疗基本稳定，建议调整二甲双胍剂量以优化血糖控制；密切监测血压波动，鼓励改善生活方式，防止慢性肾脏损伤进展。注重患者教育，提高依从性。"
+    },
+    "adherence_category": "监测",
+    "session_date": "2024-10-12"
+  },
+  "pre_annotation": {
+    "adherence_check": [
+      {
+        "date": "2024-10-12",
+        "category": "监测",
+        "overall_status": "部分遵从",
+        "reason": "患者有测量血压但存在情绪紧张，血压数值波动较大。",
+        "details": "患者早上测血压，血压数值有时160多，有时140多，情绪紧张。",
+        "dialogue_date": "2024-10-12"
+      }
+    ]
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "sample_id": "sample_6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a_20241103_medication_404e72",
+  "patient_id": "6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a",
+  "task_name": "adherence_identification",
+  "sample_data": {
+    "dialogue_piece": [
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "说得容易，实际上家里吵架了，我心情就更差，药都忘了吃。",
+        "timestamp": "2024-11-03T09:07:30+08:00",
+        "message_type": "回应",
+        "emotional_tone": "焦虑"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "患者负面情绪严重影响用药行为。",
+          "analysis": "情绪障碍导致行为依从倒退。",
+          "diagnosis": "情绪影响行为依从。",
+          "planning": "建议患者学习简单情绪调节技巧。",
+          "evaluation": "减少挫败感，增强自我管理能力。"
+        },
+        "message": "情绪不好确实会影响吃药，我建议您遇到不开心时，试着做几次深呼吸，或者听听喜欢的戏曲，稍微放松一下，您觉得可以试试吗？",
+        "timestamp": "2024-11-03T09:09:00+08:00",
+        "message_type": "提醒",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "嗯，昨天你发来的那些呼吸练习，我试过了，感觉有点用。",
+        "timestamp": "2024-11-03T09:10:30+08:00",
+        "message_type": "回应",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "患者尝试新方法，初步产生积极反馈。",
+          "analysis": "行为层面开始有小突破。",
+          "diagnosis": "情绪调节技能初步建立。",
+          "planning": "鼓励继续练习。",
+          "evaluation": "利于稳定情绪和行为改善。"
+        },
+        "message": "很好，继续保持，每天练习几分钟，情绪会慢慢好起来的。",
+        "timestamp": "2024-11-03T09:12:00+08:00",
+        "message_type": "提醒",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "运动方面，关注患者坚持情况及障碍。",
+          "analysis": "昨日提及天气影响运动，需跟进。",
+          "diagnosis": "行为层面运动依从存在波动。",
+          "planning": "引导患者尝试室内运动方案。",
+          "evaluation": "促进运动持续性。"
+        },
+        "message": "上次您说天气冷或下雨会影响运动，您这几天有尝试室内运动吗？",
+        "timestamp": "2024-11-03T09:13:30+08:00",
+        "message_type": "问题",
+        "emotional_tone": "中性"
+      }
+    ],
+    "prescription": {
+      "medications": [
+        {
+          "drug_name": "苯磺酸左旋氨氯地平片",
+          "dose": "2.5 mg",
+          "frequency": "每日一次",
+          "route": "口服"
+        },
+        {
+          "drug_name": "阿司匹林肠溶片",
+          "dose": "100 mg",
+          "frequency": "每日一次",
+          "route": "口服"
+        },
+        {
+          "drug_name": "辛伐他汀片",
+          "dose": "20 mg",
+          "frequency": "每日一次",
+          "route": "口服"
+        }
+      ],
+      "lifestyle": [],
+      "next_followup_date": "2024-12-01",
+      "physician_notes": "患者冠心病与高血压控制总体良好，建议继续现有治疗，密切监测血压波动。注意饮食调控和规律运动，定期随访复查血脂及心功能。"
+    },
+    "adherence_category": "用药",
+    "session_date": "2024-11-03"
+  },
+  "pre_annotation": {
+    "adherence_check": [
+      {
+        "date": "2024-11-03",
+        "category": "用药",
+        "overall_status": "部分遵从",
+        "reason": "因家庭矛盾导致情绪波动，患者偶尔忘记服药。",
+        "details": "患者表示家里吵架时心情差，药都忘了吃。",
+        "dialogue_date": "2024-11-03"
+      }
+    ]
+  }
+}

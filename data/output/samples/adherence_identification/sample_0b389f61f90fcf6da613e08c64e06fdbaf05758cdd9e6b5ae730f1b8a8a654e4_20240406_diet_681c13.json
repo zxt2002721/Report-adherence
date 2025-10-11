@@ -1,0 +1,86 @@
+{
+  "sample_id": "sample_0b389f61f90fcf6da613e08c64e06fdbaf05758cdd9e6b5ae730f1b8a8a654e4_20240406_diet_681c13",
+  "patient_id": "0b389f61f90fcf6da613e08c64e06fdbaf05758cdd9e6b5ae730f1b8a8a654e4",
+  "task_name": "adherence_identification",
+  "sample_data": {
+    "dialogue_piece": [
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "那好，您发给我看看。",
+        "timestamp": "2024-04-06T09:10:30Z",
+        "message_type": "回应",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "患者用药依从表现良好，准备讨论饮食。",
+          "analysis": "饮食调整依旧困难，需继续支持。",
+          "diagnosis": "饮食依从波动。",
+          "planning": "提醒饮食小技巧，鼓励坚持。",
+          "evaluation": "继续强化教育。"
+        },
+        "message": "关于饮食，您昨天跟家人沟通了吗？有没有试着让他们做些少盐的菜？",
+        "timestamp": "2024-04-06T09:12:00Z",
+        "message_type": "提醒",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "没说，怕麻烦他们。今天吃的海鲜还是放的挺咸的。",
+        "timestamp": "2024-04-06T09:13:30Z",
+        "message_type": "回应",
+        "emotional_tone": "困惑"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "饮食依从退步，社会支持薄弱。",
+          "analysis": "患者情感压力和社会障碍影响饮食控制。",
+          "diagnosis": "多维度障碍叠加。",
+          "planning": "鼓励逐步沟通，提供鼓励。",
+          "evaluation": "避免打击，支持情感。"
+        },
+        "message": "我知道改变习惯不容易，您已经做得很好了。下次如果觉得难以开口，也可以先发个微信，说您想吃得清淡点，慢慢让家人适应。不要给自己太大压力。",
+        "timestamp": "2024-04-06T09:15:00Z",
+        "message_type": "教育",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "嗯，我会试着去做的。",
+        "timestamp": "2024-04-06T09:16:30Z",
+        "message_type": "回应",
+        "emotional_tone": "合作"
+      }
+    ],
+    "prescription": {
+      "medications": [],
+      "lifestyle": [
+        {
+          "recommendation_type": "饮食",
+          "description": "控制每日主食摄入至250克，增加蔬菜和蛋白质摄入，减少盐和糖的摄入。"
+        }
+      ],
+      "next_followup_date": "2024-06-01",
+      "physician_notes": "注意血糖和血压的监测，增加家庭支持对于其依从性的提高有益。"
+    },
+    "adherence_category": "饮食",
+    "session_date": "2024-04-06"
+  },
+  "pre_annotation": {
+    "adherence_check": [
+      {
+        "date": "2024-04-06",
+        "category": "饮食",
+        "overall_status": "部分遵从",
+        "reason": "患者未与家人沟通饮食调整，饮食仍偏咸，存在饮食建议执行不到位的问题。",
+        "details": "患者表示“没说，怕麻烦他们。今天吃的海鲜还是放的挺咸的”。",
+        "dialogue_date": "2024-04-06"
+      }
+    ]
+  }
+}

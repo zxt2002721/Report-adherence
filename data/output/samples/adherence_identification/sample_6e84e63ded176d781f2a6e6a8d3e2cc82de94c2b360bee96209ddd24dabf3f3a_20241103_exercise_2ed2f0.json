@@ -1,0 +1,92 @@
+{
+  "sample_id": "sample_6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a_20241103_exercise_2ed2f0",
+  "patient_id": "6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a",
+  "task_name": "adherence_identification",
+  "sample_data": {
+    "dialogue_piece": [
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "患者尝试新方法，初步产生积极反馈。",
+          "analysis": "行为层面开始有小突破。",
+          "diagnosis": "情绪调节技能初步建立。",
+          "planning": "鼓励继续练习。",
+          "evaluation": "利于稳定情绪和行为改善。"
+        },
+        "message": "很好，继续保持，每天练习几分钟，情绪会慢慢好起来的。",
+        "timestamp": "2024-11-03T09:12:00+08:00",
+        "message_type": "提醒",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "运动方面，关注患者坚持情况及障碍。",
+          "analysis": "昨日提及天气影响运动，需跟进。",
+          "diagnosis": "行为层面运动依从存在波动。",
+          "planning": "引导患者尝试室内运动方案。",
+          "evaluation": "促进运动持续性。"
+        },
+        "message": "上次您说天气冷或下雨会影响运动，您这几天有尝试室内运动吗？",
+        "timestamp": "2024-11-03T09:13:30+08:00",
+        "message_type": "问题",
+        "emotional_tone": "中性"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "说实话没试，家里地方小，怕摔着。",
+        "timestamp": "2024-11-03T09:15:00+08:00",
+        "message_type": "回应",
+        "emotional_tone": "困惑"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "室内环境限制是运动障碍之一。",
+          "analysis": "行为障碍明显。",
+          "diagnosis": "运动依从性仍需干预。",
+          "planning": "建议简易安全动作和环境布置。",
+          "evaluation": "促使小步快走式改变。"
+        },
+        "message": "我可以帮您设计几个简单又安全的动作，不需要太大空间，也能保持身体活动，您明天方便我教您吗？",
+        "timestamp": "2024-11-03T09:16:30+08:00",
+        "message_type": "提醒",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "好吧，明天试试。",
+        "timestamp": "2024-11-03T09:18:00+08:00",
+        "message_type": "回应",
+        "emotional_tone": "合作"
+      }
+    ],
+    "prescription": {
+      "medications": [],
+      "lifestyle": [
+        {
+          "recommendation_type": "运动",
+          "description": "坚持每周至少五次中等强度有氧运动，每次30分钟，如快走、太极。"
+        }
+      ],
+      "next_followup_date": "2024-12-01",
+      "physician_notes": "患者冠心病与高血压控制总体良好，建议继续现有治疗，密切监测血压波动。注意饮食调控和规律运动，定期随访复查血脂及心功能。"
+    },
+    "adherence_category": "运动",
+    "session_date": "2024-11-03"
+  },
+  "pre_annotation": {
+    "adherence_check": [
+      {
+        "date": "2024-11-03",
+        "category": "运动",
+        "overall_status": "不遵从",
+        "reason": "患者因家中空间小且担心安全未进行运动。",
+        "details": "患者未尝试室内运动，担心摔倒，计划次日尝试简单安全动作。",
+        "dialogue_date": "2024-11-03"
+      }
+    ]
+  }
+}

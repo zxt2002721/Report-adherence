@@ -1,0 +1,81 @@
+{
+  "sample_id": "sample_7cb394d6e1c52e050ef41a9caa3c186d6a6a71fe2172fa8f901783973404285a_20241011_monitoring_734e03",
+  "patient_id": "7cb394d6e1c52e050ef41a9caa3c186d6a6a71fe2172fa8f901783973404285a",
+  "task_name": "adherence_identification",
+  "sample_data": {
+    "dialogue_piece": [
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "头晕还是有，今天早上甚至停了一次药，怕开车出事。伸展操没怎么做，早上忙着做饭，累得不想动。",
+        "timestamp": "2024-10-11T09:02:00+08:00",
+        "message_type": "回应",
+        "emotional_tone": "焦虑"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "患者行为层面再次出现用药中断和运动缺乏，情感层面焦虑加剧。",
+          "analysis": "用药依从严重波动，运动计划难以执行，患者担忧明显。",
+          "diagnosis": "行为依从倒退，情感焦虑加重。",
+          "planning": "制定更细化用药监测，缓解用药恐惧，设定合理运动目标。",
+          "evaluation": "需重点干预用药行为和情绪。"
+        },
+        "message": "您停药是因为担心安全，非常理解。为了确保安全，您愿意试试早晚测量血压和记录头晕时间，我们一起分析吗？关于运动，您看上午做饭后休息一下，下午试着做几分钟伸展操，是否合适？",
+        "timestamp": "2024-10-11T09:05:00+08:00",
+        "message_type": "教育",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "测血压我试试，可那个血压计我女儿说用法复杂，我也怕弄错。下午做伸展操……我怕一动多了头晕更厉害，实在不敢乱来。",
+        "timestamp": "2024-10-11T09:08:00+08:00",
+        "message_type": "回应",
+        "emotional_tone": "困惑"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "患者对技术操作和身体反应存在认知和情感障碍。",
+          "analysis": "技术恐惧和对身体状态的不确定感阻碍行为改变。",
+          "diagnosis": "认知障碍与情感恐惧双重阻碍。",
+          "planning": "提供简单易懂操作指导，强调安全和缓慢开始。",
+          "evaluation": "调整沟通策略。"
+        },
+        "message": "血压计确实用起来不简单，我可以教您简单几个步骤，您女儿也能帮忙指导。做伸展操时动作轻缓，感到不适就停，我们不着急，慢慢来，您觉得这样可以吗？",
+        "timestamp": "2024-10-11T09:10:00+08:00",
+        "message_type": "教育",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "这样说我能明白些，但我还是担心自己弄不好，弄错了更麻烦。",
+        "timestamp": "2024-10-11T09:12:00+08:00",
+        "message_type": "回应",
+        "emotional_tone": "焦虑"
+      }
+    ],
+    "prescription": {
+      "medications": [],
+      "lifestyle": [],
+      "next_followup_date": "2025-01-02",
+      "physician_notes": "当前药物治疗基本稳定，建议调整二甲双胍剂量以优化血糖控制；密切监测血压波动，鼓励改善生活方式，防止慢性肾脏损伤进展。注重患者教育，提高依从性。"
+    },
+    "adherence_category": "监测",
+    "session_date": "2024-10-11"
+  },
+  "pre_annotation": {
+    "adherence_check": [
+      {
+        "date": "2024-10-11",
+        "category": "监测",
+        "overall_status": "部分遵从",
+        "reason": "患者愿意尝试测量血压但担心操作复杂，尚未完全掌握使用方法，存在执行障碍。",
+        "details": "2024-10-11患者愿意试测血压，但血压计使用复杂，女儿协助指导，患者仍担心操作错误。",
+        "dialogue_date": "2024-10-11"
+      }
+    ]
+  }
+}

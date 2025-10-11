@@ -1,0 +1,100 @@
+{
+  "sample_id": "sample_7cb394d6e1c52e050ef41a9caa3c186d6a6a71fe2172fa8f901783973404285a_20241012_medication_585353",
+  "patient_id": "7cb394d6e1c52e050ef41a9caa3c186d6a6a71fe2172fa8f901783973404285a",
+  "task_name": "adherence_identification",
+  "sample_data": {
+    "dialogue_piece": [
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "我告诉你吧，数字有时160多，有时140多，反正我就担心出事。",
+        "timestamp": "2024-10-12T09:07:00+08:00",
+        "message_type": "回应",
+        "emotional_tone": "焦虑"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "患者血压波动大，情绪焦虑，可能影响用药依从。",
+          "analysis": "血压波动带来恐惧，可能导致用药不稳定。",
+          "diagnosis": "情感障碍加重。",
+          "planning": "建议及时告知医生，监测情绪，稳定用药。",
+          "evaluation": "重点情绪管理。"
+        },
+        "message": "血压有波动是比较常见的，您不用太担心。我们会帮您记录并反馈给医生，医生会帮您调整用药的。请您继续按时服药，遇到不适及时告诉我们，好吗？",
+        "timestamp": "2024-10-12T09:10:00+08:00",
+        "message_type": "教育",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "知道了，但我还是害怕吃卡托普利，每次想到副作用我就想停药。",
+        "timestamp": "2024-10-12T09:12:00+08:00",
+        "message_type": "回应",
+        "emotional_tone": "焦虑"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "患者用药恐惧持续，影响治疗依从。",
+          "analysis": "情感层面恐惧未消，影响行为。",
+          "diagnosis": "用药恐惧持续。",
+          "planning": "继续心理支持，解释副作用与监测。",
+          "evaluation": "需强化情感支持。"
+        },
+        "message": "您的担心我理解。卡托普利的副作用我们会密切关注，您只要感觉不适，马上告诉我们，我们可以帮您调整剂量或者换药。安全第一，我们一起保护您的健康。",
+        "timestamp": "2024-10-12T09:15:00+08:00",
+        "message_type": "教育",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "那好吧，我试着再坚持几天，毕竟家里人都说要听医生话。",
+        "timestamp": "2024-10-12T09:18:00+08:00",
+        "message_type": "回应",
+        "emotional_tone": "合作"
+      }
+    ],
+    "prescription": {
+      "medications": [
+        {
+          "drug_name": "卡托普利片",
+          "dose": "25 mg",
+          "frequency": "每日一次",
+          "route": "口服"
+        },
+        {
+          "drug_name": "二甲双胍",
+          "dose": "500 mg",
+          "frequency": "每日两次",
+          "route": "口服"
+        },
+        {
+          "drug_name": "消渴丸",
+          "dose": "5 粒",
+          "frequency": "每日三次",
+          "route": "口服"
+        }
+      ],
+      "lifestyle": [],
+      "next_followup_date": "2025-01-02",
+      "physician_notes": "当前药物治疗基本稳定，建议调整二甲双胍剂量以优化血糖控制；密切监测血压波动，鼓励改善生活方式，防止慢性肾脏损伤进展。注重患者教育，提高依从性。"
+    },
+    "adherence_category": "用药",
+    "session_date": "2024-10-12"
+  },
+  "pre_annotation": {
+    "adherence_check": [
+      {
+        "date": "2024-10-12",
+        "category": "用药",
+        "overall_status": "部分遵从",
+        "reason": "患者因担心卡托普利副作用有停药念头，但表示愿意尝试坚持用药。",
+        "details": "患者提到害怕卡托普利副作用，考虑停药，但最终表示会再坚持几天，听从医生建议。",
+        "dialogue_date": "2024-10-12"
+      }
+    ]
+  }
+}

@@ -1,0 +1,718 @@
+{
+  "sessions": [
+    {
+      "session_id": "20250721030658",
+      "session_date": "2024-11-01",
+      "patient_id": "6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a",
+      "conversation_turns": [
+        {
+          "speaker": "system",
+          "message": "您好，我是您的健康助手贝贝。想了解一下，最近您的血压和心脏用药吃得怎么样？",
+          "timestamp": "2024-11-01T09:00:00+08:00",
+          "message_type": "问题",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "patient",
+          "message": "唉，药我是吃了，就是有时候忘记，尤其早上老想多睡会儿。",
+          "timestamp": "2024-11-01T09:01:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "困惑"
+        },
+        {
+          "speaker": "system",
+          "message": "明白，您一般是几点服药呢？有没有试过用手机提醒帮助记得吃药？",
+          "timestamp": "2024-11-01T09:02:30+08:00",
+          "message_type": "问题",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "一般就是早上吃，手机我会设置提醒，可老被别的消息打扰，提醒经常错过。",
+          "timestamp": "2024-11-01T09:04:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "困惑"
+        },
+        {
+          "speaker": "system",
+          "message": "了解，手机提醒打扰多的话，我们可以试试设置专门的闹钟，或者在家里固定放置药盒，并每天固定时间服药，您觉得怎么样？",
+          "timestamp": "2024-11-01T09:05:30+08:00",
+          "message_type": "提醒",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "我家里有个小药盒，不过有时候出门没带，带药也麻烦，尤其去邻居家聚会，怕别人问起我的病。",
+          "timestamp": "2024-11-01T09:07:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "message": "理解您的顾虑，很多人都有这样的感觉。我们可以一起想办法，如何在不引起别人注意的情况下，方便地服药。您平时一般什么时间去邻居家？",
+          "timestamp": "2024-11-01T09:08:30+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "一般是下午，喝茶聊天的时间，我觉得那时候吃药就很尴尬。",
+          "timestamp": "2024-11-01T09:10:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "message": "除了用药，饮食方面您觉得还顺利吗？比如盐和脂肪的摄入，家里做菜都是怎样的？",
+          "timestamp": "2024-11-01T09:12:00+08:00",
+          "message_type": "问题",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "patient",
+          "message": "我喜欢家里的山西面食，做菜也喜欢蒸煮少油，可家人喜欢吃咸和辣，做菜也难统一口味，我自己倒是尽量少放盐。",
+          "timestamp": "2024-11-01T09:13:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "system",
+          "message": "您做得很不错了，能不能试试用些香草、醋或者柠檬来调味，这样能减少盐的用量，口味也不会单调？您觉得这样方便吗？",
+          "timestamp": "2024-11-01T09:15:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "倒是可以试试，不过我怕家里人觉得怪，毕竟大家习惯了那个口味。",
+          "timestamp": "2024-11-01T09:16:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "message": "能理解您的担心，有时候沟通确实不容易。下次我可以帮您准备一些和家人交流的小建议，让他们知道您的健康需要，您看好吗？",
+          "timestamp": "2024-11-01T09:18:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "嗯，也好，看看怎么说吧。",
+          "timestamp": "2024-11-01T09:19:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "system",
+          "message": "听说您喜欢早上去快走和练太极，这样的运动习惯保持得怎么样？",
+          "timestamp": "2024-11-01T09:21:00+08:00",
+          "message_type": "问题",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "还行，基本都坚持，就是偶尔天冷或者下雨就偷懒了。",
+          "timestamp": "2024-11-01T09:22:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "system",
+          "message": "下雨天或者天气冷确实不方便出门，您有没有考虑过在家里做一些简单的室内运动，比如伸展或者练习太极招式？",
+          "timestamp": "2024-11-01T09:24:00+08:00",
+          "message_type": "提醒",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "这个倒没试过，家里也没啥地方，怕摔着。",
+          "timestamp": "2024-11-01T09:25:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "困惑"
+        },
+        {
+          "speaker": "system",
+          "message": "明白您的顾虑，家里确实要注意安全。我可以教您几招简单稳妥的太极动作，适合小空间，也能保持身体活动，您看什么时候方便？",
+          "timestamp": "2024-11-01T09:27:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        }
+      ]
+    },
+    {
+      "session_id": "20250722030658",
+      "session_date": "2024-11-02",
+      "patient_id": "6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a",
+      "conversation_turns": [
+        {
+          "speaker": "system",
+          "message": "您好，昨天聊到您有时候忘记吃药，今天我想了解一下，您对这些药有没有什么担心或者感觉？",
+          "timestamp": "2024-11-02T09:00:00+08:00",
+          "message_type": "问题",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "patient",
+          "message": "说实话，我有点怕苯磺酸左旋氨氯地平片的副作用，听说有的人吃了会头晕，我昨天吃了头晕，就自己停了两天。",
+          "timestamp": "2024-11-02T09:01:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "message": "明白您的担心。这个药确实可能会有些头晕感，但一般是开始用药时身体适应的反应，如果头晕严重或持续，应该告诉医生，不建议自行停药，停药反而可能加重病情。您平时头晕的情况严重吗？",
+          "timestamp": "2024-11-02T09:03:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "有时候有点头晕，但没持续几天就好了，我自己就怕越吃越不好。",
+          "timestamp": "2024-11-02T09:04:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "message": "您的担心很正常，长期用药确实让人有压力。其实，这些药是帮助控制血压和预防心脏病发作的，好处远大于可能的副作用。我们可以一起监测您的情况，及时调整用药，您觉得怎么样？",
+          "timestamp": "2024-11-02T09:06:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "嗯，我也知道要吃，可有时候一想到这病得一辈子治下去，就挺闷的。",
+          "timestamp": "2024-11-02T09:07:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "message": "确实，长期疾病管理很累人。您平时有没有什么让自己放松心情的活动？比如听戏曲、看书？",
+          "timestamp": "2024-11-02T09:09:00+08:00",
+          "message_type": "提醒",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "我喜欢听戏曲，也喜欢邻居一起聊天，算是我的乐趣了。",
+          "timestamp": "2024-11-02T09:10:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "system",
+          "message": "太好了，保持这些兴趣爱好对健康有帮助。遇到情绪低落时，可以试着做些深呼吸或冥想，缓解压力。您想了解这方面的技巧吗？",
+          "timestamp": "2024-11-02T09:12:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "可以试试，不过我平时也不太知道怎么做。",
+          "timestamp": "2024-11-02T09:13:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "system",
+          "message": "没问题，我可以给您发一些简单的深呼吸和冥想练习，您每天花几分钟练习，就会觉得轻松一些。",
+          "timestamp": "2024-11-02T09:15:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "好，那我试试看吧。",
+          "timestamp": "2024-11-02T09:16:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "system",
+          "message": "昨天说您家人喜欢吃咸辣，您自己尽量少放盐，平时有没有和家人商量过，共同调整饮食？",
+          "timestamp": "2024-11-02T09:18:00+08:00",
+          "message_type": "问题",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "说过，可他们觉得我小题大做，自己改了口味也不太好，家里气氛有点紧张。",
+          "timestamp": "2024-11-02T09:19:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        }
+      ]
+    },
+    {
+      "session_id": "20250723030658",
+      "session_date": "2024-11-03",
+      "patient_id": "6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a",
+      "conversation_turns": [
+        {
+          "speaker": "system",
+          "message": "您好，昨天说到和家人沟通有点紧张，您觉得主要是什么原因让大家难以达成共识呢？",
+          "timestamp": "2024-11-03T09:00:00+08:00",
+          "message_type": "问题",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "我家人都觉得我年纪大了，吃那么多药也没啥大用，平时说的话他们也不太当回事。",
+          "timestamp": "2024-11-03T09:01:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "抗拒"
+        },
+        {
+          "speaker": "system",
+          "message": "您感觉家人的这种态度让您挺难受的，这很正常。或许我们可以想一些方式，帮他们更了解您的健康状况，您愿意试试吗？",
+          "timestamp": "2024-11-03T09:03:00+08:00",
+          "message_type": "提醒",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "也想让他们明白，可我跟他们说他们就说我啰嗦。",
+          "timestamp": "2024-11-03T09:04:30+08:00,",
+          "message_type": "回应",
+          "emotional_tone": "抗拒"
+        },
+        {
+          "speaker": "system",
+          "message": "有时候表达健康的需要确实容易让人反感，您可以尝试告诉他们，您希望他们理解您，是为了大家好，您觉得这样说会不会让气氛缓和一些？",
+          "timestamp": "2024-11-03T09:06:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "说得容易，实际上家里吵架了，我心情就更差，药都忘了吃。",
+          "timestamp": "2024-11-03T09:07:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "message": "情绪不好确实会影响吃药，我建议您遇到不开心时，试着做几次深呼吸，或者听听喜欢的戏曲，稍微放松一下，您觉得可以试试吗？",
+          "timestamp": "2024-11-03T09:09:00+08:00",
+          "message_type": "提醒",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "嗯，昨天你发来的那些呼吸练习，我试过了，感觉有点用。",
+          "timestamp": "2024-11-03T09:10:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "system",
+          "message": "很好，继续保持，每天练习几分钟，情绪会慢慢好起来的。",
+          "timestamp": "2024-11-03T09:12:00+08:00",
+          "message_type": "提醒",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "system",
+          "message": "上次您说天气冷或下雨会影响运动，您这几天有尝试室内运动吗？",
+          "timestamp": "2024-11-03T09:13:30+08:00",
+          "message_type": "问题",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "patient",
+          "message": "说实话没试，家里地方小，怕摔着。",
+          "timestamp": "2024-11-03T09:15:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "困惑"
+        },
+        {
+          "speaker": "system",
+          "message": "我可以帮您设计几个简单又安全的动作，不需要太大空间，也能保持身体活动，您明天方便我教您吗？",
+          "timestamp": "2024-11-03T09:16:30+08:00",
+          "message_type": "提醒",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "好吧，明天试试。",
+          "timestamp": "2024-11-03T09:18:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "合作"
+        }
+      ]
+    },
+    {
+      "session_id": "20250724030658",
+      "session_date": "2024-11-04",
+      "patient_id": "6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a",
+      "conversation_turns": [
+        {
+          "speaker": "system",
+          "message": "早上好，今天我来教您几招简单的太极动作，动作不大，您可以坐着或站着做，安全第一，您准备好了吗？",
+          "timestamp": "2024-11-04T09:00:00+08:00",
+          "message_type": "问题",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "嗯，准备好了，您说。",
+          "timestamp": "2024-11-04T09:01:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "system",
+          "message": "第一步，双手轻轻平举，缓慢向前推，动作要轻柔，感受气息，做五次。做完告诉我感觉如何。",
+          "timestamp": "2024-11-04T09:02:30+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "做了，感觉手有点酸，但还行。",
+          "timestamp": "2024-11-04T09:04:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "system",
+          "message": "很好，刚开始会有点酸是正常的，慢慢会适应。接着再做第二个动作，双脚并拢，脚跟稍微抬起，保持平衡，做三次。",
+          "timestamp": "2024-11-04T09:05:30+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "这个有点难，我站不稳，得扶着椅子。",
+          "timestamp": "2024-11-04T09:07:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "困惑"
+        },
+        {
+          "speaker": "system",
+          "message": "没关系，您可以扶着椅背做动作，安全第一，不用勉强。慢慢练，习惯了就会好些。",
+          "timestamp": "2024-11-04T09:08:30+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "好，我会注意。",
+          "timestamp": "2024-11-04T09:09:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "system",
+          "message": "除了运动，您这几天药物和饮食执行得怎么样？有没有遇到新的困难？",
+          "timestamp": "2024-11-04T09:11:00+08:00",
+          "message_type": "问题",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "patient",
+          "message": "药倒是比前几天吃得多了，就是忘记的事还时有发生，饮食那块嘛，家人还是没变，咱这大锅饭，咸菜和油也没少放。",
+          "timestamp": "2024-11-04T09:12:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "message": "您在用药方面做得很好，记得时多了，继续加油。饮食方面我们一起想办法，您是否愿意尝试和家人一起制定一些健康菜谱？",
+          "timestamp": "2024-11-04T09:14:00+08:00",
+          "message_type": "提醒",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "这事儿说着容易，家人那会儿反对我又说不出口。",
+          "timestamp": "2024-11-04T09:15:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        }
+      ]
+    },
+    {
+      "session_id": "20250725030658",
+      "session_date": "2024-11-05",
+      "patient_id": "6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a",
+      "conversation_turns": [
+        {
+          "speaker": "system",
+          "message": "您好，昨天练习太极动作感觉怎么样？药物和饮食有没有什么新的进展？",
+          "timestamp": "2024-11-05T09:00:00+08:00",
+          "message_type": "问题",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "动作做了几次，家里太小做着怪别扭，不过比没动强。药是按时吃了几天，今儿早上倒忘了，饮食还是老样子。",
+          "timestamp": "2024-11-05T09:01:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "system",
+          "message": "偶尔忘记很正常，别给自己太大压力。我们可以想些小方法，比如把药盒放在经常看见的地方，提醒自己。您觉得哪儿放药方便记得？",
+          "timestamp": "2024-11-05T09:03:00+08:00",
+          "message_type": "提醒",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "放厨房吧，那里常常去，顺手就能看到。",
+          "timestamp": "2024-11-05T09:04:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "system",
+          "message": "好的，那您就把药盒放厨房的醒目位置，做饭或吃饭时顺便记得吃药。同时，可以用手机设置第二个提醒，双保险。",
+          "timestamp": "2024-11-05T09:06:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "手机提醒我还得调调，昨儿那个闹钟声音小，经常听不见。",
+          "timestamp": "2024-11-05T09:07:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "困惑"
+        },
+        {
+          "speaker": "system",
+          "message": "您可以把手机闹钟声音调大一些，或者选一个响亮的铃声，这样提醒效果会更好。您会操作吗？",
+          "timestamp": "2024-11-05T09:09:00+08:00",
+          "message_type": "提醒",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "会的，改天我试试看。",
+          "timestamp": "2024-11-05T09:10:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "system",
+          "message": "关于饮食，您提到家里口味难改，您看有没有可能每周挑一天，全家尝试一些低盐健康菜肴？慢慢影响大家的习惯。",
+          "timestamp": "2024-11-05T09:11:30+08:00",
+          "message_type": "提醒",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "唉，这主意不错，可我怕一开始家人反感，我也不想总惹事。",
+          "timestamp": "2024-11-05T09:13:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "message": "理解您的顾虑，我们可以先从自己开始调整，比如做一小份低盐菜自己吃，等家人看到您状态好，也许他们会愿意尝试。",
+          "timestamp": "2024-11-05T09:14:30+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "这样说起来，好像能行，我试试。",
+          "timestamp": "2024-11-05T09:16:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "合作"
+        }
+      ]
+    },
+    {
+      "session_id": "20241106123456",
+      "session_date": "2024-11-06",
+      "patient_id": "6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a",
+      "conversation_turns": [
+        {
+          "speaker": "system",
+          "message": "您好，这是您11月5日的随访复盘：昨日监测血压142/88mmHg，较前略升高。饮食方面咸菜摄入仍较多，建议尝试用山西老陈醋替代部分咸菜。",
+          "timestamp": "2024-11-06T08:00:00+08:00",
+          "message_type": "引导",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "patient",
+          "message": "医生，我试过用醋泡黄瓜，但家人总说太酸，吃不下饭。",
+          "timestamp": "2024-11-06T08:02:15+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "message": "可以尝试将醋用量减半，搭配蒸南瓜食用。您今天早晨服药了吗？",
+          "timestamp": "2024-11-06T08:05:30+08:00",
+          "message_type": "追问",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "patient",
+          "message": "昨晚忘记设闹钟，今早刚想起来。现在补服了辛伐他汀。",
+          "timestamp": "2024-11-06T08:07:45+08:00",
+          "message_type": "回应",
+          "emotional_tone": "沮丧"
+        },
+        {
+          "speaker": "system",
+          "message": "建议在手机日历设置每日药提醒，并开启闹钟震动功能。您今天有进行太极练习吗？",
+          "timestamp": "2024-11-06T08:10:10+08:00",
+          "message_type": "建议",
+          "emotional_tone": "积极"
+        },
+        {
+          "speaker": "patient",
+          "message": "在小区花园练了二十分钟，但云手动作总感觉肩膀使不上劲。",
+          "timestamp": "2024-11-06T08:12:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "system",
+          "message": "可先进行肩部热敷后再练习，动作幅度不必追求完整。今日饮食计划是？",
+          "timestamp": "2024-11-06T08:15:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "积极"
+        },
+        {
+          "speaker": "patient",
+          "message": "打算吃小米粥配蒸红薯，再炒个西葫芦。您看这样行吗？",
+          "timestamp": "2024-11-06T08:17:20+08:00",
+          "message_type": "回应",
+          "emotional_tone": "积极"
+        }
+      ]
+    },
+    {
+      "session_id": "20241107123456",
+      "session_date": "2024-11-07",
+      "patient_id": "6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a",
+      "conversation_turns": [
+        {
+          "speaker": "system",
+          "message": "这是您11月6日的随访：今日血压138/85mmHg，较前改善。饮食结构符合要求，但运动时间不足。建议尝试分段练习太极。",
+          "timestamp": "2024-11-07T08:00:00+08:00",
+          "message_type": "引导",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "patient",
+          "message": "昨晚家人又吵着要吃酱牛肉，我实在拗不过他们。",
+          "timestamp": "2024-11-07T08:02:15+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "message": "可建议家人用低钠酱油替代，或将酱牛肉切薄片，用蒸的方式烹饪。",
+          "timestamp": "2024-11-07T08:05:30+08:00",
+          "message_type": "建议",
+          "emotional_tone": "积极"
+        },
+        {
+          "speaker": "patient",
+          "message": "我试过用手机计步器，但今天只走了2000步，腿有点发沉。",
+          "timestamp": "2024-11-07T08:07:45+08:00",
+          "message_type": "回应",
+          "emotional_tone": "沮丧"
+        },
+        {
+          "speaker": "system",
+          "message": "可尝试将运动拆分为上午1000步+下午1000步，配合深呼吸练习。",
+          "timestamp": "2024-11-07T08:10:10+08:00",
+          "message_type": "建议",
+          "emotional_tone": "积极"
+        },
+        {
+          "speaker": "patient",
+          "message": "今早服药时发现辛伐他汀空了两粒，是不是该换新药了？",
+          "timestamp": "2024-11-07T08:12:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "message": "请查看药品有效期，若临近过期建议更换。您最近有无肌肉酸痛等不适？",
+          "timestamp": "2024-11-07T08:15:00+08:00",
+          "message_type": "追问",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "patient",
+          "message": "昨天爬楼梯时小腿有点酸，但以为是年纪大了没在意。",
+          "timestamp": "2024-11-07T08:17:20+08:00",
+          "message_type": "回应",
+          "emotional_tone": "中性"
+        }
+      ]
+    },
+    {
+      "session_id": "20241108123456",
+      "session_date": "2024-11-08",
+      "patient_id": "6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a",
+      "conversation_turns": [
+        {
+          "speaker": "system",
+          "message": "这是您11月7日的随访：今日血压135/82mmHg，运动依从性有所改善。关于肌肉酸痛，建议暂停辛伐他汀并及时复诊。",
+          "timestamp": "2024-11-08T08:00:00+08:00",
+          "message_type": "引导",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "patient",
+          "message": "我查了药品说明书，上面说肌肉疼痛是常见副作用，是不是不用太担心？",
+          "timestamp": "2024-11-08T08:02:15+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "message": "确实常见但需警惕，建议暂时停药并监测肌酸激酶水平。您今日饮食如何？",
+          "timestamp": "2024-11-08T08:05:30+08:00",
+          "message_type": "教育",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "patient",
+          "message": "今天吃了蒸南瓜和小米粥，还喝了半杯山楂水，感觉胃有点胀。",
+          "timestamp": "2024-11-08T08:07:45+08:00",
+          "message_type": "回应",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "system",
+          "message": "山楂水可适量饮用，但避免空腹食用。您今天有进行分段运动吗？",
+          "timestamp": "2024-11-08T08:10:10+08:00",
+          "message_type": "建议",
+          "emotional_tone": "积极"
+        },
+        {
+          "speaker": "patient",
+          "message": "上午走了1000步，下午因邻居串门就搁下了，明天争取补上。",
+          "timestamp": "2024-11-08T08:12:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "积极"
+        },
+        {
+          "speaker": "system",
+          "message": "可尝试在手机健康APP设置运动提醒，与邻里活动结合进行。",
+          "timestamp": "2024-11-08T08:15:00+08:00",
+          "message_type": "建议",
+          "emotional_tone": "积极"
+        },
+        {
+          "speaker": "patient",
+          "message": "医生，我昨晚梦见血压又升高了，是不是心理压力太大？",
+          "timestamp": "2024-11-08T08:17:20+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        }
+      ]
+    }
+  ]
+}

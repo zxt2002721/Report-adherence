@@ -1,0 +1,399 @@
+{
+  "hpi": {
+    "meta": {
+      "sex": "女",
+      "age": 52
+    },
+    "chief_complaint": "腹部胀大与疼痛加重",
+    "history": {
+      "summary": "患者有丙型肝炎相关肝硬化和腹水病史，由外院急诊转来，因近一周腹部胀大与不适加重。数周前自行停用了利尿剂（呋塞米与螺内酯）。否认水肿、气促、端坐呼吸、恶心、呕吐、腹泻、便秘、尿痛、发热或近期物质使用。诉近期刷牙时牙龈出血，并在急诊有短暂意识模糊。",
+      "context": [
+        "丙肝肝硬化",
+        "HIV感染（规律抗病毒治疗）",
+        "既往静脉注射毒品史",
+        "慢性阻塞性肺疾病"
+      ],
+      "duration_weeks": 1
+    },
+    "opqrst": {
+      "onset": "过去一周逐渐加重",
+      "provocation_palliation": "停用利尿剂后出现症状；休息不能缓解",
+      "quality": "腹部胀满与不适",
+      "radiation": "无放射",
+      "severity": "中等，未量化",
+      "timing": "持续性"
+    },
+    "ros": {
+      "positive": [
+        "刷牙时牙龈出血",
+        "在急诊有短暂意识模糊"
+      ],
+      "negative": [
+        "水肿",
+        "气促",
+        "端坐呼吸",
+        "恶心",
+        "呕吐",
+        "腹泻",
+        "便秘",
+        "尿痛",
+        "发热",
+        "胸痛",
+        "近期药物使用",
+        "饮酒"
+      ]
+    },
+    "ed_snapshot": {
+      "temperature": 98.4,
+      "heartrate": 70.0,
+      "resprate": 16.0,
+      "o2sat": 97.0,
+      "sbp": 106.0,
+      "dbp": 63.0,
+      "pain": "0",
+      "ESI": 3.0
+    }
+  },
+  "ph": {
+    "problems": [
+      {
+        "diagnosis": "丙型肝炎相关肝硬化",
+        "system": "肝病/消化科",
+        "status": "活动",
+        "severity": "",
+        "complications": [
+          "门静脉高压",
+          "腹水"
+        ]
+      },
+      {
+        "diagnosis": "人类免疫缺陷病毒（HIV）感染",
+        "system": "感染科",
+        "status": "活动",
+        "severity": "",
+        "complications": []
+      },
+      {
+        "diagnosis": "慢性阻塞性肺疾病（COPD）",
+        "system": "呼吸系统",
+        "status": "活动",
+        "severity": "",
+        "complications": []
+      },
+      {
+        "diagnosis": "双相情感障碍",
+        "system": "精神科",
+        "status": "活动",
+        "severity": "",
+        "complications": []
+      },
+      {
+        "diagnosis": "创伤后应激障碍（PTSD）",
+        "system": "精神科",
+        "status": "活动",
+        "severity": "",
+        "complications": []
+      },
+      {
+        "diagnosis": "肛门上皮不典型增生",
+        "system": "肝病/消化科",
+        "status": "活动",
+        "severity": "",
+        "complications": []
+      },
+      {
+        "diagnosis": "皮肤癌",
+        "system": "皮肤科",
+        "status": "活动",
+        "severity": "",
+        "complications": []
+      }
+    ],
+    "surgeries": [
+      {
+        "procedure": "乳腺钙化灶切除（良性）",
+        "date": ""
+      },
+      {
+        "procedure": "皮肤病变活检",
+        "date": ""
+      }
+    ],
+    "allergies": [],
+    "meds": [
+      {
+        "drug": "沙丁胺醇",
+        "dose": "2喷",
+        "route": "吸入",
+        "freq": "每4小时",
+        "prn": true
+      },
+      {
+        "drug": "恩曲他滨-替诺福韦",
+        "dose": "1片",
+        "route": "口服",
+        "freq": "每日",
+        "prn": false
+      },
+      {
+        "drug": "呋塞米",
+        "dose": "20 mg",
+        "route": "口服",
+        "freq": "每日",
+        "prn": false
+      },
+      {
+        "drug": "异丙托溴铵",
+        "dose": "1次雾化",
+        "route": "吸入",
+        "freq": "每6小时",
+        "prn": false
+      },
+      {
+        "drug": "尼古丁贴片",
+        "dose": "14 mg",
+        "route": "经皮",
+        "freq": "每日",
+        "prn": false
+      },
+      {
+        "drug": "拉替拉韦",
+        "dose": "400 mg",
+        "route": "口服",
+        "freq": "每日两次",
+        "prn": false
+      },
+      {
+        "drug": "螺内酯",
+        "dose": "50 mg",
+        "route": "口服",
+        "freq": "每日",
+        "prn": false
+      }
+    ],
+    "social": {
+      "tobacco": {
+        "status": "既往",
+        "quit": "2年前"
+      },
+      "alcohol": {
+        "status": "既往",
+        "lastUse": "2个月前"
+      },
+      "substances": [
+        {
+          "name": "海洛因",
+          "route": "静脉",
+          "status": "既往",
+          "lastUse": ""
+        },
+        {
+          "name": "可卡因",
+          "route": "静脉",
+          "status": "既往",
+          "lastUse": ""
+        }
+      ],
+      "familyHistory": "家族中无已知胃肠或肝病史。"
+    }
+  },
+  "RE_resources": {
+    "bedside": {
+      "assessment_and_monitoring": [
+        {
+          "testName": "生命体征与心电监护",
+          "testId": "BS-AM-001",
+          "reasoning": "文字证据：初始生命体征为体温98.4°F、心率70次/分、血压106/63 mmHg、呼吸16次/分、室内空气血氧97%。临床依据：评估血流动力学稳定性，对合并腹水的肝硬化患者液体与用药管理至关重要。"
+        },
+        {
+          "testName": "体格检查",
+          "testId": "BS-AM-003",
+          "reasoning": "文字证据：患者自述自行停用呋塞米与螺内酯，且有短暂意识模糊。临床依据：评估用药依从性、精神状态变化，以及门静脉高压的体征（如叩诊移动性浊音、脾大）。"
+        }
+      ]
+    },
+    "laboratory_items": {
+      "hematology": [
+        {
+          "testName": "血常规",
+          "testId": "LAB-HE-001",
+          "reasoning": "文字证据：白细胞约5×10^3/μL，血小板约71×10^9/L。临床依据：可见血小板减少（提示门静脉高压），亦需关注HIV/肝硬化相关白细胞变化，用于评估出血风险与感染监测。"
+        }
+      ],
+      "chemistry": [
+        {
+          "testName": "基础/全面代谢组合",
+          "testId": "LAB-CH-001",
+          "reasoning": "文字证据：血钠138 mmol/L，血钾3.4 mmol/L，肌酐0.3 mg/dL。临床依据：评估电解质与肾功能，指导腹水的利尿剂调整。"
+        },
+        {
+          "testName": "特定器官功能标志物（如脂肪酶、肝功、肌酸激酶）",
+          "testId": "LAB-CH-004",
+          "reasoning": "文字证据：丙氨酸转氨酶100 U/L，天门冬氨酸转氨酶114 U/L，总胆红素1.6 mg/dL；脂肪酶正常。临床依据：与肝硬化一致的肝细胞损伤，排除急性胰腺炎。"
+        }
+      ],
+      "coagulation": [
+        {
+          "testName": "凝血功能（PT/INR、APTT）",
+          "testId": "LAB-CO-001",
+          "reasoning": "文字证据：INR 1.6，APTT 30.9秒。临床依据：在腹腔穿刺前评估凝血障碍与出血风险。"
+        }
+      ],
+      "urinalysis": [
+        {
+          "testName": "尿常规及镜检",
+          "testId": "LAB-UR-001",
+          "reasoning": "文字证据：尿常规阴性。临床依据：排除泌尿系感染作为感染来源。"
+        }
+      ],
+      "microbiology": [
+        {
+          "testName": "各类标本培养与涂片（血、尿、痰、伤口等）",
+          "testId": "LAB-MI-001",
+          "reasoning": "文字证据：尿培养与血培养阴性。临床依据：排除全身性感染（脓毒症），指导抗菌药物合理使用。"
+        }
+      ]
+    },
+    "diagnostic_items": {
+      "imaging": [
+        {
+          "testName": "X线检查",
+          "testId": "DX-IM-001",
+          "reasoning": "文字证据：胸部X线未见急性心肺过程。临床依据：排除呼吸困难的心肺原因，未见明显胸腔积液/实变。"
+        },
+        {
+          "testName": "超声检查",
+          "testId": "DX-IM-003",
+          "reasoning": "文字证据：肝脏呈结节样外观，见少量腹水。临床依据：证实肝硬化、门静脉高压及腹水体量，为是否行腹腔穿刺与后续处置提供依据。"
+        }
+      ],
+      "other_studies": [
+        {
+          "testName": "诊断性操作（如腰穿、腹腔穿刺、关节穿刺等）",
+          "testId": "DX-OS-003",
+          "reasoning": "文字证据：急诊已尝试行诊断性腹腔穿刺。临床依据：为评估自发性细菌性腹膜炎（SBP）；腹水多形核细胞计数＜250个/μL提示阴性。"
+        }
+      ]
+    }
+  },
+  "pre_triage_summary": "一位52岁女性，有HCV肝硬化和腹水病史，主诉腹胀腹痛加重一周。患者自述数周前停用了利尿剂（呋塞米和螺内酯）。需要关注的是，她在急诊室出现了短暂的意识模糊，并且报告有牙龈出血，高度提示肝功能失代偿，可能存在早期肝性脑病和凝血功能障碍。生命体征目前平稳：无发热，心率70，呼吸16，血氧97%（室内空气）。血压偏软，为106/63 mmHg。患者否认发烧、呼吸困难或恶心呕吐等症状。其他重要病史包括HIV（正在治疗）和COPD。",
+  "max_time_to_doctor": {
+    "chose": "10–30 分钟",
+    "evidence": "尽管生命体征尚可，但意识状态的改变和出血迹象使该患者成为高风险人群。她不属于需要立即抢救的“0–10分钟”级别（如心搏骤停或严重创伤），但绝对不能在候诊区长时间等待。必须在30分钟内将其转移至治疗区进行评估、抽血化验（尤其是氨、凝血功能、电解质）并建立静脉通路，以防病情突然恶化。"
+  },
+  "deterioration_risk": {
+    "chose": "高",
+    "evidence": "该患者已经集齐了肝硬化失代偿的多个高危因素（腹水加重、意识改变、出血倾向）。这些问题相互关联，会形成恶性循环。因此，她若不接受及时治疗，病情恶化的风险为“高”等级。"
+  },
+  "go_to_hospital": {
+    "chose": "是",
+    "evidence": "患者出现了意识模糊和牙龈出血，提示可能存在肝性脑病和凝血功能障碍。这些都是严重的临床问题，不能在门诊处理。患者需要前往急诊进行密切监测和治疗，以防止病情进一步恶化。"
+  },
+  "hospital_recommendation": {
+    "recommendations": [
+      {
+        "priority": 1,
+        "hospital_info": {
+          "name": "市中心医院",
+          "level": "三级甲等",
+          "emergency_dept_status": "繁忙"
+        },
+        "resource_match": {
+          "matched_resources": [
+            "BS-AM-001",
+            "BS-AM-003",
+            "LAB-HE-001",
+            "LAB-CH-001",
+            "LAB-CH-004",
+            "LAB-CO-001",
+            "LAB-UR-001",
+            "LAB-MI-001",
+            "DX-IM-001",
+            "DX-IM-003",
+            "DX-OS-003"
+          ],
+          "match_rate": 100,
+          "critical_resources": [
+            "DX-OS-003"
+          ],
+          "missing_resources": []
+        },
+        "wait_time": {
+          "total_estimated_min": 70,
+          "queue_position": "中等（预计第8-12位）"
+        },
+        "pros_cons": {
+          "优势": [
+            "具备完整的急诊资源，包括诊断性穿刺能力",
+            "24小时肝病专科医生在岗",
+            "配备重症监护设备",
+            "如需住院可直接收治"
+          ],
+          "劣势": [
+            "等待时间较长（约70分钟）",
+            "急诊科目前繁忙"
+          ]
+        },
+        "recommendation_reason": "患者为肝硬化并发腹水恶化，需要诊断性腹穿以排除自发性细菌性腹膜炎（SBP）。该操作仅三级医院急诊科可实施，且患者可能需要专科会诊和住院治疗。虽然等待时间较长，但避免了转院风险。",
+        "risk_assessment": {
+          "transfer_risk": "无",
+          "delay_risk": "中等",
+          "resource_unavailable_risk": "极低"
+        }
+      },
+      {
+        "priority": 2,
+        "hospital_info": {
+          "name": "社区医疗中心",
+          "level": "二级",
+          "emergency_dept_status": "畅通"
+        },
+        "resource_match": {
+          "matched_resources": [
+            "BS-AM-001",
+            "BS-AM-003",
+            "LAB-HE-001",
+            "LAB-CH-001",
+            "DX-IM-001"
+          ],
+          "match_rate": 45,
+          "critical_resources": [],
+          "missing_resources": [
+            "DX-IM-003",
+            "DX-OS-003"
+          ]
+        },
+        "wait_time": {
+          "total_estimated_min": 25,
+          "queue_position": "靠前（预计第2-4位）"
+        },
+        "pros_cons": {
+          "优势": [
+            "等待时间短（约25分钟）",
+            "急诊科目前畅通",
+            "可完成基础检查和初步评估"
+          ],
+          "劣势": [
+            "缺少关键诊断资源（腹穿能力）",
+            "如需进一步诊疗需转院"
+          ]
+        },
+        "recommendation_reason": "如果患者症状轻微、生命体征稳定，可先到社区医院完成基础检查（血常规、生化）以快速评估。但由于缺乏腹穿能力，如果怀疑SBP或病情恶化，仍需转至三级医院，可能造成时间延误。",
+        "risk_assessment": {
+          "transfer_risk": "高",
+          "delay_risk": "高",
+          "resource_unavailable_risk": "高"
+        }
+      }
+    ],
+    "system_suggested": 1,
+    "suggestion_basis": {
+      "esi_level": 3,
+      "key_decision_factors": [
+        "需要诊断性穿刺（仅三级医院可提供）",
+        "肝硬化患者腹痛加重，需紧急排查自发性细菌性腹膜炎",
+        "虽等待时间较长，但避免转院风险更重要"
+      ]
+    }
+  }
+}

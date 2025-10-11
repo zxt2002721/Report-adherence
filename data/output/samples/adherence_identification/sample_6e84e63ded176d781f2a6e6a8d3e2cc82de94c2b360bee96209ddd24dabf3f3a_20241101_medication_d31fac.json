@@ -1,0 +1,92 @@
+{
+  "sample_id": "sample_6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a_20241101_medication_d31fac",
+  "patient_id": "6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a",
+  "task_name": "adherence_identification",
+  "sample_data": {
+    "dialogue_piece": [
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "初次问候并询问患者近期用药、饮食和运动情况，观察其整体遵从状态。",
+          "analysis": "患者可能初期防御，表面听话但存在隐性问题。",
+          "diagnosis": "初步怀疑患者存在多维度不遵从，尤其用药和饮食。",
+          "planning": "以耐心倾听为主，逐步打开话题，建立信任。",
+          "evaluation": "未出现明显抗拒，需深挖潜在困难。"
+        },
+        "message": "您好，我是您的健康助手贝贝。想了解一下，最近您的血压和心脏用药吃得怎么样？",
+        "timestamp": "2024-11-01T09:00:00+08:00",
+        "message_type": "问题",
+        "emotional_tone": "中性"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "唉，药我是吃了，就是有时候忘记，尤其早上老想多睡会儿。",
+        "timestamp": "2024-11-01T09:01:30+08:00",
+        "message_type": "回应",
+        "emotional_tone": "困惑"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "患者承认存在行为层面遗忘问题。",
+          "analysis": "可能与生活习惯和睡眠时间有关。",
+          "diagnosis": "用药行为依从性不佳，部分忘记。",
+          "planning": "后续询问具体用药时间及是否尝试用手机提醒。",
+          "evaluation": "患者表现出一定的坦诚，方便进一步干预。"
+        },
+        "message": "明白，您一般是几点服药呢？有没有试过用手机提醒帮助记得吃药？",
+        "timestamp": "2024-11-01T09:02:30+08:00",
+        "message_type": "问题",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "一般就是早上吃，手机我会设置提醒，可老被别的消息打扰，提醒经常错过。",
+        "timestamp": "2024-11-01T09:04:00+08:00",
+        "message_type": "回应",
+        "emotional_tone": "困惑"
+      }
+    ],
+    "prescription": {
+      "medications": [
+        {
+          "drug_name": "苯磺酸左旋氨氯地平片",
+          "dose": "2.5 mg",
+          "frequency": "每日一次",
+          "route": "口服"
+        },
+        {
+          "drug_name": "阿司匹林肠溶片",
+          "dose": "100 mg",
+          "frequency": "每日一次",
+          "route": "口服"
+        },
+        {
+          "drug_name": "辛伐他汀片",
+          "dose": "20 mg",
+          "frequency": "每日一次",
+          "route": "口服"
+        }
+      ],
+      "lifestyle": [],
+      "next_followup_date": "2024-12-01",
+      "physician_notes": "患者冠心病与高血压控制总体良好，建议继续现有治疗，密切监测血压波动。注意饮食调控和规律运动，定期随访复查血脂及心功能。"
+    },
+    "adherence_category": "用药",
+    "session_date": "2024-11-01"
+  },
+  "pre_annotation": {
+    "adherence_check": [
+      {
+        "date": "2024-11-01",
+        "category": "用药",
+        "overall_status": "部分遵从",
+        "reason": "患者服药存在偶尔忘记，尤其早晨因想多睡导致未按时服药；手机提醒效果不理想，存在被其他消息打扰的问题；外出时携带药物不便且有顾虑。",
+        "details": "患者一般早上服药，设有手机提醒但常被打扰，家中有药盒但外出时不常携带，下午邻居家聚会时服药感到尴尬。",
+        "dialogue_date": "2024-11-01"
+      }
+    ]
+  }
+}

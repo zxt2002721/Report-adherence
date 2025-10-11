@@ -1,0 +1,144 @@
+{
+  "sample_id": "sample_7cb394d6e1c52e050ef41a9caa3c186d6a6a71fe2172fa8f901783973404285a_20241012_exercise_d7fd42",
+  "patient_id": "7cb394d6e1c52e050ef41a9caa3c186d6a6a71fe2172fa8f901783973404285a",
+  "task_name": "adherence_identification",
+  "sample_data": {
+    "dialogue_piece": [
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "询问患者昨日血压监测和运动尝试情况，评估执行力和障碍。",
+          "analysis": "患者面临技术障碍和情感阻碍，行为执行力有波动。",
+          "diagnosis": "行为层面执行困难，情感支持需加强。",
+          "planning": "鼓励小步尝试，缓解技术难题。",
+          "evaluation": "关注执行细节。"
+        },
+        "message": "您好，昨天您尝试测血压和做伸展操了吗？感觉怎么样？",
+        "timestamp": "2024-10-12T09:00:00+08:00",
+        "message_type": "提醒",
+        "emotional_tone": "中性"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "昨天我早上测了血压，女儿在旁边帮忙，看着数字我心里还是慌，担心太高。伸展操只做了两分钟就累了，后来就没做。",
+        "timestamp": "2024-10-12T09:02:00+08:00",
+        "message_type": "回应",
+        "emotional_tone": "焦虑"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "患者技术依赖家人，情感焦虑明显，运动耐受低。",
+          "analysis": "技术和情感障碍阻碍行为执行，身体耐受限制运动量。",
+          "diagnosis": "技术依赖，情感焦虑，身体耐受低。",
+          "planning": "持续技术指导和情绪安抚，建议循序渐进运动。",
+          "evaluation": "需多维干预。"
+        },
+        "message": "有家人帮忙真好，血压数字让您紧张是正常的，您可以把每天数字告诉我，我们一起观察。伸展操不急，慢慢增加时间，每天多做一点点就好。",
+        "timestamp": "2024-10-12T09:05:00+08:00",
+        "message_type": "教育",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "我告诉你吧，数字有时160多，有时140多，反正我就担心出事。",
+        "timestamp": "2024-10-12T09:07:00+08:00",
+        "message_type": "回应",
+        "emotional_tone": "焦虑"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "患者血压波动大，情绪焦虑，可能影响用药依从。",
+          "analysis": "血压波动带来恐惧，可能导致用药不稳定。",
+          "diagnosis": "情感障碍加重。",
+          "planning": "建议及时告知医生，监测情绪，稳定用药。",
+          "evaluation": "重点情绪管理。"
+        },
+        "message": "血压有波动是比较常见的，您不用太担心。我们会帮您记录并反馈给医生，医生会帮您调整用药的。请您继续按时服药，遇到不适及时告诉我们，好吗？",
+        "timestamp": "2024-10-12T09:10:00+08:00",
+        "message_type": "教育",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "知道了，但我还是害怕吃卡托普利，每次想到副作用我就想停药。",
+        "timestamp": "2024-10-12T09:12:00+08:00",
+        "message_type": "回应",
+        "emotional_tone": "焦虑"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "患者用药恐惧持续，影响治疗依从。",
+          "analysis": "情感层面恐惧未消，影响行为。",
+          "diagnosis": "用药恐惧持续。",
+          "planning": "继续心理支持，解释副作用与监测。",
+          "evaluation": "需强化情感支持。"
+        },
+        "message": "您的担心我理解。卡托普利的副作用我们会密切关注，您只要感觉不适，马上告诉我们，我们可以帮您调整剂量或者换药。安全第一，我们一起保护您的健康。",
+        "timestamp": "2024-10-12T09:15:00+08:00",
+        "message_type": "教育",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "那好吧，我试着再坚持几天，毕竟家里人都说要听医生话。",
+        "timestamp": "2024-10-12T09:18:00+08:00",
+        "message_type": "回应",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "患者表达愿意尝试，坚持治疗意愿有提升。",
+          "analysis": "情感层面有所缓解，行为依从潜力增强。",
+          "diagnosis": "情感缓解带来行为改进机会。",
+          "planning": "继续支持，鼓励每日小目标。",
+          "evaluation": "积极信号。"
+        },
+        "message": "太好了，您有这样的想法非常棒。我们每天一起努力，慢慢养成好习惯，您不会孤单。",
+        "timestamp": "2024-10-12T09:20:00+08:00",
+        "message_type": "教育",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "谢谢你，我也希望能好点。",
+        "timestamp": "2024-10-12T09:22:00+08:00",
+        "message_type": "回应",
+        "emotional_tone": "合作"
+      }
+    ],
+    "prescription": {
+      "medications": [],
+      "lifestyle": [
+        {
+          "recommendation_type": "运动",
+          "description": "逐步开始低强度室内活动，如散步和伸展操，每周至少三次，每次30分钟，避免剧烈运动。"
+        }
+      ],
+      "next_followup_date": "2025-01-02",
+      "physician_notes": "当前药物治疗基本稳定，建议调整二甲双胍剂量以优化血糖控制；密切监测血压波动，鼓励改善生活方式，防止慢性肾脏损伤进展。注重患者教育，提高依从性。"
+    },
+    "adherence_category": "运动",
+    "session_date": "2024-10-12"
+  },
+  "pre_annotation": {
+    "adherence_check": [
+      {
+        "date": "2024-10-12",
+        "category": "运动",
+        "overall_status": "部分遵从",
+        "reason": "患者运动时间较短，未完成推荐的伸展操时间。",
+        "details": "患者仅做了两分钟伸展操后感到疲劳，未继续完成。",
+        "dialogue_date": "2024-10-12"
+      }
+    ]
+  }
+}

@@ -1,0 +1,599 @@
+{
+  "patient_id": "7cb394d6e1c52e050ef41a9caa3c186d6a6a71fe2172fa8f901783973404285a",
+  "basic_info": {
+    "patient_id": "7cb394d6e1c52e050ef41a9caa3c186d6a6a71fe2172fa8f901783973404285a",
+    "name": null,
+    "age": 73,
+    "sex": "女",
+    "marital_status": "已婚",
+    "occupation": "退休",
+    "location": "云南省昆明市",
+    "education": "初中",
+    "income_bracket": "中",
+    "living_situation": "与家人同住",
+    "contact_phone": "138-XXXX-5678"
+  },
+  "last_basic_info_update": "2025-07-21T03:07:58.480383",
+  "disease_info": {
+    "primary_diseases": [
+      {
+        "disease_name": "高血压",
+        "icd10_code": "I10",
+        "years_since_diagnosis": 5.0,
+        "current_severity": "中度"
+      },
+      {
+        "disease_name": "II型糖尿病",
+        "icd10_code": "E11",
+        "years_since_diagnosis": 5.0,
+        "current_severity": "中度"
+      },
+      {
+        "disease_name": "冠心病",
+        "icd10_code": "I25.1",
+        "years_since_diagnosis": 5.0,
+        "current_severity": "可控"
+      }
+    ],
+    "comorbidities": [
+      {
+        "disease_name": "慢性肾功能不全",
+        "icd10_code": "N18.9",
+        "years_since_diagnosis": 1.0,
+        "current_severity": "轻度"
+      }
+    ],
+    "family_history": {
+      "父亲病史": null,
+      "母亲病史": null,
+      "兄弟姐妹病史": null,
+      "子女病史": null,
+      "遗传性心血管疾病": null
+    },
+    "allergies": [
+      "青霉素"
+    ],
+    "last_checkup_date": "2024-10-02"
+  },
+  "last_disease_info_update": "2025-07-21T03:07:58.480383",
+  "prescription": {
+    "medications": [
+      {
+        "drug_name": "卡托普利片",
+        "dose": "25 mg",
+        "frequency": "每日一次",
+        "route": "口服"
+      },
+      {
+        "drug_name": "二甲双胍",
+        "dose": "500 mg",
+        "frequency": "每日两次",
+        "route": "口服"
+      },
+      {
+        "drug_name": "消渴丸",
+        "dose": "5 粒",
+        "frequency": "每日三次",
+        "route": "口服"
+      }
+    ],
+    "lifestyle": [
+      {
+        "recommendation_type": "饮食",
+        "description": "减少盐摄入，限制主食量至250克/日，增加蔬菜水果摄入，避免糖分过高食品。"
+      },
+      {
+        "recommendation_type": "运动",
+        "description": "逐步开始低强度室内活动，如散步和伸展操，每周至少三次，每次30分钟，避免剧烈运动。"
+      },
+      {
+        "recommendation_type": "睡眠",
+        "description": "保持规律作息，保证每日7-8小时高质量睡眠，睡前避免使用电子产品。"
+      },
+      {
+        "recommendation_type": "压力",
+        "description": "采用深呼吸和冥想缓解压力，保持积极心态，参与社区活动。"
+      }
+    ],
+    "next_followup_date": "2025-01-02",
+    "physician_notes": "当前药物治疗基本稳定，建议调整二甲双胍剂量以优化血糖控制；密切监测血压波动，鼓励改善生活方式，防止慢性肾脏损伤进展。注重患者教育，提高依从性。"
+  },
+  "last_prescription_update": "2025-07-21T03:07:58.480383",
+  "behaviour_preferences": {
+    "preferences": [
+      {
+        "preference_type": "饮食",
+        "detail": "偏爱云南特色米饭与蔬菜，喜食清淡饮食，避免油腻和高糖食物。",
+        "prescription_impact": [
+          "饮食"
+        ]
+      },
+      {
+        "preference_type": "运动",
+        "detail": "喜欢轻松室内活动，暂不适合户外剧烈运动，期望慢速散步。",
+        "prescription_impact": [
+          "运动"
+        ]
+      },
+      {
+        "preference_type": "休闲",
+        "detail": "偏好家中看新闻和电视节目，偶尔参与亲友聚会。",
+        "prescription_impact": [
+          "用药"
+        ]
+      },
+      {
+        "preference_type": "科技",
+        "detail": "能使用智能手机，愿意尝试健康管理App。",
+        "prescription_impact": [
+          "监测"
+        ]
+      },
+      {
+        "preference_type": "其他",
+        "detail": "重视家庭观念，乐于配合医生建议，信赖传统与现代医学结合。",
+        "prescription_impact": [
+          "用药",
+          "饮食"
+        ]
+      }
+    ]
+  },
+  "last_behaviour_preferences_update": "2025-07-21T03:07:58.480383",
+  "adherence_history": [
+    {
+      "date": "2024-10-10",
+      "category": "用药",
+      "overall_status": "部分遵从",
+      "reason": "患者大部分时间按时服药，但因卡托普利片副作用（头晕、心慌）有时想停药，存在用药顾虑。",
+      "details": "患者反映早晨起床后服用卡托普利片时头晕最明显，偶尔出现心慌，导致对用药产生担忧。无明确停药行为，但有停药意向。",
+      "dialogue_date": "2024-10-10"
+    },
+    {
+      "date": "2024-10-10",
+      "category": "运动",
+      "overall_status": "不遵从",
+      "reason": "患者运动量明显不足，主要以看电视为主，缺乏主动运动，且对室内运动方式不熟悉且缺乏动力。",
+      "details": "患者表示“运动就没怎么动”，“懒得动”，“看电视时间多，动起来累”，对伸展操陌生且担心做错，手机卡顿影响学习视频，家人劝说也未积极执行。",
+      "dialogue_date": "2024-10-10"
+    },
+    {
+      "date": "2024-10-11",
+      "category": "用药",
+      "overall_status": "部分遵从",
+      "reason": "患者因头晕担忧曾停药一次，且因二甲双胍引起肚子不适，有时自行减少剂量。",
+      "details": "2024-10-11早晨停用卡托普利一次，二甲双胍有时少吃一颗，担心肚子疼。",
+      "dialogue_date": "2024-10-11"
+    },
+    {
+      "date": "2024-10-11",
+      "category": "饮食",
+      "overall_status": "部分遵从",
+      "reason": "患者早晨忙于做饭感到疲惫，未提及严格遵守饮食建议，存在疲劳影响饮食执行的情况。",
+      "details": "2024-10-11早晨忙做饭，感到累不想动，未提及饮食禁忌执行情况。",
+      "dialogue_date": "2024-10-11"
+    },
+    {
+      "date": "2024-10-11",
+      "category": "运动",
+      "overall_status": "不遵从",
+      "reason": "患者因担心头晕未做伸展操，且表达了对运动可能加重症状的恐惧，未执行运动计划。",
+      "details": "2024-10-11上午未做伸展操，担心头晕加重，未尝试下午运动。",
+      "dialogue_date": "2024-10-11"
+    },
+    {
+      "date": "2024-10-11",
+      "category": "监测",
+      "overall_status": "部分遵从",
+      "reason": "患者愿意尝试测量血压但担心操作复杂，尚未完全掌握使用方法，存在执行障碍。",
+      "details": "2024-10-11患者愿意试测血压，但血压计使用复杂，女儿协助指导，患者仍担心操作错误。",
+      "dialogue_date": "2024-10-11"
+    },
+    {
+      "date": "2024-10-12",
+      "category": "用药",
+      "overall_status": "部分遵从",
+      "reason": "患者因担心卡托普利副作用有停药念头，但表示愿意尝试坚持用药。",
+      "details": "患者提到害怕卡托普利副作用，考虑停药，但最终表示会再坚持几天，听从医生建议。",
+      "dialogue_date": "2024-10-12"
+    },
+    {
+      "date": "2024-10-12",
+      "category": "运动",
+      "overall_status": "部分遵从",
+      "reason": "患者运动时间较短，未完成推荐的伸展操时间。",
+      "details": "患者仅做了两分钟伸展操后感到疲劳，未继续完成。",
+      "dialogue_date": "2024-10-12"
+    },
+    {
+      "date": "2024-10-12",
+      "category": "监测",
+      "overall_status": "部分遵从",
+      "reason": "患者有测量血压但存在情绪紧张，血压数值波动较大。",
+      "details": "患者早上测血压，血压数值有时160多，有时140多，情绪紧张。",
+      "dialogue_date": "2024-10-12"
+    },
+    {
+      "date": "2024-10-13",
+      "category": "用药",
+      "overall_status": "部分遵从",
+      "reason": "患者存在忘记按时服药和因担心副作用（头晕）而不愿按时服药的情况。",
+      "details": "患者昨天早上忘记服用卡托普利，下午补服；因头晕担心副作用，有时不想服药。",
+      "dialogue_date": "2024-10-13"
+    },
+    {
+      "date": "2024-10-13",
+      "category": "饮食",
+      "overall_status": "部分遵从",
+      "reason": "患者在社交场合因顾虑邻居感受而饮用含糖饮料，导致血糖升高。",
+      "details": "昨晚与邻居聊天时喝了甜茶，今天血糖有点高。患者表达了拒绝甜食的困难。",
+      "dialogue_date": "2024-10-13"
+    },
+    {
+      "date": "2024-10-13",
+      "category": "运动",
+      "overall_status": "不遵从",
+      "reason": "患者未按计划进行运动，运动量明显不足。",
+      "details": "患者表示“运动没怎么做”。",
+      "dialogue_date": "2024-10-13"
+    },
+    {
+      "date": "2024-10-13",
+      "category": "监测",
+      "overall_status": "部分遵从",
+      "reason": "患者关注身体反应并愿意监测，但未提及具体监测频率或数值。",
+      "details": "患者提及血糖升高，表达愿意注意头晕等身体反应并及时反馈。",
+      "dialogue_date": "2024-10-13"
+    },
+    {
+      "date": "2024-10-14",
+      "category": "用药",
+      "overall_status": "完全遵从",
+      "reason": "患者按计划服用所有药物，无遗漏。",
+      "details": "患者提到卡托普利和二甲双胍均按时服用，未少吃或忘记。",
+      "dialogue_date": "2024-10-14"
+    },
+    {
+      "date": "2024-10-14",
+      "category": "饮食",
+      "overall_status": "部分遵从",
+      "reason": "患者因社交场合饮用甜茶，导致血糖升高。",
+      "details": "患者在亲戚来访时喝了甜茶，次日早晨血糖较前几天升高。患者尝试向亲戚说明但未被理解。",
+      "dialogue_date": "2024-10-14"
+    },
+    {
+      "date": "2024-10-15",
+      "category": "用药",
+      "overall_status": "部分遵从",
+      "reason": "存在偶尔忘记服药和担心副作用导致用药不稳定",
+      "details": "患者昨晚忘记服用消渴丸，早上补服；表达了对药物副作用的担忧，有时想停止服药。",
+      "dialogue_date": "2024-10-15"
+    },
+    {
+      "date": "2024-10-15",
+      "category": "运动",
+      "overall_status": "部分遵从",
+      "reason": "运动时间不固定且早上常忘记，运动坚持度不足",
+      "details": "患者早上经常忘记运动，考虑调整运动时间至下午或晚上，计划尝试调整。",
+      "dialogue_date": "2024-10-15"
+    }
+  ],
+  "suggestion_feedback_history": [
+    {
+      "date": "2024-10-10",
+      "suggestion_content": "考虑调整卡托普利片用药，因患者服药后早晨起床时头晕和心慌。",
+      "suggestion_category": "用药",
+      "effectiveness_feedback": "未尝试",
+      "patient_response": "患者表达了对卡托普利副作用的担忧，尚未明确是否调整用药。",
+      "dialogue_date": "2024-10-10"
+    },
+    {
+      "date": "2024-10-10",
+      "suggestion_content": "建议患者每天进行短暂散步，逐步增加运动量。",
+      "suggestion_category": "运动",
+      "effectiveness_feedback": "未尝试",
+      "patient_response": "患者因天气冷和家人担心，未实际开始散步运动。",
+      "dialogue_date": "2024-10-10"
+    },
+    {
+      "date": "2024-10-10",
+      "suggestion_content": "推荐患者进行室内伸展操或室内散步，并提供简单动作视频学习。",
+      "suggestion_category": "运动",
+      "effectiveness_feedback": "未尝试",
+      "patient_response": "患者表示手机卡顿，观看视频困难，尚未开始练习伸展操。",
+      "dialogue_date": "2024-10-10"
+    },
+    {
+      "date": "2024-10-10",
+      "suggestion_content": "通过语音电话或家人帮助指导患者做简单的伸展操动作。",
+      "suggestion_category": "运动",
+      "effectiveness_feedback": "未尝试",
+      "patient_response": "患者女儿有空会教，患者担心麻烦家人，尚未明确开始执行。",
+      "dialogue_date": "2024-10-10"
+    },
+    {
+      "date": "2024-10-11",
+      "suggestion_content": "早晚测量血压并记录头晕时间，以便分析安全状况。",
+      "suggestion_category": "监测",
+      "effectiveness_feedback": "未尝试",
+      "patient_response": "测血压我试试，可那个血压计我女儿说用法复杂，我也怕弄错。",
+      "dialogue_date": "2024-10-11"
+    },
+    {
+      "date": "2024-10-11",
+      "suggestion_content": "下午做几分钟伸展操，动作轻缓，感到不适就停，慢慢来。",
+      "suggestion_category": "运动",
+      "effectiveness_feedback": "未尝试",
+      "patient_response": "下午做伸展操……我怕一动多了头晕更厉害，实在不敢乱来。",
+      "dialogue_date": "2024-10-11"
+    },
+    {
+      "date": "2024-10-11",
+      "suggestion_content": "帮患者向医生反映二甲双胍副作用，考虑调整剂量以缓解肚子不适。",
+      "suggestion_category": "用药",
+      "effectiveness_feedback": "未尝试",
+      "patient_response": "我想医生是不是能调下剂量？我也不想总是肚子疼。",
+      "dialogue_date": "2024-10-11"
+    },
+    {
+      "date": "2024-10-12",
+      "suggestion_content": "每天测量血压并记录，及时反馈给医护人员观察血压波动情况。",
+      "suggestion_category": "监测",
+      "effectiveness_feedback": "部分有效",
+      "patient_response": "昨天早上测了血压，数字有时160多，有时140多，心里担心太高。女儿帮忙测血压。虽然担心，但还是有测量。",
+      "dialogue_date": "2024-10-12"
+    },
+    {
+      "date": "2024-10-12",
+      "suggestion_content": "每天做伸展操，逐渐增加时间，每天多做一点点。",
+      "suggestion_category": "运动",
+      "effectiveness_feedback": "未尝试",
+      "patient_response": "伸展操只做了两分钟就累了，后来就没做。",
+      "dialogue_date": "2024-10-12"
+    },
+    {
+      "date": "2024-10-12",
+      "suggestion_content": "按时服用卡托普利药物，遇到副作用或不适及时反馈，医护人员可调整剂量或换药。",
+      "suggestion_category": "用药",
+      "effectiveness_feedback": "部分有效",
+      "patient_response": "害怕卡托普利副作用，想停药，但决定再坚持几天，听家人和医生的话。",
+      "dialogue_date": "2024-10-12"
+    },
+    {
+      "date": "2024-10-13",
+      "suggestion_content": "尝试委婉表达自己健康需要，或者提前吃点东西，减少对甜食的依赖。",
+      "suggestion_category": "饮食",
+      "effectiveness_feedback": "未尝试",
+      "patient_response": "嗯，您说的我试试吧，怕邻居觉得我不合群，毕竟大家都挺好。",
+      "dialogue_date": "2024-10-13"
+    },
+    {
+      "date": "2024-10-13",
+      "suggestion_content": "监测身体反应，头晕严重时及时告知，必要时联系医生调整用药，保证安全。",
+      "suggestion_category": "用药",
+      "effectiveness_feedback": "未尝试",
+      "patient_response": "好，我会注意的，就是生活还是挺难调整，老习惯难改啊。",
+      "dialogue_date": "2024-10-13"
+    },
+    {
+      "date": "2024-10-13",
+      "suggestion_content": "每天减少一点糖分，逐步改变饮食习惯。",
+      "suggestion_category": "饮食",
+      "effectiveness_feedback": "未尝试",
+      "patient_response": "嗯，这样好像能做到，我试试看。",
+      "dialogue_date": "2024-10-13"
+    },
+    {
+      "date": "2024-10-14",
+      "suggestion_content": "关于喝甜茶的事，建议提前跟亲戚说明健康需要，或者喝甜茶之前吃点别的来减少影响。",
+      "suggestion_category": "饮食",
+      "effectiveness_feedback": "无效",
+      "patient_response": "我试过说，可他们都说我小题大做，觉得糖分没那么重要。我不好意思多说，怕大家尴尬。",
+      "dialogue_date": "2024-10-14"
+    },
+    {
+      "date": "2024-10-14",
+      "suggestion_content": "建议参加社区健康活动或者糖尿病互助群，与有相似经历的人交流。",
+      "suggestion_category": "监测",
+      "effectiveness_feedback": "未尝试",
+      "patient_response": "社区活动我听说过，但没参加过，怕去人多地方不习惯。",
+      "dialogue_date": "2024-10-14"
+    },
+    {
+      "date": "2024-10-14",
+      "suggestion_content": "建议先试试线上交流，比如微信群，慢慢适应再考虑线下活动。",
+      "suggestion_category": "监测",
+      "effectiveness_feedback": "未尝试",
+      "patient_response": "线上交流我能试试，手机用着还凑合。",
+      "dialogue_date": "2024-10-14"
+    },
+    {
+      "date": "2024-10-15",
+      "suggestion_content": "帮您调整手机提醒音量和设置优先级，让提醒更明显；与家人约定特定时间提醒，避免频繁打扰。",
+      "suggestion_category": "监测",
+      "effectiveness_feedback": "未尝试",
+      "patient_response": "听起来不错，我可以试试调一下。",
+      "dialogue_date": "2024-10-15"
+    },
+    {
+      "date": "2024-10-15",
+      "suggestion_content": "运动时间可以根据感觉调整，重要的是坚持每天活动，哪怕时间短一点也没关系。",
+      "suggestion_category": "运动",
+      "effectiveness_feedback": "未尝试",
+      "patient_response": "谢谢，我会努力调整。",
+      "dialogue_date": "2024-10-15"
+    },
+    {
+      "date": "2024-10-15",
+      "suggestion_content": "一起记录不适症状，及时调整用药方案，确保安全和舒适。",
+      "suggestion_category": "用药",
+      "effectiveness_feedback": "未尝试",
+      "patient_response": "谢谢你，有时候觉得坚持真难，年纪大了，改不了习惯。",
+      "dialogue_date": "2024-10-15"
+    }
+  ],
+  "behavior_preference_updates": [
+    {
+      "date": "2024-10-10",
+      "preference_type": "运动",
+      "prescription_impact": [
+        "用药",
+        "运动"
+      ],
+      "old_preference": "平时运动较少，主要在家里走走，较为懒散",
+      "new_preference": "愿意尝试在家里进行简单的伸展操和室内活动，计划通过女儿指导逐步开始运动",
+      "update_reason": "意识到运动对健康有益，女儿鼓励及健康助手建议，尽管担心麻烦家人但愿意尝试",
+      "dialogue_date": "2024-10-10"
+    },
+    {
+      "date": "2024-10-10",
+      "preference_type": "休闲",
+      "prescription_impact": [
+        "运动"
+      ],
+      "old_preference": "主要喜欢看电视和新闻，偶尔聊天，缺乏运动相关休闲活动",
+      "new_preference": "愿意尝试通过视频或语音电话学习简单伸展操，增加活动量",
+      "update_reason": "健康助手推荐及女儿支持，意识到休闲方式可以结合轻度运动",
+      "dialogue_date": "2024-10-10"
+    },
+    {
+      "date": "2024-10-10",
+      "preference_type": "科技",
+      "prescription_impact": [
+        "运动",
+        "监测"
+      ],
+      "old_preference": "手机使用不便，视频观看体验差，影响学习运动视频",
+      "new_preference": "接受通过语音电话指导运动，依赖家人协助学习运动",
+      "update_reason": "手机卡顿影响视频学习，转而采用更适合的语音电话方式和家人帮助",
+      "dialogue_date": "2024-10-10"
+    },
+    {
+      "date": "2024-10-11",
+      "preference_type": "运动",
+      "prescription_impact": [
+        "运动"
+      ],
+      "old_preference": "较少做伸展操，担心运动引发头晕",
+      "new_preference": "愿意尝试下午做几分钟轻缓伸展操，动作轻缓感不适即停",
+      "update_reason": "因担心运动加重头晕，经过沟通后愿意尝试轻缓伸展操，逐步适应",
+      "dialogue_date": "2024-10-11"
+    },
+    {
+      "date": "2024-10-11",
+      "preference_type": "科技",
+      "prescription_impact": [
+        "监测"
+      ],
+      "old_preference": "不愿意或担心使用血压计，觉得操作复杂怕弄错",
+      "new_preference": "愿意尝试在女儿帮助下学习使用血压计进行早晚血压测量和头晕记录",
+      "update_reason": "担心安全及操作复杂，通过鼓励和陪伴愿意尝试学习使用血压计",
+      "dialogue_date": "2024-10-11"
+    },
+    {
+      "date": "2024-10-11",
+      "preference_type": "其他",
+      "prescription_impact": [
+        "用药"
+      ],
+      "old_preference": "严格按医嘱服用二甲双胍",
+      "new_preference": "因肚子不舒服，有时自行减少二甲双胍剂量（少吃一颗）",
+      "update_reason": "二甲双胍副作用导致肚子不适，患者为减轻不适自行调整用药剂量",
+      "dialogue_date": "2024-10-11"
+    },
+    {
+      "date": "2024-10-12",
+      "preference_type": "运动",
+      "prescription_impact": [
+        "运动"
+      ],
+      "old_preference": "伸展操做得较多",
+      "new_preference": "伸展操只能做两分钟，感觉累，减少运动时间",
+      "update_reason": "患者感到做伸展操时疲劳，无法坚持较长时间",
+      "dialogue_date": "2024-10-12"
+    },
+    {
+      "date": "2024-10-12",
+      "preference_type": "其他",
+      "prescription_impact": [
+        "用药"
+      ],
+      "old_preference": "坚持服用卡托普利",
+      "new_preference": "害怕卡托普利副作用，有停药念头，但决定再坚持几天",
+      "update_reason": "担心药物副作用导致想停药，家人劝说坚持服药",
+      "dialogue_date": "2024-10-12"
+    },
+    {
+      "date": "2024-10-13",
+      "preference_type": "饮食",
+      "prescription_impact": [
+        "饮食"
+      ],
+      "old_preference": "不主动拒绝邻居提供的甜食，怕被认为不合群",
+      "new_preference": "尝试委婉表达健康需要，减少甜食摄入，逐步减少糖分摄入",
+      "update_reason": "社交场合邻居喜欢甜食，患者不爱吃糖但担心拒绝会影响邻里关系，决定尝试改变以更好控制血糖",
+      "dialogue_date": "2024-10-13"
+    },
+    {
+      "date": "2024-10-13",
+      "preference_type": "运动",
+      "prescription_impact": [
+        "运动"
+      ],
+      "old_preference": "运动较少，无明确运动计划",
+      "new_preference": "尝试每天减少糖分摄入，配合逐步调整生活习惯，计划逐步增加运动",
+      "update_reason": "意识到生活习惯难改，接受逐步小目标调整的建议，愿意尝试改变生活方式",
+      "dialogue_date": "2024-10-13"
+    },
+    {
+      "date": "2024-10-14",
+      "preference_type": "休闲",
+      "prescription_impact": [
+        "饮食",
+        "用药"
+      ],
+      "old_preference": "不参加社区健康活动，怕去人多地方不习惯",
+      "new_preference": "愿意尝试线上交流，如微信群，逐步适应后再考虑线下活动",
+      "update_reason": "因亲戚聚会喝甜茶影响血糖，患者希望通过线上交流获得支持和帮助，缓解面对面交流的压力",
+      "dialogue_date": "2024-10-14"
+    },
+    {
+      "date": "2024-10-14",
+      "preference_type": "科技",
+      "prescription_impact": [
+        "饮食",
+        "用药",
+        "监测"
+      ],
+      "old_preference": "未表达明确使用线上交流工具的意愿",
+      "new_preference": "接受并愿意尝试使用手机进行线上交流，如微信小群",
+      "update_reason": "考虑到线下活动不适应，患者愿意利用手机科技手段参与糖尿病互助群，便于健康管理和信息交流",
+      "dialogue_date": "2024-10-14"
+    },
+    {
+      "date": "2024-10-15",
+      "preference_type": "运动",
+      "prescription_impact": [
+        "运动"
+      ],
+      "old_preference": "早上运动",
+      "new_preference": "下午或晚上运动",
+      "update_reason": "早上没精力，觉得下午或晚上运动更合适",
+      "dialogue_date": "2024-10-15"
+    },
+    {
+      "date": "2024-10-15",
+      "preference_type": "科技",
+      "prescription_impact": [
+        "用药"
+      ],
+      "old_preference": "尝试使用手机提醒但效果不好",
+      "new_preference": "尝试调整手机提醒音量和优先级以增强提醒效果",
+      "update_reason": "手机提醒被其他通知打扰且不熟悉操作，尝试改进提醒设置",
+      "dialogue_date": "2024-10-15"
+    }
+  ],
+  "memory_created_at": "2025-07-21T03:07:58.480383",
+  "last_updated": "2025-07-21T03:09:21.514562",
+  "total_dialogues_processed": 6
+}

@@ -1,0 +1,86 @@
+{
+  "sample_id": "sample_0b389f61f90fcf6da613e08c64e06fdbaf05758cdd9e6b5ae730f1b8a8a654e4_20240407_diet_a85fe0",
+  "patient_id": "0b389f61f90fcf6da613e08c64e06fdbaf05758cdd9e6b5ae730f1b8a8a654e4",
+  "task_name": "adherence_identification",
+  "sample_data": {
+    "dialogue_piece": [
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "这个主意不错，我可以试试。",
+        "timestamp": "2024-04-07T09:07:30Z",
+        "message_type": "回应",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "患者饮食控制仍有反复。",
+          "analysis": "饮食习惯反复，社会支持依旧薄弱。",
+          "diagnosis": "社会和行为障碍。",
+          "planning": "鼓励记录饮食，逐步调整。",
+          "evaluation": "促进自我管理。"
+        },
+        "message": "饮食方面，最近有没有尝试控制主食和盐分呢？如果困难，可以每天简单记个日记，帮您了解进展。",
+        "timestamp": "2024-04-07T09:09:00Z",
+        "message_type": "提醒",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "老实说，昨天家里做了个我喜欢的海鲜，还是咸了点。没记日记，就是感觉管得太多了。",
+        "timestamp": "2024-04-07T09:10:30Z",
+        "message_type": "回应",
+        "emotional_tone": "焦虑"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "患者感受压力大，可能影响长期坚持。",
+          "analysis": "情感层面焦虑显著。",
+          "diagnosis": "情感层面障碍。",
+          "planning": "缓解压力，调整目标。",
+          "evaluation": "避免过度负担。"
+        },
+        "message": "理解您感觉管得多，压力大也容易放弃。我们可以不急着记日记，只要每天提醒自己尽量少吃盐，慢慢习惯就好，不用强求完美。",
+        "timestamp": "2024-04-07T09:12:00Z",
+        "message_type": "教育",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "这样说让我舒服点，看来慢慢来才行。",
+        "timestamp": "2024-04-07T09:13:30Z",
+        "message_type": "回应",
+        "emotional_tone": "合作"
+      }
+    ],
+    "prescription": {
+      "medications": [],
+      "lifestyle": [
+        {
+          "recommendation_type": "饮食",
+          "description": "控制每日主食摄入至250克，增加蔬菜和蛋白质摄入，减少盐和糖的摄入。"
+        }
+      ],
+      "next_followup_date": "2024-06-01",
+      "physician_notes": "注意血糖和血压的监测，增加家庭支持对于其依从性的提高有益。"
+    },
+    "adherence_category": "饮食",
+    "session_date": "2024-04-07"
+  },
+  "pre_annotation": {
+    "adherence_check": [
+      {
+        "date": "2024-04-07",
+        "category": "饮食",
+        "overall_status": "部分遵从",
+        "reason": "饮食中盐分控制不理想，未坚持饮食日记",
+        "details": "患者反映2024-04-06家中做了喜欢的海鲜菜肴，盐分偏高，未进行饮食记录，感到饮食管理压力较大。系统建议逐步减少盐分摄入，暂不强求饮食日记。",
+        "dialogue_date": "2024-04-07"
+      }
+    ]
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "sample_id": "sample_7cb394d6e1c52e050ef41a9caa3c186d6a6a71fe2172fa8f901783973404285a_20241013_medication_e14960",
+  "patient_id": "7cb394d6e1c52e050ef41a9caa3c186d6a6a71fe2172fa8f901783973404285a",
+  "task_name": "adherence_identification",
+  "sample_data": {
+    "dialogue_piece": [
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "询问患者近期用药情况和生活习惯，检视依从波动。",
+          "analysis": "患者表现出反复，需具体分析阻碍因素。",
+          "diagnosis": "依从性波动明显。",
+          "planning": "细化阻碍分析，调整干预策略。",
+          "evaluation": "深化患者情况了解。"
+        },
+        "message": "您好，最近几天您的用药和运动情况怎么样？有没有遇到什么新的困难？",
+        "timestamp": "2024-10-13T09:00:00+08:00",
+        "message_type": "提醒",
+        "emotional_tone": "中性"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "说实话，昨天早上我忘吃了卡托普利，下午想起来又吃了。运动没怎么做，昨晚跟邻居聊天喝了点甜茶，今天血糖有点高。",
+        "timestamp": "2024-10-13T09:02:00+08:00",
+        "message_type": "回应",
+        "emotional_tone": "焦虑"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "患者出现明显用药遗忘和饮食不当，情感层面焦虑。",
+          "analysis": "行为层面习惯不稳，社会互动影响饮食控制。",
+          "diagnosis": "行为依从不稳定，社会因素影响饮食。",
+          "planning": "加强用药提醒，饮食教育，处理社交压力。",
+          "evaluation": "多维度干预需求。"
+        },
+        "message": "忘吃药是常有的事，我们可以一起想想怎样帮您提醒用药。关于饮食，社交时确实不容易控制，您愿意跟我说说遇到的具体难处吗？",
+        "timestamp": "2024-10-13T09:05:00+08:00",
+        "message_type": "问题",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "邻居家人都喜欢甜食，我不爱吃糖，但不好意思一直拒绝，怕大家觉得我怪。",
+        "timestamp": "2024-10-13T09:08:00+08:00",
+        "message_type": "回应",
+        "emotional_tone": "困惑"
+      }
+    ],
+    "prescription": {
+      "medications": [
+        {
+          "drug_name": "卡托普利片",
+          "dose": "25 mg",
+          "frequency": "每日一次",
+          "route": "口服"
+        },
+        {
+          "drug_name": "二甲双胍",
+          "dose": "500 mg",
+          "frequency": "每日两次",
+          "route": "口服"
+        },
+        {
+          "drug_name": "消渴丸",
+          "dose": "5 粒",
+          "frequency": "每日三次",
+          "route": "口服"
+        }
+      ],
+      "lifestyle": [],
+      "next_followup_date": "2025-01-02",
+      "physician_notes": "当前药物治疗基本稳定，建议调整二甲双胍剂量以优化血糖控制；密切监测血压波动，鼓励改善生活方式，防止慢性肾脏损伤进展。注重患者教育，提高依从性。"
+    },
+    "adherence_category": "用药",
+    "session_date": "2024-10-13"
+  },
+  "pre_annotation": {
+    "adherence_check": [
+      {
+        "date": "2024-10-13",
+        "category": "用药",
+        "overall_status": "部分遵从",
+        "reason": "患者存在忘记按时服药和因担心副作用（头晕）而不愿按时服药的情况。",
+        "details": "患者昨天早上忘记服用卡托普利，下午补服；因头晕担心副作用，有时不想服药。",
+        "dialogue_date": "2024-10-13"
+      }
+    ]
+  }
+}

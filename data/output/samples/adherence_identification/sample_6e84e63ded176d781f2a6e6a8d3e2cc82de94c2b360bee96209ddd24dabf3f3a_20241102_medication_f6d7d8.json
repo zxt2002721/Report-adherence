@@ -1,0 +1,92 @@
+{
+  "sample_id": "sample_6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a_20241102_medication_f6d7d8",
+  "patient_id": "6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a",
+  "task_name": "adherence_identification",
+  "sample_data": {
+    "dialogue_piece": [
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "回顾昨日对话，进一步深入了解患者用药情绪和认知障碍。",
+          "analysis": "患者可能对药物副作用存疑。",
+          "diagnosis": "认知偏差影响用药依从。",
+          "planning": "尝试消除误解，降低情感障碍。",
+          "evaluation": "耐心细致沟通为重点。"
+        },
+        "message": "您好，昨天聊到您有时候忘记吃药，今天我想了解一下，您对这些药有没有什么担心或者感觉？",
+        "timestamp": "2024-11-02T09:00:00+08:00",
+        "message_type": "问题",
+        "emotional_tone": "中性"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "说实话，我有点怕苯磺酸左旋氨氯地平片的副作用，听说有的人吃了会头晕，我昨天吃了头晕，就自己停了两天。",
+        "timestamp": "2024-11-02T09:01:30+08:00",
+        "message_type": "回应",
+        "emotional_tone": "焦虑"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "患者认知误区导致自行停药，存在安全风险。",
+          "analysis": "副作用信息未充分理解，患者缺乏正确指导。",
+          "diagnosis": "用药认知障碍。",
+          "planning": "解释药物作用和副作用管理。",
+          "evaluation": "需强化用药安全教育。"
+        },
+        "message": "明白您的担心。这个药确实可能会有些头晕感，但一般是开始用药时身体适应的反应，如果头晕严重或持续，应该告诉医生，不建议自行停药，停药反而可能加重病情。您平时头晕的情况严重吗？",
+        "timestamp": "2024-11-02T09:03:00+08:00",
+        "message_type": "教育",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "有时候有点头晕，但没持续几天就好了，我自己就怕越吃越不好。",
+        "timestamp": "2024-11-02T09:04:30+08:00",
+        "message_type": "回应",
+        "emotional_tone": "焦虑"
+      }
+    ],
+    "prescription": {
+      "medications": [
+        {
+          "drug_name": "苯磺酸左旋氨氯地平片",
+          "dose": "2.5 mg",
+          "frequency": "每日一次",
+          "route": "口服"
+        },
+        {
+          "drug_name": "阿司匹林肠溶片",
+          "dose": "100 mg",
+          "frequency": "每日一次",
+          "route": "口服"
+        },
+        {
+          "drug_name": "辛伐他汀片",
+          "dose": "20 mg",
+          "frequency": "每日一次",
+          "route": "口服"
+        }
+      ],
+      "lifestyle": [],
+      "next_followup_date": "2024-12-01",
+      "physician_notes": "患者冠心病与高血压控制总体良好，建议继续现有治疗，密切监测血压波动。注意饮食调控和规律运动，定期随访复查血脂及心功能。"
+    },
+    "adherence_category": "用药",
+    "session_date": "2024-11-02"
+  },
+  "pre_annotation": {
+    "adherence_check": [
+      {
+        "date": "2024-11-02",
+        "category": "用药",
+        "overall_status": "部分遵从",
+        "reason": "患者因担心苯磺酸左旋氨氯地平片副作用（头晕），自行停药两天，存在用药中断行为。",
+        "details": "患者反映昨天服药后出现头晕症状，担心副作用，故自行停药两天；虽知需长期服药控制病情，但因副作用顾虑和心理压力影响用药依从性。",
+        "dialogue_date": "2024-11-02"
+      }
+    ]
+  }
+}

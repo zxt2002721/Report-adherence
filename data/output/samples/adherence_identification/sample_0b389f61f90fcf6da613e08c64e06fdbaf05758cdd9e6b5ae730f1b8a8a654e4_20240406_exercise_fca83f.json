@@ -1,0 +1,92 @@
+{
+  "sample_id": "sample_0b389f61f90fcf6da613e08c64e06fdbaf05758cdd9e6b5ae730f1b8a8a654e4_20240406_exercise_fca83f",
+  "patient_id": "0b389f61f90fcf6da613e08c64e06fdbaf05758cdd9e6b5ae730f1b8a8a654e4",
+  "task_name": "adherence_identification",
+  "sample_data": {
+    "dialogue_piece": [
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "继续跟进患者用药和生活习惯，识别波动表现。",
+          "analysis": "患者部分行为改善，但仍有遗忘和情绪困扰。",
+          "diagnosis": "依从性呈波动性。",
+          "planning": "分析困难，调整支持策略。",
+          "evaluation": "准备应对挫折，强化提醒。"
+        },
+        "message": "您好，最近几天用药和生活习惯执行得怎么样？有没有遇到什么特别难坚持的？",
+        "timestamp": "2024-04-06T09:00:00Z",
+        "message_type": "确认",
+        "emotional_tone": "中性"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "这两天我记得吃药了，特别是用彩色药盒后容易多了。就是早晨运动有点懒，昨天没去。",
+        "timestamp": "2024-04-06T09:01:30Z",
+        "message_type": "回应",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "患者行为有积极变化，运动依从稍弱。",
+          "analysis": "习惯开始养成，但仍存在行为障碍。",
+          "diagnosis": "行为层面逐步改善中。",
+          "planning": "鼓励小步运动，制定灵活计划。",
+          "evaluation": "强化正面反馈。"
+        },
+        "message": "彩色药盒起了很好的效果，太棒了！运动方面，您觉得早晨太冷还是其他原因让您懒得出门？",
+        "timestamp": "2024-04-06T09:03:00Z",
+        "message_type": "确认",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "就是天气冷，还有老觉得心慌，怕出门出啥事儿。",
+        "timestamp": "2024-04-06T09:04:30Z",
+        "message_type": "回应",
+        "emotional_tone": "焦虑"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "患者情感层面焦虑影响运动行为。",
+          "analysis": "心慌感增加运动阻力。",
+          "diagnosis": "情感和行为层面交织阻碍。",
+          "planning": "建议室内替代运动和心慌缓解方法。",
+          "evaluation": "提供替代方案。"
+        },
+        "message": "心慌让您很担心，您可以试试先在室内做些缓和的运动，比如简单伸展或瑜伽，同时继续按医生建议服药。如果心慌明显，可以告诉我，我们一起找方法。",
+        "timestamp": "2024-04-06T09:06:00Z",
+        "message_type": "教育",
+        "emotional_tone": "合作"
+      }
+    ],
+    "prescription": {
+      "medications": [],
+      "lifestyle": [
+        {
+          "recommendation_type": "运动",
+          "description": "每周5次适度运动，如步行30分钟。"
+        }
+      ],
+      "next_followup_date": "2024-06-01",
+      "physician_notes": "注意血糖和血压的监测，增加家庭支持对于其依从性的提高有益。"
+    },
+    "adherence_category": "运动",
+    "session_date": "2024-04-06"
+  },
+  "pre_annotation": {
+    "adherence_check": [
+      {
+        "date": "2024-04-06",
+        "category": "运动",
+        "overall_status": "部分遵从",
+        "reason": "患者因天气冷及心慌未能外出运动，但愿意尝试室内简单伸展运动。",
+        "details": "患者昨天未进行早晨运动，表达因天气冷和心慌担忧外出安全，计划尝试室内伸展。",
+        "dialogue_date": "2024-04-06"
+      }
+    ]
+  }
+}

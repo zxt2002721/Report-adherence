@@ -1,0 +1,86 @@
+{
+  "sample_id": "sample_6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a_20241101_exercise_f4648a",
+  "patient_id": "6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a",
+  "task_name": "adherence_identification",
+  "sample_data": {
+    "dialogue_piece": [
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "嗯，也好，看看怎么说吧。",
+        "timestamp": "2024-11-01T09:19:30+08:00",
+        "message_type": "回应",
+        "emotional_tone": "中性"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "初步识别到患者运动依从基本良好，偏好户外快走和太极，习惯上午运动。",
+          "analysis": "运动习惯较好，是可利用的正面行为资源。",
+          "diagnosis": "运动领域遵从较好，便于后续强化。",
+          "planning": "继续鼓励保持运动，观察是否有波动。",
+          "evaluation": "建立积极支持。"
+        },
+        "message": "听说您喜欢早上去快走和练太极，这样的运动习惯保持得怎么样？",
+        "timestamp": "2024-11-01T09:21:00+08:00",
+        "message_type": "问题",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "还行，基本都坚持，就是偶尔天冷或者下雨就偷懒了。",
+        "timestamp": "2024-11-01T09:22:30+08:00",
+        "message_type": "回应",
+        "emotional_tone": "中性"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "患者运动依从有季节性波动，行为层面受天气影响较大。",
+          "analysis": "需要寻找替代方案或激励措施减少波动。",
+          "diagnosis": "运动习惯尚需巩固。",
+          "planning": "建议室内适当运动替代。",
+          "evaluation": "提供多样选择，降低阻力。"
+        },
+        "message": "下雨天或者天气冷确实不方便出门，您有没有考虑过在家里做一些简单的室内运动，比如伸展或者练习太极招式？",
+        "timestamp": "2024-11-01T09:24:00+08:00",
+        "message_type": "提醒",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "这个倒没试过，家里也没啥地方，怕摔着。",
+        "timestamp": "2024-11-01T09:25:30+08:00",
+        "message_type": "回应",
+        "emotional_tone": "困惑"
+      }
+    ],
+    "prescription": {
+      "medications": [],
+      "lifestyle": [
+        {
+          "recommendation_type": "运动",
+          "description": "坚持每周至少五次中等强度有氧运动，每次30分钟，如快走、太极。"
+        }
+      ],
+      "next_followup_date": "2024-12-01",
+      "physician_notes": "患者冠心病与高血压控制总体良好，建议继续现有治疗，密切监测血压波动。注意饮食调控和规律运动，定期随访复查血脂及心功能。"
+    },
+    "adherence_category": "运动",
+    "session_date": "2024-11-01"
+  },
+  "pre_annotation": {
+    "adherence_check": [
+      {
+        "date": "2024-11-01",
+        "category": "运动",
+        "overall_status": "部分遵从",
+        "reason": "患者基本坚持早晨快走和练太极，但遇天气寒冷或下雨时会偷懒，且家中空间有限，未尝试室内运动。",
+        "details": "患者喜欢早上快走和练太极，偶尔因天气原因未运动，家中空间小且担心安全，未做室内运动。",
+        "dialogue_date": "2024-11-01"
+      }
+    ]
+  }
+}

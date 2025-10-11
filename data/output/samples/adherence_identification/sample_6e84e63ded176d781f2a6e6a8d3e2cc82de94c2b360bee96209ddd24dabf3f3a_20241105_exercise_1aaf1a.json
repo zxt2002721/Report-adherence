@@ -1,0 +1,166 @@
+{
+  "sample_id": "sample_6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a_20241105_exercise_1aaf1a",
+  "patient_id": "6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a",
+  "task_name": "adherence_identification",
+  "sample_data": {
+    "dialogue_piece": [
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "本日开场复查患者用药和情绪状态，关注昨日承诺及实际执行。",
+          "analysis": "检测患者坚持新行为情况及情绪波动。",
+          "diagnosis": "行为习惯仍处建立期，情绪有时波动。",
+          "planning": "给予积极反馈与挫折应对。",
+          "evaluation": "促进正向行为循环。"
+        },
+        "message": "您好，昨天练习太极动作感觉怎么样？药物和饮食有没有什么新的进展？",
+        "timestamp": "2024-11-05T09:00:00+08:00",
+        "message_type": "问题",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "动作做了几次，家里太小做着怪别扭，不过比没动强。药是按时吃了几天，今儿早上倒忘了，饮食还是老样子。",
+        "timestamp": "2024-11-05T09:01:30+08:00",
+        "message_type": "回应",
+        "emotional_tone": "中性"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "患者运动行为不稳定，用药偶有忘记，饮食无改善。",
+          "analysis": "行为依从波动，情绪及环境因素影响。",
+          "diagnosis": "波动型依从模式。",
+          "planning": "引导患者接受不完美，逐步改进。",
+          "evaluation": "稳定情绪，增强自我效能。"
+        },
+        "message": "偶尔忘记很正常，别给自己太大压力。我们可以想些小方法，比如把药盒放在经常看见的地方，提醒自己。您觉得哪儿放药方便记得？",
+        "timestamp": "2024-11-05T09:03:00+08:00",
+        "message_type": "提醒",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "放厨房吧，那里常常去，顺手就能看到。",
+        "timestamp": "2024-11-05T09:04:30+08:00",
+        "message_type": "回应",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "针对患者用药行为提供个性化建议。",
+          "analysis": "行为层面促进提醒机制。",
+          "diagnosis": "用药依从改善措施。",
+          "planning": "强调持续监督和反馈。",
+          "evaluation": "促进依从持续提升。"
+        },
+        "message": "好的，那您就把药盒放厨房的醒目位置，做饭或吃饭时顺便记得吃药。同时，可以用手机设置第二个提醒，双保险。",
+        "timestamp": "2024-11-05T09:06:00+08:00",
+        "message_type": "教育",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "手机提醒我还得调调，昨儿那个闹钟声音小，经常听不见。",
+        "timestamp": "2024-11-05T09:07:30+08:00",
+        "message_type": "回应",
+        "emotional_tone": "困惑"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "患者使用手机提醒存在技术问题。",
+          "analysis": "技术层面障碍需解决。",
+          "diagnosis": "用药提醒系统优化需求。",
+          "planning": "建议调整提醒铃声及时长。",
+          "evaluation": "提高提醒有效性。"
+        },
+        "message": "您可以把手机闹钟声音调大一些，或者选一个响亮的铃声，这样提醒效果会更好。您会操作吗？",
+        "timestamp": "2024-11-05T09:09:00+08:00",
+        "message_type": "提醒",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "会的，改天我试试看。",
+        "timestamp": "2024-11-05T09:10:00+08:00",
+        "message_type": "回应",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "关注饮食障碍继续存在，患者家庭环境未变。",
+          "analysis": "社会和行为层面饮食问题难突破。",
+          "diagnosis": "饮食依从障碍仍在。",
+          "planning": "建议分步尝试沟通。",
+          "evaluation": "缓解家庭矛盾促进饮食改善。"
+        },
+        "message": "关于饮食，您提到家里口味难改，您看有没有可能每周挑一天，全家尝试一些低盐健康菜肴？慢慢影响大家的习惯。",
+        "timestamp": "2024-11-05T09:11:30+08:00",
+        "message_type": "提醒",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "唉，这主意不错，可我怕一开始家人反感，我也不想总惹事。",
+        "timestamp": "2024-11-05T09:13:00+08:00",
+        "message_type": "回应",
+        "emotional_tone": "焦虑"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "患者担忧家庭冲突，影响饮食行为变动。",
+          "analysis": "情感及社会阻力依然明显。",
+          "diagnosis": "情感障碍影响行为改进。",
+          "planning": "鼓励小步试探，避免激烈冲突。",
+          "evaluation": "维护家庭和谐与健康平衡。"
+        },
+        "message": "理解您的顾虑，我们可以先从自己开始调整，比如做一小份低盐菜自己吃，等家人看到您状态好，也许他们会愿意尝试。",
+        "timestamp": "2024-11-05T09:14:30+08:00",
+        "message_type": "教育",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "这样说起来，好像能行，我试试。",
+        "timestamp": "2024-11-05T09:16:00+08:00",
+        "message_type": "回应",
+        "emotional_tone": "合作"
+      }
+    ],
+    "prescription": {
+      "medications": [],
+      "lifestyle": [
+        {
+          "recommendation_type": "运动",
+          "description": "坚持每周至少五次中等强度有氧运动，每次30分钟，如快走、太极。"
+        }
+      ],
+      "next_followup_date": "2024-12-01",
+      "physician_notes": "患者冠心病与高血压控制总体良好，建议继续现有治疗，密切监测血压波动。注意饮食调控和规律运动，定期随访复查血脂及心功能。"
+    },
+    "adherence_category": "运动",
+    "session_date": "2024-11-05"
+  },
+  "pre_annotation": {
+    "adherence_check": [
+      {
+        "date": "2024-11-05",
+        "category": "运动",
+        "overall_status": "部分遵从",
+        "reason": "患者进行了太极动作练习，但因空间限制动作不便，运动量有限。",
+        "details": "患者表示“动作做了几次，家里太小做着怪别扭，不过比没动强”，说明有运动但受环境影响。",
+        "dialogue_date": "2024-11-05"
+      }
+    ]
+  }
+}

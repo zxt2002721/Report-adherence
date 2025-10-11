@@ -1,0 +1,190 @@
+{
+  "sample_id": "sample_6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a_20241102_medication_fb9fa2",
+  "patient_id": "6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a",
+  "task_name": "suggestion_reasoning_check",
+  "sample_data": {
+    "adherence_piece": {
+      "date": "2024-11-02",
+      "category": "用药",
+      "overall_status": "部分遵从",
+      "reason": "患者因担心苯磺酸左旋氨氯地平片副作用（头晕），自行停药两天，存在用药中断行为。",
+      "details": "患者反映昨天服药后出现头晕症状，担心副作用，故自行停药两天；虽知需长期服药控制病情，但因副作用顾虑和心理压力影响用药依从性。",
+      "dialogue_date": "2024-11-02"
+    },
+    "patient_profile": {
+      "basic_info": {
+        "patient_id": "6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a",
+        "name": null,
+        "age": 58,
+        "sex": "女",
+        "marital_status": "已婚",
+        "occupation": "退休人员",
+        "location": "山西省长治市",
+        "education": "高中",
+        "income_bracket": "中",
+        "living_situation": "与家人同住",
+        "contact_phone": "138-XXXX-5678"
+      },
+      "disease_info": {
+        "primary_diseases": [
+          {
+            "disease_name": "冠心病",
+            "icd10_code": "I25.1",
+            "years_since_diagnosis": 9.0,
+            "current_severity": "中度"
+          },
+          {
+            "disease_name": "高血压",
+            "icd10_code": "I10",
+            "years_since_diagnosis": 9.0,
+            "current_severity": "中度"
+          }
+        ],
+        "comorbidities": [
+          {
+            "disease_name": "高脂血症",
+            "icd10_code": "E78.5",
+            "years_since_diagnosis": 3.0,
+            "current_severity": "轻度"
+          }
+        ],
+        "family_history": {
+          "母亲病史": "高血压",
+          "父亲病史": null,
+          "兄弟姐妹病史": null,
+          "子女病史": null
+        },
+        "allergies": [
+          "青霉素"
+        ],
+        "last_checkup_date": "2024-10-24"
+      },
+      "prescription": {
+        "medications": [
+          {
+            "drug_name": "苯磺酸左旋氨氯地平片",
+            "dose": "2.5 mg",
+            "frequency": "每日一次",
+            "route": "口服"
+          },
+          {
+            "drug_name": "阿司匹林肠溶片",
+            "dose": "100 mg",
+            "frequency": "每日一次",
+            "route": "口服"
+          },
+          {
+            "drug_name": "辛伐他汀片",
+            "dose": "20 mg",
+            "frequency": "每日一次",
+            "route": "口服"
+          }
+        ],
+        "lifestyle": [
+          {
+            "recommendation_type": "饮食",
+            "description": "低盐低脂饮食，避免高胆固醇食品，适量增加新鲜蔬菜和水果。"
+          },
+          {
+            "recommendation_type": "运动",
+            "description": "坚持每周至少五次中等强度有氧运动，每次30分钟，如快走、太极。"
+          },
+          {
+            "recommendation_type": "睡眠",
+            "description": "保持每天7-8小时优质睡眠，避免熬夜。"
+          },
+          {
+            "recommendation_type": "压力",
+            "description": "保持心态平和，学习适当减压方法，如深呼吸、冥想。"
+          }
+        ],
+        "next_followup_date": "2024-12-01",
+        "physician_notes": "患者冠心病与高血压控制总体良好，建议继续现有治疗，密切监测血压波动。注意饮食调控和规律运动，定期随访复查血脂及心功能。"
+      },
+      "behaviour_preferences": {
+        "preferences": [
+          {
+            "preference_type": "饮食",
+            "detail": "喜欢家常山西面食，避免辛辣油腻，多选用蒸煮少油方法。",
+            "prescription_impact": [
+              "饮食"
+            ]
+          },
+          {
+            "preference_type": "运动",
+            "detail": "偏好户外快走与太极，运动时间多为上午，运动坚持较好。",
+            "prescription_impact": [
+              "运动"
+            ]
+          },
+          {
+            "preference_type": "休闲",
+            "detail": "喜欢看书和听戏曲，社交活动适中，重视邻里间交流。",
+            "prescription_impact": [
+              "监测"
+            ]
+          },
+          {
+            "preference_type": "科技",
+            "detail": "能够使用智能手机查看健康信息，愿意学习手机健康应用。",
+            "prescription_impact": [
+              "监测"
+            ]
+          },
+          {
+            "preference_type": "其他",
+            "detail": "不吸烟不饮酒，注重传统养生方法。",
+            "prescription_impact": [
+              "用药",
+              "饮食"
+            ]
+          }
+        ]
+      },
+      "generation_timestamp": "2024-11-01 12:00:00+08:00"
+    },
+    "current_adherence_history": [
+      {
+        "date": "2024-11-01",
+        "category": "用药",
+        "overall_status": "部分遵从",
+        "reason": "患者服药存在偶尔忘记，尤其早晨因想多睡导致未按时服药；手机提醒效果不理想，存在被其他消息打扰的问题；外出时携带药物不便且有顾虑。",
+        "details": "患者一般早上服药，设有手机提醒但常被打扰，家中有药盒但外出时不常携带，下午邻居家聚会时服药感到尴尬。",
+        "dialogue_date": "2024-11-01"
+      }
+    ],
+    "current_suggestion_history": [
+      {
+        "date": "2024-11-01",
+        "suggestion_content": "设置专门的闹钟或固定放置药盒，并每天固定时间服药，以帮助记得按时吃药。",
+        "suggestion_category": "用药",
+        "effectiveness_feedback": "部分有效",
+        "patient_response": "患者表示手机提醒经常错过，家里有药盒但出门不方便带药，存在一定执行难度。",
+        "dialogue_date": "2024-11-01"
+      }
+    ],
+    "current_behavior_preference": [
+      {
+        "date": "2024-11-01",
+        "preference_type": "科技",
+        "prescription_impact": [
+          "用药"
+        ],
+        "old_preference": "使用手机提醒吃药，但经常被其他消息打扰，提醒错过",
+        "new_preference": "考虑设置专门的闹钟或固定放置药盒以便更好提醒服药",
+        "update_reason": "手机提醒经常被其他消息打扰导致忘记吃药，寻求更有效的提醒方式",
+        "dialogue_date": "2024-11-01"
+      }
+    ]
+  },
+  "pre_annotation": {
+    "suggestion_reasoning": {
+      "assessment": "现状评估：患者当前反映的头晕症状与用药有关，需确认症状是否为药物副作用，同时缺少对副作用的详细解释和应对策略。",
+      "analysis": "分析：患者因副作用担忧而停药，表现出对药物的恐惧感。潜在解决方案包括提供副作用信息、心理支持以及调整用药方案。",
+      "diagnosis": "诊断：患者存在部分遵从行为，风险等级中等，因不遵从可能导致病情加重。",
+      "planning": "规划：建议与患者沟通副作用信息，提供减轻头晕的建议，并考虑调整服药时间或剂量以提高依从性。",
+      "evaluation": "推理回顾：规划内容符合患者病情与不遵从行为，考虑到患者的心理状态和历史反馈，建议合理且无矛盾。"
+    },
+    "suggestion_message": "明白您的担心。这个药确实可能会有些头晕感，但一般是开始用药时身体适应的反应，如果头晕严重或持续，应该告诉医生，不建议自行停药，停药反而可能加重病情。您平时头晕的情况严重吗？"
+  }
+}

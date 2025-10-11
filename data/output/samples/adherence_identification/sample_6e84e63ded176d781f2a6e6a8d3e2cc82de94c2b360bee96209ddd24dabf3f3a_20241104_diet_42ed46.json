@@ -1,0 +1,86 @@
+{
+  "sample_id": "sample_6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a_20241104_diet_42ed46",
+  "patient_id": "6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a",
+  "task_name": "adherence_identification",
+  "sample_data": {
+    "dialogue_piece": [
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "好，我会注意。",
+        "timestamp": "2024-11-04T09:09:30+08:00",
+        "message_type": "回应",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "回顾患者前两天的用药和饮食问题，尝试重新提问，检测状况。",
+          "analysis": "行为和认知障碍仍存在。",
+          "diagnosis": "用药和饮食依从情况需动态监控。",
+          "planning": "继续跟进提醒和教育。",
+          "evaluation": "稳定性尚不足。"
+        },
+        "message": "除了运动，您这几天药物和饮食执行得怎么样？有没有遇到新的困难？",
+        "timestamp": "2024-11-04T09:11:00+08:00",
+        "message_type": "问题",
+        "emotional_tone": "中性"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "药倒是比前几天吃得多了，就是忘记的事还时有发生，饮食那块嘛，家人还是没变，咱这大锅饭，咸菜和油也没少放。",
+        "timestamp": "2024-11-04T09:12:30+08:00",
+        "message_type": "回应",
+        "emotional_tone": "焦虑"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "患者用药行为有小幅改善，饮食问题依旧突出。",
+          "analysis": "行为层面出现小进步，社会环境未变。",
+          "diagnosis": "用药行为有改善迹象，饮食依从难。",
+          "planning": "鼓励用药进步，继续解决饮食障碍。",
+          "evaluation": "需要持续干预。"
+        },
+        "message": "您在用药方面做得很好，记得时多了，继续加油。饮食方面我们一起想办法，您是否愿意尝试和家人一起制定一些健康菜谱？",
+        "timestamp": "2024-11-04T09:14:00+08:00",
+        "message_type": "提醒",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "这事儿说着容易，家人那会儿反对我又说不出口。",
+        "timestamp": "2024-11-04T09:15:30+08:00",
+        "message_type": "回应",
+        "emotional_tone": "焦虑"
+      }
+    ],
+    "prescription": {
+      "medications": [],
+      "lifestyle": [
+        {
+          "recommendation_type": "饮食",
+          "description": "低盐低脂饮食，避免高胆固醇食品，适量增加新鲜蔬菜和水果。"
+        }
+      ],
+      "next_followup_date": "2024-12-01",
+      "physician_notes": "患者冠心病与高血压控制总体良好，建议继续现有治疗，密切监测血压波动。注意饮食调控和规律运动，定期随访复查血脂及心功能。"
+    },
+    "adherence_category": "饮食",
+    "session_date": "2024-11-04"
+  },
+  "pre_annotation": {
+    "adherence_check": [
+      {
+        "date": "2024-11-04",
+        "category": "饮食",
+        "overall_status": "不遵从",
+        "reason": "患者饮食中咸菜和油脂摄入未减少，家人不支持健康饮食调整。",
+        "details": "患者提到“家人还是没变，咱这大锅饭，咸菜和油也没少放”，并且“家人那会儿反对我又说不出口”。",
+        "dialogue_date": "2024-11-04"
+      }
+    ]
+  }
+}

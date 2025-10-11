@@ -1,0 +1,92 @@
+{
+  "sample_id": "sample_0b389f61f90fcf6da613e08c64e06fdbaf05758cdd9e6b5ae730f1b8a8a654e4_20240402_medication_743e44",
+  "patient_id": "0b389f61f90fcf6da613e08c64e06fdbaf05758cdd9e6b5ae730f1b8a8a654e4",
+  "task_name": "adherence_identification",
+  "sample_data": {
+    "dialogue_piece": [
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "初次沟通，了解患者整体用药和生活习惯情况。",
+          "analysis": "患者对药物副作用有疑虑，对饮食控制有一定抵触情绪。",
+          "diagnosis": "存在认知和情感层面不遵从。",
+          "planning": "建立信任，逐步挖掘具体困难。",
+          "evaluation": "初步暴露多维度不遵从，需持续跟进。"
+        },
+        "message": "您好，我是您的健康管理助手贝贝。今天想了解一下您最近服药和生活上的情况，方便吗？",
+        "timestamp": "2024-04-02T09:00:00Z",
+        "message_type": "确认",
+        "emotional_tone": "中性"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "哎，还能怎么样，药是吃了，就是有时候觉得头晕，心里怪怪的。",
+        "timestamp": "2024-04-02T09:01:30Z",
+        "message_type": "回应",
+        "emotional_tone": "困惑"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "患者提及副作用，初步关注认知和情感障碍。",
+          "analysis": "副作用恐惧可能影响用药依从，需具体了解。",
+          "diagnosis": "认知层面副作用恐惧明显，情感上有不安。",
+          "planning": "温和询问具体症状，安抚情绪。",
+          "evaluation": "初步识别用药依从的认知及情感障碍。"
+        },
+        "message": "您提到头晕，是刚开始吃药时有吗？现在还会经常有吗？",
+        "timestamp": "2024-04-02T09:02:30Z",
+        "message_type": "问题",
+        "emotional_tone": "中性"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "头晕不是每次都有，就是有时候吃了那个降压药，觉得有点不舒服。老人家哪能说什么，闺女也说不要老抱怨药。",
+        "timestamp": "2024-04-02T09:04:00Z",
+        "message_type": "回应",
+        "emotional_tone": "焦虑"
+      }
+    ],
+    "prescription": {
+      "medications": [
+        {
+          "drug_name": "厄贝沙坦氢氯噻嗪",
+          "dose": "150 mg",
+          "frequency": "每日一次",
+          "route": "口服"
+        },
+        {
+          "drug_name": "阿卡波糖",
+          "dose": "50 mg",
+          "frequency": "每日三次",
+          "route": "口服"
+        },
+        {
+          "drug_name": "格列吡嗪控释片",
+          "dose": "5 mg",
+          "frequency": "每日一次",
+          "route": "口服"
+        }
+      ],
+      "lifestyle": [],
+      "next_followup_date": "2024-06-01",
+      "physician_notes": "注意血糖和血压的监测，增加家庭支持对于其依从性的提高有益。"
+    },
+    "adherence_category": "用药",
+    "session_date": "2024-04-02"
+  },
+  "pre_annotation": {
+    "adherence_check": [
+      {
+        "date": "2024-04-02",
+        "category": "用药",
+        "overall_status": "部分遵从",
+        "reason": "患者存在用药时间不固定、偶尔忘记服药及因担心副作用而主动减少用药的情况。",
+        "details": "患者有时饭前忘记吃降糖药，有时因担心肚子不适而不服药。早上一般7点吃早饭，但用药提醒不足，家人支持有限。患者担忧长期用药副作用，尤其降糖药引起的肚子不适。",
+        "dialogue_date": "2024-04-02"
+      }
+    ]
+  }
+}

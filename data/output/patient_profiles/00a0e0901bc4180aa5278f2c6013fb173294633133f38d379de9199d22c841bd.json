@@ -1,0 +1,136 @@
+{
+  "basic_info": {
+    "patient_id": "00a0e0901bc4180aa5278f2c6013fb173294633133f38d379de9199d22c841bd",
+    "name": null,
+    "age": 49,
+    "sex": "女",
+    "marital_status": "已婚",
+    "occupation": "小学教师",
+    "location": "山东省枣庄市",
+    "education": "高中",
+    "income_bracket": "中",
+    "living_situation": "与家人同住",
+    "contact_phone": "138-XXXX-5678"
+  },
+  "disease_info": {
+    "primary_diseases": [
+      {
+        "disease_name": "冠状动脉粥样硬化性心脏病",
+        "icd10_code": "I25.1",
+        "years_since_diagnosis": 6.0,
+        "current_severity": "中度"
+      },
+      {
+        "disease_name": "高血压",
+        "icd10_code": "I10",
+        "years_since_diagnosis": 6.0,
+        "current_severity": "轻度"
+      }
+    ],
+    "comorbidities": [
+      {
+        "disease_name": "骨质疏松症",
+        "icd10_code": "M81",
+        "years_since_diagnosis": 2.0,
+        "current_severity": "轻度"
+      }
+    ],
+    "family_history": {
+      "母亲": "骨质疏松症"
+    },
+    "allergies": [
+      "青霉素"
+    ],
+    "last_checkup_date": "2025-02-06"
+  },
+  "prescription": {
+    "medications": [
+      {
+        "drug_name": "阿司匹林肠溶片",
+        "dose": "100 mg",
+        "frequency": "每日一次",
+        "route": "口服"
+      },
+      {
+        "drug_name": "氨氯地平片",
+        "dose": "5 mg",
+        "frequency": "每日一次",
+        "route": "口服"
+      },
+      {
+        "drug_name": "依那普利片",
+        "dose": "10 mg",
+        "frequency": "每日一次",
+        "route": "口服"
+      },
+      {
+        "drug_name": "钙制剂",
+        "dose": "600 mg",
+        "frequency": "每日一次",
+        "route": "口服"
+      }
+    ],
+    "lifestyle": [
+      {
+        "recommendation_type": "饮食",
+        "description": "低盐饮食，减少脂肪摄入，多吃新鲜蔬菜水果，避免辛辣油炸食物。"
+      },
+      {
+        "recommendation_type": "运动",
+        "description": "每周保持2-3次有氧运动如快走，每次30分钟，强度以微出汗为宜。"
+      },
+      {
+        "recommendation_type": "睡眠",
+        "description": "保持规律作息，保证7-8小时优质睡眠，减少精神紧张。"
+      },
+      {
+        "recommendation_type": "压力",
+        "description": "采用放松训练和适度社交减轻精神压力，避免过度紧张。"
+      }
+    ],
+    "next_followup_date": "2025-05-06",
+    "physician_notes": "患者血压控制较好，体重偏低，建议适当增加营养摄入，骨密度可进一步检测。遵医嘱服药，继续保持良好生活方式，定期复查心脏功能和肾功能。"
+  },
+  "behaviour_preferences": {
+    "preferences": [
+      {
+        "preference_type": "饮食",
+        "detail": "偏好本地家常口味，喜食清淡，避免刺激食物，严格控制盐分摄入。",
+        "prescription_impact": [
+          "饮食"
+        ]
+      },
+      {
+        "preference_type": "运动",
+        "detail": "喜爱在社区公园慢走，运动量少且规律性较低。",
+        "prescription_impact": [
+          "运动"
+        ]
+      },
+      {
+        "preference_type": "休闲",
+        "detail": "喜欢收听传统文艺节目，阅读兴趣一般，较少社交活动。",
+        "prescription_impact": [
+          "监测"
+        ]
+      },
+      {
+        "preference_type": "科技",
+        "detail": "手机使用熟练，习惯使用健康管理类应用提醒服药及复诊。",
+        "prescription_impact": [
+          "用药",
+          "监测"
+        ]
+      },
+      {
+        "preference_type": "其他",
+        "detail": "注重家庭陪伴，价值观保守，遵医嘱严谨执行治疗方案。",
+        "prescription_impact": [
+          "用药",
+          "饮食"
+        ]
+      }
+    ]
+  },
+  "generation_timestamp": "2025-02-10 10:00:00+08:00"
+}

@@ -1,0 +1,92 @@
+{
+  "sample_id": "sample_7cb394d6e1c52e050ef41a9caa3c186d6a6a71fe2172fa8f901783973404285a_20241015_medication_002115",
+  "patient_id": "7cb394d6e1c52e050ef41a9caa3c186d6a6a71fe2172fa8f901783973404285a",
+  "task_name": "adherence_identification",
+  "sample_data": {
+    "dialogue_piece": [
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "询问患者线上交流体验及近期用药运动依从，评估进展及波动。",
+          "analysis": "患者在社会支持方面初步尝试，依从行为仍有波动。",
+          "diagnosis": "依从性呈波浪式改善。",
+          "planning": "强化社会支持，调整行为策略。",
+          "evaluation": "继续跟进改进。"
+        },
+        "message": "您好，最近加入微信群感觉怎么样？用药和运动方面有没有新的情况？",
+        "timestamp": "2024-10-15T09:00:00+08:00",
+        "message_type": "提醒",
+        "emotional_tone": "中性"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "微信群挺热闹的，有人说的我都听着，运动倒是没太坚持，早上老忘了。用药方面，昨晚忘了吃消渴丸，今天早上赶紧补上了。",
+        "timestamp": "2024-10-15T09:02:00+08:00",
+        "message_type": "回应",
+        "emotional_tone": "困惑"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "患者社会支持尝试成功，但用药运动执行仍不稳定。",
+          "analysis": "社交层面改善，行为层面波动。",
+          "diagnosis": "行为依从不稳定。",
+          "planning": "加强提醒机制，设定易达目标。",
+          "evaluation": "需优化行为管理。"
+        },
+        "message": "很高兴您能参与群里交流，运动和用药的忘记很常见。我们可以帮您设置手机提醒，或者请家人帮忙提醒，您觉得哪个更方便？",
+        "timestamp": "2024-10-15T09:05:00+08:00",
+        "message_type": "教育",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "我试过手机提醒，但老是被其他通知打扰，我又不太熟练弄那个闹钟。家人倒是能提醒，就是有时候他们忙，我又不好意思一直麻烦。",
+        "timestamp": "2024-10-15T09:08:00+08:00",
+        "message_type": "回应",
+        "emotional_tone": "困惑"
+      }
+    ],
+    "prescription": {
+      "medications": [
+        {
+          "drug_name": "卡托普利片",
+          "dose": "25 mg",
+          "frequency": "每日一次",
+          "route": "口服"
+        },
+        {
+          "drug_name": "二甲双胍",
+          "dose": "500 mg",
+          "frequency": "每日两次",
+          "route": "口服"
+        },
+        {
+          "drug_name": "消渴丸",
+          "dose": "5 粒",
+          "frequency": "每日三次",
+          "route": "口服"
+        }
+      ],
+      "lifestyle": [],
+      "next_followup_date": "2025-01-02",
+      "physician_notes": "当前药物治疗基本稳定，建议调整二甲双胍剂量以优化血糖控制；密切监测血压波动，鼓励改善生活方式，防止慢性肾脏损伤进展。注重患者教育，提高依从性。"
+    },
+    "adherence_category": "用药",
+    "session_date": "2024-10-15"
+  },
+  "pre_annotation": {
+    "adherence_check": [
+      {
+        "date": "2024-10-15",
+        "category": "用药",
+        "overall_status": "部分遵从",
+        "reason": "存在偶尔忘记服药和担心副作用导致用药不稳定",
+        "details": "患者昨晚忘记服用消渴丸，早上补服；表达了对药物副作用的担忧，有时想停止服药。",
+        "dialogue_date": "2024-10-15"
+      }
+    ]
+  }
+}

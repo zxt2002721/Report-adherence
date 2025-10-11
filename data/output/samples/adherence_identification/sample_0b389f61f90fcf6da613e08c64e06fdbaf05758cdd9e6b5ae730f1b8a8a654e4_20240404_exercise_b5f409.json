@@ -1,0 +1,78 @@
+{
+  "sample_id": "sample_0b389f61f90fcf6da613e08c64e06fdbaf05758cdd9e6b5ae730f1b8a8a654e4_20240404_exercise_b5f409",
+  "patient_id": "0b389f61f90fcf6da613e08c64e06fdbaf05758cdd9e6b5ae730f1b8a8a654e4",
+  "task_name": "adherence_identification",
+  "sample_data": {
+    "dialogue_piece": [
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "聚焦饮食和运动遵从，结合患者偏好。",
+          "analysis": "患者喜欢海鲜但对饮食控制有困难，运动习惯不稳定。",
+          "diagnosis": "饮食和运动依从不佳。",
+          "planning": "引导患者逐步调整饮食，结合偏好制定运动计划。",
+          "evaluation": "准备针对性教育和干预。"
+        },
+        "message": "早上好！想了解下您最近饮食和运动的情况，平时喜欢吃青岛的海鲜，饮食控制上有没有遇到困难？",
+        "timestamp": "2024-04-04T09:00:00Z",
+        "message_type": "确认",
+        "emotional_tone": "中性"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "说实话，我那口味重，爱吃咸的海鲜，有时候也会忍不住多吃主食。孩子们做菜也喜欢放盐，我不太好说。",
+        "timestamp": "2024-04-04T09:01:30Z",
+        "message_type": "回应",
+        "emotional_tone": "困惑"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "饮食习惯难改，家庭环境影响明显。",
+          "analysis": "患者社会环境不支持饮食调整，行为难坚持。",
+          "diagnosis": "社会和行为层面不遵从突出。",
+          "planning": "建议与家人沟通，调整做菜方式。",
+          "evaluation": "强调家庭支持重要。"
+        },
+        "message": "理解，咸味重的习惯和家人喜欢重口味确实让您很难坚持清淡饮食。您觉得跟家人商量做菜时减少盐分，尝试少量多次调整，您愿意试试看吗？",
+        "timestamp": "2024-04-04T09:03:00Z",
+        "message_type": "教育",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "孩子们都忙，做饭不是我说了算，我也不好意思总要求。",
+        "timestamp": "2024-04-04T09:04:30Z",
+        "message_type": "回应",
+        "emotional_tone": "困惑"
+      }
+    ],
+    "prescription": {
+      "medications": [],
+      "lifestyle": [
+        {
+          "recommendation_type": "运动",
+          "description": "每周5次适度运动，如步行30分钟。"
+        }
+      ],
+      "next_followup_date": "2024-06-01",
+      "physician_notes": "注意血糖和血压的监测，增加家庭支持对于其依从性的提高有益。"
+    },
+    "adherence_category": "运动",
+    "session_date": "2024-04-04"
+  },
+  "pre_annotation": {
+    "adherence_check": [
+      {
+        "date": "2024-04-04",
+        "category": "运动",
+        "overall_status": "部分遵从",
+        "reason": "天气寒冷导致患者运动习惯中断，未能持续户外运动。",
+        "details": "患者平时喜欢早晨在社区活动走路，最近因天气冷有时懒得出门，昨天未进行运动。建议尝试室内简单伸展运动。",
+        "dialogue_date": "2024-04-04"
+      }
+    ]
+  }
+}

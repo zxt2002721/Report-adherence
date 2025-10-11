@@ -1,0 +1,86 @@
+{
+  "sample_id": "sample_7cb394d6e1c52e050ef41a9caa3c186d6a6a71fe2172fa8f901783973404285a_20241013_diet_ab9a1b",
+  "patient_id": "7cb394d6e1c52e050ef41a9caa3c186d6a6a71fe2172fa8f901783973404285a",
+  "task_name": "adherence_identification",
+  "sample_data": {
+    "dialogue_piece": [
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "说实话，昨天早上我忘吃了卡托普利，下午想起来又吃了。运动没怎么做，昨晚跟邻居聊天喝了点甜茶，今天血糖有点高。",
+        "timestamp": "2024-10-13T09:02:00+08:00",
+        "message_type": "回应",
+        "emotional_tone": "焦虑"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "患者出现明显用药遗忘和饮食不当，情感层面焦虑。",
+          "analysis": "行为层面习惯不稳，社会互动影响饮食控制。",
+          "diagnosis": "行为依从不稳定，社会因素影响饮食。",
+          "planning": "加强用药提醒，饮食教育，处理社交压力。",
+          "evaluation": "多维度干预需求。"
+        },
+        "message": "忘吃药是常有的事，我们可以一起想想怎样帮您提醒用药。关于饮食，社交时确实不容易控制，您愿意跟我说说遇到的具体难处吗？",
+        "timestamp": "2024-10-13T09:05:00+08:00",
+        "message_type": "问题",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "邻居家人都喜欢甜食，我不爱吃糖，但不好意思一直拒绝，怕大家觉得我怪。",
+        "timestamp": "2024-10-13T09:08:00+08:00",
+        "message_type": "回应",
+        "emotional_tone": "困惑"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "患者社会层面压力大，影响饮食遵从。",
+          "analysis": "社交压力导致饮食不自控，行为依从困难。",
+          "diagnosis": "社会压力导致饮食不遵从。",
+          "planning": "提供应对社交压力策略。",
+          "evaluation": "重点社会层面干预。"
+        },
+        "message": "这种情况确实不容易，您可以尝试委婉表达自己健康需要，或者提前吃点东西，减少对甜食的依赖。需要我教您怎么说吗？",
+        "timestamp": "2024-10-13T09:10:00+08:00",
+        "message_type": "教育",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "嗯，您说的我试试吧，怕邻居觉得我不合群，毕竟大家都挺好。",
+        "timestamp": "2024-10-13T09:12:00+08:00",
+        "message_type": "回应",
+        "emotional_tone": "焦虑"
+      }
+    ],
+    "prescription": {
+      "medications": [],
+      "lifestyle": [
+        {
+          "recommendation_type": "饮食",
+          "description": "减少盐摄入，限制主食量至250克/日，增加蔬菜水果摄入，避免糖分过高食品。"
+        }
+      ],
+      "next_followup_date": "2025-01-02",
+      "physician_notes": "当前药物治疗基本稳定，建议调整二甲双胍剂量以优化血糖控制；密切监测血压波动，鼓励改善生活方式，防止慢性肾脏损伤进展。注重患者教育，提高依从性。"
+    },
+    "adherence_category": "饮食",
+    "session_date": "2024-10-13"
+  },
+  "pre_annotation": {
+    "adherence_check": [
+      {
+        "date": "2024-10-13",
+        "category": "饮食",
+        "overall_status": "部分遵从",
+        "reason": "患者在社交场合因顾虑邻居感受而饮用含糖饮料，导致血糖升高。",
+        "details": "昨晚与邻居聊天时喝了甜茶，今天血糖有点高。患者表达了拒绝甜食的困难。",
+        "dialogue_date": "2024-10-13"
+      }
+    ]
+  }
+}

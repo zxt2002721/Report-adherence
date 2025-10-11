@@ -1,0 +1,1120 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>分诊报告 - P001_zh</title>
+<style>
+
+/* 优化后：添加注释分组 */
+:root {
+    /* 色彩 - 文本与背景 (Colors - Text & Background) */
+    --fg: #222;
+    --fg-soft: #444;
+    --bg: #fff;
+    --muted: #888;
+    
+    /* 色彩 - 语义 (Colors - Semantic) */
+    --pri: #2e7d32;       /* 主要颜色，如成功 */
+    --pri-weak: #e9f5eb;  /* 主要颜色的弱化背景 */
+    --warn: #c62828;      /* 警告/危险色 */
+    --bar: #0f766e;       /* 用于边框、强调条等 */
+    
+    /* 色彩 - UI组件 (Colors - UI Components) */
+    --card: #f6f7f9;      /* 卡片背景 */
+    --border: #ddd;       /* 边框 */
+    --btn: #0ea5e9;       /* 按钮主色 */
+    --btn-hover: #0284c7; /* 按钮悬浮色 */
+}
+
+html,body { margin:0; padding:0; background:var(--bg); color:var(--fg); 
+    font-family:"Noto Sans CJK SC","Microsoft YaHei","PingFang SC",Arial; }
+body { font-size:14.5px; line-height:1.6; }
+.page-container { max-width:1100px; margin:0 auto; padding:16px 20px 80px; }
+.meta { color:var(--fg-soft); margin-bottom:12px; }
+h1,h2,h3,h4 { color:#111; margin:.7em 0 .45em; position:relative; }
+table { border-collapse:collapse; width:100%; margin:.4em 0 .8em; }
+th,td { border:1px solid #ccc; padding:6px 8px; vertical-align:top; }
+th { background:#f6f7f9; }
+blockquote { color:#555; margin:.6em 0; padding-left:.8em; border-left:3px solid #ddd; }
+img { max-width:100%; }
+hr { border: 0; border-top: 1px solid #eee; margin: 1em 0; }
+
+/* 批注工具条（通用） */
+.anno-toolbar {
+    position:fixed; left:50%; transform:translateX(-50%);
+    bottom:16px; z-index:9999; display:flex; gap:8px; align-items:center;
+    background:linear-gradient(90deg,#0ea5e9,#06b6d4); color:#fff;
+    padding:10px 12px; border-radius:14px; box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+.anno-toolbar button, .anno-toolbar label.btn {
+    appearance:none; border:0; border-radius:10px; padding:8px 10px; cursor:pointer; 
+    font-weight:600; background:#ffffff; color:#0b3b48; transition:all .15s ease;
+    box-shadow:0 2px 6px rgba(0,0,0,.12);
+}
+.anno-toolbar button:hover, .anno-toolbar label.btn:hover { transform:translateY(-1px); }
+.anno-toolbar .sep { width:1px; height:20px; background:rgba(255,255,255,.6); margin:0 4px; }
+.hidden-input { display:none; }
+
+/* 批注按钮（通用） */
+.add-note-btn {
+    display:none; position:absolute; right:-4px; top:50%; transform:translate(100%,-50%);
+    background:var(--btn); color:#fff; border:0; padding:3px 8px; border-radius:10px; 
+    font-size:12px; cursor:pointer;
+}
+.add-note-btn:hover { background:var(--btn-hover); }
+
+/* 章节交互工具（通用容器） */
+.section-tools {
+    display:inline-flex; gap:8px; align-items:center; margin-left:8px; 
+    transform:translateY(-1px); flex-wrap: wrap;
+}
+.section-tools select, .section-tools input[type="checkbox"] {
+    font-size:12px; padding:2px 6px;
+}
+.section-tools .chip {
+    font-size:12px; padding:2px 8px; border:1px solid var(--border); 
+    border-radius:10px; background:#fff;
+}
+.section-tools .btn-mini {
+    font-size:12px; padding:2px 8px; border:1px solid var(--border); 
+    border-radius:10px; background:#fff; cursor:pointer;
+}
+.section-tools .btn-mini:hover { background:#f1f5f9; }
+
+/* 批注卡片（通用） */
+.anno-card {
+    background:var(--card); border:1px solid var(--border); 
+    border-left:4px solid var(--bar); border-radius:12px; padding:10px; 
+    margin:8px 0 12px;
+}
+.anno-card .anno-head { 
+    display:flex; justify-content:space-between; align-items:center; 
+    margin-bottom:6px; color:var(--fg-soft); font-size:12px; 
+}
+.anno-card .anno-body[contenteditable="true"] {
+    min-height:48px; padding:6px 8px; border-radius:8px; background:#fff; 
+    border:1px dashed #cbd5e1; outline:none;
+}
+.anno-card .anno-actions { text-align:right; margin-top:6px; }
+.anno-card .anno-actions button {
+    background:#fff; border:1px solid #cbd5e1; border-radius:8px; 
+    padding:4px 8px; cursor:pointer; margin-left:6px;
+}
+.anno-card .anno-actions button:hover { background:#f1f5f9; }
+
+/* 全局批注（通用） */
+.global-anno {
+    background:#fff; border:1px solid var(--border); border-radius:14px; 
+    padding:12px; margin:10px 0 18px; box-shadow:0 2px 10px rgba(0,0,0,.06);
+}
+.global-anno h3 { margin-top:0; }
+.global-anno .area { 
+    width:100%; min-height:68px; resize:vertical; padding:8px; 
+    border-radius:10px; border:1px solid #cbd5e1; 
+}
+.global-anno .actions { text-align:right; margin-top:6px; }
+.muted { color:var(--muted); font-size:12px; }
+
+@media print {
+    .anno-toolbar { display:none!important; }
+    .add-note-btn { display:none!important; }
+    .section-tools { display:none!important; }
+    .page-container { padding-bottom:0; }
+    .global-anno { box-shadow:none; border:1px solid #ccc; }
+    .anno-card { page-break-inside: avoid; }
+}
+
+
+        /* === 分诊报告专属样式 === */
+        .decision {
+            padding: 15px; border-radius: 8px; margin: 1.2em 0;
+            border-left: 5px solid var(--bar); background: var(--card);
+        }
+        .summary.empty { background: #fff3cd; color: #856404; }
+        .evidence {
+            font-size: 0.9em; color: var(--muted); margin-top: 8px;
+            padding-left: 15px; border-left: 3px solid var(--border);
+        }
+        .badge {
+            display: inline-block; padding: 4px 12px; border-radius: 12px;
+            font-size: 0.9em; font-weight: bold; color: white;
+        }
+        .badge-yes, .badge-high, .badge-高 { background: var(--warn); }
+        .badge-no, .badge-low, .badge-低 { background: var(--pri); }
+        .badge-medium, .badge-中 { background: #f39c12; }
+        .badge-esi { background: var(--btn); }
+
+        .resource-display-area { width: 100%; }
+        .resource-list { list-style-type: none; padding-left: 0; font-size: 0.9em; }
+        .resource-list li { margin-bottom: 5px; }
+        .resource-item {
+            display: inline-block; padding: 2px 8px; background: var(--card);
+            border: 1px solid var(--border); border-radius: 6px; margin: 2px;
+        }
+        .resource-item.added-by-user {
+            background: #fee2e2; color: #991b1b;
+            border-color: #fecaca; font-weight: bold;
+        }
+
+        /* === 医院推荐样式 === */
+        .hospital-recommendation {
+            background: #fff; border: 1px solid var(--border);
+            border-radius: 10px; padding: 16px; margin: 16px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .hospital-recommendation[data-priority="1"] {
+            border-left: 5px solid #2e7d32;
+        }
+        .hospital-recommendation[data-priority="2"] {
+            border-left: 5px solid #0ea5e9;
+        }
+        .hospital-header {
+            display: flex; align-items: center; gap: 12px;
+            margin-bottom: 12px; flex-wrap: wrap;
+        }
+        .hospital-header h5 {
+            margin: 0; font-size: 1.1em; color: #111;
+        }
+        .priority-badge {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white; padding: 4px 10px; border-radius: 12px;
+            font-size: 0.85em; font-weight: bold;
+        }
+        .hospital-details {
+            line-height: 1.8; color: var(--fg-soft);
+        }
+        .hospital-details p {
+            margin: 6px 0;
+        }
+        .hospital-details strong {
+            color: var(--fg);
+        }
+        .hospital-details code {
+            background: #f1f5f9; padding: 2px 6px; border-radius: 4px;
+            font-size: 0.9em; color: #0ea5e9;
+        }
+        .critical-info {
+            background: #e9f5eb; padding: 8px 12px; border-radius: 6px;
+            border-left: 3px solid var(--pri);
+        }
+        .warning-info {
+            background: #fff3cd; padding: 8px 12px; border-radius: 6px;
+            border-left: 3px solid #f39c12; color: #856404;
+        }
+        .hospital-details details {
+            margin: 10px 0; padding: 10px;
+            background: var(--card); border-radius: 8px;
+        }
+        .hospital-details summary {
+            cursor: pointer; font-weight: 600;
+            color: var(--btn); user-select: none;
+        }
+        .hospital-details summary:hover {
+            color: var(--btn-hover);
+        }
+        .hospital-details ul {
+            margin: 8px 0; padding-left: 20px;
+        }
+        .hospital-details li {
+            margin: 4px 0;
+        }
+        .risk-无, .risk-极低 { color: var(--pri); font-weight: bold; }
+        .risk-低 { color: #2e7d32; }
+        .risk-中, .risk-中等 { color: #f39c12; font-weight: bold; }
+        .risk-高 { color: var(--warn); font-weight: bold; }
+
+        /* === 资源编辑器弹窗 (Modal) 样式 === */
+        body.modal-open { overflow: hidden; }
+        .resource-modal {
+            display: none; 
+            position: fixed; 
+            top: 0; 
+            left: 0;
+            width: 100%; 
+            height: 100%; 
+            background: rgba(0,0,0,0.6);
+            z-index: 10000; 
+            align-items: center; 
+            justify-content: center;
+        }
+        .resource-modal-content {
+            background: white; width: 90%; max-width: 800px;
+            border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            display: flex; flex-direction: column; max-height: 85vh;
+        }
+        .resource-modal-header {
+            padding: 16px 24px; border-bottom: 1px solid var(--border);
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .resource-modal-header h3 { margin: 0; font-size: 1.2em; }
+        .resource-modal-body { padding: 24px; overflow-y: auto; }
+        .resource-modal-footer {
+            padding: 16px 24px; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between; align-items:center; gap: 12px;
+            background: var(--card);
+        }
+        .resource-modal-footer button {
+            padding: 8px 16px; border-radius: 8px; border: 1px solid var(--border);
+            background: #fff; cursor: pointer; font-size: 14px; transition: background 0.2s;
+        }
+        .resource-modal-footer button:hover { background: #e9ecef; }
+        .resource-modal-footer button.primary {
+            background: var(--btn); color: #fff; border-color: var(--btn);
+        }
+        .resource-modal-footer button.primary:hover { background: var(--btn-hover); }
+        .resource-modal-body h4 {
+            color:#34495e; margin-bottom:10px; font-size:1.1em;
+        }
+        .resource-modal-body label {
+            display: block; padding: 8px 12px; margin-bottom: 5px; 
+            background: #f8f9fa; border-radius: 6px; cursor: pointer;
+            transition: background 0.2s; display: flex; align-items: center;
+        }
+        .resource-modal-body label:hover {
+            background: #e9ecef;
+        }
+        .resource-modal-body input[type="checkbox"] {
+            margin-right: 10px; width: 16px; height: 16px;
+        }
+        .system-badge {
+            color:var(--btn); font-size:0.8em; margin-left:8px; font-weight: 500;
+        }
+
+        /* === 医生审批表单样式 === */
+        .physician-approval-form {
+            background: #fff;
+            border: 2px solid var(--border);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+        .approval-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .approval-table td {
+            padding: 12px 8px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        .approval-table tr:last-child td {
+            border-bottom: none;
+        }
+        .form-input {
+            font-family: inherit;
+            font-size: 14px;
+        }
+        .signature-input {
+            border-bottom: 2px solid #0ea5e9 !important;
+            background: #f8f9fa;
+        }
+        .approval-table input[type="radio"] {
+            margin-right: 6px;
+            transform: scale(1.2);
+        }
+        
+</style>
+</head>
+<body>
+<div class="page-container" data-patient-id="P001_zh" data-report-type="triage" data-report-id="20251007_205510">
+    <div class="meta">生成时间：2025-10-07 20:55:10 | 报告ID：20251007_205510</div>
+    
+    <section class="global-anno" id="global-anno">
+        <h3>📝 全局批注（医生）</h3>
+        <textarea class="area" id="globalAnnoArea" placeholder="在此填写整体意见；支持导出/导入与自动保存。"></textarea>
+        <div class="actions muted">内容自动保存到浏览器（仅本机）。每份报告的批注独立存储。</div>
+    </section>
+    
+    <h1>分诊评估报告</h1>
+<h2>一、基本信息</h2>
+<ul>
+<li><strong>患者ID:</strong> P001_zh</li>
+<li><strong>性别:</strong> 女</li>
+<li><strong>年龄:</strong> 52</li>
+<li><strong>主诉:</strong> 腹部胀大与疼痛加重</li>
+<li><strong>过敏史:</strong> 无过敏史</li>
+<li><strong>既往史:</strong> 丙型肝炎相关肝硬化、人类免疫缺陷病毒（HIV）感染、慢性阻塞性肺疾病（COPD）、双相情感障碍、创伤后应激障碍（PTSD）、肛门上皮不典型增生、皮肤癌</li>
+<li><strong>当前用药:</strong> 沙丁胺醇 2喷 吸入 每4小时; 恩曲他滨-替诺福韦 1片 口服 每日; 呋塞米 20 mg 口服 每日; 异丙托溴铵 1次雾化 吸入 每6小时; 尼古丁贴片 14 mg 经皮 每日; 拉替拉韦 400 mg 口服 每日两次; 螺内酯 50 mg 口服 每日</li>
+</ul>
+<hr />
+<h2>二、急诊生命体征</h2>
+<ul>
+<li><strong>体温:</strong> 98.4°F</li>
+<li><strong>心率:</strong> 70.0 次/分</li>
+<li><strong>呼吸:</strong> 16.0 次/分</li>
+<li><strong>血氧:</strong> 97.0%</li>
+<li><strong>血压:</strong> 106.0/63.0 mmHg</li>
+</ul>
+<hr />
+<h2>三、AI分诊决策</h2>
+<h4>问诊摘要</h4>
+<div class="summary">
+    一位52岁女性，有HCV肝硬化和腹水病史，主诉腹胀腹痛加重一周。患者自述数周前停用了利尿剂（呋塞米和螺内酯）。需要关注的是，她在急诊室出现了短暂的意识模糊，并且报告有牙龈出血，高度提示肝功能失代偿，可能存在早期肝性脑病和凝血功能障碍。生命体征目前平稳：无发热，心率70，呼吸16，血氧97%（室内空气）。血压偏软，为106/63 mmHg。患者否认发烧、呼吸困难或恶心呕吐等症状。其他重要病史包括HIV（正在治疗）和COPD。
+</div>
+
+<h4>3.2 初步判断与ESI分级</h4>
+<div class="decision-interactive">
+    <div class="form-group">
+        <label for="judgment-select">初步判断:</label>
+
+        <select id="judgment-select" class="path-switcher-select" data-k="judgment.final">
+            <option value="yes" >建议立即就医</option>
+            <option value="no" >可居家观察</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="esi-select">ESI等级:</label>
+        <select id="esi-select" data-k="esi.level">
+
+            <option value="1" >1 - 需抢救</option>
+            <option value="2" >2 - 高危</option>
+            <option value="3" selected>3 - 紧急</option>
+            <option value="4" >4 - 次紧急</option>
+            <option value="5" >5 - 非紧急</option>
+        </select>
+    </div>
+</div>
+
+<div id="path-immediate-care">  
+    <h4>3.3 资源判断</h4>
+    <div class="decision-interactive">
+
+        <div id="resource-display-area" class="resource-display-area">
+            <p style="margin:0; font-weight:bold;">模型推荐资源:</p>
+            <ul class="resource-list">
+
+                <li><strong>床旁评估:</strong> 
+
+                <span class="resource-item">生命体征与心电监护</span><span class="resource-item">体格检查</span>
+                </li>
+
+                <li><strong>实验室检查:</strong> 
+
+                <span class="resource-item">血常规</span><span class="resource-item">基础/全面代谢组合</span><span class="resource-item">特定器官功能标志物（如脂肪酶、肝功、肌酸激酶）</span><span class="resource-item">凝血功能（PT/INR、APTT）</span><span class="resource-item">尿常规及镜检</span><span class="resource-item">各类标本培养与涂片（血、尿、痰、伤口等）</span>
+                </li>
+
+                <li><strong>影像检查:</strong> 
+
+                <span class="resource-item">X线检查</span><span class="resource-item">超声检查</span>
+                </li>
+
+                <li><strong>诊断性操作:</strong> 
+
+                <span class="resource-item">诊断性操作（如腰穿、腹腔穿刺、关节穿刺等）</span>
+                </li>
+
+            </ul>
+        </div>
+        <button class="btn-mini" data-act="edit-resources">📝 编辑资源</button>
+    </div>
+
+    <h4>3.4 最大等待时间</h4>
+    <div class="decision-interactive">
+        <label for="time-select">最大等待时间:</label>
+        <select id="time-select" data-k="time.max">
+            <option value="0" >立即</option>
+            <option value="10" >10分钟内</option>
+            <option value="30" >30分钟内</option>
+            <option value="60" >60分钟内</option>
+            <option value="120" >120分钟内</option>
+        </select>
+    </div>
+
+    <h4>3.5 恶化风险</h4>
+    <div class="decision-interactive">
+        <label for="risk-select">恶化风险:</label>
+        <select id="risk-select" data-k="risk.deterioration">
+            <option value="低" >低风险</option>
+            <option value="中" >中风险</option>
+            <option value="高" selected>高风险</option>
+        </select>
+    </div>
+<h4>3.6 医院推荐</h4>
+
+
+
+    <div class="hospital-recommendation" data-priority="1">
+        <div class="hospital-header">
+            <span class="priority-badge">推荐 1</span>
+            <h5>市中心医院 (三级甲等)</h5>
+
+            <span class="badge badge-esi">系统推荐</span>
+
+        </div>
+
+        <div class="hospital-details">
+            <p><strong>🏥 急诊状态：</strong>繁忙</p>
+            <p><strong>⏱️ 预计总等待时间：</strong>70 分钟</p>
+            <p><strong>📋 排队情况：</strong>中等（预计第8-12位）</p>
+
+            <p><strong>🔬 资源匹配度：</strong>
+                <span class="badge badge-high">
+                    100%
+                </span>
+            </p>
+
+
+            <div class="critical-info">
+                <strong>✅ 关键资源可用：</strong><br>
+
+                <span class="resource-item" style="display:inline-block; margin:4px 4px 4px 0;">诊断性穿刺操作 (腰穿/腹穿/关节穿刺)</span>
+
+            </div>
+
+
+
+
+            <details>
+                <summary><strong>📋 推荐理由</strong></summary>
+                <p style="margin-top:8px; line-height:1.6;">患者为肝硬化并发腹水恶化，需要诊断性腹穿以排除自发性细菌性腹膜炎（SBP）。该操作仅三级医院急诊科可实施，且患者可能需要专科会诊和住院治疗。虽然等待时间较长，但避免了转院风险。</p>
+            </details>
+
+            <details>
+                <summary><strong>⚖️ 优劣势分析</strong></summary>
+                <div style="margin-top:8px;">
+                    <p><strong>优势：</strong></p>
+                    <ul>
+
+                        <li>具备完整的急诊资源，包括诊断性穿刺能力</li>
+
+                        <li>24小时肝病专科医生在岗</li>
+
+                        <li>配备重症监护设备</li>
+
+                        <li>如需住院可直接收治</li>
+
+                    </ul>
+                    <p><strong>劣势：</strong></p>
+                    <ul>
+
+                        <li>等待时间较长（约70分钟）</li>
+
+                        <li>急诊科目前繁忙</li>
+
+                    </ul>
+                </div>
+            </details>
+
+            <p><strong>🚨 风险评估：</strong><br>
+                转院风险: <span class="risk-无">无</span> | 
+                延误风险: <span class="risk-中等">中等</span> | 
+                资源不可用风险: <span class="risk-极低">极低</span>
+            </p>
+        </div>
+
+        <div class="decision-interactive">
+            <label class="chip">
+                <input type="checkbox" data-k="hospital.approve_priority_1"
+                checked> 
+                批准此推荐
+            </label>
+        </div>
+    </div>
+
+    <div class="hospital-recommendation" data-priority="2">
+        <div class="hospital-header">
+            <span class="priority-badge">推荐 2</span>
+            <h5>社区医疗中心 (二级)</h5>
+
+        </div>
+
+        <div class="hospital-details">
+            <p><strong>🏥 急诊状态：</strong>畅通</p>
+            <p><strong>⏱️ 预计总等待时间：</strong>25 分钟</p>
+            <p><strong>📋 排队情况：</strong>靠前（预计第2-4位）</p>
+
+            <p><strong>🔬 资源匹配度：</strong>
+                <span class="badge badge-low">
+                    45%
+                </span>
+            </p>
+
+
+
+
+            <div class="warning-info">
+                <strong>⚠️ 缺少资源：</strong><br>
+
+                <span class="resource-item" style="display:inline-block; margin:4px 4px 4px 0; background:#fff;">超声检查</span>
+
+                <span class="resource-item" style="display:inline-block; margin:4px 4px 4px 0; background:#fff;">诊断性穿刺操作 (腰穿/腹穿/关节穿刺)</span>
+
+            </div>
+
+
+            <details>
+                <summary><strong>📋 推荐理由</strong></summary>
+                <p style="margin-top:8px; line-height:1.6;">如果患者症状轻微、生命体征稳定，可先到社区医院完成基础检查（血常规、生化）以快速评估。但由于缺乏腹穿能力，如果怀疑SBP或病情恶化，仍需转至三级医院，可能造成时间延误。</p>
+            </details>
+
+            <details>
+                <summary><strong>⚖️ 优劣势分析</strong></summary>
+                <div style="margin-top:8px;">
+                    <p><strong>优势：</strong></p>
+                    <ul>
+
+                        <li>等待时间短（约25分钟）</li>
+
+                        <li>急诊科目前畅通</li>
+
+                        <li>可完成基础检查和初步评估</li>
+
+                    </ul>
+                    <p><strong>劣势：</strong></p>
+                    <ul>
+
+                        <li>缺少关键诊断资源（腹穿能力）</li>
+
+                        <li>如需进一步诊疗需转院</li>
+
+                    </ul>
+                </div>
+            </details>
+
+            <p><strong>🚨 风险评估：</strong><br>
+                转院风险: <span class="risk-高">高</span> | 
+                延误风险: <span class="risk-高">高</span> | 
+                资源不可用风险: <span class="risk-高">高</span>
+            </p>
+        </div>
+
+        <div class="decision-interactive">
+            <label class="chip">
+                <input type="checkbox" data-k="hospital.approve_priority_2"
+                > 
+                批准此推荐
+            </label>
+        </div>
+    </div>
+
+
+    <div class="decision-interactive" style="margin-top:20px; padding:15px; background:#f8f9fa; border-radius:10px;">
+        <label for="final-hospital-select" style="display:block; margin-bottom:8px;"><strong>👨‍⚕️ 医生最终决定：</strong></label>
+        <select id="final-hospital-select" data-k="hospital.final_choice" style="width:100%; padding:8px; border-radius:6px; border:1px solid var(--border);">
+            <option value="">-- 请选择医院 --</option>
+
+            <option value="1" 
+                selected>
+                推荐1: 市中心医院 (三级甲等)
+            </option>
+
+            <option value="2" 
+                >
+                推荐2: 社区医疗中心 (二级)
+            </option>
+
+        </select>
+    </div>
+
+
+    <details style="margin-top:16px; padding:12px; background:var(--card); border-radius:8px;">
+        <summary style="cursor:pointer; font-weight:600; color:var(--btn);"><strong>🤖 系统决策依据</strong></summary>
+        <div style="margin-top:12px;">
+            <p><strong>ESI等级：</strong>3</p>
+            <p><strong>关键决策因素：</strong></p>
+            <ul>
+
+                <li>需要诊断性穿刺（仅三级医院可提供）</li>
+
+                <li>肝硬化患者腹痛加重，需紧急排查自发性细菌性腹膜炎</li>
+
+                <li>虽等待时间较长，但避免转院风险更重要</li>
+
+            </ul>
+        </div>
+    </details>
+
+
+
+
+---
+
+
+<div id="path-home-observation"> 
+    <h4>3.3 建议复查时间</h4>
+    <div class="decision-interactive">
+        <label for="followup-select">复查时间:</label>
+        <select id="followup-select" data-k="followup.time">
+            <option value="12" >12小时内</option>
+            <option value="24" >24小时内</option>
+            <option value="48" >48小时内</option>
+        </select>
+    </div>
+
+    <h4>3.4 居家护理措施</h4>
+    <div class="decision-interactive">
+        <span>模型建议了 0 项措施。</span>
+        <button class="btn-mini" data-act="edit-care-measures">📝 编辑护理措施</button>
+    </div>
+
+    <h4>3.5 警告信号</h4>
+    <div class="decision-interactive">
+        <span>模型建议了 0 项警告信号。</span>
+        <button class="btn-mini" data-act="edit-warning-signs">📝 编辑警告信号</button>
+    </div>
+
+    <h4>3.6 居家恶化风险</h4>
+    <div class="decision-interactive">
+        <label for="home-risk-select">恶化风险:</label>
+        <select id="home-risk-select" data-k="risk.home_deterioration">
+            <option value="低" >低风险</option>
+            <option value="中" >中风险</option>
+            <option value="高" selected>高风险</option>
+        </select>
+    </div>
+</div>
+
+
+<h4>3.7 急诊就诊记录确认</h4>
+
+<div class="physician-approval-form">
+    <table class="approval-table">
+        <tr>
+            <td style="width:30%; font-weight:600;">记录生成时间：</td>
+            <td>2025-10-07 20:55</td>
+        </tr>
+        <tr>
+            <td style="font-weight:600;">记录人：</td>
+            <td>
+                <input type="text" class="form-input" data-k="approval.recorder_name" 
+                       placeholder="请输入记录人姓名" style="width:100%; padding:6px; border:1px solid var(--border); border-radius:4px;">
+            </td>
+        </tr>
+        <tr>
+            <td style="font-weight:600;">科室/地点：</td>
+            <td>
+                <input type="text" class="form-input" data-k="approval.location" 
+                       placeholder="请输入科室或地点" style="width:100%; padding:6px; border:1px solid var(--border); border-radius:4px;">
+            </td>
+        </tr>
+        <tr>
+            <td style="font-weight:600;">分诊评估审核：</td>
+            <td>
+                <label style="margin-right:20px;">
+                    <input type="radio" name="triage-review" value="agree" data-k="approval.triage_review"> 同意
+                </label>
+                <label>
+                    <input type="radio" name="triage-review" value="disagree" data-k="approval.triage_review"> 不同意
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td style="font-weight:600;">医生签名：</td>
+            <td>
+                <input type="text" class="form-input signature-input" data-k="approval.physician_signature" 
+                       placeholder="请输入医生姓名" style="width:100%; padding:6px; border:1px solid var(--border); border-radius:4px; font-style:italic;">
+            </td>
+        </tr>
+    </table>
+</div>
+        <div id="resourceEditorModal" class="resource-modal">
+            <div class="resource-modal-content">
+                <div class="resource-modal-header">
+                    <h3>编辑急诊资源需求</h3>
+                    <button id="closeResourceEditorBtn" style="border:none;background:none;font-size:24px;cursor:pointer;">&times;</button>
+                </div>
+                <div id="resourceEditorContent" class="resource-modal-body"></div>
+                <div class="resource-modal-footer">
+                    <div id="resourceCount">已选择 <strong>0</strong> 项</div>
+                    <div>
+                        <button id="cancelResourceSelectionBtn">取消</button>
+                        <button id="saveResourceSelectionBtn" class="primary">确认修改</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+</div>
+
+
+<div class="anno-toolbar" id="annoToolbar">
+    <button id="toggleAnno">关闭批注模式</button>
+    <div class="sep"></div>
+    <button id="exportAnno">导出批注与交互数据</button>
+    <label class="btn" for="importAnnoInput">导入数据</label>
+    <input id="importAnnoInput" class="hidden-input" type="file" accept="application/json" />
+    <button id="clearAnno">清空本地数据</button>
+    <div class="sep"></div>
+    <button id="printView">打印友好</button>
+</div>
+
+
+<script>
+    window.TRIAGE_RESOURCES_DATA = {
+        allResources: {"床旁评估与监护": [{"id": "BS-AM-001", "name": "生命体征与心电监护 (Vital Signs & Cardiac Monitoring)"}, {"id": "BS-AM-002", "name": "床旁快速检测(血糖/酮体/尿试纸)"}, {"id": "BS-AM-003", "name": "体格检查 (Physical Examination)"}, {"id": "BS-AM-004", "name": "重点专科床旁评估(神经/呼吸/血管/POCUS)"}], "实验室检查 - 血液学": [{"id": "LAB-HE-001", "name": "血常规 (Complete Blood Count - CBC)"}, {"id": "LAB-HE-002", "name": "D-二聚体"}], "实验室检查 - 生化": [{"id": "LAB-CH-001", "name": "基础/全面代谢功能组合 (BMP/CMP)"}, {"id": "LAB-CH-002", "name": "心脏标志物组合 (肌钙蛋白/BNP)"}, {"id": "LAB-CH-003", "name": "炎症标志物 (CRP/PCT/ESR)"}, {"id": "LAB-CH-004", "name": "特定器官功能标志物 (脂肪酶/肝功/CK)"}, {"id": "LAB-CH-005", "name": "乳酸/毒理学筛查"}], "实验室检查 - 凝血": [{"id": "LAB-CO-001", "name": "凝血功能 (PT/INR, PTT)"}], "实验室检查 - 内分泌": [{"id": "LAB-EN-001", "name": "激素/内分泌检测 (甲状腺/HCG/皮质醇)"}], "实验室检查 - 血气": [{"id": "LAB-GA-001", "name": "动/静脉血气分析 (ABG/VBG)"}], "实验室检查 - 尿液": [{"id": "LAB-UR-001", "name": "尿液分析及镜检"}], "实验室检查 - 微生物": [{"id": "LAB-MI-001", "name": "各类标本培养及涂片(血/尿/痰/伤口)"}, {"id": "LAB-MI-002", "name": "感染性疾病快速检测/PCR (流感/COVID-19/C.diff)"}, {"id": "LAB-MI-003", "name": "体液分析(脑脊液/胸腹水/关节液)"}, {"id": "LAB-MI-004", "name": "血清学/特殊病原体检测 (HIV/肝炎/莱姆病)"}], "影像检查": [{"id": "DX-IM-001", "name": "X光检查"}, {"id": "DX-IM-002", "name": "CT扫描"}, {"id": "DX-IM-003", "name": "超声检查"}, {"id": "DX-IM-004", "name": "磁共振成像 (MRI)"}, {"id": "DX-IM-005", "name": "核医学扫描 (V/Q, HIDA)"}], "心脏/神经电生理": [{"id": "DX-AC-001", "name": "12导联心电图 (ECG/EKG)"}, {"id": "DX-AC-002", "name": "高级心脏/神经电生理检查 (Holter/EEG)"}], "其他检查": [{"id": "DX-OS-001", "name": "血管造影/介入操作"}, {"id": "DX-OS-002", "name": "内镜检查 (EGD/支气管镜)"}, {"id": "DX-OS-003", "name": "诊断性穿刺操作 (腰穿/腹穿/关节穿刺)"}]},
+        suggestedIds: ["BS-AM-001", "BS-AM-003", "LAB-HE-001", "LAB-CH-001", "LAB-CH-004", "LAB-CO-001", "LAB-UR-001", "LAB-MI-001", "DX-IM-001", "DX-IM-003", "DX-OS-003"]
+    };
+</script>
+
+<script>
+
+    (() => {
+    // ==================== A. 通用核心变量与函数 ====================
+    const patientId = document.querySelector('.page-container')?.dataset?.patientId || 'unknown';
+    const reportType = document.querySelector('.page-container')?.dataset?.reportType || 'triage';
+    const reportId = document.querySelector('.page-container')?.dataset?.reportId || '20251007_205510';
+    const LS_ANNOTATIONS = `report-annotations::${reportType}::${patientId}::${reportId}`;
+    const LS_GLOBAL = `report-annotations-global::${reportType}::${patientId}::${reportId}`;
+    const LS_INTERACTIONS = `report-interactions::${reportType}::${patientId}::${reportId}`;
+    let annoMode = true;
+
+    function nowStr() {
+      const d = new Date();
+      const pad = n => (n<10? '0'+n : ''+n);
+      return `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}`;
+    }
+    function loadJSON(key, def) { try { return JSON.parse(localStorage.getItem(key) || JSON.stringify(def)); } catch { return def; } }
+    function saveJSON(key, val) { localStorage.setItem(key, JSON.stringify(val || {})); }
+    function loadAnnotations() { return loadJSON(LS_ANNOTATIONS, {}); }
+    function saveAnnotations(data) { saveJSON(LS_ANNOTATIONS, data); }
+    function loadGlobal() { return localStorage.getItem(LS_GLOBAL) || ''; }
+    function saveGlobal(val) { localStorage.setItem(LS_GLOBAL, val || ''); }
+    function loadInteracts() { return loadJSON(LS_INTERACTIONS, {}); }
+    function saveInteracts(obj) { saveJSON(LS_INTERACTIONS, obj); }
+
+    // ==================== B. 资源编辑器专属逻辑 ====================
+    function setupResourceEditor() {
+        if (!window.TRIAGE_RESOURCES_DATA) return;
+        const { allResources: ALL_RESOURCES, suggestedIds: SYSTEM_SUGGESTED_IDS } = window.TRIAGE_RESOURCES_DATA;
+        let currentSelectedResourceIds = new Set();
+        const STORAGE_KEY = 'triage_resources_selection';
+        const editButton = document.querySelector('[data-act="edit-resources"]');
+        if (!editButton) return;
+        const modal = document.getElementById('resourceEditorModal');
+        const modalBody = document.getElementById('resourceEditorContent');
+        const displayAreaList = document.querySelector('#resource-display-area .resource-list');
+        const confirmBtn = document.querySelector('.resource-modal-footer button.primary');
+        const cancelBtn = document.querySelector('.resource-modal-footer button:not(.primary)');
+        const closeIconBtn = document.querySelector('.resource-modal-header button');
+        const countDisplay = document.querySelector('#resourceCount strong');
+
+        function initializeState() {
+            currentSelectedResourceIds.clear();
+            const store = loadInteracts();
+            const savedSelection = store[STORAGE_KEY];
+            if (savedSelection && Array.isArray(savedSelection)) {
+                currentSelectedResourceIds = new Set(savedSelection);
+                console.log('✅ [资源] 加载已保存的选择:', savedSelection.length, '项');
+            } else {
+                currentSelectedResourceIds = new Set(SYSTEM_SUGGESTED_IDS);
+                store[STORAGE_KEY] = Array.from(currentSelectedResourceIds);
+                saveInteracts(store);
+                console.log('✅ [资源] 使用系统推荐并已保存:', SYSTEM_SUGGESTED_IDS.length, '项');
+            }
+        }
+
+        function updateCounter() {
+            const count = modalBody.querySelectorAll('input:checked').length;
+            if(countDisplay) countDisplay.textContent = count;
+        }
+
+        function openResourceEditor() {
+            initializeState();
+            modalBody.innerHTML = '';
+            Object.entries(ALL_RESOURCES).forEach(([category, resources]) => {
+                const categoryTitle = document.createElement('h4');
+                categoryTitle.textContent = category;
+                modalBody.appendChild(categoryTitle);
+                resources.forEach(item => {
+                    const label = document.createElement('label');
+                    const checkbox = document.createElement('input');
+                    checkbox.type = 'checkbox';
+                    checkbox.value = item.id;
+                    checkbox.checked = currentSelectedResourceIds.has(item.id);
+                    checkbox.onchange = updateCounter;
+                    label.appendChild(checkbox);
+                    label.append(` ${item.name}`);
+                    if(SYSTEM_SUGGESTED_IDS.includes(item.id)) {
+                        const badge = document.createElement('span');
+                        badge.className = 'system-badge';
+                        badge.textContent = '[系统推荐]';
+                        label.appendChild(badge);
+                    }
+                    modalBody.appendChild(label);
+                });
+            });
+            updateCounter();
+            modal.style.display = 'flex';
+            document.body.classList.add('modal-open');
+        }
+
+        function closeResourceEditor() {
+            modal.style.display = 'none';
+            document.body.classList.remove('modal-open');
+        }
+
+        function saveResourceSelection() {
+            currentSelectedResourceIds = new Set(Array.from(modalBody.querySelectorAll('input:checked')).map(cb => cb.value));
+            const store = loadInteracts();
+            store[STORAGE_KEY] = Array.from(currentSelectedResourceIds);
+            saveInteracts(store);
+            console.log('💾 [资源] 已保存选择:', store[STORAGE_KEY].length, '项');
+            renderDisplayArea();
+            closeResourceEditor();
+        }
+        
+        function renderDisplayArea() {
+            if(!displayAreaList) return;
+            displayAreaList.innerHTML = '';
+            const selectedByCategory = {};
+            const allResourcesFlat = Object.values(ALL_RESOURCES).flat();
+            currentSelectedResourceIds.forEach(id => {
+                const item = allResourcesFlat.find(i => i.id === id);
+                if(item) {
+                    const category = item.category || '未分类';
+                    if (!selectedByCategory[category]) selectedByCategory[category] = [];
+                    selectedByCategory[category].push(item);
+                }
+            });
+            if (Object.keys(selectedByCategory).length === 0) {
+                displayAreaList.innerHTML = '<li>医生未选择任何资源。</li>';
+                return;
+            }
+            Object.entries(selectedByCategory).forEach(([categoryName, items]) => {
+                const li = document.createElement('li');
+                li.innerHTML = `<strong>${categoryName}:</strong> `;
+                items.forEach(item => {
+                    const span = document.createElement('span');
+                    span.className = 'resource-item';
+                    if (!SYSTEM_SUGGESTED_IDS.includes(item.id)) span.classList.add('added-by-user');
+                    span.textContent = item.name;
+                    li.appendChild(span);
+                });
+                displayAreaList.appendChild(li);
+            });
+        }
+        
+        if (editButton) editButton.addEventListener('click', openResourceEditor);
+        if (confirmBtn) confirmBtn.addEventListener('click', saveResourceSelection);
+        if (cancelBtn) cancelBtn.addEventListener('click', closeResourceEditor);
+        if (closeIconBtn) closeIconBtn.addEventListener('click', closeResourceEditor);
+        initializeState();
+        renderDisplayArea();
+    }
+
+    // ==================== C. 通用批注与交互逻辑 ====================
+    const SectionKindMap = [];
+
+    function setupSectionAnchors() {
+      const headers = document.querySelectorAll('h1, h2, h3, h4');
+      headers.forEach((h, idx) => {
+        if (!h.id) {
+            const text = h.textContent.replace(/[^a-zA-Z0-9一-龥]/g, '').substring(0, 15);
+            h.id = text ? `sec-${text}-${idx}` : `sec-${idx}`;
+        }
+        const btn = document.createElement('button');
+        btn.className = 'add-note-btn';
+        btn.textContent = '➕ 批注';
+        btn.addEventListener('click', () => createNoteCard(h.id));
+        h.appendChild(btn);
+      });
+    }
+
+    function refreshAnnoButtons() {
+      document.querySelectorAll('.add-note-btn').forEach(b => b.style.display = annoMode ? 'inline-block' : 'none');
+    }
+
+    function renderNotes() {
+      const store = loadAnnotations();
+      Object.entries(store).forEach(([secId, arr]) => {
+        const anchor = document.getElementById(secId);
+        if (anchor) arr.forEach(n => insertNoteCardAfter(anchor, n));
+      });
+    }
+
+    function createNoteCard(secId) {
+      const payload = { id: `n-${Date.now()}`, ts: nowStr(), html: '' };
+      const store = loadAnnotations();
+      (store[secId] = store[secId] || []).push(payload);
+      saveAnnotations(store);
+      const anchor = document.getElementById(secId);
+      if (anchor) insertNoteCardAfter(anchor, payload, true);
+    }
+
+    function insertNoteCardAfter(anchorEl, note, focus=false) {
+      const card = document.createElement('div');
+      card.className = 'anno-card';
+      card.dataset.noteId = note.id;
+      card.dataset.secId = anchorEl.id;
+      card.innerHTML = `<div class="anno-head"><div>章节：<code>${anchorEl.textContent.replace('➕ 批注','').trim()}</code></div><div>时间：${note.ts}</div></div><div class="anno-body" contenteditable="true" spellcheck="false">${note.html || ''}</div><div class="anno-actions"><button data-act="del">删除</button></div>`;
+      const body = card.querySelector('.anno-body');
+      body.addEventListener('input', () => {
+        const store = loadAnnotations();
+        const item = (store[card.dataset.secId] || []).find(x => x.id === card.dataset.noteId);
+        if (item) { item.html = body.innerHTML; saveAnnotations(store); }
+      });
+      card.querySelector('[data-act="del"]').addEventListener('click', () => {
+        const store = loadAnnotations();
+        let list = store[card.dataset.secId] || [];
+        store[card.dataset.secId] = list.filter(x => x.id !== card.dataset.noteId);
+        saveAnnotations(store);
+        card.remove();
+      });
+      anchorEl.parentNode.insertBefore(card, anchorEl.nextSibling);
+      if (focus) body.focus();
+    }
+
+    function injectToolsHTML() {
+      if (!SectionKindMap || SectionKindMap.length === 0) return;
+      const headers = document.querySelectorAll('h1, h2, h3, h4');
+      headers.forEach(h => {
+          const titleText = (h.textContent || '').replace(/[\s➕批注]/g, '');
+          const config = SectionKindMap.find(m => m.includes && m.includes.some(k => titleText.includes(k)));
+          if (config && config.tools_html) {
+              const wrap = document.createElement('span');
+              wrap.className = 'section-tools';
+              wrap.innerHTML = config.tools_html;
+              h.appendChild(wrap);
+          }
+      });
+    }
+
+    function activateInteractiveElements() {
+        const store = loadInteracts();
+        let hasNewValues = false;
+        
+        document.querySelectorAll('[data-k]').forEach(el => {
+            let header = el.closest('h1, h2, h3, h4');
+            if (!header) {
+                const wrapper = el.closest('.decision-interactive, .physician-approval-form');
+                if (wrapper && wrapper.previousElementSibling?.matches('h1, h2, h3, h4')) {
+                    header = wrapper.previousElementSibling;
+                }
+            }
+            
+            if (!header) {
+                console.warn('⚠️ [交互] 无法找到标题，跳过元素:', el.dataset.k);
+                return;
+            }
+            
+            const k = `${header.id}::${el.dataset.k}`;
+            const savedValue = store[k];
+            
+            let currentValue;
+            if (el.tagName === 'SELECT') {
+                currentValue = el.value;
+            } else if (el.type === 'checkbox') {
+                currentValue = el.checked;
+            } else if (el.type === 'radio') {
+                if (el.checked) {
+                    currentValue = el.value;
+                }
+            } else if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                currentValue = el.value;
+            }
+            
+            if (savedValue !== undefined) {
+                if (el.tagName === 'SELECT') {
+                    el.value = savedValue;
+                    console.log('🔄 [交互] 恢复下拉框:', k, '=', savedValue);
+                } else if (el.type === 'checkbox') {
+                    el.checked = !!savedValue;
+                    console.log('🔄 [交互] 恢复复选框:', k, '=', savedValue);
+                } else if (el.type === 'radio') {
+                    if (el.value === savedValue) {
+                        el.checked = true;
+                        console.log('🔄 [交互] 恢复单选框:', k, '=', savedValue);
+                    }
+                } else if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                    el.value = savedValue;
+                    console.log('🔄 [交互] 恢复输入框:', k, '=', savedValue);
+                }
+            } else if (currentValue !== '' && currentValue !== undefined) {
+                store[k] = currentValue;
+                hasNewValues = true;
+                console.log('💾 [交互] 保存预设值:', k, '=', currentValue);
+            }
+            
+            el.addEventListener('change', () => {
+                const cur = loadInteracts();
+                if (el.type === 'checkbox') {
+                    cur[k] = el.checked;
+                } else if (el.type === 'radio') {
+                    cur[k] = el.value;
+                } else {
+                    cur[k] = el.value;
+                }
+                saveInteracts(cur);
+                console.log('💾 [交互] 保存:', k, '=', cur[k]);
+            });
+        });
+        
+        if (hasNewValues) {
+            saveInteracts(store);
+            console.log('✅ [交互] 已保存所有预设值到localStorage');
+        }
+    }
+
+    function setupPathSwitching() {
+        const switcher = document.querySelector('.path-switcher-select');
+        const pathYes = document.getElementById('path-immediate-care');
+        const pathNo = document.getElementById('path-home-observation');
+        if (!switcher || !pathYes || !pathNo) return; 
+        const handleSwitch = () => {
+            pathYes.style.display = (switcher.value === 'yes') ? 'block' : 'none';
+            pathNo.style.display = (switcher.value === 'no') ? 'block' : 'none';
+        };
+        switcher.addEventListener('change', handleSwitch);
+        handleSwitch();
+    }
+
+    function setupToolbar() {
+      const $toggle = document.getElementById('toggleAnno'), $export = document.getElementById('exportAnno'), $import = document.getElementById('importAnnoInput'), $clear = document.getElementById('clearAnno'), $print = document.getElementById('printView'), $global = document.getElementById('globalAnnoArea');
+      $global.value = loadGlobal();
+      $global.addEventListener('input', () => saveGlobal($global.value));
+      $toggle.addEventListener('click', () => {
+        annoMode = !annoMode;
+        $toggle.textContent = annoMode ? '关闭批注模式' : '开启批注模式';
+        refreshAnnoButtons();
+      });
+      $export.addEventListener('click', () => {
+        const data = { patient_id: patientId, report_type: reportType, report_id: reportId, exported_at: nowStr(), global: $global.value || '', sections: loadAnnotations(), interactions: loadInteracts() };
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' }));
+        a.download = `annotations_${reportType}_${patientId}_${reportId}.json`;
+        a.click();
+        URL.revokeObjectURL(a.href);
+      });
+      $import.addEventListener('change', (e) => {
+        const f = e.target.files?.[0];
+        if (!f) return;
+        const reader = new FileReader();
+        reader.onload = () => {
+          try {
+            const data = JSON.parse(reader.result);
+            if (data?.global !== undefined) saveGlobal(data.global);
+            if (data?.sections) saveAnnotations(data.sections);
+            if (data?.interactions) saveInteracts(data.interactions);
+            location.reload();
+          } catch (err) { alert('导入失败：JSON格式不正确'); }
+        };
+        reader.readAsText(f, 'utf-8');
+        e.target.value = '';
+      });
+      $clear.addEventListener('click', () => {
+        if (confirm('确定清空本报告的所有本地数据吗？')) {
+            localStorage.removeItem(LS_ANNOTATIONS);
+            localStorage.removeItem(LS_GLOBAL);
+            localStorage.removeItem(LS_INTERACTIONS);
+            location.reload();
+        }
+      });
+      $print.addEventListener('click', () => window.print());
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        setupSectionAnchors();
+        injectToolsHTML();
+        activateInteractiveElements();
+        setupPathSwitching();
+        setupResourceEditor();
+        renderNotes();
+        setupToolbar();
+        refreshAnnoButtons();
+    });
+
+    })();
+</script>
+</body>
+</html>

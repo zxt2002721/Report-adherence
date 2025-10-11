@@ -1,0 +1,139 @@
+{
+  "basic_info": {
+    "patient_id": "2ba149f93d0bb25ee38f2fc621af5bc72b20bbf40fb462aaa6035bb38695656f",
+    "name": null,
+    "age": 82,
+    "sex": "女",
+    "marital_status": "丧偶",
+    "occupation": "退休",
+    "location": "吉林省吉林市",
+    "education": "小学",
+    "income_bracket": "低",
+    "living_situation": "独居",
+    "contact_phone": "138-1234-5678"
+  },
+  "disease_info": {
+    "primary_diseases": [
+      {
+        "disease_name": "冠心病",
+        "icd10_code": "I25.1",
+        "years_since_diagnosis": 10.0,
+        "current_severity": "中度"
+      },
+      {
+        "disease_name": "II型糖尿病",
+        "icd10_code": "E11",
+        "years_since_diagnosis": 10.0,
+        "current_severity": "轻度"
+      },
+      {
+        "disease_name": "高血压",
+        "icd10_code": "I10",
+        "years_since_diagnosis": 10.0,
+        "current_severity": "中度"
+      }
+    ],
+    "comorbidities": [
+      {
+        "disease_name": "慢性肾功能不全",
+        "icd10_code": "N18.4",
+        "years_since_diagnosis": 2.0,
+        "current_severity": "轻度"
+      }
+    ],
+    "family_history": {
+      "父亲病史": null,
+      "母亲病史": null,
+      "兄弟姐妹病史": null,
+      "子女病史": null,
+      "遗传病因子": null
+    },
+    "allergies": [
+      "青霉素"
+    ],
+    "last_checkup_date": "2024-09-26"
+  },
+  "prescription": {
+    "medications": [
+      {
+        "drug_name": "缬沙坦",
+        "dose": "80 mg",
+        "frequency": "每日一次",
+        "route": "口服"
+      },
+      {
+        "drug_name": "二甲双胍",
+        "dose": "500 mg",
+        "frequency": "每日两次",
+        "route": "口服"
+      },
+      {
+        "drug_name": "稳心颗粒",
+        "dose": "3包",
+        "frequency": "每日三次",
+        "route": "口服"
+      }
+    ],
+    "lifestyle": [
+      {
+        "recommendation_type": "饮食",
+        "description": "低盐低脂饮食，增加蔬菜水果摄入，避免高糖高油腻食物，适合吉林市传统饮食；"
+      },
+      {
+        "recommendation_type": "运动",
+        "description": "建议每日室内轻度活动，如伸展操或散步，每次15-20分钟，避免剧烈运动；"
+      },
+      {
+        "recommendation_type": "睡眠",
+        "description": "保证每日7-8小时睡眠，规律作息，避免过晚；"
+      },
+      {
+        "recommendation_type": "压力",
+        "description": "通过简单呼吸练习和听轻音乐缓解压力，保持心态平和；"
+      }
+    ],
+    "next_followup_date": "2024-12-10",
+    "physician_notes": "患者多慢性病共存，血压及血糖总体控制较好，建议继续坚持现有药物治疗，关注肾功能定期监测。生活方式需加强低盐饮食和适度锻炼安排，提高生活质量。持续观察血糖波动，调整二甲双胍剂量时注意低血糖风险。"
+  },
+  "behaviour_preferences": {
+    "preferences": [
+      {
+        "preference_type": "饮食",
+        "detail": "偏好家常口味，饭菜口味中等偏淡，忌口辛辣刺激食品。",
+        "prescription_impact": [
+          "饮食"
+        ]
+      },
+      {
+        "preference_type": "运动",
+        "detail": "喜欢室内闲适活动，避免户外寒冷环境，运动量轻。",
+        "prescription_impact": [
+          "运动"
+        ]
+      },
+      {
+        "preference_type": "休闲",
+        "detail": "喜好传统棋牌及家人团聚，社交需求适中。",
+        "prescription_impact": [
+          "用药"
+        ]
+      },
+      {
+        "preference_type": "科技",
+        "detail": "手机使用基础，能简单使用通讯工具，未常用智能健康设备。",
+        "prescription_impact": [
+          "监测"
+        ]
+      },
+      {
+        "preference_type": "其他",
+        "detail": "性格温和，较谨慎重视医生建议。",
+        "prescription_impact": [
+          "用药",
+          "监测"
+        ]
+      }
+    ]
+  },
+  "generation_timestamp": "2024-10-23 12:00:00+08:00"
+}

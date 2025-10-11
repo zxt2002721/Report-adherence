@@ -1,0 +1,135 @@
+{
+  "basic_info": {
+    "patient_id": "05b2b7e2c459ad1e7ef574e4cfe655d9be133bd77ea8fa9c5bbf64ca2167b10c",
+    "name": null,
+    "age": 73,
+    "sex": "男",
+    "marital_status": "已婚",
+    "occupation": "退休",
+    "location": "河北省秦皇岛市",
+    "education": "高中",
+    "income_bracket": "中",
+    "living_situation": "与家人同住",
+    "contact_phone": "138-0000-5678"
+  },
+  "disease_info": {
+    "primary_diseases": [
+      {
+        "disease_name": "冠心病",
+        "icd10_code": "I25.1",
+        "years_since_diagnosis": 8.0,
+        "current_severity": "中度"
+      },
+      {
+        "disease_name": "II型糖尿病",
+        "icd10_code": "E11",
+        "years_since_diagnosis": 8.0,
+        "current_severity": "中度"
+      },
+      {
+        "disease_name": "高血压",
+        "icd10_code": "I10",
+        "years_since_diagnosis": 8.0,
+        "current_severity": "可控"
+      }
+    ],
+    "comorbidities": [
+      {
+        "disease_name": "慢性肾功能不全",
+        "icd10_code": "N18.9",
+        "years_since_diagnosis": 2.0,
+        "current_severity": "轻度"
+      }
+    ],
+    "family_history": {
+      "父亲": null,
+      "母亲": null,
+      "兄弟姐妹": null,
+      "子女": null
+    },
+    "allergies": [
+      "青霉素"
+    ],
+    "last_checkup_date": "2024-10-17"
+  },
+  "prescription": {
+    "medications": [
+      {
+        "drug_name": "苯磺酸氨氯地平片",
+        "dose": "0.25 mg",
+        "frequency": "每日2次",
+        "route": "口服"
+      },
+      {
+        "drug_name": "二甲双胍",
+        "dose": "500 mg",
+        "frequency": "每日2次",
+        "route": "口服"
+      },
+      {
+        "drug_name": "阿司匹林",
+        "dose": "100 mg",
+        "frequency": "每日1次",
+        "route": "口服"
+      }
+    ],
+    "lifestyle": [
+      {
+        "recommendation_type": "饮食",
+        "description": "减少盐分摄入，控制每日钠盐摄入量低于5克，多吃新鲜蔬果及高纤维食物，保持主食摄入量在250克以内。"
+      },
+      {
+        "recommendation_type": "运动",
+        "description": "建议每周至少进行150分钟轻中度有氧运动，如快走或太极，分5天完成，避免剧烈运动。"
+      },
+      {
+        "recommendation_type": "睡眠",
+        "description": "保持规律作息，保证每晚7小时高质量睡眠，避免午睡过长。"
+      },
+      {
+        "recommendation_type": "压力",
+        "description": "学习深呼吸与冥想等放松技巧，减轻心理压力。"
+      }
+    ],
+    "next_followup_date": "2025-01-17",
+    "physician_notes": "患者冠心病及糖尿病控制稳定，但仍需坚持用药及生活方式干预，注意监测血糖和血压，避免盐分过高和过度饮酒，逐步增加适宜强度运动。无青霉素过敏史相关药物禁用，继续注意肾功能保护。"
+  },
+  "behaviour_preferences": {
+    "preferences": [
+      {
+        "preference_type": "饮食",
+        "detail": "偏好清淡口味，喜食燕麦和杂粮，忌油腻高盐食物。",
+        "prescription_impact": [
+          "饮食"
+        ]
+      },
+      {
+        "preference_type": "运动",
+        "detail": "喜欢室内柔和运动如太极拳，冬季较少户外活动。",
+        "prescription_impact": [
+          "运动"
+        ]
+      },
+      {
+        "preference_type": "休闲",
+        "detail": "习惯每日阅读新闻和观看传统音乐节目，社交活动较少。",
+        "prescription_impact": [
+          "监测"
+        ]
+      },
+      {
+        "preference_type": "科技",
+        "detail": "使用智能手机，能操作基本健康管理应用。",
+        "prescription_impact": [
+          "监测"
+        ]
+      },
+      {
+        "preference_type": "其他",
+        "detail": "重视家庭互动，节假日喜欢与子女共进晚餐。",
+        "prescription_impact": []
+      }
+    ]
+  },
+  "generation_timestamp": "2024-11-30 12:00:00+00:00"
+}

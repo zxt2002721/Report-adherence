@@ -1,0 +1,86 @@
+{
+  "sample_id": "sample_0b389f61f90fcf6da613e08c64e06fdbaf05758cdd9e6b5ae730f1b8a8a654e4_20240402_diet_b47ad5",
+  "patient_id": "0b389f61f90fcf6da613e08c64e06fdbaf05758cdd9e6b5ae730f1b8a8a654e4",
+  "task_name": "adherence_identification",
+  "sample_data": {
+    "dialogue_piece": [
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "也没怎么特别注意，就是有时候饭前忘记吃，有时又怕肚子难受就不吃了。",
+        "timestamp": "2024-04-02T09:12:30Z",
+        "message_type": "回应",
+        "emotional_tone": "困惑"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "识别患者行为层面依从障碍，结合情感和认知。",
+          "analysis": "患者用药习惯不稳定，有行为层面困难和认知顾虑。",
+          "diagnosis": "多维度不遵从叠加。",
+          "planning": "提出提醒及饮食调整建议。",
+          "evaluation": "计划尝试多维度介入。"
+        },
+        "message": "明白了。其实您喜欢青岛的海鲜，这很好。可以试着在餐前设置手机提醒，配合饭前用药，另外饭后吃点容易消化的蔬菜，也许会减少肚子不适。您平时会用微信吗？我可以教您怎么设置提醒。",
+        "timestamp": "2024-04-02T09:14:00Z",
+        "message_type": "提醒",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "微信会用点，不过这些电子玩意儿，我有时候弄不太来。家人也不常帮忙。",
+        "timestamp": "2024-04-02T09:15:30Z",
+        "message_type": "回应",
+        "emotional_tone": "困惑"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "识别科技使用障碍，考虑社会支持缺乏。",
+          "analysis": "患者科技能力有限，家庭支持不足。",
+          "diagnosis": "系统层面辅助不足影响依从。",
+          "planning": "提出简易提醒方法，鼓励家庭支持。",
+          "evaluation": "建立初步辅助方案。"
+        },
+        "message": "理解，科技有时候确实不太好用。除了手机提醒，您平时有没有固定的吃饭时间？我们可以试着用简单的纸质小卡片做提醒。您家人平时能不能帮您留意一下呢？",
+        "timestamp": "2024-04-02T09:17:00Z",
+        "message_type": "教育",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "我早上一般7点吃早饭，家里没人专门管我，就是提醒不太到位。",
+        "timestamp": "2024-04-02T09:18:30Z",
+        "message_type": "回应",
+        "emotional_tone": "中性"
+      }
+    ],
+    "prescription": {
+      "medications": [],
+      "lifestyle": [
+        {
+          "recommendation_type": "饮食",
+          "description": "控制每日主食摄入至250克，增加蔬菜和蛋白质摄入，减少盐和糖的摄入。"
+        }
+      ],
+      "next_followup_date": "2024-06-01",
+      "physician_notes": "注意血糖和血压的监测，增加家庭支持对于其依从性的提高有益。"
+    },
+    "adherence_category": "饮食",
+    "session_date": "2024-04-02"
+  },
+  "pre_annotation": {
+    "adherence_check": [
+      {
+        "date": "2024-04-02",
+        "category": "饮食",
+        "overall_status": "部分遵从",
+        "reason": "患者饮食习惯较好，喜欢青岛海鲜，但未明确提及严格遵守饮食禁忌。",
+        "details": "患者喜欢青岛海鲜，建议饭后吃容易消化的蔬菜以减轻用药不适。未提及饮食禁忌执行情况。",
+        "dialogue_date": "2024-04-02"
+      }
+    ]
+  }
+}

@@ -1,0 +1,514 @@
+{
+  "patient_id": "6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a",
+  "basic_info": {
+    "patient_id": "6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a",
+    "name": null,
+    "age": 58,
+    "sex": "女",
+    "marital_status": "已婚",
+    "occupation": "退休人员",
+    "location": "山西省长治市",
+    "education": "高中",
+    "income_bracket": "中",
+    "living_situation": "与家人同住",
+    "contact_phone": "138-XXXX-5678"
+  },
+  "last_basic_info_update": "2025-07-21T03:09:21.520520",
+  "disease_info": {
+    "primary_diseases": [
+      {
+        "disease_name": "冠心病",
+        "icd10_code": "I25.1",
+        "years_since_diagnosis": 9.0,
+        "current_severity": "中度"
+      },
+      {
+        "disease_name": "高血压",
+        "icd10_code": "I10",
+        "years_since_diagnosis": 9.0,
+        "current_severity": "中度"
+      }
+    ],
+    "comorbidities": [
+      {
+        "disease_name": "高脂血症",
+        "icd10_code": "E78.5",
+        "years_since_diagnosis": 3.0,
+        "current_severity": "轻度"
+      }
+    ],
+    "family_history": {
+      "母亲病史": "高血压",
+      "父亲病史": null,
+      "兄弟姐妹病史": null,
+      "子女病史": null
+    },
+    "allergies": [
+      "青霉素"
+    ],
+    "last_checkup_date": "2024-10-24"
+  },
+  "last_disease_info_update": "2025-07-21T03:09:21.520520",
+  "prescription": {
+    "medications": [
+      {
+        "drug_name": "苯磺酸左旋氨氯地平片",
+        "dose": "2.5 mg",
+        "frequency": "每日一次",
+        "route": "口服"
+      },
+      {
+        "drug_name": "阿司匹林肠溶片",
+        "dose": "100 mg",
+        "frequency": "每日一次",
+        "route": "口服"
+      },
+      {
+        "drug_name": "辛伐他汀片",
+        "dose": "20 mg",
+        "frequency": "每日一次",
+        "route": "口服"
+      }
+    ],
+    "lifestyle": [
+      {
+        "recommendation_type": "饮食",
+        "description": "低盐低脂饮食，避免高胆固醇食品，适量增加新鲜蔬菜和水果。"
+      },
+      {
+        "recommendation_type": "运动",
+        "description": "坚持每周至少五次中等强度有氧运动，每次30分钟，如快走、太极。"
+      },
+      {
+        "recommendation_type": "睡眠",
+        "description": "保持每天7-8小时优质睡眠，避免熬夜。"
+      },
+      {
+        "recommendation_type": "压力",
+        "description": "保持心态平和，学习适当减压方法，如深呼吸、冥想。"
+      }
+    ],
+    "next_followup_date": "2024-12-01",
+    "physician_notes": "患者冠心病与高血压控制总体良好，建议继续现有治疗，密切监测血压波动。注意饮食调控和规律运动，定期随访复查血脂及心功能。"
+  },
+  "last_prescription_update": "2025-07-21T03:09:21.520520",
+  "behaviour_preferences": {
+    "preferences": [
+      {
+        "preference_type": "饮食",
+        "detail": "喜欢家常山西面食，避免辛辣油腻，多选用蒸煮少油方法。",
+        "prescription_impact": [
+          "饮食"
+        ]
+      },
+      {
+        "preference_type": "运动",
+        "detail": "偏好户外快走与太极，运动时间多为上午，运动坚持较好。",
+        "prescription_impact": [
+          "运动"
+        ]
+      },
+      {
+        "preference_type": "休闲",
+        "detail": "喜欢看书和听戏曲，社交活动适中，重视邻里间交流。",
+        "prescription_impact": [
+          "监测"
+        ]
+      },
+      {
+        "preference_type": "科技",
+        "detail": "能够使用智能手机查看健康信息，愿意学习手机健康应用。",
+        "prescription_impact": [
+          "监测"
+        ]
+      },
+      {
+        "preference_type": "其他",
+        "detail": "不吸烟不饮酒，注重传统养生方法。",
+        "prescription_impact": [
+          "用药",
+          "饮食"
+        ]
+      }
+    ]
+  },
+  "last_behaviour_preferences_update": "2025-07-21T03:09:21.520520",
+  "adherence_history": [
+    {
+      "date": "2024-11-01",
+      "category": "用药",
+      "overall_status": "部分遵从",
+      "reason": "患者服药存在偶尔忘记，尤其早晨因想多睡导致未按时服药；手机提醒效果不理想，存在被其他消息打扰的问题；外出时携带药物不便且有顾虑。",
+      "details": "患者一般早上服药，设有手机提醒但常被打扰，家中有药盒但外出时不常携带，下午邻居家聚会时服药感到尴尬。",
+      "dialogue_date": "2024-11-01"
+    },
+    {
+      "date": "2024-11-01",
+      "category": "饮食",
+      "overall_status": "部分遵从",
+      "reason": "患者饮食中尽量减少盐的使用，但家人偏好咸辣口味，导致难以统一饮食习惯，存在一定饮食控制难度。",
+      "details": "患者喜欢蒸煮少油的山西面食，自己尽量少放盐，但家人喜欢咸辣，做菜口味难以统一。",
+      "dialogue_date": "2024-11-01"
+    },
+    {
+      "date": "2024-11-01",
+      "category": "运动",
+      "overall_status": "部分遵从",
+      "reason": "患者基本坚持早晨快走和练太极，但遇天气寒冷或下雨时会偷懒，且家中空间有限，未尝试室内运动。",
+      "details": "患者喜欢早上快走和练太极，偶尔因天气原因未运动，家中空间小且担心安全，未做室内运动。",
+      "dialogue_date": "2024-11-01"
+    },
+    {
+      "date": "2024-11-02",
+      "category": "用药",
+      "overall_status": "部分遵从",
+      "reason": "患者因担心苯磺酸左旋氨氯地平片副作用（头晕），自行停药两天，存在用药中断行为。",
+      "details": "患者反映昨天服药后出现头晕症状，担心副作用，故自行停药两天；虽知需长期服药控制病情，但因副作用顾虑和心理压力影响用药依从性。",
+      "dialogue_date": "2024-11-02"
+    },
+    {
+      "date": "2024-11-02",
+      "category": "饮食",
+      "overall_status": "部分遵从",
+      "reason": "患者尝试减少盐分摄入，但因家人饮食习惯不同导致家庭氛围紧张，饮食调整存在困难。",
+      "details": "患者主动减少盐分摄入，与家人沟通调整饮食，但家人认为其小题大做，导致家庭气氛紧张，影响饮食遵从。",
+      "dialogue_date": "2024-11-02"
+    },
+    {
+      "date": "2024-11-03",
+      "category": "用药",
+      "overall_status": "部分遵从",
+      "reason": "因家庭矛盾导致情绪波动，患者偶尔忘记服药。",
+      "details": "患者表示家里吵架时心情差，药都忘了吃。",
+      "dialogue_date": "2024-11-03"
+    },
+    {
+      "date": "2024-11-03",
+      "category": "运动",
+      "overall_status": "不遵从",
+      "reason": "患者因家中空间小且担心安全未进行运动。",
+      "details": "患者未尝试室内运动，担心摔倒，计划次日尝试简单安全动作。",
+      "dialogue_date": "2024-11-03"
+    },
+    {
+      "date": "2024-11-04",
+      "category": "用药",
+      "overall_status": "部分遵从",
+      "reason": "患者用药次数有所增加，但仍存在忘记服药的情况。",
+      "details": "患者表示“药倒是比前几天吃得多了，就是忘记的事还时有发生”。",
+      "dialogue_date": "2024-11-04"
+    },
+    {
+      "date": "2024-11-04",
+      "category": "饮食",
+      "overall_status": "不遵从",
+      "reason": "患者饮食中咸菜和油脂摄入未减少，家人不支持健康饮食调整。",
+      "details": "患者提到“家人还是没变，咱这大锅饭，咸菜和油也没少放”，并且“家人那会儿反对我又说不出口”。",
+      "dialogue_date": "2024-11-04"
+    },
+    {
+      "date": "2024-11-04",
+      "category": "运动",
+      "overall_status": "部分遵从",
+      "reason": "患者积极参与太极动作练习，但部分动作因身体状况需辅助完成。",
+      "details": "患者完成了第一动作，感觉手酸；第二动作站立不稳需扶椅子。",
+      "dialogue_date": "2024-11-04"
+    },
+    {
+      "date": "2024-11-05",
+      "category": "用药",
+      "overall_status": "部分遵从",
+      "reason": "患者大部分时间按时服药，但当天早晨忘记服药，且提醒机制存在不足。",
+      "details": "患者表示“药是按时吃了几天，今儿早上倒忘了”，手机闹钟声音小且提醒效果不佳，计划将药盒放厨房显眼处并调大手机闹钟声音以改善提醒。",
+      "dialogue_date": "2024-11-05"
+    },
+    {
+      "date": "2024-11-05",
+      "category": "饮食",
+      "overall_status": "部分遵从",
+      "reason": "患者饮食习惯未明显改变，家人对低盐饮食存在抵触，患者尝试逐步调整。",
+      "details": "患者称“饮食还是老样子”，对低盐健康饮食有顾虑但愿意尝试先自己做小份低盐菜，计划逐步影响家人饮食习惯。",
+      "dialogue_date": "2024-11-05"
+    },
+    {
+      "date": "2024-11-05",
+      "category": "运动",
+      "overall_status": "部分遵从",
+      "reason": "患者进行了太极动作练习，但因空间限制动作不便，运动量有限。",
+      "details": "患者表示“动作做了几次，家里太小做着怪别扭，不过比没动强”，说明有运动但受环境影响。",
+      "dialogue_date": "2024-11-05"
+    }
+  ],
+  "suggestion_feedback_history": [
+    {
+      "date": "2024-11-01",
+      "suggestion_content": "设置专门的闹钟或固定放置药盒，并每天固定时间服药，以帮助记得按时吃药。",
+      "suggestion_category": "用药",
+      "effectiveness_feedback": "部分有效",
+      "patient_response": "患者表示手机提醒经常错过，家里有药盒但出门不方便带药，存在一定执行难度。",
+      "dialogue_date": "2024-11-01"
+    },
+    {
+      "date": "2024-11-01",
+      "suggestion_content": "饮食方面尝试用香草、醋或柠檬调味，减少盐的用量，保持口味多样。",
+      "suggestion_category": "饮食",
+      "effectiveness_feedback": "未尝试",
+      "patient_response": "患者表示可以试试，但担心家人觉得怪，尚未实施。",
+      "dialogue_date": "2024-11-01"
+    },
+    {
+      "date": "2024-11-01",
+      "suggestion_content": "在家准备与家人沟通的建议，帮助家人理解患者的健康需要，促进饮食调整。",
+      "suggestion_category": "饮食",
+      "effectiveness_feedback": "未尝试",
+      "patient_response": "患者表示可以试试看，尚未反馈效果。",
+      "dialogue_date": "2024-11-01"
+    },
+    {
+      "date": "2024-11-01",
+      "suggestion_content": "在天气不好时尝试在家做简单的室内运动，如伸展或太极招式，保持身体活动。",
+      "suggestion_category": "运动",
+      "effectiveness_feedback": "未尝试",
+      "patient_response": "患者表示没试过，家里空间小且担心安全。",
+      "dialogue_date": "2024-11-01"
+    },
+    {
+      "date": "2024-11-01",
+      "suggestion_content": "学习几招简单稳妥的太极动作，适合小空间，保证安全且保持运动习惯。",
+      "suggestion_category": "运动",
+      "effectiveness_feedback": "未尝试",
+      "patient_response": "患者尚未反馈学习情况，系统提议后等待安排。",
+      "dialogue_date": "2024-11-01"
+    },
+    {
+      "date": "2024-11-02",
+      "suggestion_content": "坚持服用苯磺酸左旋氨氯地平片，避免自行停药，及时告知医生头晕等不适，医生将根据情况调整用药。",
+      "suggestion_category": "用药",
+      "effectiveness_feedback": "无效",
+      "patient_response": "患者因头晕自行停药两天，担心副作用，未持续服药，表现出对用药的顾虑和不稳定执行。",
+      "dialogue_date": "2024-11-02"
+    },
+    {
+      "date": "2024-11-02",
+      "suggestion_content": "保持兴趣爱好如听戏曲、聊天，遇情绪低落时尝试深呼吸和冥想缓解压力，系统提供相关练习指导。",
+      "suggestion_category": "运动",
+      "effectiveness_feedback": "未尝试",
+      "patient_response": "患者表示愿意尝试深呼吸和冥想，但平时不太知道怎么做，准备开始练习。",
+      "dialogue_date": "2024-11-02"
+    },
+    {
+      "date": "2024-11-02",
+      "suggestion_content": "减少盐分摄入，建议与家人共同调整饮食，减少咸辣口味。",
+      "suggestion_category": "饮食",
+      "effectiveness_feedback": "无效",
+      "patient_response": "患者尝试与家人沟通调整饮食，但家人不配合，导致家庭气氛紧张，饮食调整未能顺利实施。",
+      "dialogue_date": "2024-11-02"
+    },
+    {
+      "date": "2024-11-03",
+      "suggestion_content": "遇到不开心时，试着做几次深呼吸，或者听喜欢的戏曲，稍微放松一下。",
+      "suggestion_category": "运动",
+      "effectiveness_feedback": "部分有效",
+      "patient_response": "昨天你发来的那些呼吸练习，我试过了，感觉有点用。",
+      "dialogue_date": "2024-11-03"
+    },
+    {
+      "date": "2024-11-03",
+      "suggestion_content": "设计几个简单又安全的室内运动动作，不需要太大空间，保持身体活动。",
+      "suggestion_category": "运动",
+      "effectiveness_feedback": "未尝试",
+      "patient_response": "说实话没试，家里地方小，怕摔着。",
+      "dialogue_date": "2024-11-03"
+    },
+    {
+      "date": "2024-11-04",
+      "suggestion_content": "做简单的太极动作，动作不大，可以坐着或站着做，安全第一。第一步：双手轻轻平举，缓慢向前推，动作要轻柔，做五次。第二步：双脚并拢，脚跟稍微抬起，保持平衡，做三次。",
+      "suggestion_category": "运动",
+      "effectiveness_feedback": "部分有效",
+      "patient_response": "做了，感觉手有点酸，但还行。站不稳，得扶着椅子。会注意。",
+      "dialogue_date": "2024-11-04"
+    },
+    {
+      "date": "2024-11-04",
+      "suggestion_content": "继续保持药物服用，努力减少忘记服药的情况。",
+      "suggestion_category": "用药",
+      "effectiveness_feedback": "部分有效",
+      "patient_response": "药倒是比前几天吃得多了，就是忘记的事还时有发生。",
+      "dialogue_date": "2024-11-04"
+    },
+    {
+      "date": "2024-11-04",
+      "suggestion_content": "尝试和家人一起制定一些健康菜谱，改善饮食习惯，减少咸菜和油的摄入。",
+      "suggestion_category": "饮食",
+      "effectiveness_feedback": "无效",
+      "patient_response": "家人反对，自己说不出口，饮食没有改变，咸菜和油也没少放。",
+      "dialogue_date": "2024-11-04"
+    },
+    {
+      "date": "2024-11-05",
+      "suggestion_content": "将药盒放在厨房醒目位置，做饭或吃饭时顺便记得吃药，同时用手机设置第二个提醒，双保险。",
+      "suggestion_category": "用药",
+      "effectiveness_feedback": "未尝试",
+      "patient_response": "放厨房吧，那里常常去，顺手就能看到。手机提醒我还得调调，昨儿那个闹钟声音小，经常听不见。会的，改天我试试看。",
+      "dialogue_date": "2024-11-05"
+    },
+    {
+      "date": "2024-11-05",
+      "suggestion_content": "把手机闹钟声音调大一些，或者选一个响亮的铃声，提高提醒效果。",
+      "suggestion_category": "用药",
+      "effectiveness_feedback": "未尝试",
+      "patient_response": "手机提醒我还得调调，昨儿那个闹钟声音小，经常听不见。会的，改天我试试看。",
+      "dialogue_date": "2024-11-05"
+    },
+    {
+      "date": "2024-11-05",
+      "suggestion_content": "每周挑一天，全家尝试一些低盐健康菜肴，慢慢影响大家的饮食习惯。",
+      "suggestion_category": "饮食",
+      "effectiveness_feedback": "未尝试",
+      "patient_response": "唉，这主意不错，可我怕一开始家人反感，我也不想总惹事。",
+      "dialogue_date": "2024-11-05"
+    },
+    {
+      "date": "2024-11-05",
+      "suggestion_content": "先从自己开始调整，做一小份低盐菜自己吃，等家人看到您状态好，也许他们会愿意尝试。",
+      "suggestion_category": "饮食",
+      "effectiveness_feedback": "未尝试",
+      "patient_response": "这样说起来，好像能行，我试试。",
+      "dialogue_date": "2024-11-05"
+    },
+    {
+      "date": "2024-11-05",
+      "suggestion_content": "坚持练习太极动作，虽然空间小做着别扭，但比没动强。",
+      "suggestion_category": "运动",
+      "effectiveness_feedback": "部分有效",
+      "patient_response": "动作做了几次，家里太小做着怪别扭，不过比没动强。",
+      "dialogue_date": "2024-11-05"
+    }
+  ],
+  "behavior_preference_updates": [
+    {
+      "date": "2024-11-01",
+      "preference_type": "科技",
+      "prescription_impact": [
+        "用药"
+      ],
+      "old_preference": "使用手机提醒吃药，但经常被其他消息打扰，提醒错过",
+      "new_preference": "考虑设置专门的闹钟或固定放置药盒以便更好提醒服药",
+      "update_reason": "手机提醒经常被其他消息打扰导致忘记吃药，寻求更有效的提醒方式",
+      "dialogue_date": "2024-11-01"
+    },
+    {
+      "date": "2024-11-01",
+      "preference_type": "饮食",
+      "prescription_impact": [
+        "饮食"
+      ],
+      "old_preference": "喜欢家里的山西面食，做菜喜欢蒸煮少油，尽量少放盐，但家人喜欢咸辣，口味难统一",
+      "new_preference": "愿意尝试用香草、醋或柠檬调味以减少盐用量，但担心家人接受度",
+      "update_reason": "希望通过调整调味方式减少盐摄入以利健康，但顾虑家人习惯影响",
+      "dialogue_date": "2024-11-01"
+    },
+    {
+      "date": "2024-11-01",
+      "preference_type": "运动",
+      "prescription_impact": [
+        "运动"
+      ],
+      "old_preference": "早上快走和练太极，基本坚持，但天气冷或下雨时会偷懒",
+      "new_preference": "考虑尝试在家做简单室内运动或太极动作以保持运动习惯",
+      "update_reason": "天气影响户外运动，寻求室内安全且适合小空间的运动方式",
+      "dialogue_date": "2024-11-01"
+    },
+    {
+      "date": "2024-11-02",
+      "preference_type": "休闲",
+      "prescription_impact": [
+        "监测"
+      ],
+      "old_preference": null,
+      "new_preference": "开始尝试每天花几分钟练习深呼吸和冥想以缓解压力",
+      "update_reason": "医生建议通过深呼吸和冥想缓解长期疾病管理带来的压力，患者表达愿意尝试",
+      "dialogue_date": "2024-11-02"
+    },
+    {
+      "date": "2024-11-02",
+      "preference_type": "饮食",
+      "prescription_impact": [
+        "饮食"
+      ],
+      "old_preference": "未明确表达与家人共同调整饮食",
+      "new_preference": "尝试减少自己食盐摄入，但家人不配合，导致家庭气氛紧张",
+      "update_reason": "患者为控制血压尝试调整饮食口味，但家人偏好咸辣口味，沟通存在困难",
+      "dialogue_date": "2024-11-02"
+    },
+    {
+      "date": "2024-11-03",
+      "preference_type": "休闲",
+      "prescription_impact": [
+        "用药"
+      ],
+      "old_preference": "未尝试情绪调节方法",
+      "new_preference": "尝试深呼吸和听戏曲进行情绪放松",
+      "update_reason": "情绪不好导致忘记吃药，尝试新的情绪调节方法以改善用药依从性",
+      "dialogue_date": "2024-11-03"
+    },
+    {
+      "date": "2024-11-03",
+      "preference_type": "运动",
+      "prescription_impact": [
+        "运动"
+      ],
+      "old_preference": "未尝试室内运动，因家里空间小且担心摔倒",
+      "new_preference": "愿意尝试设计的简单安全室内运动",
+      "update_reason": "天气冷或下雨影响户外运动，考虑室内运动以保持身体活动",
+      "dialogue_date": "2024-11-03"
+    },
+    {
+      "date": "2024-11-04",
+      "preference_type": "运动",
+      "prescription_impact": [
+        "运动"
+      ],
+      "old_preference": "未明确进行太极运动，运动时不习惯扶椅子",
+      "new_preference": "开始尝试做简单太极动作，运动时需要扶椅子以保持平衡",
+      "update_reason": "接受指导尝试太极运动，发现平衡能力有限需辅助",
+      "dialogue_date": "2024-11-04"
+    },
+    {
+      "date": "2024-11-04",
+      "preference_type": "饮食",
+      "prescription_impact": [
+        "饮食"
+      ],
+      "old_preference": "饮食习惯未改变，家人做饭偏重咸菜和油",
+      "new_preference": "饮食习惯暂未改变，家人仍坚持传统大锅饭且咸菜和油用量较多",
+      "update_reason": "家人饮食习惯难以改变，患者表达难以拒绝家人做法",
+      "dialogue_date": "2024-11-04"
+    },
+    {
+      "date": "2024-11-05",
+      "preference_type": "科技",
+      "prescription_impact": [
+        "用药"
+      ],
+      "old_preference": "无明确药物提醒措施",
+      "new_preference": "将药盒放在厨房醒目位置，并计划设置手机响亮提醒闹钟以辅助服药",
+      "update_reason": "患者因偶尔忘记服药，寻求更有效的提醒方法以确保按时用药",
+      "dialogue_date": "2024-11-05"
+    },
+    {
+      "date": "2024-11-05",
+      "preference_type": "饮食",
+      "prescription_impact": [
+        "饮食"
+      ],
+      "old_preference": "饮食习惯未改变，口味偏好未调整",
+      "new_preference": "愿意尝试自己做低盐健康菜肴，逐步调整饮食习惯",
+      "update_reason": "考虑到家人可能反感，患者决定先从自己开始调整饮食以影响家人",
+      "dialogue_date": "2024-11-05"
+    }
+  ],
+  "memory_created_at": "2025-07-21T03:09:21.520520",
+  "last_updated": "2025-07-21T03:10:44.022158",
+  "total_dialogues_processed": 5
+}

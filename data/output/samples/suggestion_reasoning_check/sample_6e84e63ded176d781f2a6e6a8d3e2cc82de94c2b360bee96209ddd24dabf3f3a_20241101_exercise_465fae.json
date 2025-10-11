@@ -1,0 +1,160 @@
+{
+  "sample_id": "sample_6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a_20241101_exercise_465fae",
+  "patient_id": "6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a",
+  "task_name": "suggestion_reasoning_check",
+  "sample_data": {
+    "adherence_piece": {
+      "date": "2024-11-01",
+      "category": "运动",
+      "overall_status": "部分遵从",
+      "reason": "患者基本坚持早晨快走和练太极，但遇天气寒冷或下雨时会偷懒，且家中空间有限，未尝试室内运动。",
+      "details": "患者喜欢早上快走和练太极，偶尔因天气原因未运动，家中空间小且担心安全，未做室内运动。",
+      "dialogue_date": "2024-11-01"
+    },
+    "patient_profile": {
+      "basic_info": {
+        "patient_id": "6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a",
+        "name": null,
+        "age": 58,
+        "sex": "女",
+        "marital_status": "已婚",
+        "occupation": "退休人员",
+        "location": "山西省长治市",
+        "education": "高中",
+        "income_bracket": "中",
+        "living_situation": "与家人同住",
+        "contact_phone": "138-XXXX-5678"
+      },
+      "disease_info": {
+        "primary_diseases": [
+          {
+            "disease_name": "冠心病",
+            "icd10_code": "I25.1",
+            "years_since_diagnosis": 9.0,
+            "current_severity": "中度"
+          },
+          {
+            "disease_name": "高血压",
+            "icd10_code": "I10",
+            "years_since_diagnosis": 9.0,
+            "current_severity": "中度"
+          }
+        ],
+        "comorbidities": [
+          {
+            "disease_name": "高脂血症",
+            "icd10_code": "E78.5",
+            "years_since_diagnosis": 3.0,
+            "current_severity": "轻度"
+          }
+        ],
+        "family_history": {
+          "母亲病史": "高血压",
+          "父亲病史": null,
+          "兄弟姐妹病史": null,
+          "子女病史": null
+        },
+        "allergies": [
+          "青霉素"
+        ],
+        "last_checkup_date": "2024-10-24"
+      },
+      "prescription": {
+        "medications": [
+          {
+            "drug_name": "苯磺酸左旋氨氯地平片",
+            "dose": "2.5 mg",
+            "frequency": "每日一次",
+            "route": "口服"
+          },
+          {
+            "drug_name": "阿司匹林肠溶片",
+            "dose": "100 mg",
+            "frequency": "每日一次",
+            "route": "口服"
+          },
+          {
+            "drug_name": "辛伐他汀片",
+            "dose": "20 mg",
+            "frequency": "每日一次",
+            "route": "口服"
+          }
+        ],
+        "lifestyle": [
+          {
+            "recommendation_type": "饮食",
+            "description": "低盐低脂饮食，避免高胆固醇食品，适量增加新鲜蔬菜和水果。"
+          },
+          {
+            "recommendation_type": "运动",
+            "description": "坚持每周至少五次中等强度有氧运动，每次30分钟，如快走、太极。"
+          },
+          {
+            "recommendation_type": "睡眠",
+            "description": "保持每天7-8小时优质睡眠，避免熬夜。"
+          },
+          {
+            "recommendation_type": "压力",
+            "description": "保持心态平和，学习适当减压方法，如深呼吸、冥想。"
+          }
+        ],
+        "next_followup_date": "2024-12-01",
+        "physician_notes": "患者冠心病与高血压控制总体良好，建议继续现有治疗，密切监测血压波动。注意饮食调控和规律运动，定期随访复查血脂及心功能。"
+      },
+      "behaviour_preferences": {
+        "preferences": [
+          {
+            "preference_type": "饮食",
+            "detail": "喜欢家常山西面食，避免辛辣油腻，多选用蒸煮少油方法。",
+            "prescription_impact": [
+              "饮食"
+            ]
+          },
+          {
+            "preference_type": "运动",
+            "detail": "偏好户外快走与太极，运动时间多为上午，运动坚持较好。",
+            "prescription_impact": [
+              "运动"
+            ]
+          },
+          {
+            "preference_type": "休闲",
+            "detail": "喜欢看书和听戏曲，社交活动适中，重视邻里间交流。",
+            "prescription_impact": [
+              "监测"
+            ]
+          },
+          {
+            "preference_type": "科技",
+            "detail": "能够使用智能手机查看健康信息，愿意学习手机健康应用。",
+            "prescription_impact": [
+              "监测"
+            ]
+          },
+          {
+            "preference_type": "其他",
+            "detail": "不吸烟不饮酒，注重传统养生方法。",
+            "prescription_impact": [
+              "用药",
+              "饮食"
+            ]
+          }
+        ]
+      },
+      "generation_timestamp": "2024-11-01 12:00:00+08:00"
+    },
+    "current_adherence_history": [],
+    "current_suggestion_history": [],
+    "current_behavior_preference": []
+  },
+  "pre_annotation": {
+    "suggestion_reasoning": {
+      "assessment": "患者遵从状态显示部分遵从，天气因素影响运动习惯。缺少室内运动方案及应对寒冷天气的策略信息。",
+      "analysis": "不遵从行为表现为因天气原因暂停运动，且未尝试室内替代方案。潜在解决方案包括引导患者寻找室内运动方式或适应性运动计划。",
+      "diagnosis": "患者的部分遵从行为表明对天气敏感，风险等级为中等，可能导致心血管健康风险增加。",
+      "planning": "建议助手询问患者对室内运动的兴趣，并提供适合的室内运动建议，如瑜伽或简单力量训练。",
+      "evaluation": "规划内容与患者病情相符，未发现与其不遵从行为及个人偏好存在明显矛盾，合理性较高。"
+    },
+    "suggestion_message": "下雨天或者天气冷确实不方便出门，您有没有考虑过在家里做一些简单的室内运动，比如伸展或者练习太极招式？"
+  }
+}

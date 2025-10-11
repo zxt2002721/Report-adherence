@@ -1,0 +1,163 @@
+{
+  "sample_id": "sample_0b389f61f90fcf6da613e08c64e06fdbaf05758cdd9e6b5ae730f1b8a8a654e4_20240404_diet_aeebdf",
+  "patient_id": "0b389f61f90fcf6da613e08c64e06fdbaf05758cdd9e6b5ae730f1b8a8a654e4",
+  "task_name": "suggestion_reasoning_check",
+  "sample_data": {
+    "adherence_piece": {
+      "date": "2024-04-04",
+      "category": "饮食",
+      "overall_status": "部分遵从",
+      "reason": "患者饮食偏咸且难以控制盐分摄入，家庭成员口味重且患者不便多次要求调整。",
+      "details": "患者喜欢吃咸的海鲜和较多主食，家人做菜喜欢放盐，患者尝试通过微信沟通希望逐步调整饮食。",
+      "dialogue_date": "2024-04-04"
+    },
+    "patient_profile": {
+      "basic_info": {
+        "patient_id": "0b389f61f90fcf6da613e08c64e06fdbaf05758cdd9e6b5ae730f1b8a8a654e4",
+        "name": null,
+        "age": 80,
+        "sex": "女",
+        "marital_status": "丧偶",
+        "occupation": "退休",
+        "location": "山东省青岛市",
+        "education": "初中",
+        "income_bracket": "低",
+        "living_situation": "与家人同住",
+        "contact_phone": "138-XXXX-5678"
+      },
+      "disease_info": {
+        "primary_diseases": [
+          {
+            "disease_name": "II型糖尿病",
+            "icd10_code": "E11",
+            "years_since_diagnosis": 10.0,
+            "current_severity": "中度"
+          },
+          {
+            "disease_name": "高血压",
+            "icd10_code": "I10",
+            "years_since_diagnosis": 10.0,
+            "current_severity": "可控"
+          },
+          {
+            "disease_name": "冠心病",
+            "icd10_code": "I25",
+            "years_since_diagnosis": 10.0,
+            "current_severity": "中度"
+          }
+        ],
+        "comorbidities": [
+          {
+            "disease_name": "高脂血症",
+            "icd10_code": "E78.5",
+            "years_since_diagnosis": 5.0,
+            "current_severity": "轻度"
+          }
+        ],
+        "family_history": {
+          "父亲": "高血压",
+          "母亲": null,
+          "兄弟姐妹": null,
+          "子女": null
+        },
+        "allergies": [
+          "青霉素"
+        ],
+        "last_checkup_date": "2024-03-01"
+      },
+      "prescription": {
+        "medications": [
+          {
+            "drug_name": "厄贝沙坦氢氯噻嗪",
+            "dose": "150 mg",
+            "frequency": "每日一次",
+            "route": "口服"
+          },
+          {
+            "drug_name": "阿卡波糖",
+            "dose": "50 mg",
+            "frequency": "每日三次",
+            "route": "口服"
+          },
+          {
+            "drug_name": "格列吡嗪控释片",
+            "dose": "5 mg",
+            "frequency": "每日一次",
+            "route": "口服"
+          }
+        ],
+        "lifestyle": [
+          {
+            "recommendation_type": "饮食",
+            "description": "控制每日主食摄入至250克，增加蔬菜和蛋白质摄入，减少盐和糖的摄入。"
+          },
+          {
+            "recommendation_type": "运动",
+            "description": "每周5次适度运动，如步行30分钟。"
+          },
+          {
+            "recommendation_type": "睡眠",
+            "description": "确保睡眠质量，每晚不低于7小时。"
+          },
+          {
+            "recommendation_type": "压力",
+            "description": "每天进行放松练习，如瑜伽或冥想，缓解心理压力。"
+          }
+        ],
+        "next_followup_date": "2024-06-01",
+        "physician_notes": "注意血糖和血压的监测，增加家庭支持对于其依从性的提高有益。"
+      },
+      "behaviour_preferences": {
+        "preferences": [
+          {
+            "preference_type": "饮食",
+            "detail": "喜欢青岛本地海鲜，避免高油食物",
+            "prescription_impact": [
+              "饮食"
+            ]
+          },
+          {
+            "preference_type": "运动",
+            "detail": "偏好早晨室外活动，参与社区老年活动",
+            "prescription_impact": [
+              "运动"
+            ]
+          },
+          {
+            "preference_type": "休闲",
+            "detail": "喜爱阅读和书法，使用平板电脑观看电影",
+            "prescription_impact": []
+          },
+          {
+            "preference_type": "科技",
+            "detail": "掌握基础智能手机功能，使用微信与家人联系",
+            "prescription_impact": []
+          }
+        ]
+      },
+      "generation_timestamp": "2024-04-02 12:00:00+00:00"
+    },
+    "current_adherence_history": [
+      {
+        "date": "2024-04-02",
+        "category": "饮食",
+        "overall_status": "部分遵从",
+        "reason": "患者饮食习惯较好，但未明确执行饮食禁忌，且对调整饮食以减轻药物副作用的建议接受度有限。",
+        "details": "患者喜欢青岛海鲜，系统建议饭后吃易消化蔬菜以减轻药物副作用，但患者未明确表示采纳。患者有固定早饭时间（7点），但家人支持有限。",
+        "dialogue_date": "2024-04-02"
+      }
+    ],
+    "current_suggestion_history": [],
+    "current_behavior_preference": []
+  },
+  "pre_annotation": {
+    "suggestion_reasoning": {
+      "assessment": "当前患者的饮食遵从状态显示部分遵从，信息真实有效，但缺乏家庭成员对饮食调整的支持信息。",
+      "analysis": "患者偏咸饮食和家庭成员口味重的特征导致不遵从，建议可通过家庭沟通和逐步调整来解决。",
+      "diagnosis": "患者存在部分遵从行为，风险等级为中等，可能导致血压和血糖控制不良。",
+      "planning": "建议继续与患者沟通，了解其家庭成员的态度，并提供具体的饮食调整建议，如低盐食谱。",
+      "evaluation": "规划内容与患者的病情和不遵从行为一致，但需关注家庭成员的接受程度，以确保建议的可行性。"
+    },
+    "suggestion_message": "理解，咸味重的习惯和家人喜欢重口味确实让您很难坚持清淡饮食。您觉得跟家人商量做菜时减少盐分，尝试少量多次调整，您愿意试试看吗？"
+  }
+}

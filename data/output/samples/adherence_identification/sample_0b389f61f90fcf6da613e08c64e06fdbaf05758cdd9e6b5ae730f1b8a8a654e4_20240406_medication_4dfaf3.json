@@ -1,0 +1,92 @@
+{
+  "sample_id": "sample_0b389f61f90fcf6da613e08c64e06fdbaf05758cdd9e6b5ae730f1b8a8a654e4_20240406_medication_4dfaf3",
+  "patient_id": "0b389f61f90fcf6da613e08c64e06fdbaf05758cdd9e6b5ae730f1b8a8a654e4",
+  "task_name": "adherence_identification",
+  "sample_data": {
+    "dialogue_piece": [
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "继续跟进患者用药和生活习惯，识别波动表现。",
+          "analysis": "患者部分行为改善，但仍有遗忘和情绪困扰。",
+          "diagnosis": "依从性呈波动性。",
+          "planning": "分析困难，调整支持策略。",
+          "evaluation": "准备应对挫折，强化提醒。"
+        },
+        "message": "您好，最近几天用药和生活习惯执行得怎么样？有没有遇到什么特别难坚持的？",
+        "timestamp": "2024-04-06T09:00:00Z",
+        "message_type": "确认",
+        "emotional_tone": "中性"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "这两天我记得吃药了，特别是用彩色药盒后容易多了。就是早晨运动有点懒，昨天没去。",
+        "timestamp": "2024-04-06T09:01:30Z",
+        "message_type": "回应",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "患者行为有积极变化，运动依从稍弱。",
+          "analysis": "习惯开始养成，但仍存在行为障碍。",
+          "diagnosis": "行为层面逐步改善中。",
+          "planning": "鼓励小步运动，制定灵活计划。",
+          "evaluation": "强化正面反馈。"
+        },
+        "message": "彩色药盒起了很好的效果，太棒了！运动方面，您觉得早晨太冷还是其他原因让您懒得出门？",
+        "timestamp": "2024-04-06T09:03:00Z",
+        "message_type": "确认",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "就是天气冷，还有老觉得心慌，怕出门出啥事儿。",
+        "timestamp": "2024-04-06T09:04:30Z",
+        "message_type": "回应",
+        "emotional_tone": "焦虑"
+      }
+    ],
+    "prescription": {
+      "medications": [
+        {
+          "drug_name": "厄贝沙坦氢氯噻嗪",
+          "dose": "150 mg",
+          "frequency": "每日一次",
+          "route": "口服"
+        },
+        {
+          "drug_name": "阿卡波糖",
+          "dose": "50 mg",
+          "frequency": "每日三次",
+          "route": "口服"
+        },
+        {
+          "drug_name": "格列吡嗪控释片",
+          "dose": "5 mg",
+          "frequency": "每日一次",
+          "route": "口服"
+        }
+      ],
+      "lifestyle": [],
+      "next_followup_date": "2024-06-01",
+      "physician_notes": "注意血糖和血压的监测，增加家庭支持对于其依从性的提高有益。"
+    },
+    "adherence_category": "用药",
+    "session_date": "2024-04-06"
+  },
+  "pre_annotation": {
+    "adherence_check": [
+      {
+        "date": "2024-04-06",
+        "category": "用药",
+        "overall_status": "完全遵从",
+        "reason": null,
+        "details": "患者表示这两天记得吃药，使用彩色药盒帮助记忆，整体用药执行良好。",
+        "dialogue_date": "2024-04-06"
+      }
+    ]
+  }
+}

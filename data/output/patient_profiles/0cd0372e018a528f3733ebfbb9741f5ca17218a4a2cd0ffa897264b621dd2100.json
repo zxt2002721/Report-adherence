@@ -1,0 +1,133 @@
+{
+  "basic_info": {
+    "patient_id": "0cd0372e018a528f3733ebfbb9741f5ca17218a4a2cd0ffa897264b621dd2100",
+    "name": null,
+    "age": 51,
+    "sex": "女",
+    "marital_status": "已婚",
+    "occupation": "小学教师",
+    "location": "山东省东营市",
+    "education": "高中",
+    "income_bracket": "中",
+    "living_situation": "与家人同住",
+    "contact_phone": "138-1234-5678"
+  },
+  "disease_info": {
+    "primary_diseases": [
+      {
+        "disease_name": "冠心病",
+        "icd10_code": "I25.1",
+        "years_since_diagnosis": 13.0,
+        "current_severity": "中度"
+      },
+      {
+        "disease_name": "高血压",
+        "icd10_code": "I10",
+        "years_since_diagnosis": 13.0,
+        "current_severity": "中度"
+      }
+    ],
+    "comorbidities": [
+      {
+        "disease_name": "高脂血症",
+        "icd10_code": "E78.5",
+        "years_since_diagnosis": 3.0,
+        "current_severity": "轻度"
+      }
+    ],
+    "family_history": {
+      "母亲": null,
+      "父亲": null,
+      "兄弟姐妹": null,
+      "子女": null
+    },
+    "allergies": [
+      "青霉素"
+    ],
+    "last_checkup_date": "2025-02-02"
+  },
+  "prescription": {
+    "medications": [
+      {
+        "drug_name": "硝苯地平控释片",
+        "dose": "30mg",
+        "frequency": "每日一次",
+        "route": "口服"
+      },
+      {
+        "drug_name": "缬沙坦胶囊",
+        "dose": "80mg",
+        "frequency": "每日一次",
+        "route": "口服"
+      },
+      {
+        "drug_name": "琥珀酸美托洛尔缓释片",
+        "dose": "47.5mg",
+        "frequency": "每日一次",
+        "route": "口服"
+      }
+    ],
+    "lifestyle": [
+      {
+        "recommendation_type": "饮食",
+        "description": "减少盐摄入，每日盐摄入量控制在5克以下，增加蔬菜水果摄入，避免高脂高糖食物。"
+      },
+      {
+        "recommendation_type": "运动",
+        "description": "建议每周进行中等强度有氧运动150分钟，开始时从室内健步走和轻柔操逐步过渡。"
+      },
+      {
+        "recommendation_type": "睡眠",
+        "description": "保持规律作息，保证每晚7-8小时优质睡眠。"
+      },
+      {
+        "recommendation_type": "压力",
+        "description": "采取放松练习如深呼吸或静坐，每日15分钟，减少心理压力。"
+      }
+    ],
+    "next_followup_date": "2025-03-04",
+    "physician_notes": "患者血压控制欠佳，建议调整药物治疗并加强生活方式干预，关注心率和体重变化，定期监测血压及心电图。强调用药依从性和定期随访。"
+  },
+  "behaviour_preferences": {
+    "preferences": [
+      {
+        "preference_type": "饮食",
+        "detail": "偏爱家常口味，喜食清淡苏北风味，避免高盐重口味食物。",
+        "prescription_impact": [
+          "饮食"
+        ]
+      },
+      {
+        "preference_type": "运动",
+        "detail": "偏好室内静态运动，如瑜伽和慢速舞蹈，运动时间灵活，以周末活动为主。",
+        "prescription_impact": [
+          "运动"
+        ]
+      },
+      {
+        "preference_type": "休闲",
+        "detail": "喜欢读书、与社区老年群体交流，参加老年大学文化活动。",
+        "prescription_impact": [
+          "饮食",
+          "运动"
+        ]
+      },
+      {
+        "preference_type": "科技",
+        "detail": "能够使用智能手机及平板，熟悉基础健康APP操作，乐于学习健康管理知识。",
+        "prescription_impact": [
+          "监测"
+        ]
+      },
+      {
+        "preference_type": "其他",
+        "detail": "注重家庭和睦，关注养生文化，倾向天然疗法和传统保健方法。",
+        "prescription_impact": [
+          "用药",
+          "饮食"
+        ]
+      }
+    ]
+  },
+  "generation_timestamp": "2025-02-10 10:00:00+08:00"
+}

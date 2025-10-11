@@ -1,0 +1,139 @@
+{
+  "basic_info": {
+    "patient_id": "2d167509a99d23d5b6d470857f44cccf9e8d94ecc67351994432fac3718c138e",
+    "name": null,
+    "age": 64,
+    "sex": "女",
+    "marital_status": "已婚",
+    "occupation": "退休",
+    "location": "山东省淄博市",
+    "education": "高中",
+    "income_bracket": "中",
+    "living_situation": "与家人同住",
+    "contact_phone": "138-1234-5678"
+  },
+  "disease_info": {
+    "primary_diseases": [
+      {
+        "disease_name": "冠心病",
+        "icd10_code": "I25.1",
+        "years_since_diagnosis": 2.0,
+        "current_severity": "中度"
+      },
+      {
+        "disease_name": "高血压",
+        "icd10_code": "I10",
+        "years_since_diagnosis": 2.0,
+        "current_severity": "可控"
+      },
+      {
+        "disease_name": "II型糖尿病",
+        "icd10_code": "E11",
+        "years_since_diagnosis": 2.0,
+        "current_severity": "中度"
+      }
+    ],
+    "comorbidities": [
+      {
+        "disease_name": "骨质疏松症",
+        "icd10_code": "M81.0",
+        "years_since_diagnosis": null,
+        "current_severity": "轻度"
+      }
+    ],
+    "family_history": {
+      "母亲": "高血压",
+      "兄弟姐妹": null,
+      "父亲": null,
+      "子女": null,
+      "罕见遗传病或家族遗传倾向": null
+    },
+    "allergies": [
+      "青霉素"
+    ],
+    "last_checkup_date": "2024-12-21"
+  },
+  "prescription": {
+    "medications": [
+      {
+        "drug_name": "二甲双胍片",
+        "dose": "0.5 g",
+        "frequency": "每日一次",
+        "route": "口服"
+      },
+      {
+        "drug_name": "氨氯地平",
+        "dose": "5 mg",
+        "frequency": "每日一次",
+        "route": "口服"
+      },
+      {
+        "drug_name": "阿司匹林肠溶片",
+        "dose": "100 mg",
+        "frequency": "每日一次",
+        "route": "口服"
+      }
+    ],
+    "lifestyle": [
+      {
+        "recommendation_type": "饮食",
+        "description": "减少主食量至250克/日，增加蔬菜摄入，限制盐摄入量至5克/日，避免油炸和高脂肪食物"
+      },
+      {
+        "recommendation_type": "运动",
+        "description": "每周进行3次中等强度有氧运动，每次30分钟，如快走或太极拳"
+      },
+      {
+        "recommendation_type": "睡眠",
+        "description": "保持规律作息，保证每日7至8小时睡眠，避免熬夜"
+      },
+      {
+        "recommendation_type": "压力",
+        "description": "通过散步和适度休闲活动减压，适当参与社区活动"
+      }
+    ],
+    "next_followup_date": "2025-03-21",
+    "physician_notes": "患者三种主要慢性疾病均处于稳定期，血糖和血压控制较好，但需继续规范用药与生活方式干预，加强骨质疏松防治，建议定期复查骨密度与肾功能。"
+  },
+  "behaviour_preferences": {
+    "preferences": [
+      {
+        "preference_type": "饮食",
+        "detail": "偏好清淡口味，爱吃家常山东菜，适量主食，喜葱姜调味",
+        "prescription_impact": [
+          "饮食"
+        ]
+      },
+      {
+        "preference_type": "运动",
+        "detail": "喜欢室外慢步和太极拳，运动频率较低，易疲劳需注意适度",
+        "prescription_impact": [
+          "运动"
+        ]
+      },
+      {
+        "preference_type": "休闲",
+        "detail": "喜欢看电视和听戏曲，偶尔参加老年活动中心社交",
+        "prescription_impact": [
+          "用药"
+        ]
+      },
+      {
+        "preference_type": "科技",
+        "detail": "能使用智能手机与微信交流，接受电子健康教育内容",
+        "prescription_impact": [
+          "监测"
+        ]
+      },
+      {
+        "preference_type": "其他",
+        "detail": "注重家庭和谐，有较强遵医行为，尊重医生建议",
+        "prescription_impact": [
+          "用药",
+          "饮食"
+        ]
+      }
+    ]
+  },
+  "generation_timestamp": "2024-12-25 12:00:00+08:00"
+}

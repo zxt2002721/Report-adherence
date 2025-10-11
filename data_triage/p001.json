@@ -1,0 +1,399 @@
+{
+  "hpi": {
+    "meta": {
+      "sex": "F",
+      "age": 52
+    },
+    "chief_complaint": "Worsening abdominal distension and pain",
+    "history": {
+      "summary": "Patient with HCV cirrhosis and ascites presented from an outside ED with worsening abdominal distension and discomfort over the past week after self‑discontinuing furosemide and spironolactone weeks ago. She denies edema, shortness of breath, orthopnea, nausea, vomiting, diarrhea, constipation, dysuria, fever, or recent substance use. She reports recent gum bleeding and a brief period of confusion in the ED.",
+      "context": [
+        "HCV cirrhosis",
+        "HIV infection on ART",
+        "IV drug use history",
+        "COPD"
+      ],
+      "duration_weeks": 1
+    },
+    "opqrst": {
+      "onset": "Worsening over the past week",
+      "provocation_palliation": "Symptoms began after stopping diuretics; no relief with rest",
+      "quality": "Abdominal distension and discomfort",
+      "radiation": "None",
+      "severity": "Moderate, not quantified",
+      "timing": "Continuous"
+    },
+    "ros": {
+      "positive": [
+        "Gum bleeding while brushing teeth",
+        "Brief confusion in ED"
+      ],
+      "negative": [
+        "Edema",
+        "Shortness of breath",
+        "Orthopnea",
+        "Nausea",
+        "Vomiting",
+        "Diarrhea",
+        "Constipation",
+        "Dysuria",
+        "Fever",
+        "Chest pain",
+        "Recent drug use",
+        "Alcohol use"
+      ]
+    },
+    "ed_snapshot": {
+      "temperature": 98.4,
+      "heartrate": 70.0,
+      "resprate": 16.0,
+      "o2sat": 97.0,
+      "sbp": 106.0,
+      "dbp": 63.0,
+      "pain": "0",
+      "ESI": 3.0
+    }
+  },
+  "ph": {
+    "problems": [
+      {
+        "diagnosis": "Hepatitis C virus (HCV) cirrhosis",
+        "system": "Hepatology/Gastroenterology",
+        "status": "active",
+        "severity": "",
+        "complications": [
+          "portal hypertension",
+          "ascites"
+        ]
+      },
+      {
+        "diagnosis": "Human immunodeficiency virus (HIV) infection",
+        "system": "Infectious Disease",
+        "status": "active",
+        "severity": "",
+        "complications": []
+      },
+      {
+        "diagnosis": "Chronic obstructive pulmonary disease (COPD)",
+        "system": "Respiratory",
+        "status": "active",
+        "severity": "",
+        "complications": []
+      },
+      {
+        "diagnosis": "Bipolar disorder",
+        "system": "Psychiatry",
+        "status": "active",
+        "severity": "",
+        "complications": []
+      },
+      {
+        "diagnosis": "Post-traumatic stress disorder (PTSD)",
+        "system": "Psychiatry",
+        "status": "active",
+        "severity": "",
+        "complications": []
+      },
+      {
+        "diagnosis": "Anal dysplasia",
+        "system": "Hepatology/Gastroenterology",
+        "status": "active",
+        "severity": "",
+        "complications": []
+      },
+      {
+        "diagnosis": "Skin cancer",
+        "system": "Dermatology",
+        "status": "active",
+        "severity": "",
+        "complications": []
+      }
+    ],
+    "surgeries": [
+      {
+        "procedure": "Breast calcification removal (benign)",
+        "date": ""
+      },
+      {
+        "procedure": "Skin lesion biopsy",
+        "date": ""
+      }
+    ],
+    "allergies": [],
+    "meds": [
+      {
+        "drug": "Albuterol",
+        "dose": "2 PUFF",
+        "route": "inhaled",
+        "freq": "Q4H",
+        "prn": "true"
+      },
+      {
+        "drug": "Emtricitabine-Tenofovir (Truvada)",
+        "dose": "1 TAB",
+        "route": "PO",
+        "freq": "DAILY",
+        "prn": "false"
+      },
+      {
+        "drug": "Furosemide",
+        "dose": "20 mg",
+        "route": "PO",
+        "freq": "DAILY",
+        "prn": "false"
+      },
+      {
+        "drug": "Ipratropium Bromide",
+        "dose": "1 NEB",
+        "route": "inhaled",
+        "freq": "Q6H",
+        "prn": "false"
+      },
+      {
+        "drug": "Nicotine Patch",
+        "dose": "14 mg",
+        "route": "TD",
+        "freq": "DAILY",
+        "prn": "false"
+      },
+      {
+        "drug": "Raltegravir",
+        "dose": "400 mg",
+        "route": "PO",
+        "freq": "BID",
+        "prn": "false"
+      },
+      {
+        "drug": "Spironolactone",
+        "dose": "50 mg",
+        "route": "PO",
+        "freq": "DAILY",
+        "prn": "false"
+      }
+    ],
+    "social": {
+      "tobacco": {
+        "status": "former",
+        "quit": "2 years ago"
+      },
+      "alcohol": {
+        "status": "former",
+        "lastUse": "2 months ago"
+      },
+      "substances": [
+        {
+          "name": "heroin",
+          "route": "IV",
+          "status": "former",
+          "lastUse": ""
+        },
+        {
+          "name": "cocaine",
+          "route": "IV",
+          "status": "former",
+          "lastUse": ""
+        }
+      ],
+      "familyHistory": "No known GI or liver disease in family."
+    }
+  },
+  "RE_resources": {
+    "bedside": {
+      "assessment_and_monitoring": [
+        {
+          "testName": "生命体征与心电监护 (Vital Signs & Cardiac Monitoring)",
+          "testId": "BS-AM-001",
+          "reasoning": "Evidence from text: 'initial vitals were 98.4 70 106/63 16 97% RA'. Clinical Rationale: Essential for assessing hemodynamic stability and guiding fluid management in cirrhosis with ascites."
+        },
+        {
+          "testName": "体格检查 (Physical Examination)",
+          "testId": "BS-AM-003",
+          "reasoning": "Evidence from text: 'Pt reports self-discontinuing lasix...' and 'brief period of confusion'. Clinical Rationale: Evaluates medication adherence, mental status changes, and physical signs of portal hypertension (e.g., flank dullness, splenomegaly)."
+        }
+      ]
+    },
+    "laboratory_items": {
+      "hematology": [
+        {
+          "testName": "血常规 (Complete Blood Count - CBC)",
+          "testId": "LAB-HE-001",
+          "reasoning": "Evidence from text: 'WBC 5K, platelet 71'. Clinical Rationale: Identifies thrombocytopenia (portal hypertension) and leukopenia (HIV/cirrhosis), guiding bleeding risk and infection surveillance."
+        }
+      ],
+      "chemistry": [
+        {
+          "testName": "基础/全面代谢功能组合 (BMP/CMP)",
+          "testId": "LAB-CH-001",
+          "reasoning": "Evidence from text: 'SODIUM-138, POTASSIUM-3.4, CREAT-0.3'. Clinical Rationale: Assesses electrolyte balance, renal function, and guides diuretic adjustment in ascites management."
+        },
+        {
+          "testName": "特定器官功能标志物 (Specific Organ Markers, e.g., Lipase, LFTs, CK)",
+          "testId": "LAB-CH-004",
+          "reasoning": "Evidence from text: 'ALT(SGPT)-100, AST(SGOT)-114, TOT BILI-1.6'. Clinical Rationale: Confirms hepatic injury consistent with cirrhosis and rules out acute pancreatitis (normal lipase)."
+        }
+      ],
+      "coagulation": [
+        {
+          "testName": "凝血功能 (Coagulation Profile, e.g., PT/INR, PTT)",
+          "testId": "LAB-CO-001",
+          "reasoning": "Evidence from text: 'INR 1.6, PTT-30.9'. Clinical Rationale: Evaluates coagulopathy severity and bleeding risk prior to paracentesis."
+        }
+      ],
+      "urinalysis": [
+        {
+          "testName": "尿液分析及镜检 (Urinalysis with Microscopy)",
+          "testId": "LAB-UR-001",
+          "reasoning": "Evidence from text: 'UA negative'. Clinical Rationale: Rules out UTI as a source of infection in cirrhosis with ascites."
+        }
+      ],
+      "microbiology": [
+        {
+          "testName": "各类标本培养及涂片 (Cultures & Smears from various sources, e.g., Blood, Urine, Sputum, Wound)",
+          "testId": "LAB-MI-001",
+          "reasoning": "Evidence from text: 'Urine culture blood culture negative'. Clinical Rationale: Excludes systemic infection (sepsis) and guides antimicrobial stewardship."
+        }
+      ]
+    },
+    "diagnostic_items": {
+      "imaging": [
+        {
+          "testName": "X光 (X-ray)",
+          "testId": "DX-IM-001",
+          "reasoning": "Evidence from text: 'CXR: No acute cardiopulmonary process'. Clinical Rationale: Rules out cardiopulmonary causes of dyspnea and confirms absence of pleural effusion/consolidation."
+        },
+        {
+          "testName": "超声检查 (Ultrasound)",
+          "testId": "DX-IM-003",
+          "reasoning": "Evidence from text: 'Nodular appearance of the liver... small amount of ascites'. Clinical Rationale: Confirms cirrhosis, portal hypertension, and ascites volume to guide paracentesis and disposition."
+        }
+      ],
+      "other_studies": [
+        {
+          "testName": "诊断性穿刺操作 (Diagnostic Procedures, e.g., Lumbar Puncture, Paracentesis, Arthrocentesis)",
+          "testId": "DX-OS-003",
+          "reasoning": "Evidence from text: 'Diagnostic para attempted in the ED'. Clinical Rationale: Attempted to obtain ascitic fluid for SBP evaluation (ascitic PMN <250 cells/µL confirmed negative)."
+        }
+      ]
+    }
+  },
+  "pre_triage_summary": "一位52岁女性，有HCV肝硬化和腹水病史，主诉腹胀腹痛加重一周。患者自述数周前停用了利尿剂（呋塞米和螺内酯）。需要关注的是，她在急诊室出现了短暂的意识模糊，并且报告有牙龈出血，高度提示肝功能失代偿，可能存在早期肝性脑病和凝血功能障碍。生命体征目前平稳：无发热，心率70，呼吸16，血氧97%（室内空气）。血压偏软，为106/63 mmHg。患者否认发烧、呼吸困难或恶心呕吐等症状。其他重要病史包括HIV（正在治疗）和COPD。",
+  "max_time_to_doctor": {
+    "chose": "10-30 min",
+    "evidence": "尽管生命体征尚可，但意识状态的改变和出血迹象使该患者成为高风险人群。她不属于需要立即抢救的“0-10分钟”级别（如心搏骤停或严重创伤），但绝对不能在候诊区长时间等待。必须在30分钟内将其转移至治疗区进行评估、抽血化验（尤其是氨、凝血功能、电解质）并建立静脉通路，以防病情突然恶化。"
+  },
+  "deterioration_risk": {
+    "chose": "high",
+    "evidence": "该患者已经集齐了肝硬化失代償的多个高危因素（腹水加重、意识改变、出血倾向）。这些问题相互关联，会形成恶性循环。因此，她若不接受及时治疗，病情恶化的风险为“高”等级。"
+  },
+  "go_to_hospital": {
+    "chose": "yes",
+    "evidence": "患者出现了意识模糊和牙龈出血，提示可能存在肝性脑病和凝血功能障碍。这些都是严重的临床问题，不能在门诊处理。患者需要前往急诊进行密切监测和治疗，以防止病情进一步恶化。"
+  },
+  "hospital_recommendation": {
+    "recommendations": [
+      {
+        "priority": 1,
+        "hospital_info": {
+          "name": "市中心医院",
+          "level": "三级甲等",
+          "emergency_dept_status": "繁忙"
+        },
+        "resource_match": {
+          "matched_resources": [
+            "BS-AM-001",
+            "BS-AM-003",
+            "LAB-HE-001",
+            "LAB-CH-001",
+            "LAB-CH-004",
+            "LAB-CO-001",
+            "LAB-UR-001",
+            "LAB-MI-001",
+            "DX-IM-001",
+            "DX-IM-003",
+            "DX-OS-003"
+          ],
+          "match_rate": 100,
+          "critical_resources": [
+            "DX-OS-003"
+          ],
+          "missing_resources": []
+        },
+        "wait_time": {
+          "total_estimated_min": 70,
+          "queue_position": "中等（预计第8-12位）"
+        },
+        "pros_cons": {
+          "优势": [
+            "具备完整的急诊资源，包括诊断性穿刺能力",
+            "24小时肝病专科医生在岗",
+            "配备重症监护设备",
+            "如需住院可直接收治"
+          ],
+          "劣势": [
+            "等待时间较长（约70分钟）",
+            "急诊科目前繁忙"
+          ]
+        },
+        "recommendation_reason": "患者为肝硬化并发腹水恶化，需要诊断性腹穿以排除自发性细菌性腹膜炎（SBP）。该操作仅三级医院急诊科可实施，且患者可能需要专科会诊和住院治疗。虽然等待时间较长，但避免了转院风险。",
+        "risk_assessment": {
+          "transfer_risk": "无",
+          "delay_risk": "中等",
+          "resource_unavailable_risk": "极低"
+        }
+      },
+      {
+        "priority": 2,
+        "hospital_info": {
+          "name": "社区医疗中心",
+          "level": "二级",
+          "emergency_dept_status": "畅通"
+        },
+        "resource_match": {
+          "matched_resources": [
+            "BS-AM-001",
+            "BS-AM-003",
+            "LAB-HE-001",
+            "LAB-CH-001",
+            "DX-IM-001"
+          ],
+          "match_rate": 45,
+          "critical_resources": [],
+          "missing_resources": [
+            "DX-IM-003",
+            "DX-OS-003"
+          ]
+        },
+        "wait_time": {
+          "total_estimated_min": 25,
+          "queue_position": "靠前（预计第2-4位）"
+        },
+        "pros_cons": {
+          "优势": [
+            "等待时间短（约25分钟）",
+            "急诊科目前畅通",
+            "可完成基础检查和初步评估"
+          ],
+          "劣势": [
+            "缺少关键诊断资源（腹穿能力）",
+            "如需进一步诊疗需转院"
+          ]
+        },
+        "recommendation_reason": "如果患者症状轻微、生命体征稳定，可先到社区医院完成基础检查（血常规、生化）以快速评估。但由于缺乏腹穿能力，如果怀疑SBP或病情恶化，仍需转至三级医院，可能造成时间延误。",
+        "risk_assessment": {
+          "transfer_risk": "高",
+          "delay_risk": "高",
+          "resource_unavailable_risk": "高"
+        }
+      }
+    ],
+    "system_suggested": 1,
+    "suggestion_basis": {
+      "esi_level": 3,
+      "key_decision_factors": [
+        "需要诊断性穿刺（仅三级医院可提供）",
+        "肝硬化患者腹痛恶化，怀疑SBP需紧急排查",
+        "虽等待时间长，但避免转院风险更重要"
+      ]
+    }
+  }
+}

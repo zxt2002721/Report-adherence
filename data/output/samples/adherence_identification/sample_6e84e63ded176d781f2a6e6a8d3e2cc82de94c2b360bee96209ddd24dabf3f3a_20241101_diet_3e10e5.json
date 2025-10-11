@@ -1,0 +1,86 @@
+{
+  "sample_id": "sample_6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a_20241101_diet_3e10e5",
+  "patient_id": "6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a",
+  "task_name": "adherence_identification",
+  "sample_data": {
+    "dialogue_piece": [
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "一般是下午，喝茶聊天的时间，我觉得那时候吃药就很尴尬。",
+        "timestamp": "2024-11-01T09:10:00+08:00",
+        "message_type": "回应",
+        "emotional_tone": "焦虑"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "患者饮食偏好偏咸，家庭烹饪习惯影响饮食控制。",
+          "analysis": "饮食方面患者习惯山西家常口味，偏好面食，难以完全遵守低盐低脂。",
+          "diagnosis": "饮食遵从存在认知和行为障碍。",
+          "planning": "后续给予符合其偏好且健康的饮食建议。",
+          "evaluation": "饮食问题复杂，需个性化方案。"
+        },
+        "message": "除了用药，饮食方面您觉得还顺利吗？比如盐和脂肪的摄入，家里做菜都是怎样的？",
+        "timestamp": "2024-11-01T09:12:00+08:00",
+        "message_type": "问题",
+        "emotional_tone": "中性"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "我喜欢家里的山西面食，做菜也喜欢蒸煮少油，可家人喜欢吃咸和辣，做菜也难统一口味，我自己倒是尽量少放盐。",
+        "timestamp": "2024-11-01T09:13:30+08:00",
+        "message_type": "回应",
+        "emotional_tone": "中性"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "饮食方面患者面临家庭成员口味不同，难以完全控制盐分摄入。",
+          "analysis": "家庭影响饮食行为，患者有一定自我调节尝试。",
+          "diagnosis": "饮食习惯受社会层面影响，存在妥协。",
+          "planning": "建议患者尝试少盐调味料或单独调整个人餐盘。",
+          "evaluation": "饮食调整需兼顾家庭关系，介入难度较大。"
+        },
+        "message": "您做得很不错了，能不能试试用些香草、醋或者柠檬来调味，这样能减少盐的用量，口味也不会单调？您觉得这样方便吗？",
+        "timestamp": "2024-11-01T09:15:00+08:00",
+        "message_type": "教育",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "倒是可以试试，不过我怕家里人觉得怪，毕竟大家习惯了那个口味。",
+        "timestamp": "2024-11-01T09:16:30+08:00",
+        "message_type": "回应",
+        "emotional_tone": "焦虑"
+      }
+    ],
+    "prescription": {
+      "medications": [],
+      "lifestyle": [
+        {
+          "recommendation_type": "饮食",
+          "description": "低盐低脂饮食，避免高胆固醇食品，适量增加新鲜蔬菜和水果。"
+        }
+      ],
+      "next_followup_date": "2024-12-01",
+      "physician_notes": "患者冠心病与高血压控制总体良好，建议继续现有治疗，密切监测血压波动。注意饮食调控和规律运动，定期随访复查血脂及心功能。"
+    },
+    "adherence_category": "饮食",
+    "session_date": "2024-11-01"
+  },
+  "pre_annotation": {
+    "adherence_check": [
+      {
+        "date": "2024-11-01",
+        "category": "饮食",
+        "overall_status": "部分遵从",
+        "reason": "患者饮食中尽量减少盐的使用，但家人偏好咸辣口味，导致难以统一饮食习惯，存在一定饮食控制难度。",
+        "details": "患者喜欢蒸煮少油的山西面食，自己尽量少放盐，但家人喜欢咸辣，做菜口味难以统一。",
+        "dialogue_date": "2024-11-01"
+      }
+    ]
+  }
+}

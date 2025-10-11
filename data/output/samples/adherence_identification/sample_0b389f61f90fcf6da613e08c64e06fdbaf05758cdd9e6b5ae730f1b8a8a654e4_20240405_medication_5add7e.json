@@ -1,0 +1,100 @@
+{
+  "sample_id": "sample_0b389f61f90fcf6da613e08c64e06fdbaf05758cdd9e6b5ae730f1b8a8a654e4_20240405_medication_5add7e",
+  "patient_id": "0b389f61f90fcf6da613e08c64e06fdbaf05758cdd9e6b5ae730f1b8a8a654e4",
+  "task_name": "adherence_identification",
+  "sample_data": {
+    "dialogue_piece": [
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "嗯，微信发个消息倒是不难，我试试。",
+        "timestamp": "2024-04-05T09:10:30Z",
+        "message_type": "回应",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "引导患者正面应对焦虑，识别认知误区。",
+          "analysis": "患者可能对病情恐惧过度。",
+          "diagnosis": "认知层面焦虑。",
+          "planning": "介绍疾病控制好可减少风险。",
+          "evaluation": "缓解认知焦虑。"
+        },
+        "message": "关于病情，您知道吗？坚持服药和调整生活方式，血糖和血压控制好了，心脏病的风险会大大降低，这样可以减少您的担心。您觉得这信息对您有帮助吗？",
+        "timestamp": "2024-04-05T09:12:00Z",
+        "message_type": "教育",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "知道是知道，就是做起来难，特别是有时候心里烦躁。",
+        "timestamp": "2024-04-05T09:13:30Z",
+        "message_type": "回应",
+        "emotional_tone": "焦虑"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "识别患者情绪阻力，准备挫折应对。",
+          "analysis": "情绪波动影响依从。",
+          "diagnosis": "情感层面依从受阻。",
+          "planning": "鼓励逐步调整，避免完美主义。",
+          "evaluation": "建立支持耐心机制。"
+        },
+        "message": "这很正常，改变习惯不容易，您不必要求自己一下子做到完美。我们一起慢慢来，每次坚持一点点就是进步。您有什么想法或者困难可以随时告诉我。",
+        "timestamp": "2024-04-05T09:15:00Z",
+        "message_type": "教育",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "谢谢你，我会尽量努力。",
+        "timestamp": "2024-04-05T09:16:30Z",
+        "message_type": "回应",
+        "emotional_tone": "合作"
+      }
+    ],
+    "prescription": {
+      "medications": [
+        {
+          "drug_name": "厄贝沙坦氢氯噻嗪",
+          "dose": "150 mg",
+          "frequency": "每日一次",
+          "route": "口服"
+        },
+        {
+          "drug_name": "阿卡波糖",
+          "dose": "50 mg",
+          "frequency": "每日三次",
+          "route": "口服"
+        },
+        {
+          "drug_name": "格列吡嗪控释片",
+          "dose": "5 mg",
+          "frequency": "每日一次",
+          "route": "口服"
+        }
+      ],
+      "lifestyle": [],
+      "next_followup_date": "2024-06-01",
+      "physician_notes": "注意血糖和血压的监测，增加家庭支持对于其依从性的提高有益。"
+    },
+    "adherence_category": "用药",
+    "session_date": "2024-04-05"
+  },
+  "pre_annotation": {
+    "adherence_check": [
+      {
+        "date": "2024-04-05",
+        "category": "用药",
+        "overall_status": "部分遵从",
+        "reason": "患者知道坚持服药的重要性，但因心理烦躁和情绪影响，执行上存在困难。",
+        "details": "患者表示“知道是知道，就是做起来难，特别是有时候心里烦躁”，说明用药执行有波动，未完全稳定遵从。",
+        "dialogue_date": "2024-04-05"
+      }
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "sample_id": "sample_7cb394d6e1c52e050ef41a9caa3c186d6a6a71fe2172fa8f901783973404285a_20241014_diet_3f5ca3",
+  "patient_id": "7cb394d6e1c52e050ef41a9caa3c186d6a6a71fe2172fa8f901783973404285a",
+  "task_name": "adherence_identification",
+  "sample_data": {
+    "dialogue_piece": [
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "检查患者用药和饮食改变的执行情况，分析行为波动原因。",
+          "analysis": "患者存在反复，行为习惯未稳固，情感焦虑波动。",
+          "diagnosis": "依从性不稳定。",
+          "planning": "针对执行困难制定个性化干预，强化情感支持。",
+          "evaluation": "继续强化干预。"
+        },
+        "message": "您好，想了解一下，昨天您按计划吃药和控制饮食了吗？有没有遇到新的困难？",
+        "timestamp": "2024-10-14T09:00:00+08:00",
+        "message_type": "提醒",
+        "emotional_tone": "中性"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "昨天还算可以，卡托普利没忘，肚子疼的那个二甲双胍我也没少吃。不过下午亲戚又来家里喝茶，没忍住喝了点甜茶，今天早上血糖比前两天高。",
+        "timestamp": "2024-10-14T09:02:00+08:00",
+        "message_type": "回应",
+        "emotional_tone": "焦虑"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "患者用药依从有所改善，但饮食控制受社交影响波动。",
+          "analysis": "行为习惯有所进步，但社交压力仍然是挑战。",
+          "diagnosis": "行为依从部分改善，社交压力持续。",
+          "planning": "建议饮食社交策略强化。",
+          "evaluation": "重点解决饮食社交难题。"
+        },
+        "message": "很棒，您药物坚持得很好。关于喝甜茶的事，您觉得要不要提前跟亲戚说您的健康需要？或者喝之前吃点别的来减少影响？",
+        "timestamp": "2024-10-14T09:05:00+08:00",
+        "message_type": "教育",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "我试过说，可他们都说我小题大做，觉得糖分没那么重要。我不好意思多说，怕大家尴尬。",
+        "timestamp": "2024-10-14T09:08:00+08:00",
+        "message_type": "回应",
+        "emotional_tone": "困惑"
+      }
+    ],
+    "prescription": {
+      "medications": [],
+      "lifestyle": [
+        {
+          "recommendation_type": "饮食",
+          "description": "减少盐摄入，限制主食量至250克/日，增加蔬菜水果摄入，避免糖分过高食品。"
+        }
+      ],
+      "next_followup_date": "2025-01-02",
+      "physician_notes": "当前药物治疗基本稳定，建议调整二甲双胍剂量以优化血糖控制；密切监测血压波动，鼓励改善生活方式，防止慢性肾脏损伤进展。注重患者教育，提高依从性。"
+    },
+    "adherence_category": "饮食",
+    "session_date": "2024-10-14"
+  },
+  "pre_annotation": {
+    "adherence_check": [
+      {
+        "date": "2024-10-14",
+        "category": "饮食",
+        "overall_status": "部分遵从",
+        "reason": "患者因社交场合饮用甜茶，导致血糖升高。",
+        "details": "患者在亲戚来访时喝了甜茶，次日早晨血糖较前几天升高。患者尝试向亲戚说明但未被理解。",
+        "dialogue_date": "2024-10-14"
+      }
+    ]
+  }
+}

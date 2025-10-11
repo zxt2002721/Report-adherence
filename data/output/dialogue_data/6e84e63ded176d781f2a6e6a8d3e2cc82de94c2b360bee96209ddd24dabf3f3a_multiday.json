@@ -1,0 +1,845 @@
+{
+  "sessions": [
+    {
+      "session_id": "20250721030658",
+      "session_date": "2024-11-01",
+      "patient_id": "6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a",
+      "conversation_turns": [
+        {
+          "speaker": "system",
+          "reasoning": {
+            "assessment": "初次问候并询问患者近期用药、饮食和运动情况，观察其整体遵从状态。",
+            "analysis": "患者可能初期防御，表面听话但存在隐性问题。",
+            "diagnosis": "初步怀疑患者存在多维度不遵从，尤其用药和饮食。",
+            "planning": "以耐心倾听为主，逐步打开话题，建立信任。",
+            "evaluation": "未出现明显抗拒，需深挖潜在困难。"
+          },
+          "message": "您好，我是您的健康助手贝贝。想了解一下，最近您的血压和心脏用药吃得怎么样？",
+          "timestamp": "2024-11-01T09:00:00+08:00",
+          "message_type": "问题",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "唉，药我是吃了，就是有时候忘记，尤其早上老想多睡会儿。",
+          "timestamp": "2024-11-01T09:01:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "困惑"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "assessment": "患者承认存在行为层面遗忘问题。",
+            "analysis": "可能与生活习惯和睡眠时间有关。",
+            "diagnosis": "用药行为依从性不佳，部分忘记。",
+            "planning": "后续询问具体用药时间及是否尝试用手机提醒。",
+            "evaluation": "患者表现出一定的坦诚，方便进一步干预。"
+          },
+          "message": "明白，您一般是几点服药呢？有没有试过用手机提醒帮助记得吃药？",
+          "timestamp": "2024-11-01T09:02:30+08:00",
+          "message_type": "问题",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "一般就是早上吃，手机我会设置提醒，可老被别的消息打扰，提醒经常错过。",
+          "timestamp": "2024-11-01T09:04:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "困惑"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "assessment": "患者用药依从存在技术层面障碍，手机提醒效果不佳。",
+            "analysis": "患者熟悉手机但提醒功能干扰大。",
+            "diagnosis": "技术辅助存在不便，行为障碍显著。",
+            "planning": "建议调整提醒方式或尝试多重提醒。",
+            "evaluation": "患者有一定的科技使用能力，可尝试优化方法。"
+          },
+          "message": "了解，手机提醒打扰多的话，我们可以试试设置专门的闹钟，或者在家里固定放置药盒，并每天固定时间服药，您觉得怎么样？",
+          "timestamp": "2024-11-01T09:05:30+08:00",
+          "message_type": "提醒",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "我家里有个小药盒，不过有时候出门没带，带药也麻烦，尤其去邻居家聚会，怕别人问起我的病。",
+          "timestamp": "2024-11-01T09:07:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "assessment": "患者表达社会层面的隐私和社交压力影响用药行为。",
+            "analysis": "患者害怕被邻居知道患病，影响外出用药。",
+            "diagnosis": "社会支持不足，存在隐私顾虑。",
+            "planning": "后续需要探讨如何改善社交环境与患者的接受度。",
+            "evaluation": "发现社会阻力，为长期干预点。"
+          },
+          "message": "理解您的顾虑，很多人都有这样的感觉。我们可以一起想办法，如何在不引起别人注意的情况下，方便地服药。您平时一般什么时间去邻居家？",
+          "timestamp": "2024-11-01T09:08:30+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "一般是下午，喝茶聊天的时间，我觉得那时候吃药就很尴尬。",
+          "timestamp": "2024-11-01T09:10:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "assessment": "患者饮食偏好偏咸，家庭烹饪习惯影响饮食控制。",
+            "analysis": "饮食方面患者习惯山西家常口味，偏好面食，难以完全遵守低盐低脂。",
+            "diagnosis": "饮食遵从存在认知和行为障碍。",
+            "planning": "后续给予符合其偏好且健康的饮食建议。",
+            "evaluation": "饮食问题复杂，需个性化方案。"
+          },
+          "message": "除了用药，饮食方面您觉得还顺利吗？比如盐和脂肪的摄入，家里做菜都是怎样的？",
+          "timestamp": "2024-11-01T09:12:00+08:00",
+          "message_type": "问题",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "我喜欢家里的山西面食，做菜也喜欢蒸煮少油，可家人喜欢吃咸和辣，做菜也难统一口味，我自己倒是尽量少放盐。",
+          "timestamp": "2024-11-01T09:13:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "assessment": "饮食方面患者面临家庭成员口味不同，难以完全控制盐分摄入。",
+            "analysis": "家庭影响饮食行为，患者有一定自我调节尝试。",
+            "diagnosis": "饮食习惯受社会层面影响，存在妥协。",
+            "planning": "建议患者尝试少盐调味料或单独调整个人餐盘。",
+            "evaluation": "饮食调整需兼顾家庭关系，介入难度较大。"
+          },
+          "message": "您做得很不错了，能不能试试用些香草、醋或者柠檬来调味，这样能减少盐的用量，口味也不会单调？您觉得这样方便吗？",
+          "timestamp": "2024-11-01T09:15:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "倒是可以试试，不过我怕家里人觉得怪，毕竟大家习惯了那个口味。",
+          "timestamp": "2024-11-01T09:16:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "assessment": "患者情感层面有压力，担心家人不理解，导致饮食遵从难。",
+            "analysis": "患者存在社会支持不足问题，影响饮食行为。",
+            "diagnosis": "饮食行为难以坚持，情感负担加重。",
+            "planning": "后续尝试引导患者和家人沟通，寻求支持。",
+            "evaluation": "社会支持干预必要。"
+          },
+          "message": "能理解您的担心，有时候沟通确实不容易。下次我可以帮您准备一些和家人交流的小建议，让他们知道您的健康需要，您看好吗？",
+          "timestamp": "2024-11-01T09:18:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "嗯，也好，看看怎么说吧。",
+          "timestamp": "2024-11-01T09:19:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "assessment": "初步识别到患者运动依从基本良好，偏好户外快走和太极，习惯上午运动。",
+            "analysis": "运动习惯较好，是可利用的正面行为资源。",
+            "diagnosis": "运动领域遵从较好，便于后续强化。",
+            "planning": "继续鼓励保持运动，观察是否有波动。",
+            "evaluation": "建立积极支持。"
+          },
+          "message": "听说您喜欢早上去快走和练太极，这样的运动习惯保持得怎么样？",
+          "timestamp": "2024-11-01T09:21:00+08:00",
+          "message_type": "问题",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "还行，基本都坚持，就是偶尔天冷或者下雨就偷懒了。",
+          "timestamp": "2024-11-01T09:22:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "assessment": "患者运动依从有季节性波动，行为层面受天气影响较大。",
+            "analysis": "需要寻找替代方案或激励措施减少波动。",
+            "diagnosis": "运动习惯尚需巩固。",
+            "planning": "建议室内适当运动替代。",
+            "evaluation": "提供多样选择，降低阻力。"
+          },
+          "message": "下雨天或者天气冷确实不方便出门，您有没有考虑过在家里做一些简单的室内运动，比如伸展或者练习太极招式？",
+          "timestamp": "2024-11-01T09:24:00+08:00",
+          "message_type": "提醒",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "这个倒没试过，家里也没啥地方，怕摔着。",
+          "timestamp": "2024-11-01T09:25:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "困惑"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "assessment": "患者担忧家庭环境安全影响运动行为。",
+            "analysis": "行为障碍明显，需安全指导。",
+            "diagnosis": "室内运动的顾虑限制了运动依从。",
+            "planning": "建议提供安全运动指导。",
+            "evaluation": "未来需具体指导与鼓励。"
+          },
+          "message": "明白您的顾虑，家里确实要注意安全。我可以教您几招简单稳妥的太极动作，适合小空间，也能保持身体活动，您看什么时候方便？",
+          "timestamp": "2024-11-01T09:27:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        }
+      ],
+      "end_time": "2024-11-01T09:28:00+08:00",
+      "adherence_outcome": "未知",
+      "system_interventions": [
+        "教育",
+        "提提醒"
+      ]
+    },
+    {
+      "session_id": "20250722030658",
+      "session_date": "2024-11-02",
+      "patient_id": "6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a",
+      "conversation_turns": [
+        {
+          "speaker": "system",
+          "reasoning": {
+            "assessment": "回顾昨日对话，进一步深入了解患者用药情绪和认知障碍。",
+            "analysis": "患者可能对药物副作用存疑。",
+            "diagnosis": "认知偏差影响用药依从。",
+            "planning": "尝试消除误解，降低情感障碍。",
+            "evaluation": "耐心细致沟通为重点。"
+          },
+          "message": "您好，昨天聊到您有时候忘记吃药，今天我想了解一下，您对这些药有没有什么担心或者感觉？",
+          "timestamp": "2024-11-02T09:00:00+08:00",
+          "message_type": "问题",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "说实话，我有点怕苯磺酸左旋氨氯地平片的副作用，听说有的人吃了会头晕，我昨天吃了头晕，就自己停了两天。",
+          "timestamp": "2024-11-02T09:01:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "assessment": "患者认知误区导致自行停药，存在安全风险。",
+            "analysis": "副作用信息未充分理解，患者缺乏正确指导。",
+            "diagnosis": "用药认知障碍。",
+            "planning": "解释药物作用和副作用管理。",
+            "evaluation": "需强化用药安全教育。"
+          },
+          "message": "明白您的担心。这个药确实可能会有些头晕感，但一般是开始用药时身体适应的反应，如果头晕严重或持续，应该告诉医生，不建议自行停药，停药反而可能加重病情。您平时头晕的情况严重吗？",
+          "timestamp": "2024-11-02T09:03:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "有时候有点头晕，但没持续几天就好了，我自己就怕越吃越不好。",
+          "timestamp": "2024-11-02T09:04:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "assessment": "患者情感层面对长期用药的恐惧和担忧影响依从。",
+            "analysis": "存在情感障碍，担心长期副作用。",
+            "diagnosis": "情感维度影响用药持续性。",
+            "planning": "强调药物益处和风险平衡。",
+            "evaluation": "需耐心引导调整情感认知。"
+          },
+          "message": "您的担心很正常，长期用药确实让人有压力。其实，这些药是帮助控制血压和预防心脏病发作的，好处远大于可能的副作用。我们可以一起监测您的情况，及时调整用药，您觉得怎么样？",
+          "timestamp": "2024-11-02T09:06:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "嗯，我也知道要吃，可有时候一想到这病得一辈子治下去，就挺闷的。",
+          "timestamp": "2024-11-02T09:07:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "assessment": "患者情绪低落，长期疾病带来情感负担。",
+            "analysis": "情感障碍需要社会支持及心理疏导。",
+            "diagnosis": "情绪压力明显。",
+            "planning": "建议尝试减压方法，寻求家人支持。",
+            "evaluation": "后续关注情感状态变化。"
+          },
+          "message": "确实，长期疾病管理很累人。您平时有没有什么让自己放松心情的活动？比如听戏曲、看书？",
+          "timestamp": "2024-11-02T09:09:00+08:00",
+          "message_type": "提醒",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "我喜欢听戏曲，也喜欢邻居一起聊天，算是我的乐趣了。",
+          "timestamp": "2024-11-02T09:10:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "assessment": "患者已有一定应对压力的活动，社交适中。",
+            "analysis": "社会支持资源存在，后续可增强。",
+            "diagnosis": "情感调节部分可用资源。",
+            "planning": "鼓励保持并扩展这些活动。",
+            "evaluation": "有助改善情绪和遵从。"
+          },
+          "message": "太好了，保持这些兴趣爱好对健康有帮助。遇到情绪低落时，可以试着做些深呼吸或冥想，缓解压力。您想了解这方面的技巧吗？",
+          "timestamp": "2024-11-02T09:12:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "可以试试，不过我平时也不太知道怎么做。",
+          "timestamp": "2024-11-02T09:13:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "assessment": "患者愿意尝试新方法缓解压力，但缺乏技能。",
+            "analysis": "行为层面需技能指导。",
+            "diagnosis": "压力管理能力不足。",
+            "planning": "计划提供简单易行的减压指导。",
+            "evaluation": "利于情绪改善。"
+          },
+          "message": "没问题，我可以给您发一些简单的深呼吸和冥想练习，您每天花几分钟练习，就会觉得轻松一些。",
+          "timestamp": "2024-11-02T09:15:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "好，那我试试看吧。",
+          "timestamp": "2024-11-02T09:16:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "assessment": "饮食方面进一步探查患者自我调节和家庭影响。",
+            "analysis": "饮食不易调整，患者既有尝试也有阻力。",
+            "diagnosis": "饮食遵从存在双重阻碍。",
+            "planning": "后续可尝试家庭饮食沟通支持。",
+            "evaluation": "社会层面关键点。"
+          },
+          "message": "昨天说您家人喜欢吃咸辣，您自己尽量少放盐，平时有没有和家人商量过，共同调整饮食？",
+          "timestamp": "2024-11-02T09:18:00+08:00",
+          "message_type": "问题",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "说过，可他们觉得我小题大做，自己改了口味也不太好，家里气氛有点紧张。",
+          "timestamp": "2024-11-02T09:19:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        }
+      ],
+      "end_time": "2024-11-02T09:20:00+08:00",
+      "adherence_outcome": "下降",
+      "system_interventions": [
+        "教育",
+        "提提醒"
+      ]
+    },
+    {
+      "session_id": "20250723030658",
+      "session_date": "2024-11-03",
+      "patient_id": "6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a",
+      "conversation_turns": [
+        {
+          "speaker": "system",
+          "reasoning": {
+            "assessment": "关注患者昨日反馈的情绪压力及家庭矛盾问题。",
+            "analysis": "患者对家人支持不足表现不满，情绪波动。",
+            "diagnosis": "社会支持缺失导致情绪及行为障碍。",
+            "planning": "引导患者思考改善家庭沟通的具体方法。",
+            "evaluation": "需要细致的沟通技巧指导。"
+          },
+          "message": "您好，昨天说到和家人沟通有点紧张，您觉得主要是什么原因让大家难以达成共识呢？",
+          "timestamp": "2024-11-03T09:00:00+08:00",
+          "message_type": "问题",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "我家人都觉得我年纪大了，吃那么多药也没啥大用，平时说的话他们也不太当回事。",
+          "timestamp": "2024-11-03T09:01:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "抗拒"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "assessment": "患者感受到家人缺乏理解和支持，产生抗拒情绪。",
+            "analysis": "社会层面影响情绪和行为的关键因素。",
+            "diagnosis": "家庭支持不足，情绪障碍加重。",
+            "planning": "计划提供沟通技巧及情感疏导建议。",
+            "evaluation": "需帮助患者建立支持系统。"
+          },
+          "message": "您感觉家人的这种态度让您挺难受的，这很正常。或许我们可以想一些方式，帮他们更了解您的健康状况，您愿意试试吗？",
+          "timestamp": "2024-11-03T09:03:00+08:00",
+          "message_type": "提醒",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "也想让他们明白，可我跟他们说他们就说我啰嗦。",
+          "timestamp": "2024-11-03T09:04:30+08:00,",
+          "message_type": "回应",
+          "emotional_tone": "抗拒"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "assessment": "患者表达情感隔阂，沟通效果差。",
+            "analysis": "情绪障碍和家庭关系紧张相互影响。",
+            "diagnosis": "情感支持缺失，影响生活质量。",
+            "planning": "建议患者尝试表达感受，减少对抗。",
+            "evaluation": "后续需强化情感表达训练。"
+          },
+          "message": "有时候表达健康的需要确实容易让人反感，您可以尝试告诉他们，您希望他们理解您，是为了大家好，您觉得这样说会不会让气氛缓和一些？",
+          "timestamp": "2024-11-03T09:06:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "说得容易，实际上家里吵架了，我心情就更差，药都忘了吃。",
+          "timestamp": "2024-11-03T09:07:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "assessment": "患者负面情绪严重影响用药行为。",
+            "analysis": "情绪障碍导致行为依从倒退。",
+            "diagnosis": "情绪影响行为依从。",
+            "planning": "建议患者学习简单情绪调节技巧。",
+            "evaluation": "减少挫败感，增强自我管理能力。"
+          },
+          "message": "情绪不好确实会影响吃药，我建议您遇到不开心时，试着做几次深呼吸，或者听听喜欢的戏曲，稍微放松一下，您觉得可以试试吗？",
+          "timestamp": "2024-11-03T09:09:00+08:00",
+          "message_type": "提醒",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "嗯，昨天你发来的那些呼吸练习，我试过了，感觉有点用。",
+          "timestamp": "2024-11-03T09:10:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "assessment": "患者尝试新方法，初步产生积极反馈。",
+            "analysis": "行为层面开始有小突破。",
+            "diagnosis": "情绪调节技能初步建立。",
+            "planning": "鼓励继续练习。",
+            "evaluation": "利于稳定情绪和行为改善。"
+          },
+          "message": "很好，继续保持，每天练习几分钟，情绪会慢慢好起来的。",
+          "timestamp": "2024-11-03T09:12:00+08:00",
+          "message_type": "提醒",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "assessment": "运动方面，关注患者坚持情况及障碍。",
+            "analysis": "昨日提及天气影响运动，需跟进。",
+            "diagnosis": "行为层面运动依从存在波动。",
+            "planning": "引导患者尝试室内运动方案。",
+            "evaluation": "促进运动持续性。"
+          },
+          "message": "上次您说天气冷或下雨会影响运动，您这几天有尝试室内运动吗？",
+          "timestamp": "2024-11-03T09:13:30+08:00",
+          "message_type": "问题",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "说实话没试，家里地方小，怕摔着。",
+          "timestamp": "2024-11-03T09:15:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "困惑"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "assessment": "室内环境限制是运动障碍之一。",
+            "analysis": "行为障碍明显。",
+            "diagnosis": "运动依从性仍需干预。",
+            "planning": "建议简易安全动作和环境布置。",
+            "evaluation": "促使小步快走式改变。"
+          },
+          "message": "我可以帮您设计几个简单又安全的动作，不需要太大空间，也能保持身体活动，您明天方便我教您吗？",
+          "timestamp": "2024-11-03T09:16:30+08:00",
+          "message_type": "提醒",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "好吧，明天试试。",
+          "timestamp": "2024-11-03T09:18:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "合作"
+        }
+      ],
+      "end_time": "2024-11-03T09:19:00+08:00",
+      "adherence_outcome": "维持",
+      "system_interventions": [
+        "教育",
+        "提提醒"
+      ]
+    },
+    {
+      "session_id": "20250724030658",
+      "session_date": "2024-11-04",
+      "patient_id": "6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a",
+      "conversation_turns": [
+        {
+          "speaker": "system",
+          "reasoning": {
+            "assessment": "开始教授患者室内简单运动，关注患者接受程度和实际操作情况。",
+            "analysis": "尝试具体行为改变。",
+            "diagnosis": "运动行为初步介入。",
+            "planning": "观察患者反馈调整策略。",
+            "evaluation": "促进运动依从稳定。"
+          },
+          "message": "早上好，今天我来教您几招简单的太极动作，动作不大，您可以坐着或站着做，安全第一，您准备好了吗？",
+          "timestamp": "2024-11-04T09:00:00+08:00",
+          "message_type": "问题",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "嗯，准备好了，您说。",
+          "timestamp": "2024-11-04T09:01:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "assessment": "指导具体动作，重视患者安全感。",
+            "analysis": "行为层面辅助技能提升。",
+            "diagnosis": "提高运动执行能力。",
+            "planning": "鼓励分步练习。",
+            "evaluation": "利于运动持续。"
+          },
+          "message": "第一步，双手轻轻平举，缓慢向前推，动作要轻柔，感受气息，做五次。做完告诉我感觉如何。",
+          "timestamp": "2024-11-04T09:02:30+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "做了，感觉手有点酸，但还行。",
+          "timestamp": "2024-11-04T09:04:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "assessment": "鼓励患者反馈并调整动作节奏。",
+            "analysis": "建立积极行为反馈。",
+            "diagnosis": "运动接受度提升。",
+            "planning": "继续教学，巩固行为。",
+            "evaluation": "增强患者自信。"
+          },
+          "message": "很好，刚开始会有点酸是正常的，慢慢会适应。接着再做第二个动作，双脚并拢，脚跟稍微抬起，保持平衡，做三次。",
+          "timestamp": "2024-11-04T09:05:30+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "这个有点难，我站不稳，得扶着椅子。",
+          "timestamp": "2024-11-04T09:07:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "困惑"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "assessment": "患者安全感需求强烈，动作需调整。",
+            "analysis": "行为执行障碍，需个性化调整。",
+            "diagnosis": "运动依从面临环境限制。",
+            "planning": "建议使用辅助工具。",
+            "evaluation": "保证安全前提下促进运动。"
+          },
+          "message": "没关系，您可以扶着椅背做动作，安全第一，不用勉强。慢慢练，习惯了就会好些。",
+          "timestamp": "2024-11-04T09:08:30+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "好，我会注意。",
+          "timestamp": "2024-11-04T09:09:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "assessment": "回顾患者前两天的用药和饮食问题，尝试重新提问，检测状况。",
+            "analysis": "行为和认知障碍仍存在。",
+            "diagnosis": "用药和饮食依从情况需动态监控。",
+            "planning": "继续跟进提醒和教育。",
+            "evaluation": "稳定性尚不足。"
+          },
+          "message": "除了运动，您这几天药物和饮食执行得怎么样？有没有遇到新的困难？",
+          "timestamp": "2024-11-04T09:11:00+08:00",
+          "message_type": "问题",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "药倒是比前几天吃得多了，就是忘记的事还时有发生，饮食那块嘛，家人还是没变，咱这大锅饭，咸菜和油也没少放。",
+          "timestamp": "2024-11-04T09:12:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "assessment": "患者用药行为有小幅改善，饮食问题依旧突出。",
+            "analysis": "行为层面出现小进步，社会环境未变。",
+            "diagnosis": "用药行为有改善迹象，饮食依从难。",
+            "planning": "鼓励用药进步，继续解决饮食障碍。",
+            "evaluation": "需要持续干预。"
+          },
+          "message": "您在用药方面做得很好，记得时多了，继续加油。饮食方面我们一起想办法，您是否愿意尝试和家人一起制定一些健康菜谱？",
+          "timestamp": "2024-11-04T09:14:00+08:00",
+          "message_type": "提醒",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "这事儿说着容易，家人那会儿反对我又说不出口。",
+          "timestamp": "2024-11-04T09:15:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        }
+      ],
+      "end_time": "2024-11-04T09:16:00+08:00",
+      "adherence_outcome": "改善",
+      "system_interventions": [
+        "教育",
+        "提提醒"
+      ]
+    },
+    {
+      "session_id": "20250725030658",
+      "session_date": "2024-11-05",
+      "patient_id": "6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a",
+      "conversation_turns": [
+        {
+          "speaker": "system",
+          "reasoning": {
+            "assessment": "本日开场复查患者用药和情绪状态，关注昨日承诺及实际执行。",
+            "analysis": "检测患者坚持新行为情况及情绪波动。",
+            "diagnosis": "行为习惯仍处建立期，情绪有时波动。",
+            "planning": "给予积极反馈与挫折应对。",
+            "evaluation": "促进正向行为循环。"
+          },
+          "message": "您好，昨天练习太极动作感觉怎么样？药物和饮食有没有什么新的进展？",
+          "timestamp": "2024-11-05T09:00:00+08:00",
+          "message_type": "问题",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "动作做了几次，家里太小做着怪别扭，不过比没动强。药是按时吃了几天，今儿早上倒忘了，饮食还是老样子。",
+          "timestamp": "2024-11-05T09:01:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "assessment": "患者运动行为不稳定，用药偶有忘记，饮食无改善。",
+            "analysis": "行为依从波动，情绪及环境因素影响。",
+            "diagnosis": "波动型依从模式。",
+            "planning": "引导患者接受不完美，逐步改进。",
+            "evaluation": "稳定情绪，增强自我效能。"
+          },
+          "message": "偶尔忘记很正常，别给自己太大压力。我们可以想些小方法，比如把药盒放在经常看见的地方，提醒自己。您觉得哪儿放药方便记得？",
+          "timestamp": "2024-11-05T09:03:00+08:00",
+          "message_type": "提醒",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "放厨房吧，那里常常去，顺手就能看到。",
+          "timestamp": "2024-11-05T09:04:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "assessment": "针对患者用药行为提供个性化建议。",
+            "analysis": "行为层面促进提醒机制。",
+            "diagnosis": "用药依从改善措施。",
+            "planning": "强调持续监督和反馈。",
+            "evaluation": "促进依从持续提升。"
+          },
+          "message": "好的，那您就把药盒放厨房的醒目位置，做饭或吃饭时顺便记得吃药。同时，可以用手机设置第二个提醒，双保险。",
+          "timestamp": "2024-11-05T09:06:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "手机提醒我还得调调，昨儿那个闹钟声音小，经常听不见。",
+          "timestamp": "2024-11-05T09:07:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "困惑"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "assessment": "患者使用手机提醒存在技术问题。",
+            "analysis": "技术层面障碍需解决。",
+            "diagnosis": "用药提醒系统优化需求。",
+            "planning": "建议调整提醒铃声及时长。",
+            "evaluation": "提高提醒有效性。"
+          },
+          "message": "您可以把手机闹钟声音调大一些，或者选一个响亮的铃声，这样提醒效果会更好。您会操作吗？",
+          "timestamp": "2024-11-05T09:09:00+08:00",
+          "message_type": "提醒",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "会的，改天我试试看。",
+          "timestamp": "2024-11-05T09:10:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "assessment": "关注饮食障碍继续存在，患者家庭环境未变。",
+            "analysis": "社会和行为层面饮食问题难突破。",
+            "diagnosis": "饮食依从障碍仍在。",
+            "planning": "建议分步尝试沟通。",
+            "evaluation": "缓解家庭矛盾促进饮食改善。"
+          },
+          "message": "关于饮食，您提到家里口味难改，您看有没有可能每周挑一天，全家尝试一些低盐健康菜肴？慢慢影响大家的习惯。",
+          "timestamp": "2024-11-05T09:11:30+08:00",
+          "message_type": "提醒",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "唉，这主意不错，可我怕一开始家人反感，我也不想总惹事。",
+          "timestamp": "2024-11-05T09:13:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "assessment": "患者担忧家庭冲突，影响饮食行为变动。",
+            "analysis": "情感及社会阻力依然明显。",
+            "diagnosis": "情感障碍影响行为改进。",
+            "planning": "鼓励小步试探，避免激烈冲突。",
+            "evaluation": "维护家庭和谐与健康平衡。"
+          },
+          "message": "理解您的顾虑，我们可以先从自己开始调整，比如做一小份低盐菜自己吃，等家人看到您状态好，也许他们会愿意尝试。",
+          "timestamp": "2024-11-05T09:14:30+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "这样说起来，好像能行，我试试。",
+          "timestamp": "2024-11-05T09:16:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "合作"
+        }
+      ],
+      "end_time": "2024-11-05T09:17:00+08:00",
+      "adherence_outcome": "改善",
+      "system_interventions": [
+        "教育",
+        "提提醒"
+      ]
+    }
+  ]
+}

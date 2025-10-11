@@ -1,0 +1,139 @@
+{
+  "basic_info": {
+    "patient_id": "3b27958e8cf554f4afd5252d88278c350b9d2392e8c36d7e16221182d4185fc6",
+    "name": null,
+    "age": 76,
+    "sex": "男",
+    "marital_status": "已婚",
+    "occupation": "退休人员",
+    "location": "广东省珠海市",
+    "education": "高中",
+    "income_bracket": "中",
+    "living_situation": "与家人同住",
+    "contact_phone": "138-0000-5678"
+  },
+  "disease_info": {
+    "primary_diseases": [
+      {
+        "disease_name": "高血压",
+        "icd10_code": "I10",
+        "years_since_diagnosis": 13.0,
+        "current_severity": "中度"
+      },
+      {
+        "disease_name": "II型糖尿病",
+        "icd10_code": "E11",
+        "years_since_diagnosis": 13.0,
+        "current_severity": "中度"
+      },
+      {
+        "disease_name": "冠心病",
+        "icd10_code": "I25.1",
+        "years_since_diagnosis": 10.0,
+        "current_severity": "轻度"
+      }
+    ],
+    "comorbidities": [
+      {
+        "disease_name": "慢性肾脏病",
+        "icd10_code": "N18.3",
+        "years_since_diagnosis": 3.0,
+        "current_severity": "轻度"
+      }
+    ],
+    "family_history": {
+      "父亲": null,
+      "母亲": null,
+      "兄弟姐妹": null,
+      "子女": "高血压"
+    },
+    "allergies": [
+      "青霉素"
+    ],
+    "last_checkup_date": "2024-10-02"
+  },
+  "prescription": {
+    "medications": [
+      {
+        "drug_name": "缬沙坦胶囊",
+        "dose": "80 mg",
+        "frequency": "每日一次",
+        "route": "口服"
+      },
+      {
+        "drug_name": "氨氯地平片",
+        "dose": "5 mg",
+        "frequency": "每日一次",
+        "route": "口服"
+      },
+      {
+        "drug_name": "二甲双胍片",
+        "dose": "500 mg",
+        "frequency": "每日两次",
+        "route": "口服"
+      }
+    ],
+    "lifestyle": [
+      {
+        "recommendation_type": "饮食",
+        "description": "减少盐分摄入，每日盐摄入量控制在5克以内，增加蔬菜水果摄入，避免高脂肪、高糖食品。"
+      },
+      {
+        "recommendation_type": "运动",
+        "description": "建议每日进行30分钟中等强度散步，适量活动促进血糖及血压控制。"
+      },
+      {
+        "recommendation_type": "睡眠",
+        "description": "保持规律作息，保证每晚7小时高质量睡眠。"
+      },
+      {
+        "recommendation_type": "压力",
+        "description": "采取缓解压力方法，如深呼吸、太极拳，有助于情绪稳定和血压控制。"
+      }
+    ],
+    "next_followup_date": "2025-01-10",
+    "physician_notes": "患者高血压、糖尿病控制尚可，继续坚持药物治疗及生活方式干预。建议增加安全的日常活动，监测血糖变化，防止并发症发展。注意药物过敏史，避免青霉素类药物。定期随访，无异常及时调整治疗方案。"
+  },
+  "behaviour_preferences": {
+    "preferences": [
+      {
+        "preference_type": "饮食",
+        "detail": "偏好广东本地清淡、少油少盐饮食，喜欢海鲜及蔬菜，但注意减少高糖甜点摄入。",
+        "prescription_impact": [
+          "饮食"
+        ]
+      },
+      {
+        "preference_type": "运动",
+        "detail": "因体力有限，偏好室内轻松活动及每日散步，避免剧烈运动。",
+        "prescription_impact": [
+          "运动"
+        ]
+      },
+      {
+        "preference_type": "休闲",
+        "detail": "喜欢阅读报纸和看电视，偶尔参加社区老年活动，社交需求适中。",
+        "prescription_impact": [
+          "监测"
+        ]
+      },
+      {
+        "preference_type": "科技",
+        "detail": "能使用智能手机浏览基础应用，有接受远程健康教育和随访意愿。",
+        "prescription_impact": [
+          "监测",
+          "用药"
+        ]
+      },
+      {
+        "preference_type": "其他",
+        "detail": "注重家庭关系，配合医嘱，重视健康管理。",
+        "prescription_impact": [
+          "用药",
+          "饮食"
+        ]
+      }
+    ]
+  },
+  "generation_timestamp": "2024-11-29 12:00:00+08:00"
+}

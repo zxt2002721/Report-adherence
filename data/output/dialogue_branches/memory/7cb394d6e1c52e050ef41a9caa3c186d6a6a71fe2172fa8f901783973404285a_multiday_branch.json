@@ -1,0 +1,725 @@
+{
+  "sessions": [
+    {
+      "session_id": "20250721030435",
+      "session_date": "2024-10-10",
+      "patient_id": "7cb394d6e1c52e050ef41a9caa3c186d6a6a71fe2172fa8f901783973404285a",
+      "conversation_turns": [
+        {
+          "speaker": "system",
+          "message": "您好，我是您的健康助手，想了解一下您最近的用药和生活情况，方便跟您聊聊吗？",
+          "timestamp": "2024-10-10T09:00:00+08:00",
+          "message_type": "提醒",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "patient",
+          "message": "唉，好吧，最近药我都还记得吃，就是有时候感觉头晕，就想停一停。运动就没怎么动，毕竟年纪大了，身体也不是很好。",
+          "timestamp": "2024-10-10T09:01:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "困惑"
+        },
+        {
+          "speaker": "system",
+          "message": "您说头晕是服用哪种药后出现的呢？还有，您平时运动时遇到了什么困难？",
+          "timestamp": "2024-10-10T09:03:00+08:00",
+          "message_type": "问题",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "patient",
+          "message": "主要是那个卡托普利片，我老觉得有点头晕，有时候还心慌。运动的话，家里人说屋里走走就行，我就是懒得动，平时看电视时间多，动起来累。",
+          "timestamp": "2024-10-10T09:05:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "message": "卡托普利可能有些头晕副作用，您可以告诉我具体什么时候出现的吗？我们可以帮您跟医生沟通，看看调整方案。同时，运动可以从每天短暂散步开始，不用一下子做太多，您觉得怎么样？",
+          "timestamp": "2024-10-10T09:07:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "哎，我这头晕就是早上起床后感觉最明显，走动多一点就好点。散步的话，我怕出门着凉，外头天气凉，家人又说我年纪大了别折腾。",
+          "timestamp": "2024-10-10T09:10:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "message": "理解您担心天气冷和家人的担心，您平时喜欢什么样的室内活动呢？比如伸展操或者室内散步？我们也可以帮您和家人沟通，争取他们的理解和支持。",
+          "timestamp": "2024-10-10T09:12:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "我就喜欢家里看电视和新闻，偶尔跟亲戚聊天，做那些伸展操有点陌生，也不太会做，怕做错了。",
+          "timestamp": "2024-10-10T09:15:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "困惑"
+        },
+        {
+          "speaker": "system",
+          "message": "明白，伸展操确实需要指导。我可以给您推荐一些简单的动作视频，您可以跟着学，逐步开始，您看这样方便吗？",
+          "timestamp": "2024-10-10T09:17:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "视频我试试，不过我这手机也不是很灵光，老卡顿，看视频费劲。",
+          "timestamp": "2024-10-10T09:20:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "困惑"
+        },
+        {
+          "speaker": "system",
+          "message": "了解您的手机情况，我们也可以通过语音电话教您几个简单动作，或者您家里有家人可以帮忙一起学吗？",
+          "timestamp": "2024-10-10T09:22:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "我女儿有空会教我，她也说我得动一动。说实话，我就是怕麻烦家人，总觉得自己拖累人。",
+          "timestamp": "2024-10-10T09:25:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "困惑"
+        },
+        {
+          "speaker": "system",
+          "message": "能理解您的感受，但您健康好了，家人才更安心。偶尔让家人帮忙也是一种相互关爱，不用太担心拖累。",
+          "timestamp": "2024-10-10T09:27:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "嗯，你这么说我也觉得是。药的事，我还是有点怕副作用，尤其卡托普利，有时候真不舒服。",
+          "timestamp": "2024-10-10T09:30:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        }
+      ]
+    },
+    {
+      "session_id": "20250722030435",
+      "session_date": "2024-10-11",
+      "patient_id": "7cb394d6e1c52e050ef41a9caa3c186d6a6a71fe2172fa8f901783973404285a",
+      "conversation_turns": [
+        {
+          "speaker": "system",
+          "message": "您好，昨天我们聊到您对卡托普利的头晕有顾虑，今天感觉怎么样？运动方面有没有试着做些伸展操？",
+          "timestamp": "2024-10-11T09:00:00+08:00",
+          "message_type": "提醒",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "patient",
+          "message": "头晕还是有，今天早上甚至停了一次药，怕开车出事。伸展操没怎么做，早上忙着做饭，累得不想动。",
+          "timestamp": "2024-10-11T09:02:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "message": "您停药是因为担心安全，非常理解。为了确保安全，您愿意试试早晚测量血压和记录头晕时间，我们一起分析吗？关于运动，您看上午做饭后休息一下，下午试着做几分钟伸展操，是否合适？",
+          "timestamp": "2024-10-11T09:05:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "测血压我试试，可那个血压计我女儿说用法复杂，我也怕弄错。下午做伸展操……我怕一动多了头晕更厉害，实在不敢乱来。",
+          "timestamp": "2024-10-11T09:08:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "困惑"
+        },
+        {
+          "speaker": "system",
+          "message": "血压计确实用起来不简单，我可以教您简单几个步骤，您女儿也能帮忙指导。做伸展操时动作轻缓，感到不适就停，我们不着急，慢慢来，您觉得这样可以吗？",
+          "timestamp": "2024-10-11T09:10:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "这样说我能明白些，但我还是担心自己弄不好，弄错了更麻烦。",
+          "timestamp": "2024-10-11T09:12:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "message": "您这样担心很正常，我会一直陪着您，慢慢练习，保证安全。您可以先跟女儿一起练，等您觉得熟悉了再自己试试，没问题的。",
+          "timestamp": "2024-10-11T09:15:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "嗯，我会试试的。对了，二甲双胍吃多了肚子不舒服，我有时候就少吃一颗，怕肚子疼。",
+          "timestamp": "2024-10-11T09:18:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "message": "二甲双胍有时会让肚子不舒服，这很常见，但减少药量可能影响血糖控制。您愿意让我帮您跟医生反映，看看有没有缓解副作用的方法吗？",
+          "timestamp": "2024-10-11T09:20:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "好吧，我怕吃药影响肚子，我想医生是不是能调下剂量？我也不想总是肚子疼。",
+          "timestamp": "2024-10-11T09:23:00+08:00,",
+          "message_type": "回应",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "system",
+          "message": "很好的想法，我会帮您传达，医生会帮您调整的。您也可以继续记录身体感受，方便医生参考。",
+          "timestamp": "2024-10-11T09:25:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "谢谢，我尽量记着。",
+          "timestamp": "2024-10-11T09:26:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "合作"
+        }
+      ]
+    },
+    {
+      "session_id": "20250723030435",
+      "session_date": "2024-10-12",
+      "patient_id": "7cb394d6e1c52e050ef41a9caa3c186d6a6a71fe2172fa8f901783973404285a",
+      "conversation_turns": [
+        {
+          "speaker": "system",
+          "message": "您好，昨天您尝试测血压和做伸展操了吗？感觉怎么样？",
+          "timestamp": "2024-10-12T09:00:00+08:00",
+          "message_type": "提醒",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "patient",
+          "message": "昨天我早上测了血压，女儿在旁边帮忙，看着数字我心里还是慌，担心太高。伸展操只做了两分钟就累了，后来就没做。",
+          "timestamp": "2024-10-12T09:02:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "message": "有家人帮忙真好，血压数字让您紧张是正常的，您可以把每天数字告诉我，我们一起观察。伸展操不急，慢慢增加时间，每天多做一点点就好。",
+          "timestamp": "2024-10-12T09:05:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "我告诉你吧，数字有时160多，有时140多，反正我就担心出事。",
+          "timestamp": "2024-10-12T09:07:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "message": "血压有波动是比较常见的，您不用太担心。我们会帮您记录并反馈给医生，医生会帮您调整用药的。请您继续按时服药，遇到不适及时告诉我们，好吗？",
+          "timestamp": "2024-10-12T09:10:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "知道了，但我还是害怕吃卡托普利，每次想到副作用我就想停药。",
+          "timestamp": "2024-10-12T09:12:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "message": "您的担心我理解。卡托普利的副作用我们会密切关注，您只要感觉不适，马上告诉我们，我们可以帮您调整剂量或者换药。安全第一，我们一起保护您的健康。",
+          "timestamp": "2024-10-12T09:15:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "那好吧，我试着再坚持几天，毕竟家里人都说要听医生话。",
+          "timestamp": "2024-10-12T09:18:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "system",
+          "message": "太好了，您有这样的想法非常棒。我们每天一起努力，慢慢养成好习惯，您不会孤单。",
+          "timestamp": "2024-10-12T09:20:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "谢谢你，我也希望能好点。",
+          "timestamp": "2024-10-12T09:22:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "合作"
+        }
+      ]
+    },
+    {
+      "session_id": "20250724030435",
+      "session_date": "2024-10-13",
+      "patient_id": "7cb394d6e1c52e050ef41a9caa3c186d6a6a71fe2172fa8f901783973404285a",
+      "conversation_turns": [
+        {
+          "speaker": "system",
+          "message": "您好，最近几天您的用药和运动情况怎么样？有没有遇到什么新的困难？",
+          "timestamp": "2024-10-13T09:00:00+08:00",
+          "message_type": "提醒",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "patient",
+          "message": "说实话，昨天早上我忘吃了卡托普利，下午想起来又吃了。运动没怎么做，昨晚跟邻居聊天喝了点甜茶，今天血糖有点高。",
+          "timestamp": "2024-10-13T09:02:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "message": "忘吃药是常有的事，我们可以一起想想怎样帮您提醒用药。关于饮食，社交时确实不容易控制，您愿意跟我说说遇到的具体难处吗？",
+          "timestamp": "2024-10-13T09:05:00+08:00",
+          "message_type": "问题",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "邻居家人都喜欢甜食，我不爱吃糖，但不好意思一直拒绝，怕大家觉得我怪。",
+          "timestamp": "2024-10-13T09:08:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "困惑"
+        },
+        {
+          "speaker": "system",
+          "message": "这种情况确实不容易，您可以尝试委婉表达自己健康需要，或者提前吃点东西，减少对甜食的依赖。需要我教您怎么说吗？",
+          "timestamp": "2024-10-13T09:10:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "嗯，您说的我试试吧，怕邻居觉得我不合群，毕竟大家都挺好。",
+          "timestamp": "2024-10-13T09:12:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "message": "理解您的顾虑，我们可以一步步来，不用急于改变。保持身体健康对大家也好，您是邻居们的宝贵朋友。",
+          "timestamp": "2024-10-13T09:15:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "谢谢，您说得我觉得好点了。就是那药，我还是担心副作用，头晕时就不想吃。",
+          "timestamp": "2024-10-13T09:18:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "message": "您的担心很重要，我们会一起监测您的身体反应。如果头晕严重，请及时告诉我，我们会帮您联系医生，调整用药，保证安全。",
+          "timestamp": "2024-10-13T09:20:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "好，我会注意的，就是生活还是挺难调整，老习惯难改啊。",
+          "timestamp": "2024-10-13T09:22:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "困惑"
+        },
+        {
+          "speaker": "system",
+          "message": "改变习惯确实不容易，我们可以先从每天一点点小目标开始，慢慢积累，您觉得每天减少一点糖分怎么样？",
+          "timestamp": "2024-10-13T09:25:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "嗯，这样好像能做到，我试试看。",
+          "timestamp": "2024-10-13T09:26:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "合作"
+        }
+      ]
+    },
+    {
+      "session_id": "20250725030435",
+      "session_date": "2024-10-14",
+      "patient_id": "7cb394d6e1c52e050ef41a9caa3c186d6a6a71fe2172fa8f901783973404285a",
+      "conversation_turns": [
+        {
+          "speaker": "system",
+          "message": "您好，想了解一下，昨天您按计划吃药和控制饮食了吗？有没有遇到新的困难？",
+          "timestamp": "2024-10-14T09:00:00+08:00",
+          "message_type": "提醒",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "patient",
+          "message": "昨天还算可以，卡托普利没忘，肚子疼的那个二甲双胍我也没少吃。不过下午亲戚又来家里喝茶，没忍住喝了点甜茶，今天早上血糖比前两天高。",
+          "timestamp": "2024-10-14T09:02:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "message": "很棒，您药物坚持得很好。关于喝甜茶的事，您觉得要不要提前跟亲戚说您的健康需要？或者喝之前吃点别的来减少影响？",
+          "timestamp": "2024-10-14T09:05:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "我试过说，可他们都说我小题大做，觉得糖分没那么重要。我不好意思多说，怕大家尴尬。",
+          "timestamp": "2024-10-14T09:08:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "困惑"
+        },
+        {
+          "speaker": "system",
+          "message": "这确实不容易，您觉得参加社区的健康活动或者糖尿病互助群，和有相似经历的人交流会不会对您帮助大些？",
+          "timestamp": "2024-10-14T09:10:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "社区活动我听说过，但没参加过，怕去人多地方不习惯。",
+          "timestamp": "2024-10-14T09:12:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "message": "理解您的顾虑，您可以先试试线上交流，比如微信小群，慢慢适应再考虑线下。这样不会太有压力。",
+          "timestamp": "2024-10-14T09:15:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "线上交流我能试试，手机用着还凑合。",
+          "timestamp": "2024-10-14T09:18:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "system",
+          "message": "太好了，我会帮您推荐几个适合的微信群，您可以先观察，慢慢参与。我们也继续关注您的用药和饮食情况。",
+          "timestamp": "2024-10-14T09:20:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "谢谢，我试试看。",
+          "timestamp": "2024-10-14T09:22:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "合作"
+        }
+      ]
+    },
+    {
+      "session_id": "20250726030435",
+      "session_date": "2024-10-15",
+      "patient_id": "7cb394d6e1c52e050ef41a9caa3c186d6a6a71fe2172fa8f901783973404285a",
+      "conversation_turns": [
+        {
+          "speaker": "system",
+          "message": "您好，最近加入微信群感觉怎么样？用药和运动方面有没有新的情况？",
+          "timestamp": "2024-10-15T09:00:00+08:00",
+          "message_type": "提醒",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "patient",
+          "message": "微信群挺热闹的，有人说的我都听着，运动倒是没太坚持，早上老忘了。用药方面，昨晚忘了吃消渴丸，今天早上赶紧补上了。",
+          "timestamp": "2024-10-15T09:02:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "困惑"
+        },
+        {
+          "speaker": "system",
+          "message": "很高兴您能参与群里交流，运动和用药的忘记很常见。我们可以帮您设置手机提醒，或者请家人帮忙提醒，您觉得哪个更方便？",
+          "timestamp": "2024-10-15T09:05:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "我试过手机提醒，但老是被其他通知打扰，我又不太熟练弄那个闹钟。家人倒是能提醒，就是有时候他们忙，我又不好意思一直麻烦。",
+          "timestamp": "2024-10-15T09:08:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "困惑"
+        },
+        {
+          "speaker": "system",
+          "message": "明白您的情况，我们可以帮您调整手机提醒音量和设置优先级，让它更明显。同时，您可以和家人约定特定时间提醒，这样不打扰他们其他时间。您看如何？",
+          "timestamp": "2024-10-15T09:10:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "听起来不错，我可以试试调一下。就是运动，我觉得早上没精力，下午或者晚上做行不行？",
+          "timestamp": "2024-10-15T09:12:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "system",
+          "message": "当然可以，运动时间可以根据您感觉调整，重要的是坚持每天活动，哪怕时间短一点也没关系。",
+          "timestamp": "2024-10-15T09:15:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "谢谢，我会努力调整。就是药那块，我还是担心副作用，有时候干脆想不吃了。",
+          "timestamp": "2024-10-15T09:18:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "message": "您的担心很正常，我们可以一起记录不适症状，及时调整用药方案，确保您的安全和舒适。",
+          "timestamp": "2024-10-15T09:20:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "谢谢你，有时候觉得坚持真难，年纪大了，改不了习惯。",
+          "timestamp": "2024-10-15T09:22:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "困惑"
+        },
+        {
+          "speaker": "system",
+          "message": "每个人改习惯都不容易，您已经很努力了，我们一起慢慢来，肯定每一点进步，您不是一个人。",
+          "timestamp": "2024-10-15T09:25:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "message": "嗯，有你陪着，我就不那么害怕了。",
+          "timestamp": "2024-10-15T09:26:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "合作"
+        }
+      ]
+    },
+    {
+      "session_id": "20241016142301",
+      "session_date": "2024-10-16",
+      "patient_id": "7cb394d6e1c52e050ef41a9caa3c186d6a6a71fe2172fa8f901783973404285a",
+      "conversation_turns": [
+        {
+          "speaker": "system",
+          "message": "李阿姨您好，这是10月16日的随访。昨天您提到忘记服用二甲双胍一次，今天是否已补服？",
+          "timestamp": "2024-10-16T14:23:01+08:00",
+          "message_type": "追问",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "patient",
+          "message": "哎呀医生，昨晚看电视太入迷了，到十点才想起来吃药，后来就忘记补了。",
+          "timestamp": "2024-10-16T14:24:15+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "message": "建议您把药放在手机旁边，设置闹钟提醒。今天是否监测过血压和血糖？",
+          "timestamp": "2024-10-16T14:25:30+08:00",
+          "message_type": "建议",
+          "emotional_tone": "积极"
+        },
+        {
+          "speaker": "patient",
+          "message": "早上量了血压是138/82，血糖空腹7.2。中午吃了半碗米饭配炒青菜。",
+          "timestamp": "2024-10-16T14:26:45+08:00",
+          "message_type": "回应",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "system",
+          "message": "血压控制不错，但血糖略高。今天是否按计划进行了30分钟散步？",
+          "timestamp": "2024-10-16T14:28:00+08:00",
+          "message_type": "引导",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "patient",
+          "message": "早上想散步但天气太冷，就坐在阳台晒太阳半小时，后来又睡着了。",
+          "timestamp": "2024-10-16T14:29:15+08:00",
+          "message_type": "回应",
+          "emotional_tone": "沮丧"
+        },
+        {
+          "speaker": "system",
+          "message": "建议改在下午阳光温和时活动，可以尝试做些伸展操。今天是否食用了甜茶？",
+          "timestamp": "2024-10-16T14:30:30+08:00",
+          "message_type": "建议",
+          "emotional_tone": "积极"
+        },
+        {
+          "speaker": "patient",
+          "message": "中午亲戚来家里，喝了一小杯甜茶，但马上用温水漱口了。",
+          "timestamp": "2024-10-16T14:31:45+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        }
+      ]
+    },
+    {
+      "session_id": "20241017101502",
+      "session_date": "2024-10-17",
+      "patient_id": "7cb394d6e1c52e050ef41a9caa3c186d6a6a71fe2172fa8f901783973404285a",
+      "conversation_turns": [
+        {
+          "speaker": "system",
+          "message": "李阿姨，这是10月17日的随访。昨天您提到喝甜茶后漱口，今天是否继续监测血糖？",
+          "timestamp": "2024-10-17T10:15:02+08:00",
+          "message_type": "追问",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "patient",
+          "message": "今早空腹血糖6.8，餐后两小时8.1。不过昨晚睡得不太好，老是做梦。",
+          "timestamp": "2024-10-17T10:16:20+08:00",
+          "message_type": "回应",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "system",
+          "message": "睡眠质量影响血糖波动，建议睡前避免看刺激性新闻。今天是否按计划服药？",
+          "timestamp": "2024-10-17T10:17:45+08:00",
+          "message_type": "教育",
+          "emotional_tone": "积极"
+        },
+        {
+          "speaker": "patient",
+          "message": "卡托普利和消渴丸都按时吃了，但二甲双胍今天忘记吃早上的。",
+          "timestamp": "2024-10-17T10:19:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "message": "建议把二甲双胍分装在两个药盒里，早中晚各放一次。今天是否运动了？",
+          "timestamp": "2024-10-17T10:20:15+08:00",
+          "message_type": "建议",
+          "emotional_tone": "积极"
+        },
+        {
+          "speaker": "patient",
+          "message": "下午在阳台做了半小时伸展操，感觉膝盖有点不舒服。",
+          "timestamp": "2024-10-17T10:21:30+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "message": "运动时注意保暖，可以尝试坐姿抬腿运动。今天是否使用健康App记录数据？",
+          "timestamp": "2024-10-17T10:22:45+08:00",
+          "message_type": "引导",
+          "emotional_tone": "积极"
+        },
+        {
+          "speaker": "patient",
+          "message": "下载了那个App，但不会设置提醒功能，您教我一下吧。",
+          "timestamp": "2024-10-17T10:24:00+08:00",
+          "message_type": "回应",
+          "emotional_tone": "积极"
+        }
+      ]
+    },
+    {
+      "session_id": "20241018093003",
+      "session_date": "2024-10-18",
+      "patient_id": "7cb394d6e1c52e050ef41a9caa3c186d6a6a71fe2172fa8f901783973404285a",
+      "conversation_turns": [
+        {
+          "speaker": "system",
+          "message": "李阿姨，这是10月18日的随访。昨天您提到App设置问题，今天是否已解决？",
+          "timestamp": "2024-10-18T09:30:03+08:00",
+          "message_type": "追问",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "patient",
+          "message": "孩子帮我设置了用药提醒，但今天早上还是睡过头了，差点错过早餐药。",
+          "timestamp": "2024-10-18T09:31:15+08:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "message": "建议把药放在床头柜，设置双闹钟。今天是否监测到血压波动？",
+          "timestamp": "2024-10-18T09:32:30+08:00",
+          "message_type": "建议",
+          "emotional_tone": "积极"
+        },
+        {
+          "speaker": "patient",
+          "message": "今早血压142/85，喝了半杯温水后降下来了。午饭吃了两小碗米饭。",
+          "timestamp": "2024-10-18T09:33:45+08:00",
+          "message_type": "回应",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "system",
+          "message": "米饭摄入稍多，建议用杂粮饭替代部分白米。今天是否坚持运动？",
+          "timestamp": "2024-10-18T09:35:00+08:00",
+          "message_type": "教育",
+          "emotional_tone": "积极"
+        },
+        {
+          "speaker": "patient",
+          "message": "下午做了20分钟坐姿抬腿，感觉膝盖比昨天好些了。",
+          "timestamp": "2024-10-18T09:36:15+08:00",
+          "message_type": "回应",
+          "emotional_tone": "积极"
+        },
+        {
+          "speaker": "system",
+          "message": "很好！建议每周逐渐增加5分钟运动时间。今天是否出现药物副作用？",
+          "timestamp": "2024-10-18T09:37:30+08:00",
+          "message_type": "引导",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "patient",
+          "message": "昨晚肚子有点胀气，但喝了热水后缓解了。",
+          "timestamp": "2024-10-18T09:38:45+08:00",
+          "message_type": "回应",
+          "emotional_tone": "中性"
+        }
+      ]
+    }
+  ]
+}

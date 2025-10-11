@@ -1,0 +1,92 @@
+{
+  "sample_id": "sample_0b389f61f90fcf6da613e08c64e06fdbaf05758cdd9e6b5ae730f1b8a8a654e4_20240403_medication_9fc88a",
+  "patient_id": "0b389f61f90fcf6da613e08c64e06fdbaf05758cdd9e6b5ae730f1b8a8a654e4",
+  "task_name": "adherence_identification",
+  "sample_data": {
+    "dialogue_piece": [
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "跟进昨日情况，重点关注患者用药和饮食依从。",
+          "analysis": "患者表达了抗拒和孤独感，影响依从性。",
+          "diagnosis": "情感和社会层面不遵从突出。",
+          "planning": "引导表达，尝试建立小目标。",
+          "evaluation": "需要分步引导缓解情绪。"
+        },
+        "message": "您好，昨天我们聊了很多，您觉得今天身体状况怎么样？有没有按时吃药？",
+        "timestamp": "2024-04-03T09:00:00Z",
+        "message_type": "确认",
+        "emotional_tone": "中性"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "说实话，昨天我忘了吃阿卡波糖，中午出去跟朋友喝茶，没带药。",
+        "timestamp": "2024-04-03T09:01:30Z",
+        "message_type": "回应",
+        "emotional_tone": "困惑"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "识别行为层面问题，社交影响依从。",
+          "analysis": "外出社交导致用药疏忽，行为习惯难建立。",
+          "diagnosis": "行为层面不遵从明显。",
+          "planning": "提出实际操作方案，降低用药疏漏。",
+          "evaluation": "需细化具体场景解决方案。"
+        },
+        "message": "外出时忘带药很常见，您喜欢参加社区活动吗？如果方便的话，可以准备一个小药盒，放在包里，出门就带着。这样即使出去喝茶也不怕忘了。您觉得这个方法怎么样？",
+        "timestamp": "2024-04-03T09:03:00Z",
+        "message_type": "提醒",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "准备药盒听着不错，可我老是搞不清时间，三次吃药怎么记住？",
+        "timestamp": "2024-04-03T09:04:30Z",
+        "message_type": "回应",
+        "emotional_tone": "困惑"
+      }
+    ],
+    "prescription": {
+      "medications": [
+        {
+          "drug_name": "厄贝沙坦氢氯噻嗪",
+          "dose": "150 mg",
+          "frequency": "每日一次",
+          "route": "口服"
+        },
+        {
+          "drug_name": "阿卡波糖",
+          "dose": "50 mg",
+          "frequency": "每日三次",
+          "route": "口服"
+        },
+        {
+          "drug_name": "格列吡嗪控释片",
+          "dose": "5 mg",
+          "frequency": "每日一次",
+          "route": "口服"
+        }
+      ],
+      "lifestyle": [],
+      "next_followup_date": "2024-06-01",
+      "physician_notes": "注意血糖和血压的监测，增加家庭支持对于其依从性的提高有益。"
+    },
+    "adherence_category": "用药",
+    "session_date": "2024-04-03"
+  },
+  "pre_annotation": {
+    "adherence_check": [
+      {
+        "date": "2024-04-03",
+        "category": "用药",
+        "overall_status": "部分遵从",
+        "reason": "患者昨天忘记按时服用阿卡波糖，主要因外出未带药及对服药时间记忆困难。",
+        "details": "患者未按饭前三次服用阿卡波糖，原因是外出喝茶时忘带药，且对三次服药时间难以记忆。已探讨使用彩色标签药盒和微信提醒等辅助措施。",
+        "dialogue_date": "2024-04-03"
+      }
+    ]
+  }
+}

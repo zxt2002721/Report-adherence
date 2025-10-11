@@ -1,0 +1,92 @@
+{
+  "sample_id": "sample_7cb394d6e1c52e050ef41a9caa3c186d6a6a71fe2172fa8f901783973404285a_20241010_exercise_352f57",
+  "patient_id": "7cb394d6e1c52e050ef41a9caa3c186d6a6a71fe2172fa8f901783973404285a",
+  "task_name": "adherence_identification",
+  "sample_data": {
+    "dialogue_piece": [
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "初步询问患者近期用药及生活状态，评估患者整体情绪和依从情况。",
+          "analysis": "患者年龄较大，患有多种慢性病，需重点关注用药依从和生活习惯。初步判断患者对用药存在一定疑虑和行为习惯障碍。",
+          "diagnosis": "患者可能存在用药恐惧和行为习惯障碍，需进一步探索具体原因。",
+          "planning": "逐步建立信任，温和询问用药和生活习惯，识别关键阻碍因素。",
+          "evaluation": "初步会话，建立良好沟通氛围。"
+        },
+        "message": "您好，我是您的健康助手，想了解一下您最近的用药和生活情况，方便跟您聊聊吗？",
+        "timestamp": "2024-10-10T09:00:00+08:00",
+        "message_type": "提醒",
+        "emotional_tone": "中性"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "唉，好吧，最近药我都还记得吃，就是有时候感觉头晕，就想停一停。运动就没怎么动，毕竟年纪大了，身体也不是很好。",
+        "timestamp": "2024-10-10T09:01:00+08:00",
+        "message_type": "回应",
+        "emotional_tone": "困惑"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "患者表达了头晕副作用的担忧和运动懈怠，显示情感和行为层面的问题。",
+          "analysis": "患者对药物副作用有恐惧（情感层面），运动行为缺乏动力（行为层面）。",
+          "diagnosis": "用药恐惧及运动动力不足。",
+          "planning": "耐心了解头晕的具体情况，探讨运动难点，提供个性化建议。",
+          "evaluation": "初步识别用药恐惧和运动行为问题。"
+        },
+        "message": "您说头晕是服用哪种药后出现的呢？还有，您平时运动时遇到了什么困难？",
+        "timestamp": "2024-10-10T09:03:00+08:00",
+        "message_type": "问题",
+        "emotional_tone": "中性"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "主要是那个卡托普利片，我老觉得有点头晕，有时候还心慌。运动的话，家里人说屋里走走就行，我就是懒得动，平时看电视时间多，动起来累。",
+        "timestamp": "2024-10-10T09:05:00+08:00",
+        "message_type": "回应",
+        "emotional_tone": "焦虑"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "患者明确卡托普利片引发不适，运动习惯难以改变，体现情感抗拒和行为习惯固化。",
+          "analysis": "用药副作用让患者恐惧（情感层面），生活习惯固定导致运动缺乏动力（行为层面）。",
+          "diagnosis": "情感抗拒加上行为习惯障碍。",
+          "planning": "解释药物副作用，建议监测调整，鼓励小步运动。",
+          "evaluation": "针对情感与行为层面制定初步应对策略。"
+        },
+        "message": "卡托普利可能有些头晕副作用，您可以告诉我具体什么时候出现的吗？我们可以帮您跟医生沟通，看看调整方案。同时，运动可以从每天短暂散步开始，不用一下子做太多，您觉得怎么样？",
+        "timestamp": "2024-10-10T09:07:00+08:00",
+        "message_type": "教育",
+        "emotional_tone": "合作"
+      }
+    ],
+    "prescription": {
+      "medications": [],
+      "lifestyle": [
+        {
+          "recommendation_type": "运动",
+          "description": "逐步开始低强度室内活动，如散步和伸展操，每周至少三次，每次30分钟，避免剧烈运动。"
+        }
+      ],
+      "next_followup_date": "2025-01-02",
+      "physician_notes": "当前药物治疗基本稳定，建议调整二甲双胍剂量以优化血糖控制；密切监测血压波动，鼓励改善生活方式，防止慢性肾脏损伤进展。注重患者教育，提高依从性。"
+    },
+    "adherence_category": "运动",
+    "session_date": "2024-10-10"
+  },
+  "pre_annotation": {
+    "adherence_check": [
+      {
+        "date": "2024-10-10",
+        "category": "运动",
+        "overall_status": "不遵从",
+        "reason": "患者运动量明显不足，主要以看电视为主，缺乏主动运动，且对室内运动方式不熟悉且缺乏动力。",
+        "details": "患者表示“运动就没怎么动”，“懒得动”，“看电视时间多，动起来累”，对伸展操陌生且担心做错，手机卡顿影响学习视频，家人劝说也未积极执行。",
+        "dialogue_date": "2024-10-10"
+      }
+    ]
+  }
+}

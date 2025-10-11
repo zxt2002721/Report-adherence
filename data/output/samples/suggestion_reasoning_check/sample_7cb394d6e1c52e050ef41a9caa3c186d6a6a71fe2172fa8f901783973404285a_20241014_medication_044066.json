@@ -1,0 +1,268 @@
+{
+  "sample_id": "sample_7cb394d6e1c52e050ef41a9caa3c186d6a6a71fe2172fa8f901783973404285a_20241014_medication_044066",
+  "patient_id": "7cb394d6e1c52e050ef41a9caa3c186d6a6a71fe2172fa8f901783973404285a",
+  "task_name": "suggestion_reasoning_check",
+  "sample_data": {
+    "adherence_piece": {
+      "date": "2024-10-14",
+      "category": "用药",
+      "overall_status": "完全遵从",
+      "reason": "患者按计划服用所有药物，无遗漏。",
+      "details": "患者提到卡托普利和二甲双胍均按时服用，未少吃或忘记。",
+      "dialogue_date": "2024-10-14"
+    },
+    "patient_profile": {
+      "basic_info": {
+        "patient_id": "7cb394d6e1c52e050ef41a9caa3c186d6a6a71fe2172fa8f901783973404285a",
+        "name": null,
+        "age": 73,
+        "sex": "女",
+        "marital_status": "已婚",
+        "occupation": "退休",
+        "location": "云南省昆明市",
+        "education": "初中",
+        "income_bracket": "中",
+        "living_situation": "与家人同住",
+        "contact_phone": "138-XXXX-5678"
+      },
+      "disease_info": {
+        "primary_diseases": [
+          {
+            "disease_name": "高血压",
+            "icd10_code": "I10",
+            "years_since_diagnosis": 5.0,
+            "current_severity": "中度"
+          },
+          {
+            "disease_name": "II型糖尿病",
+            "icd10_code": "E11",
+            "years_since_diagnosis": 5.0,
+            "current_severity": "中度"
+          },
+          {
+            "disease_name": "冠心病",
+            "icd10_code": "I25.1",
+            "years_since_diagnosis": 5.0,
+            "current_severity": "可控"
+          }
+        ],
+        "comorbidities": [
+          {
+            "disease_name": "慢性肾功能不全",
+            "icd10_code": "N18.9",
+            "years_since_diagnosis": 1.0,
+            "current_severity": "轻度"
+          }
+        ],
+        "family_history": {
+          "父亲病史": null,
+          "母亲病史": null,
+          "兄弟姐妹病史": null,
+          "子女病史": null,
+          "遗传性心血管疾病": null
+        },
+        "allergies": [
+          "青霉素"
+        ],
+        "last_checkup_date": "2024-10-02"
+      },
+      "prescription": {
+        "medications": [
+          {
+            "drug_name": "卡托普利片",
+            "dose": "25 mg",
+            "frequency": "每日一次",
+            "route": "口服"
+          },
+          {
+            "drug_name": "二甲双胍",
+            "dose": "500 mg",
+            "frequency": "每日两次",
+            "route": "口服"
+          },
+          {
+            "drug_name": "消渴丸",
+            "dose": "5 粒",
+            "frequency": "每日三次",
+            "route": "口服"
+          }
+        ],
+        "lifestyle": [
+          {
+            "recommendation_type": "饮食",
+            "description": "减少盐摄入，限制主食量至250克/日，增加蔬菜水果摄入，避免糖分过高食品。"
+          },
+          {
+            "recommendation_type": "运动",
+            "description": "逐步开始低强度室内活动，如散步和伸展操，每周至少三次，每次30分钟，避免剧烈运动。"
+          },
+          {
+            "recommendation_type": "睡眠",
+            "description": "保持规律作息，保证每日7-8小时高质量睡眠，睡前避免使用电子产品。"
+          },
+          {
+            "recommendation_type": "压力",
+            "description": "采用深呼吸和冥想缓解压力，保持积极心态，参与社区活动。"
+          }
+        ],
+        "next_followup_date": "2025-01-02",
+        "physician_notes": "当前药物治疗基本稳定，建议调整二甲双胍剂量以优化血糖控制；密切监测血压波动，鼓励改善生活方式，防止慢性肾脏损伤进展。注重患者教育，提高依从性。"
+      },
+      "behaviour_preferences": {
+        "preferences": [
+          {
+            "preference_type": "饮食",
+            "detail": "偏爱云南特色米饭与蔬菜，喜食清淡饮食，避免油腻和高糖食物。",
+            "prescription_impact": [
+              "饮食"
+            ]
+          },
+          {
+            "preference_type": "运动",
+            "detail": "喜欢轻松室内活动，暂不适合户外剧烈运动，期望慢速散步。",
+            "prescription_impact": [
+              "运动"
+            ]
+          },
+          {
+            "preference_type": "休闲",
+            "detail": "偏好家中看新闻和电视节目，偶尔参与亲友聚会。",
+            "prescription_impact": [
+              "用药"
+            ]
+          },
+          {
+            "preference_type": "科技",
+            "detail": "能使用智能手机，愿意尝试健康管理App。",
+            "prescription_impact": [
+              "监测"
+            ]
+          },
+          {
+            "preference_type": "其他",
+            "detail": "重视家庭观念，乐于配合医生建议，信赖传统与现代医学结合。",
+            "prescription_impact": [
+              "用药",
+              "饮食"
+            ]
+          }
+        ]
+      },
+      "generation_timestamp": "2024-10-10 12:00:00+08:00"
+    },
+    "current_adherence_history": [
+      {
+        "date": "2024-10-13",
+        "category": "用药",
+        "overall_status": "部分遵从",
+        "reason": "患者存在忘记按时服药和因担心副作用（头晕）而不愿按时服药的情况。",
+        "details": "患者昨天早上忘记服用卡托普利，下午补服；因头晕担心副作用，有时不想服药。",
+        "dialogue_date": "2024-10-13"
+      },
+      {
+        "date": "2024-10-12",
+        "category": "用药",
+        "overall_status": "部分遵从",
+        "reason": "患者因担心卡托普利副作用有停药念头，但表示愿意尝试坚持用药。",
+        "details": "患者提到害怕卡托普利副作用，考虑停药，但最终表示会再坚持几天，听从医生建议。",
+        "dialogue_date": "2024-10-12"
+      },
+      {
+        "date": "2024-10-11",
+        "category": "用药",
+        "overall_status": "部分遵从",
+        "reason": "患者因头晕担忧曾停药一次，且因二甲双胍引起肚子不适，有时自行减少剂量。",
+        "details": "2024-10-11早晨停用卡托普利一次，二甲双胍有时少吃一颗，担心肚子疼。",
+        "dialogue_date": "2024-10-11"
+      },
+      {
+        "date": "2024-10-10",
+        "category": "用药",
+        "overall_status": "部分遵从",
+        "reason": "患者大部分时间按时服药，但因卡托普利片副作用（头晕、心慌）有时想停药，存在用药顾虑。",
+        "details": "患者反映早晨起床后服用卡托普利片时头晕最明显，偶尔出现心慌，导致对用药产生担忧。无明确停药行为，但有停药意向。",
+        "dialogue_date": "2024-10-10"
+      }
+    ],
+    "current_suggestion_history": [
+      {
+        "date": "2024-10-13",
+        "suggestion_content": "监测身体反应，头晕严重时及时告知，必要时联系医生调整用药，保证安全。",
+        "suggestion_category": "用药",
+        "effectiveness_feedback": "未尝试",
+        "patient_response": "好，我会注意的，就是生活还是挺难调整，老习惯难改啊。",
+        "dialogue_date": "2024-10-13"
+      },
+      {
+        "date": "2024-10-12",
+        "suggestion_content": "按时服用卡托普利药物，遇到副作用或不适及时反馈，医护人员可调整剂量或换药。",
+        "suggestion_category": "用药",
+        "effectiveness_feedback": "部分有效",
+        "patient_response": "害怕卡托普利副作用，想停药，但决定再坚持几天，听家人和医生的话。",
+        "dialogue_date": "2024-10-12"
+      },
+      {
+        "date": "2024-10-11",
+        "suggestion_content": "帮患者向医生反映二甲双胍副作用，考虑调整剂量以缓解肚子不适。",
+        "suggestion_category": "用药",
+        "effectiveness_feedback": "未尝试",
+        "patient_response": "我想医生是不是能调下剂量？我也不想总是肚子疼。",
+        "dialogue_date": "2024-10-11"
+      },
+      {
+        "date": "2024-10-10",
+        "suggestion_content": "考虑调整卡托普利片用药，因患者服药后早晨起床时头晕和心慌。",
+        "suggestion_category": "用药",
+        "effectiveness_feedback": "未尝试",
+        "patient_response": "患者表达了对卡托普利副作用的担忧，尚未明确是否调整用药。",
+        "dialogue_date": "2024-10-10"
+      }
+    ],
+    "current_behavior_preference": [
+      {
+        "date": "2024-10-12",
+        "preference_type": "其他",
+        "prescription_impact": [
+          "用药"
+        ],
+        "old_preference": "坚持服用卡托普利",
+        "new_preference": "害怕卡托普利副作用，有停药念头，但决定再坚持几天",
+        "update_reason": "担心药物副作用导致想停药，家人劝说坚持服药",
+        "dialogue_date": "2024-10-12"
+      },
+      {
+        "date": "2024-10-11",
+        "preference_type": "其他",
+        "prescription_impact": [
+          "用药"
+        ],
+        "old_preference": "严格按医嘱服用二甲双胍",
+        "new_preference": "因肚子不舒服，有时自行减少二甲双胍剂量（少吃一颗）",
+        "update_reason": "二甲双胍副作用导致肚子不适，患者为减轻不适自行调整用药剂量",
+        "dialogue_date": "2024-10-11"
+      },
+      {
+        "date": "2024-10-10",
+        "preference_type": "运动",
+        "prescription_impact": [
+          "用药",
+          "运动"
+        ],
+        "old_preference": "平时运动较少，主要在家里走走，较为懒散",
+        "new_preference": "愿意尝试在家里进行简单的伸展操和室内活动，计划通过女儿指导逐步开始运动",
+        "update_reason": "意识到运动对健康有益，女儿鼓励及健康助手建议，尽管担心麻烦家人但愿意尝试",
+        "dialogue_date": "2024-10-10"
+      }
+    ]
+  },
+  "pre_annotation": {
+    "suggestion_reasoning": {
+      "assessment": "现状评估：患者目前完全遵从用药计划，按时服用卡托普利和二甲双胍，信息真实。但需关注其对副作用的担忧与历史不遵从行为，以便进行全面评估。",
+      "analysis": "分析：患者的历史记录显示因副作用（头晕、肚子不适）曾多次部分遵从，且存在停药念头。潜在解决方案包括调整剂量或更换药物，以缓解副作用。",
+      "diagnosis": "诊断：患者目前完全遵从，但存在心理顾虑和副作用的风险，属于中等风险等级，需关注其用药心理状态与身体反应。",
+      "planning": "规划：建议继续监测患者的身体反应，鼓励其在出现不适时及时反馈，同时安排与医生讨论调整用药方案的机会。",
+      "evaluation": "推理回顾：规划内容与患者历史遵从情况一致，未发现明显矛盾，但需强调在副作用出现时主动反馈的重要性，以确保安全。"
+    },
+    "suggestion_message": "您好，想了解一下，昨天您按计划吃药和控制饮食了吗？有没有遇到新的困难？"
+  }
+}

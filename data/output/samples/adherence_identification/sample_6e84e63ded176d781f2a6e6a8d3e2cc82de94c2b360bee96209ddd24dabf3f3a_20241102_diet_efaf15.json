@@ -1,0 +1,64 @@
+{
+  "sample_id": "sample_6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a_20241102_diet_efaf15",
+  "patient_id": "6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a",
+  "task_name": "adherence_identification",
+  "sample_data": {
+    "dialogue_piece": [
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "好，那我试试看吧。",
+        "timestamp": "2024-11-02T09:16:30+08:00",
+        "message_type": "回应",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "饮食方面进一步探查患者自我调节和家庭影响。",
+          "analysis": "饮食不易调整，患者既有尝试也有阻力。",
+          "diagnosis": "饮食遵从存在双重阻碍。",
+          "planning": "后续可尝试家庭饮食沟通支持。",
+          "evaluation": "社会层面关键点。"
+        },
+        "message": "昨天说您家人喜欢吃咸辣，您自己尽量少放盐，平时有没有和家人商量过，共同调整饮食？",
+        "timestamp": "2024-11-02T09:18:00+08:00",
+        "message_type": "问题",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "说过，可他们觉得我小题大做，自己改了口味也不太好，家里气氛有点紧张。",
+        "timestamp": "2024-11-02T09:19:30+08:00",
+        "message_type": "回应",
+        "emotional_tone": "焦虑"
+      }
+    ],
+    "prescription": {
+      "medications": [],
+      "lifestyle": [
+        {
+          "recommendation_type": "饮食",
+          "description": "低盐低脂饮食，避免高胆固醇食品，适量增加新鲜蔬菜和水果。"
+        }
+      ],
+      "next_followup_date": "2024-12-01",
+      "physician_notes": "患者冠心病与高血压控制总体良好，建议继续现有治疗，密切监测血压波动。注意饮食调控和规律运动，定期随访复查血脂及心功能。"
+    },
+    "adherence_category": "饮食",
+    "session_date": "2024-11-02"
+  },
+  "pre_annotation": {
+    "adherence_check": [
+      {
+        "date": "2024-11-02",
+        "category": "饮食",
+        "overall_status": "部分遵从",
+        "reason": "患者尝试减少盐分摄入，但因家人饮食习惯不同导致家庭氛围紧张，饮食调整存在困难。",
+        "details": "患者主动减少盐分摄入，与家人沟通调整饮食，但家人认为其小题大做，导致家庭气氛紧张，影响饮食遵从。",
+        "dialogue_date": "2024-11-02"
+      }
+    ]
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "sample_id": "sample_7cb394d6e1c52e050ef41a9caa3c186d6a6a71fe2172fa8f901783973404285a_20241011_medication_989b76",
+  "patient_id": "7cb394d6e1c52e050ef41a9caa3c186d6a6a71fe2172fa8f901783973404285a",
+  "task_name": "adherence_identification",
+  "sample_data": {
+    "dialogue_piece": [
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "患者因副作用减少药量，存在认知误区和行为不遵从。",
+          "analysis": "患者对药物副作用理解不足，导致用药不稳定。",
+          "diagnosis": "认知障碍导致用药不遵从。",
+          "planning": "科普二甲双胍副作用，强调遵医嘱重要性。",
+          "evaluation": "拟定药物教育策略。"
+        },
+        "message": "二甲双胍有时会让肚子不舒服，这很常见，但减少药量可能影响血糖控制。您愿意让我帮您跟医生反映，看看有没有缓解副作用的方法吗？",
+        "timestamp": "2024-10-11T09:20:00+08:00",
+        "message_type": "教育",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "好吧，我怕吃药影响肚子，我想医生是不是能调下剂量？我也不想总是肚子疼。",
+        "timestamp": "2024-10-11T09:23:00+08:00,",
+        "message_type": "回应",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "system",
+        "reasoning": {
+          "assessment": "患者开始愿意配合医生调整，情感障碍略有缓解。",
+          "analysis": "患者认知逐步清晰，行为意愿有所提高。",
+          "diagnosis": "情感障碍缓解，行为改善潜力。",
+          "planning": "继续鼓励，协助沟通医嘱。",
+          "evaluation": "正向进展。"
+        },
+        "message": "很好的想法，我会帮您传达，医生会帮您调整的。您也可以继续记录身体感受，方便医生参考。",
+        "timestamp": "2024-10-11T09:25:00+08:00",
+        "message_type": "教育",
+        "emotional_tone": "合作"
+      },
+      {
+        "speaker": "patient",
+        "reasoning": null,
+        "message": "谢谢，我尽量记着。",
+        "timestamp": "2024-10-11T09:26:00+08:00",
+        "message_type": "回应",
+        "emotional_tone": "合作"
+      }
+    ],
+    "prescription": {
+      "medications": [
+        {
+          "drug_name": "卡托普利片",
+          "dose": "25 mg",
+          "frequency": "每日一次",
+          "route": "口服"
+        },
+        {
+          "drug_name": "二甲双胍",
+          "dose": "500 mg",
+          "frequency": "每日两次",
+          "route": "口服"
+        },
+        {
+          "drug_name": "消渴丸",
+          "dose": "5 粒",
+          "frequency": "每日三次",
+          "route": "口服"
+        }
+      ],
+      "lifestyle": [],
+      "next_followup_date": "2025-01-02",
+      "physician_notes": "当前药物治疗基本稳定，建议调整二甲双胍剂量以优化血糖控制；密切监测血压波动，鼓励改善生活方式，防止慢性肾脏损伤进展。注重患者教育，提高依从性。"
+    },
+    "adherence_category": "用药",
+    "session_date": "2024-10-11"
+  },
+  "pre_annotation": {
+    "adherence_check": [
+      {
+        "date": "2024-10-11",
+        "category": "用药",
+        "overall_status": "部分遵从",
+        "reason": "患者因头晕担忧曾停药一次，且因二甲双胍引起肚子不适，有时自行减少剂量。",
+        "details": "2024-10-11早晨停用卡托普利一次，二甲双胍有时少吃一颗，担心肚子疼。",
+        "dialogue_date": "2024-10-11"
+      }
+    ]
+  }
+}

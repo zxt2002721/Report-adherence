@@ -1,0 +1,225 @@
+{
+  "sample_id": "sample_6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a_20241104_diet_2eb231",
+  "patient_id": "6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a",
+  "task_name": "suggestion_reasoning_check",
+  "sample_data": {
+    "adherence_piece": {
+      "date": "2024-11-04",
+      "category": "饮食",
+      "overall_status": "不遵从",
+      "reason": "患者饮食中咸菜和油脂摄入未减少，家人不支持健康饮食调整。",
+      "details": "患者提到“家人还是没变，咱这大锅饭，咸菜和油也没少放”，并且“家人那会儿反对我又说不出口”。",
+      "dialogue_date": "2024-11-04"
+    },
+    "patient_profile": {
+      "basic_info": {
+        "patient_id": "6e84e63ded176d781f2a6e6a8d3e2cc82de94c2b360bee96209ddd24dabf3f3a",
+        "name": null,
+        "age": 58,
+        "sex": "女",
+        "marital_status": "已婚",
+        "occupation": "退休人员",
+        "location": "山西省长治市",
+        "education": "高中",
+        "income_bracket": "中",
+        "living_situation": "与家人同住",
+        "contact_phone": "138-XXXX-5678"
+      },
+      "disease_info": {
+        "primary_diseases": [
+          {
+            "disease_name": "冠心病",
+            "icd10_code": "I25.1",
+            "years_since_diagnosis": 9.0,
+            "current_severity": "中度"
+          },
+          {
+            "disease_name": "高血压",
+            "icd10_code": "I10",
+            "years_since_diagnosis": 9.0,
+            "current_severity": "中度"
+          }
+        ],
+        "comorbidities": [
+          {
+            "disease_name": "高脂血症",
+            "icd10_code": "E78.5",
+            "years_since_diagnosis": 3.0,
+            "current_severity": "轻度"
+          }
+        ],
+        "family_history": {
+          "母亲病史": "高血压",
+          "父亲病史": null,
+          "兄弟姐妹病史": null,
+          "子女病史": null
+        },
+        "allergies": [
+          "青霉素"
+        ],
+        "last_checkup_date": "2024-10-24"
+      },
+      "prescription": {
+        "medications": [
+          {
+            "drug_name": "苯磺酸左旋氨氯地平片",
+            "dose": "2.5 mg",
+            "frequency": "每日一次",
+            "route": "口服"
+          },
+          {
+            "drug_name": "阿司匹林肠溶片",
+            "dose": "100 mg",
+            "frequency": "每日一次",
+            "route": "口服"
+          },
+          {
+            "drug_name": "辛伐他汀片",
+            "dose": "20 mg",
+            "frequency": "每日一次",
+            "route": "口服"
+          }
+        ],
+        "lifestyle": [
+          {
+            "recommendation_type": "饮食",
+            "description": "低盐低脂饮食，避免高胆固醇食品，适量增加新鲜蔬菜和水果。"
+          },
+          {
+            "recommendation_type": "运动",
+            "description": "坚持每周至少五次中等强度有氧运动，每次30分钟，如快走、太极。"
+          },
+          {
+            "recommendation_type": "睡眠",
+            "description": "保持每天7-8小时优质睡眠，避免熬夜。"
+          },
+          {
+            "recommendation_type": "压力",
+            "description": "保持心态平和，学习适当减压方法，如深呼吸、冥想。"
+          }
+        ],
+        "next_followup_date": "2024-12-01",
+        "physician_notes": "患者冠心病与高血压控制总体良好，建议继续现有治疗，密切监测血压波动。注意饮食调控和规律运动，定期随访复查血脂及心功能。"
+      },
+      "behaviour_preferences": {
+        "preferences": [
+          {
+            "preference_type": "饮食",
+            "detail": "喜欢家常山西面食，避免辛辣油腻，多选用蒸煮少油方法。",
+            "prescription_impact": [
+              "饮食"
+            ]
+          },
+          {
+            "preference_type": "运动",
+            "detail": "偏好户外快走与太极，运动时间多为上午，运动坚持较好。",
+            "prescription_impact": [
+              "运动"
+            ]
+          },
+          {
+            "preference_type": "休闲",
+            "detail": "喜欢看书和听戏曲，社交活动适中，重视邻里间交流。",
+            "prescription_impact": [
+              "监测"
+            ]
+          },
+          {
+            "preference_type": "科技",
+            "detail": "能够使用智能手机查看健康信息，愿意学习手机健康应用。",
+            "prescription_impact": [
+              "监测"
+            ]
+          },
+          {
+            "preference_type": "其他",
+            "detail": "不吸烟不饮酒，注重传统养生方法。",
+            "prescription_impact": [
+              "用药",
+              "饮食"
+            ]
+          }
+        ]
+      },
+      "generation_timestamp": "2024-11-01 12:00:00+08:00"
+    },
+    "current_adherence_history": [
+      {
+        "date": "2024-11-02",
+        "category": "饮食",
+        "overall_status": "部分遵从",
+        "reason": "患者尝试减少盐分摄入，但因家人饮食习惯不同导致家庭氛围紧张，饮食调整存在困难。",
+        "details": "患者主动减少盐分摄入，与家人沟通调整饮食，但家人认为其小题大做，导致家庭气氛紧张，影响饮食遵从。",
+        "dialogue_date": "2024-11-02"
+      },
+      {
+        "date": "2024-11-01",
+        "category": "饮食",
+        "overall_status": "部分遵从",
+        "reason": "患者饮食中尽量减少盐的使用，但家人偏好咸辣口味，导致难以统一饮食习惯，存在一定饮食控制难度。",
+        "details": "患者喜欢蒸煮少油的山西面食，自己尽量少放盐，但家人喜欢咸辣，做菜口味难以统一。",
+        "dialogue_date": "2024-11-01"
+      }
+    ],
+    "current_suggestion_history": [
+      {
+        "date": "2024-11-02",
+        "suggestion_content": "减少盐分摄入，建议与家人共同调整饮食，减少咸辣口味。",
+        "suggestion_category": "饮食",
+        "effectiveness_feedback": "无效",
+        "patient_response": "患者尝试与家人沟通调整饮食，但家人不配合，导致家庭气氛紧张，饮食调整未能顺利实施。",
+        "dialogue_date": "2024-11-02"
+      },
+      {
+        "date": "2024-11-01",
+        "suggestion_content": "饮食方面尝试用香草、醋或柠檬调味，减少盐的用量，保持口味多样。",
+        "suggestion_category": "饮食",
+        "effectiveness_feedback": "未尝试",
+        "patient_response": "患者表示可以试试，但担心家人觉得怪，尚未实施。",
+        "dialogue_date": "2024-11-01"
+      },
+      {
+        "date": "2024-11-01",
+        "suggestion_content": "在家准备与家人沟通的建议，帮助家人理解患者的健康需要，促进饮食调整。",
+        "suggestion_category": "饮食",
+        "effectiveness_feedback": "未尝试",
+        "patient_response": "患者表示可以试试看，尚未反馈效果。",
+        "dialogue_date": "2024-11-01"
+      }
+    ],
+    "current_behavior_preference": [
+      {
+        "date": "2024-11-02",
+        "preference_type": "饮食",
+        "prescription_impact": [
+          "饮食"
+        ],
+        "old_preference": "未明确表达与家人共同调整饮食",
+        "new_preference": "尝试减少自己食盐摄入，但家人不配合，导致家庭气氛紧张",
+        "update_reason": "患者为控制血压尝试调整饮食口味，但家人偏好咸辣口味，沟通存在困难",
+        "dialogue_date": "2024-11-02"
+      },
+      {
+        "date": "2024-11-01",
+        "preference_type": "饮食",
+        "prescription_impact": [
+          "饮食"
+        ],
+        "old_preference": "喜欢家里的山西面食，做菜喜欢蒸煮少油，尽量少放盐，但家人喜欢咸辣，口味难统一",
+        "new_preference": "愿意尝试用香草、醋或柠檬调味以减少盐用量，但担心家人接受度",
+        "update_reason": "希望通过调整调味方式减少盐摄入以利健康，但顾虑家人习惯影响",
+        "dialogue_date": "2024-11-01"
+      }
+    ]
+  },
+  "pre_annotation": {
+    "suggestion_reasoning": {
+      "assessment": "患者当前遵从状态显示饮食不遵从，缺乏家人支持导致饮食调整困难。需要进一步了解患者对家庭饮食习惯的具体感受及家人对健康饮食的态度。",
+      "analysis": "患者饮食中咸菜和油脂摄入未减少，且家人习惯未变。建议反馈显示沟通不足，患者在家庭环境中感到孤立。潜在解决方案包括引导患者与家人进行有效沟通，寻求共同饮食习惯的调整。",
+      "diagnosis": "患者的饮食不遵从行为特征为缺乏家庭支持，风险等级中等，可能导致冠心病和高血压加重。",
+      "planning": "建议助手引导患者制定家庭沟通计划，鼓励其尝试简单的健康饮食替代方案，并提供支持性资源帮助其与家人讨论饮食调整。",
+      "evaluation": "规划内容与患者的病情和不遵从行为一致，但需注意患者的沟通能力和家人的接受程度，确保建议可行性。"
+    },
+    "suggestion_message": "您在用药方面做得很好，记得时多了，继续加油。饮食方面我们一起想办法，您是否愿意尝试和家人一起制定一些健康菜谱？"
+  }
+}

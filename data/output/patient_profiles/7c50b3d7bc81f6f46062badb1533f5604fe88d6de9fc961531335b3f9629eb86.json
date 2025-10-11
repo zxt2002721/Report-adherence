@@ -1,0 +1,147 @@
+{
+  "basic_info": {
+    "patient_id": "7c50b3d7bc81f6f46062badb1533f5604fe88d6de9fc961531335b3f9629eb86",
+    "name": null,
+    "age": 62,
+    "sex": "男",
+    "marital_status": "已婚",
+    "occupation": "退休",
+    "location": "河南省洛阳市",
+    "education": "初中",
+    "income_bracket": "中",
+    "living_situation": "与家人同住",
+    "contact_phone": "138-XXXX-5678"
+  },
+  "disease_info": {
+    "primary_diseases": [
+      {
+        "disease_name": "冠状动脉粥样硬化性心脏病",
+        "icd10_code": "I25.1",
+        "years_since_diagnosis": 15.0,
+        "current_severity": "中度"
+      },
+      {
+        "disease_name": "2型糖尿病",
+        "icd10_code": "E11",
+        "years_since_diagnosis": 15.0,
+        "current_severity": "中度"
+      },
+      {
+        "disease_name": "高血压病",
+        "icd10_code": "I10",
+        "years_since_diagnosis": 15.0,
+        "current_severity": "可控"
+      }
+    ],
+    "comorbidities": [
+      {
+        "disease_name": "慢性肾脏病第2期",
+        "icd10_code": "N18.2",
+        "years_since_diagnosis": null,
+        "current_severity": "轻度"
+      }
+    ],
+    "family_history": {
+      "父亲": null,
+      "母亲": null,
+      "兄弟姐妹": "糖尿病",
+      "子女": null,
+      "遗传病": null
+    },
+    "allergies": [
+      "头孢类抗生素"
+    ],
+    "last_checkup_date": "2024-12-30"
+  },
+  "prescription": {
+    "medications": [
+      {
+        "drug_name": "非洛地平缓释片",
+        "dose": "5 mg",
+        "frequency": "每日1次",
+        "route": "口服"
+      },
+      {
+        "drug_name": "西格列汀片",
+        "dose": "100 mg",
+        "frequency": "每日1次",
+        "route": "口服"
+      },
+      {
+        "drug_name": "阿司匹林肠溶片",
+        "dose": "100 mg",
+        "frequency": "每日1次",
+        "route": "口服"
+      },
+      {
+        "drug_name": "阿托伐他汀钙片",
+        "dose": "20 mg",
+        "frequency": "每日1次",
+        "route": "口服"
+      }
+    ],
+    "lifestyle": [
+      {
+        "recommendation_type": "饮食",
+        "description": "保持低盐饮食，适量摄入主食（约250克/日），增加蔬菜水果，多食用粗粮，限制高脂肪和高糖食物。"
+      },
+      {
+        "recommendation_type": "运动",
+        "description": "继续维持每周5-6次中等强度有氧运动，每次30-60分钟，避免过量，适当增加户外散步活动。"
+      },
+      {
+        "recommendation_type": "睡眠",
+        "description": "保证每天7-8小时优质睡眠，规律作息，避免熬夜。"
+      },
+      {
+        "recommendation_type": "压力",
+        "description": "保持良好心态，适当参加社区活动，避免过度精神紧张。"
+      }
+    ],
+    "next_followup_date": "2025-03-30",
+    "physician_notes": "患者病情整体稳定，血压及血糖控制较好。建议继续现有治疗方案，保持生活方式调整，密切监测肾功能及心血管状态。"
+  },
+  "behaviour_preferences": {
+    "preferences": [
+      {
+        "preference_type": "饮食",
+        "detail": "偏爱河南地方家常菜，喜食面食，喜欢低盐较清淡饮食，避免油炸及甜品。",
+        "prescription_impact": [
+          "饮食"
+        ]
+      },
+      {
+        "preference_type": "运动",
+        "detail": "喜欢早晨公园散步和太极拳，享受户外活动，运动频次高，但注意避免剧烈运动，倾向规律中强度运动。",
+        "prescription_impact": [
+          "运动"
+        ]
+      },
+      {
+        "preference_type": "休闲",
+        "detail": "业余时间喜欢与邻里下象棋，看电视新闻，社交需求适中，参与社区文化活动。",
+        "prescription_impact": [
+          "监测"
+        ]
+      },
+      {
+        "preference_type": "科技",
+        "detail": "会使用智能手机，通过微信了解健康信息，愿意尝试简单的健康APP辅助管理。",
+        "prescription_impact": [
+          "监测",
+          "用药"
+        ]
+      },
+      {
+        "preference_type": "其他",
+        "detail": "生活作息规律，重视家庭责任，有较强的自我管理意识，配合医嘱执行良好。",
+        "prescription_impact": [
+          "用药",
+          "运动",
+          "饮食"
+        ]
+      }
+    ]
+  },
+  "generation_timestamp": "2024-12-31 10:00:00+08:00"
+}

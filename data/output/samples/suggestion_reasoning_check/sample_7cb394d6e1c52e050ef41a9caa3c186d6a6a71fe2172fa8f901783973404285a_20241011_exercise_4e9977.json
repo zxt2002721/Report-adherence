@@ -1,0 +1,237 @@
+{
+  "sample_id": "sample_7cb394d6e1c52e050ef41a9caa3c186d6a6a71fe2172fa8f901783973404285a_20241011_exercise_4e9977",
+  "patient_id": "7cb394d6e1c52e050ef41a9caa3c186d6a6a71fe2172fa8f901783973404285a",
+  "task_name": "suggestion_reasoning_check",
+  "sample_data": {
+    "adherence_piece": {
+      "date": "2024-10-11",
+      "category": "运动",
+      "overall_status": "不遵从",
+      "reason": "患者因担心头晕未做伸展操，且表达了对运动可能加重症状的恐惧，未执行运动计划。",
+      "details": "2024-10-11上午未做伸展操，担心头晕加重，未尝试下午运动。",
+      "dialogue_date": "2024-10-11"
+    },
+    "patient_profile": {
+      "basic_info": {
+        "patient_id": "7cb394d6e1c52e050ef41a9caa3c186d6a6a71fe2172fa8f901783973404285a",
+        "name": null,
+        "age": 73,
+        "sex": "女",
+        "marital_status": "已婚",
+        "occupation": "退休",
+        "location": "云南省昆明市",
+        "education": "初中",
+        "income_bracket": "中",
+        "living_situation": "与家人同住",
+        "contact_phone": "138-XXXX-5678"
+      },
+      "disease_info": {
+        "primary_diseases": [
+          {
+            "disease_name": "高血压",
+            "icd10_code": "I10",
+            "years_since_diagnosis": 5.0,
+            "current_severity": "中度"
+          },
+          {
+            "disease_name": "II型糖尿病",
+            "icd10_code": "E11",
+            "years_since_diagnosis": 5.0,
+            "current_severity": "中度"
+          },
+          {
+            "disease_name": "冠心病",
+            "icd10_code": "I25.1",
+            "years_since_diagnosis": 5.0,
+            "current_severity": "可控"
+          }
+        ],
+        "comorbidities": [
+          {
+            "disease_name": "慢性肾功能不全",
+            "icd10_code": "N18.9",
+            "years_since_diagnosis": 1.0,
+            "current_severity": "轻度"
+          }
+        ],
+        "family_history": {
+          "父亲病史": null,
+          "母亲病史": null,
+          "兄弟姐妹病史": null,
+          "子女病史": null,
+          "遗传性心血管疾病": null
+        },
+        "allergies": [
+          "青霉素"
+        ],
+        "last_checkup_date": "2024-10-02"
+      },
+      "prescription": {
+        "medications": [
+          {
+            "drug_name": "卡托普利片",
+            "dose": "25 mg",
+            "frequency": "每日一次",
+            "route": "口服"
+          },
+          {
+            "drug_name": "二甲双胍",
+            "dose": "500 mg",
+            "frequency": "每日两次",
+            "route": "口服"
+          },
+          {
+            "drug_name": "消渴丸",
+            "dose": "5 粒",
+            "frequency": "每日三次",
+            "route": "口服"
+          }
+        ],
+        "lifestyle": [
+          {
+            "recommendation_type": "饮食",
+            "description": "减少盐摄入，限制主食量至250克/日，增加蔬菜水果摄入，避免糖分过高食品。"
+          },
+          {
+            "recommendation_type": "运动",
+            "description": "逐步开始低强度室内活动，如散步和伸展操，每周至少三次，每次30分钟，避免剧烈运动。"
+          },
+          {
+            "recommendation_type": "睡眠",
+            "description": "保持规律作息，保证每日7-8小时高质量睡眠，睡前避免使用电子产品。"
+          },
+          {
+            "recommendation_type": "压力",
+            "description": "采用深呼吸和冥想缓解压力，保持积极心态，参与社区活动。"
+          }
+        ],
+        "next_followup_date": "2025-01-02",
+        "physician_notes": "当前药物治疗基本稳定，建议调整二甲双胍剂量以优化血糖控制；密切监测血压波动，鼓励改善生活方式，防止慢性肾脏损伤进展。注重患者教育，提高依从性。"
+      },
+      "behaviour_preferences": {
+        "preferences": [
+          {
+            "preference_type": "饮食",
+            "detail": "偏爱云南特色米饭与蔬菜，喜食清淡饮食，避免油腻和高糖食物。",
+            "prescription_impact": [
+              "饮食"
+            ]
+          },
+          {
+            "preference_type": "运动",
+            "detail": "喜欢轻松室内活动，暂不适合户外剧烈运动，期望慢速散步。",
+            "prescription_impact": [
+              "运动"
+            ]
+          },
+          {
+            "preference_type": "休闲",
+            "detail": "偏好家中看新闻和电视节目，偶尔参与亲友聚会。",
+            "prescription_impact": [
+              "用药"
+            ]
+          },
+          {
+            "preference_type": "科技",
+            "detail": "能使用智能手机，愿意尝试健康管理App。",
+            "prescription_impact": [
+              "监测"
+            ]
+          },
+          {
+            "preference_type": "其他",
+            "detail": "重视家庭观念，乐于配合医生建议，信赖传统与现代医学结合。",
+            "prescription_impact": [
+              "用药",
+              "饮食"
+            ]
+          }
+        ]
+      },
+      "generation_timestamp": "2024-10-10 12:00:00+08:00"
+    },
+    "current_adherence_history": [
+      {
+        "date": "2024-10-10",
+        "category": "运动",
+        "overall_status": "不遵从",
+        "reason": "患者运动量明显不足，主要以看电视为主，缺乏主动运动，且对室内运动方式不熟悉且缺乏动力。",
+        "details": "患者表示“运动就没怎么动”，“懒得动”，“看电视时间多，动起来累”，对伸展操陌生且担心做错，手机卡顿影响学习视频，家人劝说也未积极执行。",
+        "dialogue_date": "2024-10-10"
+      }
+    ],
+    "current_suggestion_history": [
+      {
+        "date": "2024-10-10",
+        "suggestion_content": "建议患者每天进行短暂散步，逐步增加运动量。",
+        "suggestion_category": "运动",
+        "effectiveness_feedback": "未尝试",
+        "patient_response": "患者因天气冷和家人担心，未实际开始散步运动。",
+        "dialogue_date": "2024-10-10"
+      },
+      {
+        "date": "2024-10-10",
+        "suggestion_content": "推荐患者进行室内伸展操或室内散步，并提供简单动作视频学习。",
+        "suggestion_category": "运动",
+        "effectiveness_feedback": "未尝试",
+        "patient_response": "患者表示手机卡顿，观看视频困难，尚未开始练习伸展操。",
+        "dialogue_date": "2024-10-10"
+      },
+      {
+        "date": "2024-10-10",
+        "suggestion_content": "通过语音电话或家人帮助指导患者做简单的伸展操动作。",
+        "suggestion_category": "运动",
+        "effectiveness_feedback": "未尝试",
+        "patient_response": "患者女儿有空会教，患者担心麻烦家人，尚未明确开始执行。",
+        "dialogue_date": "2024-10-10"
+      }
+    ],
+    "current_behavior_preference": [
+      {
+        "date": "2024-10-10",
+        "preference_type": "运动",
+        "prescription_impact": [
+          "用药",
+          "运动"
+        ],
+        "old_preference": "平时运动较少，主要在家里走走，较为懒散",
+        "new_preference": "愿意尝试在家里进行简单的伸展操和室内活动，计划通过女儿指导逐步开始运动",
+        "update_reason": "意识到运动对健康有益，女儿鼓励及健康助手建议，尽管担心麻烦家人但愿意尝试",
+        "dialogue_date": "2024-10-10"
+      },
+      {
+        "date": "2024-10-10",
+        "preference_type": "休闲",
+        "prescription_impact": [
+          "运动"
+        ],
+        "old_preference": "主要喜欢看电视和新闻，偶尔聊天，缺乏运动相关休闲活动",
+        "new_preference": "愿意尝试通过视频或语音电话学习简单伸展操，增加活动量",
+        "update_reason": "健康助手推荐及女儿支持，意识到休闲方式可以结合轻度运动",
+        "dialogue_date": "2024-10-10"
+      },
+      {
+        "date": "2024-10-10",
+        "preference_type": "科技",
+        "prescription_impact": [
+          "运动",
+          "监测"
+        ],
+        "old_preference": "手机使用不便，视频观看体验差，影响学习运动视频",
+        "new_preference": "接受通过语音电话指导运动，依赖家人协助学习运动",
+        "update_reason": "手机卡顿影响视频学习，转而采用更适合的语音电话方式和家人帮助",
+        "dialogue_date": "2024-10-10"
+      }
+    ]
+  },
+  "pre_annotation": {
+    "suggestion_reasoning": {
+      "assessment": "现状评估：患者因担心头晕未遵从运动计划，需确认头晕的具体原因及严重程度，以评估其对运动的真实影响。",
+      "analysis": "分析：患者对运动的恐惧导致不遵从，需探讨如何减轻其对头晕的担忧，考虑提供更安全的运动方案，如坐着的伸展操。",
+      "diagnosis": "诊断：患者的不遵从行为表现为对运动的恐惧，风险等级为中等，可能加重心血管疾病相关风险。",
+      "planning": "规划：建议与患者沟通，解释运动对健康的益处，并安排家人陪同进行简单的、低风险的室内活动，逐步建立信心。",
+      "evaluation": "推理回顾：规划内容需确保与患者的健康状况和偏好一致，避免过于激进的建议，确保患者在安全范围内逐步适应运动。"
+    },
+    "suggestion_message": "您好，昨天我们聊到您对卡托普利的头晕有顾虑，今天感觉怎么样？运动方面有没有试着做些伸展操？"
+  }
+}
