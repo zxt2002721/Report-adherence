@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>医生版报告</title>
+<style>
+
+/* 优化后：添加注释分组 */
+:root {
+    /* 色彩 - 文本与背景 (Colors - Text & Background) */
+    --fg: #222;
+    --fg-soft: #444;
+    --bg: #fff;
+    --muted: #888;
+    
+    /* 色彩 - 语义 (Colors - Semantic) */
+    --pri: #2e7d32;       /* 主要颜色，如成功 */
+    --pri-weak: #e9f5eb;  /* 主要颜色的弱化背景 */
+    --warn: #c62828;      /* 警告/危险色 */
+    --bar: #0f766e;       /* 用于边框、强调条等 */
+    
+    /* 色彩 - UI组件 (Colors - UI Components) */
+    --card: #f6f7f9;      /* 卡片背景 */
+    --border: #ddd;       /* 边框 */
+    --btn: #0ea5e9;       /* 按钮主色 */
+    --btn-hover: #0284c7; /* 按钮悬浮色 */
+}
+
+html,body { margin:0; padding:0; background:var(--bg); color:var(--fg); 
+    font-family:"Noto Sans CJK SC","Microsoft YaHei","PingFang SC",Arial; }
+body { font-size:14.5px; line-height:1.6; }
+.page-container { max-width:1100px; margin:0 auto; padding:16px 20px 80px; }
+.meta { color:var(--fg-soft); margin-bottom:12px; }
+h1,h2,h3,h4 { color:#111; margin:.7em 0 .45em; position:relative; }
+table { border-collapse:collapse; width:100%; margin:.4em 0 .8em; }
+th,td { border:1px solid #ccc; padding:6px 8px; vertical-align:top; }
+th { background:#f6f7f9; }
+blockquote { color:#555; margin:.6em 0; padding-left:.8em; border-left:3px solid #ddd; }
+img { max-width:100%; }
+hr { border: 0; border-top: 1px solid #eee; margin: 1em 0; }
+
+/* 批注工具条（通用） */
+.anno-toolbar {
+    position:fixed; left:50%; transform:translateX(-50%);
+    bottom:16px; z-index:9999; display:flex; gap:8px; align-items:center;
+    background:linear-gradient(90deg,#0ea5e9,#06b6d4); color:#fff;
+    padding:10px 12px; border-radius:14px; box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+.anno-toolbar button, .anno-toolbar label.btn {
+    appearance:none; border:0; border-radius:10px; padding:8px 10px; cursor:pointer; 
+    font-weight:600; background:#ffffff; color:#0b3b48; transition:all .15s ease;
+    box-shadow:0 2px 6px rgba(0,0,0,.12);
+}
+.anno-toolbar button:hover, .anno-toolbar label.btn:hover { transform:translateY(-1px); }
+.anno-toolbar .sep { width:1px; height:20px; background:rgba(255,255,255,.6); margin:0 4px; }
+.hidden-input { display:none; }
+
+/* 批注按钮（通用） */
+.add-note-btn {
+    display:none; position:absolute; right:-4px; top:50%; transform:translate(100%,-50%);
+    background:var(--btn); color:#fff; border:0; padding:3px 8px; border-radius:10px; 
+    font-size:12px; cursor:pointer;
+}
+.add-note-btn:hover { background:var(--btn-hover); }
+
+/* 章节交互工具（通用容器） */
+.section-tools {
+    display:inline-flex; gap:8px; align-items:center; margin-left:8px; 
+    transform:translateY(-1px); flex-wrap: wrap;
+}
+.section-tools select, .section-tools input[type="checkbox"] {
+    font-size:12px; padding:2px 6px;
+}
+.section-tools .chip {
+    font-size:12px; padding:2px 8px; border:1px solid var(--border); 
+    border-radius:10px; background:#fff;
+}
+.section-tools .btn-mini {
+    font-size:12px; padding:2px 8px; border:1px solid var(--border); 
+    border-radius:10px; background:#fff; cursor:pointer;
+}
+.section-tools .btn-mini:hover { background:#f1f5f9; }
+
+/* 批注卡片（通用） */
+.anno-card {
+    background:var(--card); border:1px solid var(--border); 
+    border-left:4px solid var(--bar); border-radius:12px; padding:10px; 
+    margin:8px 0 12px;
+}
+.anno-card .anno-head { 
+    display:flex; justify-content:space-between; align-items:center; 
+    margin-bottom:6px; color:var(--fg-soft); font-size:12px; 
+}
+.anno-card .anno-body[contenteditable="true"] {
+    min-height:48px; padding:6px 8px; border-radius:8px; background:#fff; 
+    border:1px dashed #cbd5e1; outline:none;
+}
+.anno-card .anno-actions { text-align:right; margin-top:6px; }
+.anno-card .anno-actions button {
+    background:#fff; border:1px solid #cbd5e1; border-radius:8px; 
+    padding:4px 8px; cursor:pointer; margin-left:6px;
+}
+.anno-card .anno-actions button:hover { background:#f1f5f9; }
+
+/* 全局批注（通用） */
+.global-anno {
+    background:#fff; border:1px solid var(--border); border-radius:14px; 
+    padding:12px; margin:10px 0 18px; box-shadow:0 2px 10px rgba(0,0,0,.06);
+}
+.global-anno h3 { margin-top:0; }
+.global-anno .area { 
+    width:100%; min-height:68px; resize:vertical; padding:8px; 
+    border-radius:10px; border:1px solid #cbd5e1; 
+}
+.global-anno .actions { text-align:right; margin-top:6px; }
+.muted { color:var(--muted); font-size:12px; }
+
+@media print {
+    .anno-toolbar { display:none!important; }
+    .add-note-btn { display:none!important; }
+    .section-tools { display:none!important; }
+    .page-container { padding-bottom:0; }
+    .global-anno { box-shadow:none; border:1px solid #ccc; }
+    .anno-card { page-break-inside: avoid; }
+}
+
+
+/* 依从性报告专用样式 */
+.adherence-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.adherence-good { background: #d1fae5; color: #065f46; }
+.adherence-warn { background: #fef3c7; color: #92400e; }
+.adherence-poor { background: #fee2e2; color: #991b1b; }
+
+</style>
+</head>
+<body>
+<div class="page-container" data-patient-id="0b389f61f90fcf6da613e08c64e06fdbaf05758cdd9e6b5ae730f1b8a8a654e4" data-report-type="compliance" data-report-id="20251013_202422">
+    <div class="meta">生成时间：2025-10-13 20:24:22 | 报告ID：20251013_202422</div>
+    
+    <section class="global-anno" id="global-anno">
+        <h3>📝 全局批注（医生）</h3>
+        <textarea class="area" id="globalAnnoArea" placeholder="在此填写整体意见；支持导出/导入与自动保存。"></textarea>
+        <div class="actions muted">内容自动保存到浏览器（仅本机）。每份报告的批注独立存储。</div>
+    </section>
+    
+    <h1>慢病阶段管理月报（医生版）</h1>
+<h2>一、基本信息</h2>
+<ul>
+<li>姓名：None</li>
+<li>性别：女</li>
+<li>年龄：80</li>
+<li>职业：退休</li>
+<li>文化程度：初中</li>
+<li>家庭情况：与家人同住</li>
+<li>联系方式：138-XXXX-5678</li>
+<li>过敏史：青霉素</li>
+<li>既往史：II型糖尿病、高血压、冠心病</li>
+<li>家庭支持情况：—</li>
+</ul>
+<hr />
+<h2>二、主要疾病诊断及治疗</h2>
+<ul>
+<li>疾病名称：II型糖尿病 （ICD10: E11）</li>
+<li>当前病情：中度</li>
+<li>当前用药：厄贝沙坦氢氯噻嗪 150 mg 每日一次（口服）；阿卡波糖 50 mg 每日三次（口服）；格列吡嗪控释片 5 mg 每日一次（口服）</li>
+<li>与指南推荐：</li>
+<li>
+<p>一致性评价：</p>
+</li>
+<li>
+<p>疾病名称：高血压 （ICD10: I10）</p>
+</li>
+<li>当前病情：可控</li>
+<li>当前用药：厄贝沙坦氢氯噻嗪 150 mg 每日一次（口服）；阿卡波糖 50 mg 每日三次（口服）；格列吡嗪控释片 5 mg 每日一次（口服）</li>
+<li>与指南推荐：</li>
+<li>
+<p>一致性评价：</p>
+</li>
+<li>
+<p>疾病名称：冠心病 （ICD10: I25）</p>
+</li>
+<li>当前病情：中度</li>
+<li>当前用药：厄贝沙坦氢氯噻嗪 150 mg 每日一次（口服）；阿卡波糖 50 mg 每日三次（口服）；格列吡嗪控释片 5 mg 每日一次（口服）</li>
+<li>与指南推荐：</li>
+<li>一致性评价：</li>
+</ul>
+<hr />
+<hr />
+<h2>三、核心监测指标</h2>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>当前值</th>
+<th>推荐目标</th>
+<th>是否达标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>血压</td>
+<td>141/94 mmHg</td>
+<td>&lt; 140/90 mmHg</td>
+<td>未达标</td>
+</tr>
+<tr>
+<td>空腹血糖</td>
+<td>8.0 mmol/L</td>
+<td>&lt; 7.0 mmol/L（空腹）</td>
+<td>未达标</td>
+</tr>
+<tr>
+<td>HbA1c</td>
+<td>7.8%</td>
+<td>&lt; 7.0%</td>
+<td>未达标</td>
+</tr>
+<tr>
+<td>LDL-C</td>
+<td>3.1 mmol/L</td>
+<td>&lt; 2.6 mmol/L</td>
+<td>未达标</td>
+</tr>
+<tr>
+<td>BMI</td>
+<td>25.5 kg/m²</td>
+<td>18.5–24.9 kg/m²</td>
+<td>未达标</td>
+</tr>
+<tr>
+<td>心率</td>
+<td>81 bpm</td>
+<td>60–100 bpm</td>
+<td>达标</td>
+</tr>
+<tr>
+<td>肾功能</td>
+<td>eGFR 75 ml/min/1.73m²</td>
+<td>eGFR ≥ 60 ml/min/1.73m²</td>
+<td>达标</td>
+</tr>
+</tbody>
+</table>
+<h3>指标趋势图</h3>
+<h4>血压变化</h4>
+<p><img alt="" src="assets/bp_trend.png" /></p>
+<h4>血糖变化</h4>
+<p><img alt="" src="assets/glucose_trend.png" /></p>
+<h4>体重/BMI/心率对比</h4>
+<p><img alt="" src="assets/monthly_comparison.png" /></p>
+<hr />
+<h2>四、生活方式处方</h2>
+<ul>
+<li>饮食：控制每日主食摄入至250克，增加蔬菜和蛋白质摄入，减少盐和糖的摄入。</li>
+<li>运动：每周5次适度运动，如步行30分钟。</li>
+<li>睡眠：确保睡眠质量，每晚不低于7小时。</li>
+<li>心理：每天进行放松练习，如瑜伽或冥想，缓解心理压力。</li>
+</ul>
+<hr />
+<h2>五、依从性与APP使用情况</h2>
+<ul>
+<li>打卡情况：近月打卡 6 天</li>
+<li>症状反馈：症状反馈 0 次</li>
+<li>在线咨询：线上咨询 0 次</li>
+<li>问卷完成情况：问卷 0 次</li>
+<li>依从性总体：近12条记录，完全遵从 8.3%</li>
+</ul>
+<h3>依从性趋势图</h3>
+<p><img alt="" src="assets/adherence_trend.png" /></p>
+<hr />
+<h2>六、健康管理提示（来源：AI智能分析）</h2>
+<h3>1. 用药管理</h3>
+<ul>
+<li>状态：患者用药依从性总体为部分遵从，存在服药时间不固定、漏服及因副作用担忧而减少服药的情况。</li>
+<li>建议：建议使用彩色药盒和时间表辅助记忆，结合微信提醒功能进行每日服药打卡。同时，可尝试将药物放在床头柜以提高服药意识。</li>
+<li>医生补充：需关注患者对药物副作用的担忧，评估是否需要调整药物剂量或更换药物类型。</li>
+<li>风险提示：长期不规律服药可能导致血糖、血压控制不佳，增加心脑血管事件风险。</li>
+</ul>
+<h3>2. 指标监测</h3>
+<ul>
+<li>状态：当前各项生理指标控制尚可，但HbA1c偏高（7.8%），提示血糖控制仍需加强。</li>
+<li>建议：建议每周监测血糖2-3次，每月复查HbA1c，同时定期监测血压、血脂和肾功能。</li>
+<li>医生补充：需注意HbA1c偏高的趋势，评估是否需要调整降糖方案或加强生活方式干预。</li>
+<li>风险提示：HbA1c持续升高可能增加糖尿病并发症风险，如视网膜病变、肾病等。</li>
+</ul>
+<h3>3. 运动与康复</h3>
+<ul>
+<li>状态：患者运动依从性较低，近期因天气寒冷和心慌未能坚持户外运动。</li>
+<li>建议：建议尝试室内轻度运动，如每天进行10分钟伸展运动或散步，逐步恢复运动习惯。</li>
+<li>医生补充：应避免剧烈运动，建议在医生指导下进行适度运动，防止低血糖或心律失常。</li>
+<li>风险提示：缺乏运动可能导致血糖控制不佳、体重增加，进一步加重心血管负担。</li>
+</ul>
+<h3>4. 饮食管理</h3>
+<ul>
+<li>状态：患者饮食偏咸且未严格执行饮食禁忌，盐分摄入控制不足。</li>
+<li>建议：建议逐步减少盐分摄入，优先选择清淡食物，如蔬菜、低盐海鲜，并与家人沟通调整饮食。</li>
+<li>医生补充：需关注高盐饮食对血压和肾脏功能的影响，建议定期监测血压和eGFR。</li>
+<li>风险提示：高盐饮食可能加重高血压和肾脏负担，增加心脑血管疾病风险。</li>
+</ul>
+<h3>5. 心理与家庭支持</h3>
+<ul>
+<li>状态：患者存在心理压力和情绪波动，对长期治疗存在担忧，家庭支持有限。</li>
+<li>建议：建议通过深呼吸、冥想或轻柔瑜伽缓解压力，同时鼓励家人给予更多情感支持。</li>
+<li>医生补充：需关注患者情绪变化，必要时提供心理咨询或药物干预。</li>
+<li>风险提示：心理压力可能影响血糖控制和服药依从性，加重慢性病管理难度。</li>
+</ul>
+<hr />
+<h2>七、AI 综合分析</h2>
+<ul>
+<li>总结：患者为80岁女性，患有II型糖尿病、高血压和冠心病，目前用药依从性部分遵从，饮食和运动控制尚可，但存在服药不规律、饮食偏咸、心理压力等问题。整体病情控制尚可，但需加强生活方式管理和心理支持以降低并发症风险。</li>
+<li>风险评估：主要风险包括：血糖控制不佳（HbA1c 7.8%）、高血压未完全控制（血压141/94 mmHg）、饮食中盐分过高、心理压力大、运动不足。这些因素可能增加心脑血管事件和糖尿病并发症的风险。</li>
+<li>个性化建议：['使用彩色药盒和微信提醒功能提高服药依从性。', '与家人沟通，逐步减少饮食中的盐分摄入。', '尝试室内轻度运动，如每天10分钟伸展或散步，逐步恢复运动习惯。', '进行心理调适，如深呼吸或轻柔瑜伽，缓解压力。', '定期监测血糖、血压、HbA1c和肾功能，及时调整治疗方案。', '加强家庭支持，鼓励患者积极参与慢性病管理。', '若出现情绪波动或服药困难，及时与医生沟通调整药物或治疗方案。']</li>
+</ul>
+<hr />
+<h2>八、参考文献</h2>
+<hr />
+<blockquote>
+<p>报告生成日期：2025-10-13
+报告周期：2024-03-25 至 2024-04-07</p>
+</blockquote><hr />
+<h2>附：依从性可视化</h2>
+<p><img alt="各类别依从趋势" src="assets/adherence_trend.png" /></p>
+<p><img alt="主要非依从原因" src="assets/adherence_causes.png" /></p>
+<p><img alt="用药依从趋势" src="assets/med_adherence_trend.png" /></p>
+</div>
+
+
+<div class="anno-toolbar" id="annoToolbar">
+    <button id="toggleAnno">关闭批注模式</button>
+    <div class="sep"></div>
+    <button id="exportAnno">导出批注与交互数据</button>
+    <label class="btn" for="importAnnoInput">导入数据</label>
+    <input id="importAnnoInput" class="hidden-input" type="file" accept="application/json" />
+    <button id="clearAnno">清空本地数据</button>
+    <div class="sep"></div>
+    <button id="printView">打印友好</button>
+</div>
+
+
+<script>
+
+    (() => {
+    // ==================== A. 通用核心变量与函数 ====================
+    const patientId = document.querySelector('.page-container')?.dataset?.patientId || 'unknown';
+    const reportType = document.querySelector('.page-container')?.dataset?.reportType || 'compliance';
+    const reportId = document.querySelector('.page-container')?.dataset?.reportId || '20251013_202422';
+    const LS_ANNOTATIONS = `report-annotations::${reportType}::${patientId}::${reportId}`;
+    const LS_GLOBAL = `report-annotations-global::${reportType}::${patientId}::${reportId}`;
+    const LS_INTERACTIONS = `report-interactions::${reportType}::${patientId}::${reportId}`;
+    let annoMode = true;
+
+    function nowStr() {
+      const d = new Date();
+      const pad = n => (n<10? '0'+n : ''+n);
+      return `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}`;
+    }
+    function loadJSON(key, def) { try { return JSON.parse(localStorage.getItem(key) || JSON.stringify(def)); } catch { return def; } }
+    function saveJSON(key, val) { localStorage.setItem(key, JSON.stringify(val || {})); }
+    function loadAnnotations() { return loadJSON(LS_ANNOTATIONS, {}); }
+    function saveAnnotations(data) { saveJSON(LS_ANNOTATIONS, data); }
+    function loadGlobal() { return localStorage.getItem(LS_GLOBAL) || ''; }
+    function saveGlobal(val) { localStorage.setItem(LS_GLOBAL, val || ''); }
+    function loadInteracts() { return loadJSON(LS_INTERACTIONS, {}); }
+    function saveInteracts(obj) { saveJSON(LS_INTERACTIONS, obj); }
+
+    // ==================== B. 资源编辑器专属逻辑 ====================
+    function setupResourceEditor() {
+        if (!window.TRIAGE_RESOURCES_DATA) return;
+        const { allResources: ALL_RESOURCES, suggestedIds: SYSTEM_SUGGESTED_IDS } = window.TRIAGE_RESOURCES_DATA;
+        let currentSelectedResourceIds = new Set();
+        const STORAGE_KEY = 'triage_resources_selection';
+        const editButton = document.querySelector('[data-act="edit-resources"]');
+        if (!editButton) return;
+        const modal = document.getElementById('resourceEditorModal');
+        const modalBody = document.getElementById('resourceEditorContent');
+        const displayAreaList = document.querySelector('#resource-display-area .resource-list');
+        const confirmBtn = document.querySelector('.resource-modal-footer button.primary');
+        const cancelBtn = document.querySelector('.resource-modal-footer button:not(.primary)');
+        const closeIconBtn = document.querySelector('.resource-modal-header button');
+        const countDisplay = document.querySelector('#resourceCount strong');
+
+        function initializeState() {
+            currentSelectedResourceIds.clear();
+            const store = loadInteracts();
+            const savedSelection = store[STORAGE_KEY];
+            if (savedSelection && Array.isArray(savedSelection)) {
+                currentSelectedResourceIds = new Set(savedSelection);
+                console.log('✅ [资源] 加载已保存的选择:', savedSelection.length, '项');
+            } else {
+                currentSelectedResourceIds = new Set(SYSTEM_SUGGESTED_IDS);
+                store[STORAGE_KEY] = Array.from(currentSelectedResourceIds);
+                saveInteracts(store);
+                console.log('✅ [资源] 使用系统推荐并已保存:', SYSTEM_SUGGESTED_IDS.length, '项');
+            }
+        }
+
+        function updateCounter() {
+            const count = modalBody.querySelectorAll('input:checked').length;
+            if(countDisplay) countDisplay.textContent = count;
+        }
+
+        function openResourceEditor() {
+            initializeState();
+            modalBody.innerHTML = '';
+            Object.entries(ALL_RESOURCES).forEach(([category, resources]) => {
+                const categoryTitle = document.createElement('h4');
+                categoryTitle.textContent = category;
+                modalBody.appendChild(categoryTitle);
+                resources.forEach(item => {
+                    const label = document.createElement('label');
+                    const checkbox = document.createElement('input');
+                    checkbox.type = 'checkbox';
+                    checkbox.value = item.id;
+                    checkbox.checked = currentSelectedResourceIds.has(item.id);
+                    checkbox.onchange = updateCounter;
+                    label.appendChild(checkbox);
+                    label.append(` ${item.name}`);
+                    if(SYSTEM_SUGGESTED_IDS.includes(item.id)) {
+                        const badge = document.createElement('span');
+                        badge.className = 'system-badge';
+                        badge.textContent = '[系统推荐]';
+                        label.appendChild(badge);
+                    }
+                    modalBody.appendChild(label);
+                });
+            });
+            updateCounter();
+            modal.style.display = 'flex';
+            document.body.classList.add('modal-open');
+        }
+
+        function closeResourceEditor() {
+            modal.style.display = 'none';
+            document.body.classList.remove('modal-open');
+        }
+
+        function saveResourceSelection() {
+            currentSelectedResourceIds = new Set(Array.from(modalBody.querySelectorAll('input:checked')).map(cb => cb.value));
+            const store = loadInteracts();
+            store[STORAGE_KEY] = Array.from(currentSelectedResourceIds);
+            saveInteracts(store);
+            console.log('💾 [资源] 已保存选择:', store[STORAGE_KEY].length, '项');
+            renderDisplayArea();
+            closeResourceEditor();
+        }
+        
+        function renderDisplayArea() {
+            if(!displayAreaList) return;
+            displayAreaList.innerHTML = '';
+            const selectedByCategory = {};
+            const allResourcesFlat = Object.values(ALL_RESOURCES).flat();
+            currentSelectedResourceIds.forEach(id => {
+                const item = allResourcesFlat.find(i => i.id === id);
+                if(item) {
+                    const category = item.category || '未分类';
+                    if (!selectedByCategory[category]) selectedByCategory[category] = [];
+                    selectedByCategory[category].push(item);
+                }
+            });
+            if (Object.keys(selectedByCategory).length === 0) {
+                displayAreaList.innerHTML = '<li>医生未选择任何资源。</li>';
+                return;
+            }
+            Object.entries(selectedByCategory).forEach(([categoryName, items]) => {
+                const li = document.createElement('li');
+                li.innerHTML = `<strong>${categoryName}:</strong> `;
+                items.forEach(item => {
+                    const span = document.createElement('span');
+                    span.className = 'resource-item';
+                    if (!SYSTEM_SUGGESTED_IDS.includes(item.id)) span.classList.add('added-by-user');
+                    span.textContent = item.name;
+                    li.appendChild(span);
+                });
+                displayAreaList.appendChild(li);
+            });
+        }
+        
+        if (editButton) editButton.addEventListener('click', openResourceEditor);
+        if (confirmBtn) confirmBtn.addEventListener('click', saveResourceSelection);
+        if (cancelBtn) cancelBtn.addEventListener('click', closeResourceEditor);
+        if (closeIconBtn) closeIconBtn.addEventListener('click', closeResourceEditor);
+        initializeState();
+        renderDisplayArea();
+    }
+
+    // ==================== C. 通用批注与交互逻辑 ====================
+    const SectionKindMap = [{"key": "disease", "includes": ["\u4e3b\u8981\u75be\u75c5\u8bca\u65ad", "\u6cbb\u7597", "\u8bca\u65ad\u53ca\u6cbb\u7597"], "tools_html": "\n                <span class=\"chip\">\u5904\u7f6e\uff1a</span>\n                <select data-k=\"disease.plan\">\n                    <option value=\"\">\u65e0</option>\n                    <option>\u7b80\u5316</option>\n                    <option>\u52a0\u5f3a</option>\n                    <option>\u6539\u836f</option>\n                    <option>\u4f1a\u8bca</option>\n                </select>\n                <label class=\"chip\"><input type=\"checkbox\" data-k=\"disease.medChecked\"> \u5df2\u6838\u5bf9\u7528\u836f</label>\n            "}, {"key": "monitor", "includes": ["\u6838\u5fc3\u76d1\u6d4b\u6307\u6807", "\u76d1\u6d4b", "\u6307\u6807"], "tools_html": "\n                <span class=\"chip\">\u590d\u67e5\u5b89\u6392\uff1a</span>\n                <select data-k=\"monitor.recheck\">\n                    <option value=\"\">\u6309\u9700\u8981</option>\n                    <option>1\u5468</option>\n                    <option>2\u5468</option>\n                    <option>4\u5468</option>\n                </select>\n                <button class=\"btn-mini\" data-act=\"mark-recheck\" data-done-text=\"\u5df2\u6807\u8bb0\">\u8bb0\u4e3a\u9700\u590d\u67e5</button>\n            "}, {"key": "adherence", "includes": ["\u4f9d\u4ece", "\u4f9d\u4ece\u6027", "\u4f9d\u5f9e"], "tools_html": "\n                <label class=\"chip\"><input type=\"checkbox\" data-k=\"adherence.follow\"> \u9700\u968f\u8bbf</label>\n                <span class=\"chip\">\u5468\u671f\uff1a</span>\n                <select data-k=\"adherence.period\">\n                    <option>1\u5468</option>\n                    <option>2\u5468</option>\n                    <option selected>4\u5468</option>\n                </select>\n                <button class=\"btn-mini\" data-act=\"make-follow\" data-done-text=\"\u5df2\u8bb0\u5f55\">\u8bb0\u5f55\u968f\u8bbf\u4efb\u52a1</button>\n            "}, {"key": "lifestyle", "includes": ["\u751f\u6d3b\u65b9\u5f0f", "\u751f\u6d3b", "\u5e72\u9884"], "tools_html": "\n                <span class=\"chip\">\u751f\u6d3b\u65b9\u5f0f\u6307\u5bfc\uff1a</span>\n                <label class=\"chip\"><input type=\"checkbox\" data-k=\"life.diet\"> \u996e\u98df</label>\n                <label class=\"chip\"><input type=\"checkbox\" data-k=\"life.exercise\"> \u8fd0\u52a8</label>\n                <label class=\"chip\"><input type=\"checkbox\" data-k=\"life.sleep\"> \u7761\u7720</label>\n                <label class=\"chip\"><input type=\"checkbox\" data-k=\"life.psy\"> \u5fc3\u7406</label>\n                <button class=\"btn-mini\" data-act=\"lifestyle-complete\" data-done-text=\"\u5df2\u5b8c\u6210\">\u5b8c\u6210\u6559\u80b2</button>\n            "}, {"key": "tips", "includes": ["\u5efa\u8bae", "\u63d0\u793a", "\u968f\u8bbf\u5efa\u8bae", "\u6cbb\u7597\u5efa\u8bae"], "tools_html": "\n                <span class=\"chip\">\u5efa\u8bae\u91c7\u7eb3\u60c5\u51b5\uff1a</span>\n                <select data-k=\"tips.overall\">\n                    <option value=\"\">\u603b\u4f53\u8bc4\u4ef7</option>\n                    <option>\u5b8c\u5168\u91c7\u7eb3</option>\n                    <option>\u90e8\u5206\u91c7\u7eb3</option>\n                    <option>\u9700\u8981\u4fee\u6539</option>\n                    <option>\u91cd\u65b0\u5236\u5b9a</option>\n                </select>\n                <label class=\"chip\">\u91cd\u70b9\u5173\u6ce8\uff1a</label>\n                <select data-k=\"tips.focus\">\n                    <option value=\"\">\u9009\u62e9\u91cd\u70b9</option>\n                    <option>\u7528\u836f\u4f9d\u4ece\u6027</option>\n                    <option>\u8840\u538b\u76d1\u6d4b</option>\n                    <option>\u8840\u7cd6\u63a7\u5236</option>\n                    <option>\u751f\u6d3b\u65b9\u5f0f</option>\n                </select>\n                <button class=\"btn-mini\" data-act=\"create-plan\" data-done-text=\"\u5df2\u5236\u5b9a\">\u5236\u5b9a\u968f\u8bbf\u8ba1\u5212</button>\n            "}, {"key": "ai", "includes": ["AI", "\u4eba\u5de5\u667a\u80fd", "\u7efc\u5408\u5206\u6790", "\u603b\u7ed3", "\u98ce\u9669\u8bc4\u4f30"], "tools_html": "\n                <span class=\"chip\">AI\u5206\u6790\u786e\u8ba4\uff1a</span>\n                <select data-k=\"ai.summary\">\n                    <option value=\"\">\u603b\u7ed3</option>\n                    <option>\u540c\u610f</option>\n                    <option>\u9700\u4fee\u6539</option>\n                </select>\n                <select data-k=\"ai.risk\">\n                    <option value=\"\">\u98ce\u9669\u8bc4\u4f30</option>\n                    <option>\u540c\u610f</option>\n                    <option>\u9700\u4fee\u6539</option>\n                </select>\n                <select data-k=\"ai.recommendations\">\n                    <option value=\"\">\u5efa\u8bae</option>\n                    <option>\u540c\u610f</option>\n                    <option>\u9700\u4fee\u6539</option>\n                </select>\n                <button class=\"btn-mini\" data-act=\"ai-approve\" data-done-text=\"\u5df2\u786e\u8ba4\">\u786e\u8ba4\u5206\u6790</button>\n            "}];
+
+    function setupSectionAnchors() {
+      const headers = document.querySelectorAll('h1, h2, h3, h4');
+      headers.forEach((h, idx) => {
+        if (!h.id) {
+            const text = h.textContent.replace(/[^a-zA-Z0-9一-龥]/g, '').substring(0, 15);
+            h.id = text ? `sec-${text}-${idx}` : `sec-${idx}`;
+        }
+        const btn = document.createElement('button');
+        btn.className = 'add-note-btn';
+        btn.textContent = '➕ 批注';
+        btn.addEventListener('click', () => createNoteCard(h.id));
+        h.appendChild(btn);
+      });
+    }
+
+    function refreshAnnoButtons() {
+      document.querySelectorAll('.add-note-btn').forEach(b => b.style.display = annoMode ? 'inline-block' : 'none');
+    }
+
+    function renderNotes() {
+      const store = loadAnnotations();
+      Object.entries(store).forEach(([secId, arr]) => {
+        const anchor = document.getElementById(secId);
+        if (anchor) arr.forEach(n => insertNoteCardAfter(anchor, n));
+      });
+    }
+
+    function createNoteCard(secId) {
+      const payload = { id: `n-${Date.now()}`, ts: nowStr(), html: '' };
+      const store = loadAnnotations();
+      (store[secId] = store[secId] || []).push(payload);
+      saveAnnotations(store);
+      const anchor = document.getElementById(secId);
+      if (anchor) insertNoteCardAfter(anchor, payload, true);
+    }
+
+    function insertNoteCardAfter(anchorEl, note, focus=false) {
+      const card = document.createElement('div');
+      card.className = 'anno-card';
+      card.dataset.noteId = note.id;
+      card.dataset.secId = anchorEl.id;
+      card.innerHTML = `<div class="anno-head"><div>章节：<code>${anchorEl.textContent.replace('➕ 批注','').trim()}</code></div><div>时间：${note.ts}</div></div><div class="anno-body" contenteditable="true" spellcheck="false">${note.html || ''}</div><div class="anno-actions"><button data-act="del">删除</button></div>`;
+      const body = card.querySelector('.anno-body');
+      body.addEventListener('input', () => {
+        const store = loadAnnotations();
+        const item = (store[card.dataset.secId] || []).find(x => x.id === card.dataset.noteId);
+        if (item) { item.html = body.innerHTML; saveAnnotations(store); }
+      });
+      card.querySelector('[data-act="del"]').addEventListener('click', () => {
+        const store = loadAnnotations();
+        let list = store[card.dataset.secId] || [];
+        store[card.dataset.secId] = list.filter(x => x.id !== card.dataset.noteId);
+        saveAnnotations(store);
+        card.remove();
+      });
+      anchorEl.parentNode.insertBefore(card, anchorEl.nextSibling);
+      if (focus) body.focus();
+    }
+
+    function injectToolsHTML() {
+      if (!SectionKindMap || SectionKindMap.length === 0) return;
+      const headers = document.querySelectorAll('h1, h2, h3, h4');
+      headers.forEach(h => {
+          const titleText = (h.textContent || '').replace(/[\s➕批注]/g, '');
+          const config = SectionKindMap.find(m => m.includes && m.includes.some(k => titleText.includes(k)));
+          if (config && config.tools_html) {
+              const wrap = document.createElement('span');
+              wrap.className = 'section-tools';
+              wrap.innerHTML = config.tools_html;
+              h.appendChild(wrap);
+          }
+      });
+    }
+
+    function activateInteractiveElements() {
+        const store = loadInteracts();
+        let hasNewValues = false;
+        
+        document.querySelectorAll('[data-k]').forEach(el => {
+            let header = el.closest('h1, h2, h3, h4');
+            if (!header) {
+                const wrapper = el.closest('.decision-interactive, .physician-approval-form');
+                if (wrapper && wrapper.previousElementSibling?.matches('h1, h2, h3, h4')) {
+                    header = wrapper.previousElementSibling;
+                }
+            }
+            
+            if (!header) {
+                console.warn('⚠️ [交互] 无法找到标题，跳过元素:', el.dataset.k);
+                return;
+            }
+            
+            const k = `${header.id}::${el.dataset.k}`;
+            const savedValue = store[k];
+            
+            let currentValue;
+            if (el.tagName === 'SELECT') {
+                currentValue = el.value;
+            } else if (el.type === 'checkbox') {
+                currentValue = el.checked;
+            } else if (el.type === 'radio') {
+                if (el.checked) {
+                    currentValue = el.value;
+                }
+            } else if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                currentValue = el.value;
+            }
+            
+            if (savedValue !== undefined) {
+                if (el.tagName === 'SELECT') {
+                    el.value = savedValue;
+                    console.log('🔄 [交互] 恢复下拉框:', k, '=', savedValue);
+                } else if (el.type === 'checkbox') {
+                    el.checked = !!savedValue;
+                    console.log('🔄 [交互] 恢复复选框:', k, '=', savedValue);
+                } else if (el.type === 'radio') {
+                    if (el.value === savedValue) {
+                        el.checked = true;
+                        console.log('🔄 [交互] 恢复单选框:', k, '=', savedValue);
+                    }
+                } else if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                    el.value = savedValue;
+                    console.log('🔄 [交互] 恢复输入框:', k, '=', savedValue);
+                }
+            } else if (currentValue !== '' && currentValue !== undefined) {
+                store[k] = currentValue;
+                hasNewValues = true;
+                console.log('💾 [交互] 保存预设值:', k, '=', currentValue);
+            }
+            
+            el.addEventListener('change', () => {
+                const cur = loadInteracts();
+                if (el.type === 'checkbox') {
+                    cur[k] = el.checked;
+                } else if (el.type === 'radio') {
+                    cur[k] = el.value;
+                } else {
+                    cur[k] = el.value;
+                }
+                saveInteracts(cur);
+                console.log('💾 [交互] 保存:', k, '=', cur[k]);
+            });
+        });
+        
+        if (hasNewValues) {
+            saveInteracts(store);
+            console.log('✅ [交互] 已保存所有预设值到localStorage');
+        }
+    }
+
+    function setupPathSwitching() {
+        const switcher = document.querySelector('.path-switcher-select');
+        const pathYes = document.getElementById('path-immediate-care');
+        const pathNo = document.getElementById('path-home-observation');
+        if (!switcher || !pathYes || !pathNo) return; 
+        const handleSwitch = () => {
+            pathYes.style.display = (switcher.value === 'yes') ? 'block' : 'none';
+            pathNo.style.display = (switcher.value === 'no') ? 'block' : 'none';
+        };
+        switcher.addEventListener('change', handleSwitch);
+        handleSwitch();
+    }
+
+    function setupToolbar() {
+      const $toggle = document.getElementById('toggleAnno'), $export = document.getElementById('exportAnno'), $import = document.getElementById('importAnnoInput'), $clear = document.getElementById('clearAnno'), $print = document.getElementById('printView'), $global = document.getElementById('globalAnnoArea');
+      $global.value = loadGlobal();
+      $global.addEventListener('input', () => saveGlobal($global.value));
+      $toggle.addEventListener('click', () => {
+        annoMode = !annoMode;
+        $toggle.textContent = annoMode ? '关闭批注模式' : '开启批注模式';
+        refreshAnnoButtons();
+      });
+      $export.addEventListener('click', () => {
+        const data = { patient_id: patientId, report_type: reportType, report_id: reportId, exported_at: nowStr(), global: $global.value || '', sections: loadAnnotations(), interactions: loadInteracts() };
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' }));
+        a.download = `annotations_${reportType}_${patientId}_${reportId}.json`;
+        a.click();
+        URL.revokeObjectURL(a.href);
+      });
+      $import.addEventListener('change', (e) => {
+        const f = e.target.files?.[0];
+        if (!f) return;
+        const reader = new FileReader();
+        reader.onload = () => {
+          try {
+            const data = JSON.parse(reader.result);
+            if (data?.global !== undefined) saveGlobal(data.global);
+            if (data?.sections) saveAnnotations(data.sections);
+            if (data?.interactions) saveInteracts(data.interactions);
+            location.reload();
+          } catch (err) { alert('导入失败：JSON格式不正确'); }
+        };
+        reader.readAsText(f, 'utf-8');
+        e.target.value = '';
+      });
+      $clear.addEventListener('click', () => {
+        if (confirm('确定清空本报告的所有本地数据吗？')) {
+            localStorage.removeItem(LS_ANNOTATIONS);
+            localStorage.removeItem(LS_GLOBAL);
+            localStorage.removeItem(LS_INTERACTIONS);
+            location.reload();
+        }
+      });
+      $print.addEventListener('click', () => window.print());
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        setupSectionAnchors();
+        injectToolsHTML();
+        activateInteractiveElements();
+        setupPathSwitching();
+        setupResourceEditor();
+        renderNotes();
+        setupToolbar();
+        refreshAnnoButtons();
+    });
+
+    })();
+</script>
+</body>
+</html>

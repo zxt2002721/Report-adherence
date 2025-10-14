@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>慢病管理报告系统 - 控制台</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- 顶部导航 -->
+        <header class="top-nav">
+            <div class="nav-brand">
+                <i class="fas fa-heartbeat"></i>
+                <span>慢病管理系统</span>
+            </div>
+            <div class="nav-actions">
+                <button class="btn btn-outline" onclick="refreshData()">
+                    <i class="fas fa-sync-alt"></i> 刷新
+                </button>
+                <div class="user-info">
+                    <i class="fas fa-user-md"></i>
+                    <span>医生工作台</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- 主内容区 -->
+        <div class="main-content">
+            <!-- 侧边栏 -->
+            <nav class="sidebar">
+                <ul class="nav-menu">
+                    <li class="nav-item active">
+                        <a href="#" onclick="showSection('dashboard')">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>仪表板</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" onclick="showSection('patients')">
+                            <i class="fas fa-users"></i>
+                            <span>患者管理</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" onclick="showSection('reports')">
+                            <i class="fas fa-file-medical"></i>
+                            <span>报告生成</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" onclick="showSection('feedback')">
+                            <i class="fas fa-comments"></i>
+                            <span>反馈管理</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" onclick="showSection('analytics')">
+                            <i class="fas fa-chart-line"></i>
+                            <span>数据分析</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" onclick="showSection('settings')">
+                            <i class="fas fa-cog"></i>
+                            <span>系统设置</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- 内容面板 -->
+            <div class="content-panel">
+                <!-- 仪表板 -->
+                <section id="dashboard-section" class="content-section active">
+                    <div class="section-header">
+                        <h2><i class="fas fa-tachometer-alt"></i> 系统仪表板</h2>
+                        <p>系统整体运行状态和关键指标概览</p>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3 id="total-patients">3</h3>
+                                <p>管理患者数</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-file-medical"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3 id="total-reports">12</h3>
+                                <p>生成报告数</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3 id="pending-feedback">5</h3>
+                                <p>待处理反馈</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3 id="system-status">正常</h3>
+                                <p>系统状态</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-grid">
+                        <div class="dashboard-card">
+                            <h3>最近活动</h3>
+                            <div class="activity-list" id="recent-activities">
+                                <div class="activity-item">
+                                    <i class="fas fa-file-plus"></i>
+                                    <span>生成了患者张阿姨的依从性报告</span>
+                                    <time>2分钟前</time>
+                                </div>
+                                <div class="activity-item">
+                                    <i class="fas fa-comment"></i>
+                                    <span>收到医生对李先生报告的反馈</span>
+                                    <time>15分钟前</time>
+                                </div>
+                                <div class="activity-item">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>完成了本周数据分析</span>
+                                    <time>1小时前</time>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-card">
+                            <h3>快速操作</h3>
+                            <div class="quick-actions">
+                                <button class="quick-btn" onclick="showSection('reports')">
+                                    <i class="fas fa-plus"></i>
+                                    <span>生成新报告</span>
+                                </button>
+                                <button class="quick-btn" onclick="showSection('patients')">
+                                    <i class="fas fa-user-plus"></i>
+                                    <span>添加患者</span>
+                                </button>
+                                <button class="quick-btn" onclick="showSection('feedback')">
+                                    <i class="fas fa-eye"></i>
+                                    <span>查看反馈</span>
+                                </button>
+                                <button class="quick-btn" onclick="exportData()">
+                                    <i class="fas fa-download"></i>
+                                    <span>导出数据</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 患者管理 -->
+                <section id="patients-section" class="content-section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-users"></i> 患者管理</h2>
+                        <button class="btn btn-primary" onclick="addPatient()">
+                            <i class="fas fa-plus"></i> 添加患者
+                        </button>
+                    </div>
+
+                    <div class="search-bar">
+                        <input type="text" id="patient-search" placeholder="搜索患者姓名或ID..." onkeyup="searchPatients()">
+                        <button class="btn btn-outline" onclick="searchPatients()">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+
+                    <div class="patients-grid" id="patients-grid">
+                        <!-- 患者卡片将通过JavaScript动态生成 -->
+                    </div>
+                </section>
+
+                <!-- 报告生成 -->
+                <section id="reports-section" class="content-section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-file-medical"></i> 报告生成</h2>
+                        <p>生成各类慢病管理报告</p>
+                    </div>
+
+                    <div class="report-generator">
+                        <div class="generator-card">
+                            <h3>生成新报告</h3>
+                            <div class="form-group">
+                                <label>选择患者</label>
+                                <select id="report-patient-select" class="form-control">
+                                    <option value="">请选择患者...</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>报告类型</label>
+                                <select id="report-type-select" class="form-control">
+                                    <option value="compliance">依从性报告</option>
+                                    <option value="triage">分诊报告</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>报告版本</label>
+                                <select id="report-version-select" class="form-control">
+                                    <option value="doctor">医生版</option>
+                                    <option value="family">家属版</option>
+                                </select>
+                            </div>
+                            <button class="btn btn-primary btn-large" onclick="generateReport()">
+                                <i class="fas fa-cog fa-spin" id="generate-spinner" style="display:none;"></i>
+                                <i class="fas fa-play" id="generate-icon"></i>
+                                生成报告
+                            </button>
+                        </div>
+
+                        <div class="recent-reports">
+                            <h3>最近生成的报告</h3>
+                            <div class="reports-list" id="recent-reports-list">
+                                <!-- 报告列表将通过JavaScript动态生成 -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 反馈管理 -->
+                <section id="feedback-section" class="content-section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-comments"></i> 反馈管理</h2>
+                        <p>管理医生反馈和改进版报告生成</p>
+                    </div>
+
+                    <div class="feedback-workflow">
+                        <div class="workflow-step">
+                            <h3>1. 上传医生反馈</h3>
+                            <div class="upload-area" id="feedback-upload-area">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <p>拖拽或点击上传医生反馈JSON文件</p>
+                                <input type="file" id="feedback-file-input" accept=".json" onchange="handleFeedbackUpload(event)">
+                            </div>
+                        </div>
+
+                        <div class="workflow-step">
+                            <h3>2. 生成改进版报告</h3>
+                            <div class="feedback-actions">
+                                <button class="btn btn-primary" onclick="generateImprovedReport()" disabled id="improve-btn">
+                                    <i class="fas fa-magic"></i> 生成改进版患者报告
+                                </button>
+                                <button class="btn btn-outline" onclick="previewFeedback()" disabled id="preview-btn">
+                                    <i class="fas fa-eye"></i> 预览反馈内容
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feedback-history" id="feedback-history">
+                        <h3>反馈历史</h3>
+                        <!-- 反馈历史列表 -->
+                    </div>
+                </section>
+
+                <!-- 数据分析 -->
+                <section id="analytics-section" class="content-section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-chart-line"></i> 数据分析</h2>
+                        <p>系统使用情况和质量指标分析</p>
+                    </div>
+
+                    <div class="analytics-dashboard">
+                        <div class="chart-container">
+                            <h3>报告生成趋势</h3>
+                            <canvas id="reports-trend-chart"></canvas>
+                        </div>
+                        <div class="chart-container">
+                            <h3>患者管理统计</h3>
+                            <canvas id="patients-stats-chart"></canvas>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 系统设置 -->
+                <section id="settings-section" class="content-section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-cog"></i> 系统设置</h2>
+                        <p>配置系统参数和偏好设置</p>
+                    </div>
+
+                    <div class="settings-grid">
+                        <div class="settings-card">
+                            <h3>AI 模型配置</h3>
+                            <div class="form-group">
+                                <label>模型名称</label>
+                                <input type="text" class="form-control" value="qwen3-4b" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label>温度参数</label>
+                                <input type="range" class="form-control" min="0" max="1" step="0.1" value="0.3">
+                            </div>
+                        </div>
+
+                        <div class="settings-card">
+                            <h3>报告设置</h3>
+                            <div class="form-group">
+                                <label>
+                                    <input type="checkbox" checked> 自动保存报告
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label>
+                                    <input type="checkbox" checked> 生成批注功能
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="settings-card">
+                            <h3>系统维护</h3>
+                            <button class="btn btn-outline" onclick="clearCache()">
+                                <i class="fas fa-trash"></i> 清理缓存
+                            </button>
+                            <button class="btn btn-outline" onclick="exportLogs()">
+                                <i class="fas fa-download"></i> 导出日志
+                            </button>
+                            <button class="btn btn-danger" onclick="resetSystem()">
+                                <i class="fas fa-exclamation-triangle"></i> 重置系统
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- 模态框 -->
+    <div id="modal-overlay" class="modal-overlay" onclick="closeModal()">
+        <div class="modal" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <h3 id="modal-title">标题</h3>
+                <button class="modal-close" onclick="closeModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- 模态框内容 -->
+            </div>
+            <div class="modal-footer" id="modal-footer">
+                <button class="btn btn-outline" onclick="closeModal()">取消</button>
+                <button class="btn btn-primary" id="modal-confirm">确定</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 通知容器 -->
+    <div id="notifications-container" class="notifications-container"></div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/patients.js"></script>
+    <script src="js/reports.js"></script>
+    <script src="js/feedback.js"></script>
+    <script src="js/utils.js"></script>
+</body>
+</html>
