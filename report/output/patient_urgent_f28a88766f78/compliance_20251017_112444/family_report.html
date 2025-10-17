@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>医生版报告</title>
+<title>家属版报告</title>
 <style>
 
 /* 优化后：添加注释分组 */
@@ -138,11 +138,138 @@ hr { border: 0; border-top: 1px solid #eee; margin: 1em 0; }
 .adherence-warn { background: #fef3c7; color: #92400e; }
 .adherence-poor { background: #fee2e2; color: #991b1b; }
 
+/* 紧迫程度状态卡片样式 */
+.urgency-banner {
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 6px solid;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    page-break-inside: avoid;
+}
+
+.urgency-banner.urgency-urgent {
+    background: #fef2f2;
+    border-left-color: #dc2626;
+}
+
+.urgency-banner.urgency-attention {
+    background: #fffbeb;
+    border-left-color: #f59e0b;
+}
+
+.urgency-banner.urgency-stable {
+    background: #f0fdf4;
+    border-left-color: #10b981;
+}
+
+.urgency-banner .urgency-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.urgency-banner .urgency-icon {
+    font-size: 32px;
+}
+
+.urgency-banner h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #111827;
+}
+
+.urgency-banner .risk-score {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 12px;
+}
+
+.urgency-urgent .risk-score {
+    background: #dc2626;
+    color: white;
+}
+
+.urgency-attention .risk-score {
+    background: #f59e0b;
+    color: white;
+}
+
+.urgency-stable .risk-score {
+    background: #10b981;
+    color: white;
+}
+
+.urgency-banner .reasoning {
+    margin: 12px 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #374151;
+}
+
+.urgency-banner .key-concerns {
+    margin: 12px 0;
+}
+
+.urgency-banner .key-concerns strong {
+    color: #1f2937;
+}
+
+.urgency-banner .key-concerns ul {
+    margin: 8px 0;
+    padding-left: 20px;
+}
+
+.urgency-banner .key-concerns li {
+    margin: 4px 0;
+    color: #4b5563;
+}
+
+.urgency-banner .action-row {
+    display: flex;
+    gap: 20px;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.urgency-banner .action-item {
+    flex: 1;
+}
+
+.urgency-banner .action-item strong {
+    display: block;
+    color: #1f2937;
+    margin-bottom: 4px;
+}
+
+.urgency-banner .action-item span {
+    color: #4b5563;
+}
+
+.urgency-banner .verification-note {
+    margin-top: 12px;
+    padding: 8px 12px;
+    background: rgba(0,0,0,0.05);
+    border-radius: 6px;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.urgency-banner .verification-note.failed {
+    background: #fef3c7;
+    color: #92400e;
+}
+
 </style>
 </head>
 <body>
-<div class="page-container" data-patient-id="0b389f61f90fcf6da613e08c64e06fdbaf05758cdd9e6b5ae730f1b8a8a654e4" data-report-type="compliance" data-report-id="20251013_202422">
-    <div class="meta">生成时间：2025-10-13 20:24:22 | 报告ID：20251013_202422</div>
+<div class="page-container" data-patient-id="patient_urgent_f28a88766f78" data-report-type="compliance" data-report-id="20251017_112507">
+    <div class="meta">生成时间：2025-10-17 11:25:07 | 报告ID：20251017_112507</div>
     
     <section class="global-anno" id="global-anno">
         <h3>📝 全局批注（医生）</h3>
@@ -150,185 +277,150 @@ hr { border: 0; border-top: 1px solid #eee; margin: 1em 0; }
         <div class="actions muted">内容自动保存到浏览器（仅本机）。每份报告的批注独立存储。</div>
     </section>
     
-    <h1>慢病阶段管理月报（医生版）</h1>
-<h2>一、基本信息</h2>
+    <h1>慢病阶段管理月报（家属版）</h1>
+<p>报告周期：2025-10-04 至 2025-10-17
+报告日期：2025-10-17</p>
+<hr />
+<h2>一、患者基本信息</h2>
 <ul>
 <li>姓名：None</li>
-<li>性别：女</li>
-<li>年龄：80</li>
-<li>职业：退休</li>
-<li>文化程度：初中</li>
-<li>家庭情况：与家人同住</li>
-<li>联系方式：138-XXXX-5678</li>
+<li>年龄：45 岁</li>
 <li>过敏史：青霉素</li>
-<li>既往史：II型糖尿病、高血压、冠心病</li>
-<li>家庭支持情况：—</li>
+<li>疾病史：哮喘、高脂血症</li>
 </ul>
 <hr />
-<h2>二、主要疾病诊断及治疗</h2>
+<h2>二、目前诊断与用药（含副作用提示）</h2>
 <ul>
-<li>疾病名称：II型糖尿病 （ICD10: E11）</li>
-<li>当前病情：中度</li>
-<li>当前用药：厄贝沙坦氢氯噻嗪 150 mg 每日一次（口服）；阿卡波糖 50 mg 每日三次（口服）；格列吡嗪控释片 5 mg 每日一次（口服）</li>
-<li>与指南推荐：</li>
-<li>
-<p>一致性评价：</p>
-</li>
-<li>
-<p>疾病名称：高血压 （ICD10: I10）</p>
-</li>
-<li>当前病情：可控</li>
-<li>当前用药：厄贝沙坦氢氯噻嗪 150 mg 每日一次（口服）；阿卡波糖 50 mg 每日三次（口服）；格列吡嗪控释片 5 mg 每日一次（口服）</li>
-<li>与指南推荐：</li>
-<li>
-<p>一致性评价：</p>
-</li>
-<li>
-<p>疾病名称：冠心病 （ICD10: I25）</p>
-</li>
-<li>当前病情：中度</li>
-<li>当前用药：厄贝沙坦氢氯噻嗪 150 mg 每日一次（口服）；阿卡波糖 50 mg 每日三次（口服）；格列吡嗪控释片 5 mg 每日一次（口服）</li>
-<li>与指南推荐：</li>
-<li>一致性评价：</li>
+<li>主要诊断：</li>
+<li>用药数量：0 种</li>
 </ul>
+<h3>用药清单</h3>
 <hr />
-<hr />
-<h2>三、核心监测指标</h2>
+<h2>三、重点遵从任务（家属可协助监督）</h2>
 <table>
 <thead>
 <tr>
-<th>指标</th>
-<th>当前值</th>
-<th>推荐目标</th>
-<th>是否达标</th>
+<th>任务</th>
+<th>执行频率</th>
+<th>家属提醒要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>每日按时使用吸入性激素等哮喘药物</td>
+<td>每日两次医学指导下使用粉雾剂有效预防发作</td>
+<td>认真掌握正确器械使用方法避免漏服致加重</td>
+</tr>
+<tr>
+<td>每3个月监测血脂指数 ：保持长期达标调整方剂 。</td>
+<td>每季度一次实验室检查必不可少 。</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>四、关键监测方式（家庭可执行）</h2>
+<ul>
+<li><strong>血压</strong>：早晚各测一次，记录数值。</li>
+<li><strong>血糖</strong>：空腹一次、餐后一次。</li>
+<li><strong>体重</strong>：每周一次，注意突然增减。</li>
+</ul>
+<blockquote>
+<p>建议：把每天的测量写在本子或手机里，方便医生判断趋势。</p>
+</blockquote>
+<hr />
+<h2>五、管理情况与家属支持</h2>
+<table>
+<thead>
+<tr>
+<th>日常领域</th>
+<th>患者当前做法</th>
+<th>家属可以这样帮忙</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>作息</td>
+<td>+保持充足睡眠，避免熬夜保证呼吸道健康。</td>
+<td>—</td>
+</tr>
+<tr>
+<td>饮食</td>
+<td>低盐低脂饮食，避免油腻和高胆固醇食品。多吃新鲜蔬果和粗粮。</td>
+<td>—</td>
+</tr>
+<tr>
+<td>运动</td>
+<td>+坚持每周最少3次适度有氧运动，如快走或太极。注意防止过敏原暴露。</td>
+<td>—</td>
+</tr>
+<tr>
+<td>心理</td>
+<td>+学习放松技巧减少精神压力诱发哮喘发作。</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>六、出现以下情况需要注意（危险信号）</h2>
+<table>
+<thead>
+<tr>
+<th>监控项目</th>
+<th>日常正常范围</th>
+<th>危机信号（立即就医 / 拨打 120）</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>血压</td>
-<td>141/94 mmHg</td>
-<td>&lt; 140/90 mmHg</td>
-<td>未达标</td>
+<td>收缩压90-140 / 舒张压60-90 mmHg</td>
+<td>收缩压≥180 或 舒张压≥110，伴剧烈头痛/视物模糊/呕吐</td>
 </tr>
 <tr>
-<td>空腹血糖</td>
-<td>8.0 mmol/L</td>
-<td>&lt; 7.0 mmol/L（空腹）</td>
-<td>未达标</td>
+<td>血糖</td>
+<td>空腹4-7 mmol/L；餐后&lt;10 mmol/L</td>
+<td>低血糖&lt;3.9伴出汗心慌；高血糖&gt;16.7伴口渴频尿嗜睡</td>
 </tr>
 <tr>
-<td>HbA1c</td>
-<td>7.8%</td>
-<td>&lt; 7.0%</td>
-<td>未达标</td>
+<td>胸部症状</td>
+<td>无胸闷、胸痛</td>
+<td>胸痛≥5分钟并放射，伴出汗、气短</td>
 </tr>
 <tr>
-<td>LDL-C</td>
-<td>3.1 mmol/L</td>
-<td>&lt; 2.6 mmol/L</td>
-<td>未达标</td>
+<td>神经症状</td>
+<td>语言/肢体/表情正常</td>
+<td>口齿不清、单侧无力/麻木、突发剧烈头痛</td>
 </tr>
 <tr>
-<td>BMI</td>
-<td>25.5 kg/m²</td>
-<td>18.5–24.9 kg/m²</td>
-<td>未达标</td>
+<td>足部皮肤</td>
+<td>完整无破溃</td>
+<td>小伤口&gt;24h不愈、流脓或坏死</td>
 </tr>
 <tr>
-<td>心率</td>
-<td>81 bpm</td>
-<td>60–100 bpm</td>
-<td>达标</td>
+<td>体重/水肿</td>
+<td>体重稳定，小腿不肿</td>
+<td>3-5天内突然增加≥2kg，或踝/小腿肿胀伴呼吸困难</td>
 </tr>
 <tr>
-<td>肾功能</td>
-<td>eGFR 75 ml/min/1.73m²</td>
-<td>eGFR ≥ 60 ml/min/1.73m²</td>
-<td>达标</td>
+<td>用药依从</td>
+<td>按时按量服药</td>
+<td>连续漏服&gt;1次；黑便、呕血、严重皮疹、黄疸</td>
+</tr>
+<tr>
+<td>情绪状态</td>
+<td>心情平稳，睡眠正常</td>
+<td>持续抑郁&gt;2周；明显焦虑、失眠、提及轻生念头</td>
 </tr>
 </tbody>
 </table>
-<h3>指标趋势图</h3>
-<h4>血压变化</h4>
-<p><img alt="" src="assets/bp_trend.png" /></p>
-<h4>血糖变化</h4>
-<p><img alt="" src="assets/glucose_trend.png" /></p>
-<h4>体重/BMI/心率对比</h4>
-<p><img alt="" src="assets/monthly_comparison.png" /></p>
 <hr />
-<h2>四、生活方式处方</h2>
+<h2>七、下次随访</h2>
 <ul>
-<li>饮食：控制每日主食摄入至250克，增加蔬菜和蛋白质摄入，减少盐和糖的摄入。</li>
-<li>运动：每周5次适度运动，如步行30分钟。</li>
-<li>睡眠：确保睡眠质量，每晚不低于7小时。</li>
-<li>心理：每天进行放松练习，如瑜伽或冥想，缓解心理压力。</li>
-</ul>
-<hr />
-<h2>五、依从性与APP使用情况</h2>
-<ul>
-<li>打卡情况：近月打卡 6 天</li>
-<li>症状反馈：症状反馈 0 次</li>
-<li>在线咨询：线上咨询 0 次</li>
-<li>问卷完成情况：问卷 0 次</li>
-<li>依从性总体：近12条记录，完全遵从 8.3%</li>
-</ul>
-<h3>依从性趋势图</h3>
-<p><img alt="" src="assets/adherence_trend.png" /></p>
-<hr />
-<h2>六、健康管理提示（来源：AI智能分析）</h2>
-<h3>1. 用药管理</h3>
-<ul>
-<li>状态：患者用药依从性总体为部分遵从，存在服药时间不固定、漏服及因副作用担忧而减少服药的情况。</li>
-<li>建议：建议使用彩色药盒和时间表辅助记忆，结合微信提醒功能进行每日服药打卡。同时，可尝试将药物放在床头柜以提高服药意识。</li>
-<li>医生补充：需关注患者对药物副作用的担忧，评估是否需要调整药物剂量或更换药物类型。</li>
-<li>风险提示：长期不规律服药可能导致血糖、血压控制不佳，增加心脑血管事件风险。</li>
-</ul>
-<h3>2. 指标监测</h3>
-<ul>
-<li>状态：当前各项生理指标控制尚可，但HbA1c偏高（7.8%），提示血糖控制仍需加强。</li>
-<li>建议：建议每周监测血糖2-3次，每月复查HbA1c，同时定期监测血压、血脂和肾功能。</li>
-<li>医生补充：需注意HbA1c偏高的趋势，评估是否需要调整降糖方案或加强生活方式干预。</li>
-<li>风险提示：HbA1c持续升高可能增加糖尿病并发症风险，如视网膜病变、肾病等。</li>
-</ul>
-<h3>3. 运动与康复</h3>
-<ul>
-<li>状态：患者运动依从性较低，近期因天气寒冷和心慌未能坚持户外运动。</li>
-<li>建议：建议尝试室内轻度运动，如每天进行10分钟伸展运动或散步，逐步恢复运动习惯。</li>
-<li>医生补充：应避免剧烈运动，建议在医生指导下进行适度运动，防止低血糖或心律失常。</li>
-<li>风险提示：缺乏运动可能导致血糖控制不佳、体重增加，进一步加重心血管负担。</li>
-</ul>
-<h3>4. 饮食管理</h3>
-<ul>
-<li>状态：患者饮食偏咸且未严格执行饮食禁忌，盐分摄入控制不足。</li>
-<li>建议：建议逐步减少盐分摄入，优先选择清淡食物，如蔬菜、低盐海鲜，并与家人沟通调整饮食。</li>
-<li>医生补充：需关注高盐饮食对血压和肾脏功能的影响，建议定期监测血压和eGFR。</li>
-<li>风险提示：高盐饮食可能加重高血压和肾脏负担，增加心脑血管疾病风险。</li>
-</ul>
-<h3>5. 心理与家庭支持</h3>
-<ul>
-<li>状态：患者存在心理压力和情绪波动，对长期治疗存在担忧，家庭支持有限。</li>
-<li>建议：建议通过深呼吸、冥想或轻柔瑜伽缓解压力，同时鼓励家人给予更多情感支持。</li>
-<li>医生补充：需关注患者情绪变化，必要时提供心理咨询或药物干预。</li>
-<li>风险提示：心理压力可能影响血糖控制和服药依从性，加重慢性病管理难度。</li>
-</ul>
-<hr />
-<h2>七、AI 综合分析</h2>
-<ul>
-<li>总结：患者为80岁女性，患有II型糖尿病、高血压和冠心病，目前用药依从性部分遵从，饮食和运动控制尚可，但存在服药不规律、饮食偏咸、心理压力等问题。整体病情控制尚可，但需加强生活方式管理和心理支持以降低并发症风险。</li>
-<li>风险评估：主要风险包括：血糖控制不佳（HbA1c 7.8%）、高血压未完全控制（血压141/94 mmHg）、饮食中盐分过高、心理压力大、运动不足。这些因素可能增加心脑血管事件和糖尿病并发症的风险。</li>
-<li>个性化建议：['使用彩色药盒和微信提醒功能提高服药依从性。', '与家人沟通，逐步减少饮食中的盐分摄入。', '尝试室内轻度运动，如每天10分钟伸展或散步，逐步恢复运动习惯。', '进行心理调适，如深呼吸或轻柔瑜伽，缓解压力。', '定期监测血糖、血压、HbA1c和肾功能，及时调整治疗方案。', '加强家庭支持，鼓励患者积极参与慢性病管理。', '若出现情绪波动或服药困难，及时与医生沟通调整药物或治疗方案。']</li>
-</ul>
-<hr />
-<h2>八、参考文献</h2>
-<hr />
-<blockquote>
-<p>报告生成日期：2025-10-13
-报告周期：2024-03-25 至 2024-04-07</p>
-</blockquote><hr />
+<li>建议随访时间：（待补充）</li>
+<li>需带材料：血压/血糖记录本、近期检查报告</li>
+</ul><hr />
 <h2>附：依从性可视化</h2>
-<p><img alt="各类别依从趋势" src="assets/adherence_trend.png" /></p>
-<p><img alt="主要非依从原因" src="assets/adherence_causes.png" /></p>
-<p><img alt="用药依从趋势" src="assets/med_adherence_trend.png" /></p>
 </div>
 
 
@@ -350,7 +442,7 @@ hr { border: 0; border-top: 1px solid #eee; margin: 1em 0; }
     // ==================== A. 通用核心变量与函数 ====================
     const patientId = document.querySelector('.page-container')?.dataset?.patientId || 'unknown';
     const reportType = document.querySelector('.page-container')?.dataset?.reportType || 'compliance';
-    const reportId = document.querySelector('.page-container')?.dataset?.reportId || '20251013_202422';
+    const reportId = document.querySelector('.page-container')?.dataset?.reportId || '20251017_112507';
     const LS_ANNOTATIONS = `report-annotations::${reportType}::${patientId}::${reportId}`;
     const LS_GLOBAL = `report-annotations-global::${reportType}::${patientId}::${reportId}`;
     const LS_INTERACTIONS = `report-interactions::${reportType}::${patientId}::${reportId}`;

@@ -600,6 +600,230 @@
     border: 0;
 }
 
+/* 紧迫程度样式 */
+.urgency-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.urgency-badge.urgency-urgent {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.urgency-badge.urgency-attention {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.urgency-badge.urgency-stable {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.urgency-badge .risk-score-small {
+    padding: 2px 6px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-size: 11px;
+}
+
+/* 紧迫程度卡片 */
+.urgency-card {
+    border-radius: 8px;
+    padding: 16px;
+    margin: 12px 0;
+    border-left: 4px solid;
+}
+
+.urgency-card.urgency-urgent {
+    background: #fef2f2;
+    border-left-color: #dc2626;
+}
+
+.urgency-card.urgency-attention {
+    background: #fffbeb;
+    border-left-color: #f59e0b;
+}
+
+.urgency-card.urgency-stable {
+    background: #f0fdf4;
+    border-left-color: #10b981;
+}
+
+.urgency-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.urgency-card .urgency-icon {
+    font-size: 24px;
+}
+
+.urgency-card-info {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.urgency-card-info strong {
+    font-size: 16px;
+    color: #111827;
+}
+
+.risk-score-badge {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.urgency-card-body {
+    font-size: 14px;
+}
+
+.urgency-reasoning {
+    margin-bottom: 12px;
+    line-height: 1.5;
+    color: #374151;
+}
+
+.urgency-concerns {
+    margin: 12px 0;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+}
+
+.urgency-concerns strong {
+    display: block;
+    margin-bottom: 6px;
+    color: #1f2937;
+}
+
+.urgency-concerns ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.urgency-concerns li {
+    margin: 4px 0;
+    color: #4b5563;
+}
+
+.urgency-actions {
+    display: flex;
+    gap: 16px;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 13px;
+}
+
+.urgency-actions strong {
+    color: #1f2937;
+}
+
+.urgency-card-footer {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* 紧迫程度统计 */
+.urgency-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.urgency-stat-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    border-radius: 8px;
+    border-left: 4px solid;
+}
+
+.urgency-stat-item.urgency-urgent {
+    background: #fef2f2;
+    border-left-color: #dc2626;
+}
+
+.urgency-stat-item.urgency-attention {
+    background: #fffbeb;
+    border-left-color: #f59e0b;
+}
+
+.urgency-stat-item.urgency-stable {
+    background: #f0fdf4;
+    border-left-color: #10b981;
+}
+
+.urgency-stat-icon {
+    font-size: 28px;
+}
+
+.urgency-stat-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.urgency-stat-label {
+    font-size: 13px;
+    color: #6b7280;
+    margin-bottom: 4px;
+}
+
+.urgency-stat-value {
+    font-size: 24px;
+    font-weight: 600;
+    color: #111827;
+}
+
+/* 紧迫程度调整对话框 */
+.urgency-adjust-modal {
+    width: 500px;
+    max-width: 90%;
+}
+
+.urgency-adjust-modal .form-group {
+    margin-bottom: 16px;
+}
+
+.urgency-adjust-modal label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #374151;
+}
+
+.urgency-adjust-modal select,
+.urgency-adjust-modal textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid var(--gray-300);
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.urgency-adjust-modal textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
 /* 打印样式 */
 @media print {
     .sidebar,
@@ -617,5 +841,10 @@
         break-inside: avoid;
         box-shadow: none;
         border: 1px solid var(--gray-300);
+    }
+    
+    .urgency-banner,
+    .urgency-card {
+        page-break-inside: avoid;
     }
 }

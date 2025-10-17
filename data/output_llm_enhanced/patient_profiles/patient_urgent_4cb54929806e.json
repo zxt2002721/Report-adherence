@@ -1,0 +1,151 @@
+{
+  "basic_info": {
+    "patient_id": "patient_urgent_4cb54929806e",
+    "name": null,
+    "age": 72,
+    "sex": "男",
+    "marital_status": "已婚",
+    "occupation": "退休人员",
+    "location": "安徽省芜湖市",
+    "education": "初中",
+    "income_bracket": "中",
+    "living_situation": "与家人同住",
+    "contact_phone": "138-1234-5678"
+  },
+  "disease_info": {
+    "primary_diseases": [
+      {
+        "disease_name": "肛周瘘管伴脓肿",
+        "icd10_code": "K60.3",
+        "years_since_diagnosis": 5.0,
+        "current_severity": "中度"
+      },
+      {
+        "disease_name": "冠状动脉疾病（CAD）",
+        "icd10_code": "I25.10",
+        "years_since_diagnosis": 10.0,
+        "current_severity": "可控"
+      },
+      {
+        "disease_name": "充血性心力衰竭（CHF）",
+        "icd10_code": "I50.9",
+        "years_since_diagnosis": 3.0,
+        "current_severity": "中度"
+      },
+      {
+        "disease_name": "脑卒中后遗症",
+        "icd10_code": "I69.398",
+        "years_since_diagnosis": 6.0,
+        "current_severity": "轻度"
+      }
+    ],
+    "comorbidities": [
+      {
+        "disease_name": "高脂血症(HLD)",
+        "icd10_code": "E78.5",
+        "years_since_diagnosis": 12.0,
+        "current_severity": "可控"
+      }
+    ],
+    "family_history": {
+      "父亲": "",
+      "母亲": null
+    },
+    "allergies": [
+      "利辛普利"
+    ],
+    "last_checkup_date": "2024-05-15"
+  },
+  "prescription": {
+    "medications": [
+      {
+        "drug_name": "阿司匹林(81mg)片剂",
+        "dose": "81毫克/日一次口服，随餐服用。",
+        "frequency": "每日一次口服。 ",
+        "route": "口服"
+      },
+      {
+        "drug_name": "美托洛尔缓释片（25mg） ",
+        "dose": "",
+        "frequency": "",
+        "route": ""
+      },
+      {
+        "drug_name": "",
+        "dose": "",
+        "frequency": "",
+        "route": ""
+      }
+    ],
+    "lifestyle": [
+      {
+        "recommendation_type": "饮食",
+        "description": "+低盐低脂，限油腻，忌烟酒，多吃蔬果、粗粮。"
+      },
+      {
+        "recommendation_type": "运动",
+        "description": "+适度缓步走，每日30分钟，避免剧烈运动。"
+      },
+      {
+        "recommendation_type": "睡眠",
+        "description": "+保持7-8小时规律睡眠，注意床铺舒适。"
+      },
+      {
+        "recommendation_type": "压力",
+        "description": "+避免情绪波动，采用放松方法减压。"
+      }
+    ],
+    "next_followup_date": "2024-07-01",
+    "physician_notes": "患者肛周瘘反复发作，需监测局部感染和心功能变化。建议严格药物依从及生活方式调整。",
+    "compliance_tasks": [
+      {
+        "task": "服用阿司匹林与美托洛尔",
+        "frequency": "每日一次",
+        "instructions": "遵医嘱定时服用，不自行停药或改药"
+      },
+      {
+        "task": "伤口护理和引流管维护",
+        "frequency": "每日一次清洁检查 ",
+        "instructions": "保持创面干净，引流管无阻塞"
+      },
+      {
+        "task": "体温及疼痛监测 ",
+        "frequency": "每日三至四次 ",
+        "instructions": "发现发热或疼痛加重及时就医 "
+      }
+    ]
+  },
+  "behaviour_preferences": {
+    "preferences": [
+      {
+        "preference_type": "饮食",
+        "detail": "偏好安徽本地家常菜，以清淡微辣为主，戒辛辣油腻。",
+        "prescription_impact": [
+          "饮食"
+        ]
+      },
+      {
+        "preference_type": "运动",
+        "detail": "喜欢室内太极，偶尔户外散步。",
+        "prescription_impact": [
+          "运动"
+        ]
+      },
+      {
+        "preference_type": "休闲",
+        "detail": "习惯阅读报刊和与老友聊家常。",
+        "prescription_impact": [
+          "监测"
+        ]
+      },
+      {
+        "preference_type": "科技",
+        "detail": "会使用智能手机查看健康信息。",
+        "prescription_impact": [
+          "用药"
+        ]
+      }
+    ]
+  },
+  "generation_timestamp": "2024-06-05 14:00:00+08:00"
+}

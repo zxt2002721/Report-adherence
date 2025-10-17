@@ -1,0 +1,141 @@
+{
+  "basic_info": {
+    "patient_id": "patient_urgent_f28a88766f78",
+    "name": null,
+    "age": 45,
+    "sex": "女",
+    "marital_status": "已婚",
+    "occupation": "公务员",
+    "location": "安徽省淮南市",
+    "education": "大专",
+    "income_bracket": "中",
+    "living_situation": "与家人同住",
+    "contact_phone": "138-XXXX-5678"
+  },
+  "disease_info": {
+    "primary_diseases": [
+      {
+        "disease_name": "哮喘",
+        "icd10_code": "J45.909",
+        "years_since_diagnosis": 10.0,
+        "current_severity": "中度"
+      },
+      {
+        "disease_name": "高脂血症",
+        "icd10_code": "E78.5",
+        "years_since_diagnosis": 3.0,
+        "current_severity": "轻度"
+      }
+    ],
+    "comorbidities": [
+      {
+        "disease_name": "鼻炎",
+        "icd10_code": "J30.9",
+        "years_since_diagnosis": 5.0,
+        "current_severity": "轻度"
+      }
+    ],
+    "family_history": {
+      "母亲": null,
+      "父亲": "高血压，冠心病"
+    },
+    "allergies": [
+      "青霉素"
+    ],
+    "last_checkup_date": "2024-05-01"
+  },
+  "prescription": {
+    "medications": [
+      {
+        "drug_name": "布地奈德吸入粉雾剂",
+        "dose": "200微克/次，每日2次，口服吸入用药",
+        "frequency": "每日两次",
+        "route": "吸入"
+      },
+      {
+        "drug_name": "沙美特罗替卡松粉吸入剂",
+        "dose": "50微克/次，每日2次，口服吸入用药",
+        "frequency": "每日两次",
+        "route": "吸入"
+      },
+      {
+        "drug_name": "阿托伐他汀钙片",
+        "dose": "20毫克，每晚1次，口服用药",
+        "frequency": "每日一次晚间服用 ",
+        "route": ""
+      }
+    ],
+    "lifestyle": [
+      {
+        "recommendation_type": "饮食",
+        "description": "低盐低脂饮食，避免油腻和高胆固醇食品。多吃新鲜蔬果和粗粮。"
+      },
+      {
+        "recommendation_type": "运动",
+        "description": "+坚持每周最少3次适度有氧运动，如快走或太极。注意防止过敏原暴露。"
+      },
+      {
+        "recommendation_type": "睡眠",
+        "description": "+保持充足睡眠，避免熬夜保证呼吸道健康。"
+      },
+      {
+        "recommendation_type": "压力",
+        "description": "+学习放松技巧减少精神压力诱发哮喘发作。"
+      }
+    ],
+    "next_followup_date": "+2024-07-01 ",
+    "physician_notes": "+建议继续常规哮喘管理方案，加强自测肺功能记录内源恶化迹象，提高依从性保障稳定控制；定期随访监测调整降脂治疗强化生活方式干预，以降低心血管风险。制订个体化教育计划提高患者疾病认知与自我管理能力。细致评估合并症、亚临床表现及不良反应及时调整疗法。优化联动基层医疗资源断面服务质量。+日常注意防治感染并避免环境烟尘刺激，对抗复发危险因素至关重要。 ",
+    "compliance_tasks": [
+      {
+        "task": "+每日按时使用吸入性激素等哮喘药物 ",
+        "frequency": "+每日两次医学指导下使用粉雾剂有效预防发作 ",
+        "instructions": "+认真掌握正确器械使用方法避免漏服致加重"
+      },
+      {
+        "task": "+每3个月监测血脂指数 ：保持长期达标调整方剂 。 ",
+        "frequency": "+每季度一次实验室检查必不可少 。 ",
+        "instructions": null
+      }
+    ]
+  },
+  "behaviour_preferences": {
+    "preferences": [
+      {
+        "preference_type": "饮食",
+        "detail": "偏好安徽家常菜，喜爱清淡带一点咸鲜味，中午主食以米饭为主，不喜欢油炸食品，如火锅较少摄入，以豫皖特色瓜果丰富餐桌",
+        "prescription_impact": [
+          "用药"
+        ]
+      },
+      {
+        "preference_type": "运动",
+        "detail": "喜欢早晨快走及周末户外太极训练，注重呼吸与身体协调，有规律且适量强度",
+        "prescription_impact": [
+          "运动"
+        ]
+      },
+      {
+        "preference_type": "休闲",
+        "detail": "偶尔参与社区文艺活动，如广场舞与书画课，有一定社交需求但更倾向家庭聚会场所",
+        "prescription_impact": [
+          "监测"
+        ]
+      },
+      {
+        "preference_type": "科技",
+        "detail": "能熟练操作智能手机应用，通过视频学习健康管理，自我监控意识较强",
+        "prescription_impact": [
+          "用药"
+        ]
+      },
+      {
+        "preference_type": "其他",
+        "detail": "遵守医嘱为先原则，对中医有一定兴趣，经常关注季节调养知识和空气质量信息发布等.",
+        "prescription_impact": [
+          "用药"
+        ]
+      }
+    ]
+  },
+  "generation_timestamp": "2024-06-15 12:00:00+00:00"
+}

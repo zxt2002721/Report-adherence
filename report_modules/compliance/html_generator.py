@@ -29,6 +29,133 @@ class ComplianceHTMLGenerator:
 .adherence-good { background: #d1fae5; color: #065f46; }
 .adherence-warn { background: #fef3c7; color: #92400e; }
 .adherence-poor { background: #fee2e2; color: #991b1b; }
+
+/* 紧迫程度状态卡片样式 */
+.urgency-banner {
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 6px solid;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    page-break-inside: avoid;
+}
+
+.urgency-banner.urgency-urgent {
+    background: #fef2f2;
+    border-left-color: #dc2626;
+}
+
+.urgency-banner.urgency-attention {
+    background: #fffbeb;
+    border-left-color: #f59e0b;
+}
+
+.urgency-banner.urgency-stable {
+    background: #f0fdf4;
+    border-left-color: #10b981;
+}
+
+.urgency-banner .urgency-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.urgency-banner .urgency-icon {
+    font-size: 32px;
+}
+
+.urgency-banner h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #111827;
+}
+
+.urgency-banner .risk-score {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 12px;
+}
+
+.urgency-urgent .risk-score {
+    background: #dc2626;
+    color: white;
+}
+
+.urgency-attention .risk-score {
+    background: #f59e0b;
+    color: white;
+}
+
+.urgency-stable .risk-score {
+    background: #10b981;
+    color: white;
+}
+
+.urgency-banner .reasoning {
+    margin: 12px 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #374151;
+}
+
+.urgency-banner .key-concerns {
+    margin: 12px 0;
+}
+
+.urgency-banner .key-concerns strong {
+    color: #1f2937;
+}
+
+.urgency-banner .key-concerns ul {
+    margin: 8px 0;
+    padding-left: 20px;
+}
+
+.urgency-banner .key-concerns li {
+    margin: 4px 0;
+    color: #4b5563;
+}
+
+.urgency-banner .action-row {
+    display: flex;
+    gap: 20px;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.urgency-banner .action-item {
+    flex: 1;
+}
+
+.urgency-banner .action-item strong {
+    display: block;
+    color: #1f2937;
+    margin-bottom: 4px;
+}
+
+.urgency-banner .action-item span {
+    color: #4b5563;
+}
+
+.urgency-banner .verification-note {
+    margin-top: 12px;
+    padding: 8px 12px;
+    background: rgba(0,0,0,0.05);
+    border-radius: 6px;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.urgency-banner .verification-note.failed {
+    background: #fef3c7;
+    color: #92400e;
+}
 """
     
     SECTION_KINDS = [

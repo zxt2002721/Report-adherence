@@ -1,0 +1,578 @@
+[
+  {
+    "file": "C:\\CodeProgram\\python\\RAIntern\\Report-adherence\\data_triage\\p001.json",
+    "classification": {
+      "level": "IMMEDIATE_DOCTOR",
+      "urgency_score": 18,
+      "llm_confidence": 0.5,
+      "reasons": {
+        "critical_findings": [
+          "Critical temperature: 98.4°F"
+        ],
+        "warning_findings": [
+          "ESI Level 3.0 - Moderate acuity",
+          "Severe or acute presentation",
+          "Complex medical history: cirrhosis"
+        ],
+        "confidence_factors": [
+          "LLM confidence: 0.50"
+        ],
+        "decision": "Case requires immediate physician evaluation"
+      }
+    },
+    "ui_badge": {
+      "class": "badge-danger",
+      "icon": "🚨",
+      "text": "需医生立即决策",
+      "color": "#dc3545",
+      "action": "disable_auto_approve"
+    }
+  },
+  {
+    "file": "C:\\CodeProgram\\python\\RAIntern\\Report-adherence\\data_triage\\p001_zh.json",
+    "classification": {
+      "level": "IMMEDIATE_DOCTOR",
+      "urgency_score": 13,
+      "llm_confidence": 0.5,
+      "reasons": {
+        "critical_findings": [
+          "Critical temperature: 98.4°F"
+        ],
+        "warning_findings": [
+          "ESI Level 3.0 - Moderate acuity"
+        ],
+        "confidence_factors": [
+          "LLM confidence: 0.50"
+        ],
+        "decision": "Case requires immediate physician evaluation"
+      }
+    },
+    "ui_badge": {
+      "class": "badge-danger",
+      "icon": "🚨",
+      "text": "需医生立即决策",
+      "color": "#dc3545",
+      "action": "disable_auto_approve"
+    }
+  },
+  {
+    "file": "C:\\CodeProgram\\python\\RAIntern\\Report-adherence\\data_triage\\routine_cases\\routine_001.json",
+    "classification": {
+      "level": "IMMEDIATE_DOCTOR",
+      "urgency_score": 25,
+      "llm_confidence": 0.5,
+      "reasons": {
+        "critical_findings": [
+          "ESI Level 2 - Critical patient",
+          "Critical temperature: 98.6°F"
+        ],
+        "warning_findings": [],
+        "confidence_factors": [
+          "LLM confidence: 0.50"
+        ],
+        "decision": "Case requires immediate physician evaluation"
+      }
+    },
+    "ui_badge": {
+      "class": "badge-danger",
+      "icon": "🚨",
+      "text": "需医生立即决策",
+      "color": "#dc3545",
+      "action": "disable_auto_approve"
+    }
+  },
+  {
+    "file": "C:\\CodeProgram\\python\\RAIntern\\Report-adherence\\data_triage\\routine_cases\\routine_002.json",
+    "classification": {
+      "level": "IMMEDIATE_DOCTOR",
+      "urgency_score": 25,
+      "llm_confidence": 0.5,
+      "reasons": {
+        "critical_findings": [
+          "ESI Level 2 - Critical patient",
+          "Critical temperature: 98.6°F"
+        ],
+        "warning_findings": [],
+        "confidence_factors": [
+          "LLM confidence: 0.50"
+        ],
+        "decision": "Case requires immediate physician evaluation"
+      }
+    },
+    "ui_badge": {
+      "class": "badge-danger",
+      "icon": "🚨",
+      "text": "需医生立即决策",
+      "color": "#dc3545",
+      "action": "disable_auto_approve"
+    }
+  },
+  {
+    "file": "C:\\CodeProgram\\python\\RAIntern\\Report-adherence\\data_triage\\routine_cases\\routine_003.json",
+    "classification": {
+      "level": "IMMEDIATE_DOCTOR",
+      "urgency_score": 25,
+      "llm_confidence": 0.5,
+      "reasons": {
+        "critical_findings": [
+          "ESI Level 2 - Critical patient",
+          "Critical temperature: 98.6°F"
+        ],
+        "warning_findings": [],
+        "confidence_factors": [
+          "LLM confidence: 0.50"
+        ],
+        "decision": "Case requires immediate physician evaluation"
+      }
+    },
+    "ui_badge": {
+      "class": "badge-danger",
+      "icon": "🚨",
+      "text": "需医生立即决策",
+      "color": "#dc3545",
+      "action": "disable_auto_approve"
+    }
+  },
+  {
+    "file": "C:\\CodeProgram\\python\\RAIntern\\Report-adherence\\data_triage\\routine_cases\\routine_004.json",
+    "classification": {
+      "level": "IMMEDIATE_DOCTOR",
+      "urgency_score": 25,
+      "llm_confidence": 0.5,
+      "reasons": {
+        "critical_findings": [
+          "ESI Level 2 - Critical patient",
+          "Critical temperature: 98.6°F"
+        ],
+        "warning_findings": [],
+        "confidence_factors": [
+          "LLM confidence: 0.50"
+        ],
+        "decision": "Case requires immediate physician evaluation"
+      }
+    },
+    "ui_badge": {
+      "class": "badge-danger",
+      "icon": "🚨",
+      "text": "需医生立即决策",
+      "color": "#dc3545",
+      "action": "disable_auto_approve"
+    }
+  },
+  {
+    "file": "C:\\CodeProgram\\python\\RAIntern\\Report-adherence\\data_triage\\routine_cases\\routine_005.json",
+    "classification": {
+      "level": "IMMEDIATE_DOCTOR",
+      "urgency_score": 25,
+      "llm_confidence": 0.5,
+      "reasons": {
+        "critical_findings": [
+          "ESI Level 2 - Critical patient",
+          "Critical temperature: 98.6°F"
+        ],
+        "warning_findings": [],
+        "confidence_factors": [
+          "LLM confidence: 0.50"
+        ],
+        "decision": "Case requires immediate physician evaluation"
+      }
+    },
+    "ui_badge": {
+      "class": "badge-danger",
+      "icon": "🚨",
+      "text": "需医生立即决策",
+      "color": "#dc3545",
+      "action": "disable_auto_approve"
+    }
+  },
+  {
+    "file": "C:\\CodeProgram\\python\\RAIntern\\Report-adherence\\data_triage\\routine_cases\\routine_006.json",
+    "classification": {
+      "level": "IMMEDIATE_DOCTOR",
+      "urgency_score": 25,
+      "llm_confidence": 0.5,
+      "reasons": {
+        "critical_findings": [
+          "ESI Level 2 - Critical patient",
+          "Critical temperature: 98.6°F"
+        ],
+        "warning_findings": [],
+        "confidence_factors": [
+          "LLM confidence: 0.50"
+        ],
+        "decision": "Case requires immediate physician evaluation"
+      }
+    },
+    "ui_badge": {
+      "class": "badge-danger",
+      "icon": "🚨",
+      "text": "需医生立即决策",
+      "color": "#dc3545",
+      "action": "disable_auto_approve"
+    }
+  },
+  {
+    "file": "C:\\CodeProgram\\python\\RAIntern\\Report-adherence\\data_triage\\routine_cases\\routine_007.json",
+    "classification": {
+      "level": "IMMEDIATE_DOCTOR",
+      "urgency_score": 25,
+      "llm_confidence": 0.5,
+      "reasons": {
+        "critical_findings": [
+          "ESI Level 2 - Critical patient",
+          "Critical temperature: 98.6°F"
+        ],
+        "warning_findings": [],
+        "confidence_factors": [
+          "LLM confidence: 0.50"
+        ],
+        "decision": "Case requires immediate physician evaluation"
+      }
+    },
+    "ui_badge": {
+      "class": "badge-danger",
+      "icon": "🚨",
+      "text": "需医生立即决策",
+      "color": "#dc3545",
+      "action": "disable_auto_approve"
+    }
+  },
+  {
+    "file": "C:\\CodeProgram\\python\\RAIntern\\Report-adherence\\data_triage\\routine_cases\\routine_008.json",
+    "classification": {
+      "level": "IMMEDIATE_DOCTOR",
+      "urgency_score": 25,
+      "llm_confidence": 0.5,
+      "reasons": {
+        "critical_findings": [
+          "ESI Level 2 - Critical patient",
+          "Critical temperature: 98.6°F"
+        ],
+        "warning_findings": [],
+        "confidence_factors": [
+          "LLM confidence: 0.50"
+        ],
+        "decision": "Case requires immediate physician evaluation"
+      }
+    },
+    "ui_badge": {
+      "class": "badge-danger",
+      "icon": "🚨",
+      "text": "需医生立即决策",
+      "color": "#dc3545",
+      "action": "disable_auto_approve"
+    }
+  },
+  {
+    "file": "C:\\CodeProgram\\python\\RAIntern\\Report-adherence\\data_triage\\routine_cases\\routine_009.json",
+    "classification": {
+      "level": "IMMEDIATE_DOCTOR",
+      "urgency_score": 25,
+      "llm_confidence": 0.5,
+      "reasons": {
+        "critical_findings": [
+          "ESI Level 2 - Critical patient",
+          "Critical temperature: 98.6°F"
+        ],
+        "warning_findings": [],
+        "confidence_factors": [
+          "LLM confidence: 0.50"
+        ],
+        "decision": "Case requires immediate physician evaluation"
+      }
+    },
+    "ui_badge": {
+      "class": "badge-danger",
+      "icon": "🚨",
+      "text": "需医生立即决策",
+      "color": "#dc3545",
+      "action": "disable_auto_approve"
+    }
+  },
+  {
+    "file": "C:\\CodeProgram\\python\\RAIntern\\Report-adherence\\data_triage\\routine_cases\\routine_010.json",
+    "classification": {
+      "level": "IMMEDIATE_DOCTOR",
+      "urgency_score": 25,
+      "llm_confidence": 0.5,
+      "reasons": {
+        "critical_findings": [
+          "ESI Level 2 - Critical patient",
+          "Critical temperature: 98.6°F"
+        ],
+        "warning_findings": [],
+        "confidence_factors": [
+          "LLM confidence: 0.50"
+        ],
+        "decision": "Case requires immediate physician evaluation"
+      }
+    },
+    "ui_badge": {
+      "class": "badge-danger",
+      "icon": "🚨",
+      "text": "需医生立即决策",
+      "color": "#dc3545",
+      "action": "disable_auto_approve"
+    }
+  },
+  {
+    "file": "C:\\CodeProgram\\python\\RAIntern\\Report-adherence\\data_triage\\urgent_cases\\urgent_001.json",
+    "classification": {
+      "level": "IMMEDIATE_DOCTOR",
+      "urgency_score": 25,
+      "llm_confidence": 0.5,
+      "reasons": {
+        "critical_findings": [
+          "ESI Level 2 - Critical patient",
+          "Critical temperature: 98.6°F"
+        ],
+        "warning_findings": [],
+        "confidence_factors": [
+          "LLM confidence: 0.50"
+        ],
+        "decision": "Case requires immediate physician evaluation"
+      }
+    },
+    "ui_badge": {
+      "class": "badge-danger",
+      "icon": "🚨",
+      "text": "需医生立即决策",
+      "color": "#dc3545",
+      "action": "disable_auto_approve"
+    }
+  },
+  {
+    "file": "C:\\CodeProgram\\python\\RAIntern\\Report-adherence\\data_triage\\urgent_cases\\urgent_002.json",
+    "classification": {
+      "level": "IMMEDIATE_DOCTOR",
+      "urgency_score": 25,
+      "llm_confidence": 0.5,
+      "reasons": {
+        "critical_findings": [
+          "ESI Level 2 - Critical patient",
+          "Critical temperature: 98.6°F"
+        ],
+        "warning_findings": [],
+        "confidence_factors": [
+          "LLM confidence: 0.50"
+        ],
+        "decision": "Case requires immediate physician evaluation"
+      }
+    },
+    "ui_badge": {
+      "class": "badge-danger",
+      "icon": "🚨",
+      "text": "需医生立即决策",
+      "color": "#dc3545",
+      "action": "disable_auto_approve"
+    }
+  },
+  {
+    "file": "C:\\CodeProgram\\python\\RAIntern\\Report-adherence\\data_triage\\urgent_cases\\urgent_003.json",
+    "classification": {
+      "level": "IMMEDIATE_DOCTOR",
+      "urgency_score": 25,
+      "llm_confidence": 0.5,
+      "reasons": {
+        "critical_findings": [
+          "ESI Level 2 - Critical patient",
+          "Critical temperature: 98.6°F"
+        ],
+        "warning_findings": [],
+        "confidence_factors": [
+          "LLM confidence: 0.50"
+        ],
+        "decision": "Case requires immediate physician evaluation"
+      }
+    },
+    "ui_badge": {
+      "class": "badge-danger",
+      "icon": "🚨",
+      "text": "需医生立即决策",
+      "color": "#dc3545",
+      "action": "disable_auto_approve"
+    }
+  },
+  {
+    "file": "C:\\CodeProgram\\python\\RAIntern\\Report-adherence\\data_triage\\urgent_cases\\urgent_004.json",
+    "classification": {
+      "level": "IMMEDIATE_DOCTOR",
+      "urgency_score": 25,
+      "llm_confidence": 0.5,
+      "reasons": {
+        "critical_findings": [
+          "ESI Level 2 - Critical patient",
+          "Critical temperature: 98.6°F"
+        ],
+        "warning_findings": [],
+        "confidence_factors": [
+          "LLM confidence: 0.50"
+        ],
+        "decision": "Case requires immediate physician evaluation"
+      }
+    },
+    "ui_badge": {
+      "class": "badge-danger",
+      "icon": "🚨",
+      "text": "需医生立即决策",
+      "color": "#dc3545",
+      "action": "disable_auto_approve"
+    }
+  },
+  {
+    "file": "C:\\CodeProgram\\python\\RAIntern\\Report-adherence\\data_triage\\urgent_cases\\urgent_005.json",
+    "classification": {
+      "level": "IMMEDIATE_DOCTOR",
+      "urgency_score": 25,
+      "llm_confidence": 0.5,
+      "reasons": {
+        "critical_findings": [
+          "ESI Level 2 - Critical patient",
+          "Critical temperature: 98.6°F"
+        ],
+        "warning_findings": [],
+        "confidence_factors": [
+          "LLM confidence: 0.50"
+        ],
+        "decision": "Case requires immediate physician evaluation"
+      }
+    },
+    "ui_badge": {
+      "class": "badge-danger",
+      "icon": "🚨",
+      "text": "需医生立即决策",
+      "color": "#dc3545",
+      "action": "disable_auto_approve"
+    }
+  },
+  {
+    "file": "C:\\CodeProgram\\python\\RAIntern\\Report-adherence\\data_triage\\urgent_cases\\urgent_006.json",
+    "classification": {
+      "level": "IMMEDIATE_DOCTOR",
+      "urgency_score": 25,
+      "llm_confidence": 0.5,
+      "reasons": {
+        "critical_findings": [
+          "ESI Level 2 - Critical patient",
+          "Critical temperature: 98.6°F"
+        ],
+        "warning_findings": [],
+        "confidence_factors": [
+          "LLM confidence: 0.50"
+        ],
+        "decision": "Case requires immediate physician evaluation"
+      }
+    },
+    "ui_badge": {
+      "class": "badge-danger",
+      "icon": "🚨",
+      "text": "需医生立即决策",
+      "color": "#dc3545",
+      "action": "disable_auto_approve"
+    }
+  },
+  {
+    "file": "C:\\CodeProgram\\python\\RAIntern\\Report-adherence\\data_triage\\urgent_cases\\urgent_007.json",
+    "classification": {
+      "level": "IMMEDIATE_DOCTOR",
+      "urgency_score": 25,
+      "llm_confidence": 0.5,
+      "reasons": {
+        "critical_findings": [
+          "ESI Level 2 - Critical patient",
+          "Critical temperature: 98.6°F"
+        ],
+        "warning_findings": [],
+        "confidence_factors": [
+          "LLM confidence: 0.50"
+        ],
+        "decision": "Case requires immediate physician evaluation"
+      }
+    },
+    "ui_badge": {
+      "class": "badge-danger",
+      "icon": "🚨",
+      "text": "需医生立即决策",
+      "color": "#dc3545",
+      "action": "disable_auto_approve"
+    }
+  },
+  {
+    "file": "C:\\CodeProgram\\python\\RAIntern\\Report-adherence\\data_triage\\urgent_cases\\urgent_008.json",
+    "classification": {
+      "level": "IMMEDIATE_DOCTOR",
+      "urgency_score": 25,
+      "llm_confidence": 0.5,
+      "reasons": {
+        "critical_findings": [
+          "ESI Level 2 - Critical patient",
+          "Critical temperature: 98.6°F"
+        ],
+        "warning_findings": [],
+        "confidence_factors": [
+          "LLM confidence: 0.50"
+        ],
+        "decision": "Case requires immediate physician evaluation"
+      }
+    },
+    "ui_badge": {
+      "class": "badge-danger",
+      "icon": "🚨",
+      "text": "需医生立即决策",
+      "color": "#dc3545",
+      "action": "disable_auto_approve"
+    }
+  },
+  {
+    "file": "C:\\CodeProgram\\python\\RAIntern\\Report-adherence\\data_triage\\urgent_cases\\urgent_009.json",
+    "classification": {
+      "level": "IMMEDIATE_DOCTOR",
+      "urgency_score": 25,
+      "llm_confidence": 0.5,
+      "reasons": {
+        "critical_findings": [
+          "ESI Level 2 - Critical patient",
+          "Critical temperature: 98.6°F"
+        ],
+        "warning_findings": [],
+        "confidence_factors": [
+          "LLM confidence: 0.50"
+        ],
+        "decision": "Case requires immediate physician evaluation"
+      }
+    },
+    "ui_badge": {
+      "class": "badge-danger",
+      "icon": "🚨",
+      "text": "需医生立即决策",
+      "color": "#dc3545",
+      "action": "disable_auto_approve"
+    }
+  },
+  {
+    "file": "C:\\CodeProgram\\python\\RAIntern\\Report-adherence\\data_triage\\urgent_cases\\urgent_010.json",
+    "classification": {
+      "level": "IMMEDIATE_DOCTOR",
+      "urgency_score": 25,
+      "llm_confidence": 0.5,
+      "reasons": {
+        "critical_findings": [
+          "ESI Level 2 - Critical patient",
+          "Critical temperature: 98.6°F"
+        ],
+        "warning_findings": [],
+        "confidence_factors": [
+          "LLM confidence: 0.50"
+        ],
+        "decision": "Case requires immediate physician evaluation"
+      }
+    },
+    "ui_badge": {
+      "class": "badge-danger",
+      "icon": "🚨",
+      "text": "需医生立即决策",
+      "color": "#dc3545",
+      "action": "disable_auto_approve"
+    }
+  }
+]

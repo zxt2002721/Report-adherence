@@ -14,7 +14,9 @@ from report_modules.compliance import (
     monitoring_processor,
     data_builder,
     ai_analyzer,
-    html_generator
+    html_generator,
+    urgency_classifier,
+    task_progress_extractor
 )
 
 
@@ -76,6 +78,22 @@ class ComplianceReportGenerator(BaseReportGenerator):
         
         print(f"  → 构建建议提示...")
         tips_block = data_builder.build_tips(memory, monitoring, status, adherence_std)
+
+        print(f"  → 梳理重点遵从任务...")
+        compliance_tasks = data_builder.build_compliance_tasks(memory)
+        task_progress = memory.get("compliance_task_progress_history", []) or []
+        if not task_progress and compliance_tasks:
+            print(f"  → AI分析任务执行进度...")
+            dialogue_context = {
+                "memory_dialogue_history": memory.get("dialogue_history", []),
+                "dialogue_sessions": dialogues.get("sessions", []) if isinstance(dialogues, dict) else dialogues
+            }
+            task_progress = task_progress_extractor.analyze_task_progress(
+                tasks=compliance_tasks,
+                patient_info=memory.get("basic_info", {}),
+                dialogues=dialogue_context,
+                adherence_history=memory.get("adherence_history", []) or []
+            )
         
         # 获取目标值和报告周期
         targets = memory.get("targets", config.DEFAULT_TARGETS)
@@ -84,6 +102,17 @@ class ComplianceReportGenerator(BaseReportGenerator):
         # 构建患者基础信息
         basic = memory.get("basic_info", {})
         patient_context = self._build_patient_context(basic, disease_info)
+        
+        # 新增：紧迫程度分级评估
+        print(f"  → AI判断紧迫程度...")
+        urgency_assessment = urgency_classifier.classify_urgency_with_llm(
+            patient_data=patient_context,
+            monitoring=monitoring,
+            adherence=adherence_std,
+            lifestyle=lifestyle_std,
+            tasks=compliance_tasks,
+            task_progress=task_progress
+        )
         
         return {
             'patient': patient_context,
@@ -95,8 +124,11 @@ class ComplianceReportGenerator(BaseReportGenerator):
             'lifestyle': lifestyle_std,
             'app': app_overview,
             'tips': tips_block,
+            'compliance_tasks': compliance_tasks,
+            'compliance_task_progress': task_progress,
             'report_period': report_period,
-            'references': memory.get("references", [])
+            'references': memory.get("references", []),
+            'urgency': urgency_assessment  # 新增：紧迫程度评估
         }
     
     def generate_charts(self) -> Dict[str, str]:
@@ -105,8 +137,9 @@ class ComplianceReportGenerator(BaseReportGenerator):
         df_patient = self.raw_data['df_patient']
         
         # 为每个报告创建独立的assets目录
-        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-        assets_dir = config.OUT_DIR / self.patient_id / f"compliance_{timestamp}" / "assets"
+        timestamp = (self.generated_at or datetime.now()).strftime('%Y%m%d_%H%M%S')
+        report_dir = config.OUT_DIR / self.patient_id / f"compliance_{timestamp}"
+        assets_dir = report_dir / "assets"
         assets_dir.mkdir(parents=True, exist_ok=True)
         
         print(f"  → 生成依从性图表（保存到 {assets_dir}）...")
@@ -159,6 +192,8 @@ class ComplianceReportGenerator(BaseReportGenerator):
             "app": self.processed_data['app'],
             "tips": self.analysis.get('tips', self.processed_data['tips']),  # 优先使用AI生成的tips
             "tips_source": "AI智能分析" if 'tips' in self.analysis else "系统模板",
+            "compliance_tasks": self.processed_data['compliance_tasks'],
+            "compliance_task_progress": self.processed_data['compliance_task_progress'],
             "ai": {
                 "summary": self.analysis.get('summary', ''),
                 "risk_assessment": self.analysis.get('risk_assessment', ''),
@@ -166,6 +201,7 @@ class ComplianceReportGenerator(BaseReportGenerator):
             },
             "references": self.processed_data['references'],
             "charts": self.charts,
+            "urgency": self.processed_data['urgency']  # 新增：紧迫程度评估
         }
         
         doc_html, fam_html = html_generator.ComplianceHTMLGenerator.generate_html_reports(

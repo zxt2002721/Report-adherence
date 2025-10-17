@@ -1,0 +1,204 @@
+{
+  "sessions": [
+    {
+      "session_id": "patient_urgent_4cb54929806e_20251016234914_00",
+      "session_date": "2025-10-16",
+      "patient_id": "patient_urgent_4cb54929806e",
+      "conversation_turns": [
+        {
+          "speaker": "system",
+          "reasoning": {
+            "observation": "患者年龄较大，慢性多病共存，存在多种不良生活习惯和用药疑虑。",
+            "analysis": "患者可能因担忧副作用及生活习惯难改，出现用药和饮食依从性问题，同时有一定的情绪抵触和认知偏差。",
+            "strategy": "初步建立信任关系，耐心询问日常用药及饮食状况，重点识别认知与情感障碍。"
+          },
+          "message": "您好，我想了解一下您最近服药的情况怎么样？阿司匹林和美托洛尔您能坚持按时服用吗？",
+          "timestamp": null,
+          "message_type": "问题",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "哎，说实话吧，我这药啊，有时候觉得头晕了就不敢吃了。特别是美托洛尔那个，我怕它影响我平时走路呢。老伴也说这药吃着没啥用，还怕副作用大。",
+          "timestamp": null,
+          "message_type": "回应",
+          "emotional_tone": "抗拒"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "observation": "患者表现出对美托洛尔副作用的担忧，并受到家庭影响，存在停药风险。",
+            "analysis": "这是典型的认知误区和社会压力影响，用药依从性受阻，同时有潜在的行为维度风险（随意停药）。",
+            "strategy": "给予针对性的教育，缓解对副作用的焦虑，并探讨家庭支持状况。"
+          },
+          "message": "理解您的顾虑，美托洛尔有可能会让人感觉头晕，但停药反而可能加重心脏负担。您平时有没有和老伴一起了解这些情况呢？家人的支持对治疗很重要。",
+          "timestamp": null,
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "家里那口子嘛，也就嘴上说说，她总觉得吃一堆药没啥用。我这把年纪了，总想少吃点儿，但又怕身体撑不住，真是难办啊。饭桌上她们也老爱放辣椒油，我都不好意思跟他们讲忌口。你说这咋整？",
+          "timestamp": null,
+          "message_type": "回应",
+          "emotional_tone": "困惑"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "observation": "患者表达饮食控制困难，尤其面对家庭成员不同饮食习惯且不易拒绝，显示出社会和行为层面障碍。",
+            "analysis": "饮食依从受家庭环境影响明显，患者感到无奈且缺乏沟通支持。同时饮食习惯根深蒂固，是重要阻碍因素。",
+            "strategy": "建议逐步调整饮食结构，同时提供实际操作建议如适度减盐技巧及如何委婉沟通饮食需求。"
+          },
+          "message": "听起来您在饮食方面压力挺大的。在安徽家常菜里可以尝试一些微辣但低盐少油的做法，比如用姜蒜提味，这样既合口味又健康。同时，我们可以一起想办法，让家人更理解您的需要，好不好？您觉得哪些方法比较容易开始尝试？",
+          "timestamp": null,
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "嗯，说实话我喜欢微辣，不过要真减盐减油，那我得慢慢来。这些事儿还真不好跟别人直说，总怕他们觉得我啰嗦或者怪我太挑剔。我看还是先盯着自己多注意点儿吧，不敢指望别人改变那么快。谢谢你耐心听我唠叨！",
+          "timestamp": null,
+          "message_type": "回应",
+          "emotional_tone": "合作"
+        }
+      ],
+      "end_time": null,
+      "adherence_outcome": "下降",
+      "system_interventions": [
+        "educational_content"
+      ]
+    },
+    {
+      "session_id": "patient_urgent_4cb54929806e_20251017234914_01",
+      "session_date": "2025-10-17",
+      "patient_id": "patient_urgent_4cb54929806e",
+      "conversation_turns": [
+        {
+          "speaker": "system",
+          "reasoning": {
+            "observation": "第二天继续跟进患者用药和生活习惯状况，关注是否采取行动及情绪波动情况。",
+            "analysis": "",
+            "strategy": ""
+          },
+          "message": "+早上好！昨天我们聊到了一些关于您吃药和饮食的问题，请问今天您的服药情况怎么样？有没有遇到什么新的困难？ ",
+          "timestamp": null,
+          "message_type": "问题",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "+哎，说实话昨晚没按时吃美托洛尔，那会儿头晕得厉害，也忘记带手机设闹钟了，这两天忙着看报纸聊天，脑子有点乱套了。有时候真觉着医生说的太复杂，我记不住那么多规矩了，还有就是怕麻烦家里人，一想到这些事儿就烦。 ",
+          "timestamp": null,
+          "message_type": "回应",
+          "emotional_tone": "困惑"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "observation": "+患者表示因为头晕、忘记及认知负担较重导致用药不规律，同时对生活细节管理感到厌烦和压力大，对技术辅助工具接受度低。 ",
+            "analysis": "+存在认知过载、行为依从障碍及情绪挫败感，应寻找简化策略并缓解焦虑情绪以提高依从率。 ",
+            "strategy": "+建议使用简单有效的提醒方式，例如固定放置药物位置提醒服药；并通过分步骤方法降低认知负担，同时关注情绪疏导避免进一步抗拒。"
+          },
+          "message": "+能理解您的辛苦，每天记这么多事情确实不容易。不如试试把阿司匹林、美托洛尔放在固定地方，比如餐桌旁边，这样每次吃饭的时候就不会忘了。而且，我们可以一起慢慢把复杂的信息分成小块来记，不着急，一步步来，好吗？ ",
+          "timestamp": null,
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "+听你这么一说倒有点道理。不过我这人就是粗心，一紧张就更忘东忘西。而且昨晚家里串门来的邻居让我喝酒，我也不好意思推辞，这下又担心对病情不好。这年纪了，这种应酬也难躲开啊，你说怎么办好？",
+          "timestamp": null,
+          "message_type": "回应",
+          "emotional_tone": "困惑"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "observation": "+社交场合喝酒影响健康与用药效果，是社会环境带来的挑战；患者表现出无奈与压力，需要指导应对策略。",
+            "analysis": "+若不能避免，应教会患者合理表达拒绝理由，以及选择低风险社交行为以保障健康。",
+            "strategy": "+引导患者提前准备简单礼貌的话语，以减少被迫饮酒的频率；并强调遵医嘱的重要性，同时关注心理疏导提升自我效能感。"
+          },
+          "message": "+社交应酬确实难免让人头疼，要是喝酒会影响您的病情和用药效果，我们可以帮您想一些简单的话术，比如‘医生嘱咐暂时不能喝’这样既能拒绝又不会尴尬。另外，也可以尽量选择喝些无酒精饮料替代。如果遇到难处，可以随时告诉我，我们一起想办法解决，好吗？",
+          "timestamp": null,
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        }
+      ],
+      "end_time": null,
+      "adherence_outcome": "下降",
+      "system_interventions": [
+        "educational_content"
+      ]
+    },
+    {
+      "session_id": "patient_urgent_4cb54929806e_20251018234914_02",
+      "session_date": "2025-10-18",
+      "patient_id": "patient_urgent_4cb54929806e",
+      "conversation_turns": [
+        {
+          "speaker": "system",
+          "reasoning": {
+            "observation": "+第三天随访重点观察前两日建议执行情况及患者态度变化，有无积极尝试或反复情况。",
+            "analysis": "+鉴于之前多次反复，应鼓励小步改善并肯定尝试，同时准备应对挫折。",
+            "strategy": "+采用正向反馈激励机制，加强简化提示工具使用，引导持续努力并允许偶尔失误，不气馁。"
+          },
+          "message": "+您好！昨天我们聊过避免喝酒的小技巧，不知道今天您有没有机会尝试呢？同时您服药打卡或者监测创面情况怎么样？有什么感觉吗？",
+          "timestamp": null,
+          "message_type": "问题",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "+哎，说实话吧，上回邻居聚会我硬是没喝，只喝了茶，不过忘记给自己设手机提醒了，所以美托洛尔还是差点没吃成。不过好歹比以前强点儿。我太喜欢看报纸聊天了，有时候都忙活不过来，更别提运动什么的。我今天才走了十几分钟路，都嫌累，这身体是真不中用了呀！",
+          "timestamp": null,
+          "message_type": "回应",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "observation": "+运动耐力不足是充血性心衰后遗症常见表现，需要循序渐进恢复锻炼。",
+            "analysis": "+运动意愿虽有，但体力限制与疲劳感成为主要障碍。",
+            "strategy": "+鼓励适量缓步走，并结合太极等喜好运动形式，可分散注意力减少疲劳感，更易坚持。同时建议监测症状变化及时调整活动强度."
+          },
+          "message": "+听您这样说，十几分钟已经不错啦！考虑到您的身体状况，可以结合喜欢的室内太极动作，每天逐渐增加运动时间，不必一下子要求太高，这样身体适应起来也轻松些。同时保持观察疼痛或疲劳，如果有异常及时告知哦！",
+          "timestamp": null,
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "+嗯，那太极倒是可以一试。我这孩子教过几招，就是嫌老人动作慢，我也懒得计较这个。不过就是昨天清理引流管时手忙脚乱的，有点怕弄坏伤口，又不知道该怎么更仔细地操作。",
+          "timestamp": null,
+          "message_type": "回应",
+          "emotional_tone": "困惑"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "observation": "",
+            "analysis": "",
+            "strategy": "+针对伤口护理部分，可以安排家属协助或演示具体操作步骤视频；强调创面清洁的重要性同时减轻操作焦虑；可通过手机APP视频学习辅助自学护理技巧，提高信心。"
+          },
+          "message": "+伤口护理确实要小心谨慎，如果感觉手忙脚乱，不妨让孩子帮忙或者我们给您推荐几个简单易懂的视频教学，通过手机看着学，也方便反复练习。同时保持清洁干燥最关键，不必过于紧张哦。",
+          "timestamp": null,
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        }
+      ],
+      "end_time": null,
+      "adherence_outcome": "改善",
+      "system_interventions": [
+        "educational_content"
+      ]
+    }
+  ]
+}

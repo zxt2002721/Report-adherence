@@ -1,0 +1,347 @@
+{
+  "patient_id": "patient_urgent_f28a88766f78",
+  "basic_info": {
+    "patient_id": "patient_urgent_f28a88766f78",
+    "name": null,
+    "age": 45,
+    "sex": "女",
+    "marital_status": "已婚",
+    "occupation": "公务员",
+    "location": "安徽省淮南市",
+    "education": "大专",
+    "income_bracket": "中",
+    "living_situation": "与家人同住",
+    "contact_phone": "138-XXXX-5678"
+  },
+  "last_basic_info_update": "2025-10-17T10:26:20.459023",
+  "disease_info": {
+    "primary_diseases": [
+      {
+        "disease_name": "哮喘",
+        "icd10_code": "J45.909",
+        "years_since_diagnosis": 10.0,
+        "current_severity": "中度"
+      },
+      {
+        "disease_name": "高脂血症",
+        "icd10_code": "E78.5",
+        "years_since_diagnosis": 3.0,
+        "current_severity": "轻度"
+      }
+    ],
+    "comorbidities": [
+      {
+        "disease_name": "鼻炎",
+        "icd10_code": "J30.9",
+        "years_since_diagnosis": 5.0,
+        "current_severity": "轻度"
+      }
+    ],
+    "family_history": {
+      "母亲": null,
+      "父亲": "高血压，冠心病"
+    },
+    "allergies": [
+      "青霉素"
+    ],
+    "last_checkup_date": "2024-05-01"
+  },
+  "last_disease_info_update": "2025-10-17T10:26:20.459023",
+  "prescription": {
+    "medications": [
+      {
+        "drug_name": "布地奈德吸入粉雾剂",
+        "dose": "200微克/次，每日2次，口服吸入用药",
+        "frequency": "每日两次",
+        "route": "吸入"
+      },
+      {
+        "drug_name": "沙美特罗替卡松粉吸入剂",
+        "dose": "50微克/次，每日2次，口服吸入用药",
+        "frequency": "每日两次",
+        "route": "吸入"
+      },
+      {
+        "drug_name": "阿托伐他汀钙片",
+        "dose": "20毫克，每晚1次，口服用药",
+        "frequency": "每日一次晚间服用 ",
+        "route": ""
+      }
+    ],
+    "lifestyle": [
+      {
+        "recommendation_type": "饮食",
+        "description": "低盐低脂饮食，避免油腻和高胆固醇食品。多吃新鲜蔬果和粗粮。"
+      },
+      {
+        "recommendation_type": "运动",
+        "description": "+坚持每周最少3次适度有氧运动，如快走或太极。注意防止过敏原暴露。"
+      },
+      {
+        "recommendation_type": "睡眠",
+        "description": "+保持充足睡眠，避免熬夜保证呼吸道健康。"
+      },
+      {
+        "recommendation_type": "压力",
+        "description": "+学习放松技巧减少精神压力诱发哮喘发作。"
+      }
+    ],
+    "next_followup_date": "+2024-07-01 ",
+    "physician_notes": "+建议继续常规哮喘管理方案，加强自测肺功能记录内源恶化迹象，提高依从性保障稳定控制；定期随访监测调整降脂治疗强化生活方式干预，以降低心血管风险。制订个体化教育计划提高患者疾病认知与自我管理能力。细致评估合并症、亚临床表现及不良反应及时调整疗法。优化联动基层医疗资源断面服务质量。+日常注意防治感染并避免环境烟尘刺激，对抗复发危险因素至关重要。 ",
+    "compliance_tasks": [
+      {
+        "task": "+每日按时使用吸入性激素等哮喘药物 ",
+        "frequency": "+每日两次医学指导下使用粉雾剂有效预防发作 ",
+        "instructions": "+认真掌握正确器械使用方法避免漏服致加重"
+      },
+      {
+        "task": "+每3个月监测血脂指数 ：保持长期达标调整方剂 。 ",
+        "frequency": "+每季度一次实验室检查必不可少 。 ",
+        "instructions": null
+      }
+    ]
+  },
+  "last_prescription_update": "2025-10-17T10:26:20.459023",
+  "behaviour_preferences": {
+    "preferences": [
+      {
+        "preference_type": "饮食",
+        "detail": "偏好安徽家常菜，喜爱清淡带一点咸鲜味，中午主食以米饭为主，不喜欢油炸食品，如火锅较少摄入，以豫皖特色瓜果丰富餐桌",
+        "prescription_impact": [
+          "用药"
+        ]
+      },
+      {
+        "preference_type": "运动",
+        "detail": "喜欢早晨快走及周末户外太极训练，注重呼吸与身体协调，有规律且适量强度",
+        "prescription_impact": [
+          "运动"
+        ]
+      },
+      {
+        "preference_type": "休闲",
+        "detail": "偶尔参与社区文艺活动，如广场舞与书画课，有一定社交需求但更倾向家庭聚会场所",
+        "prescription_impact": [
+          "监测"
+        ]
+      },
+      {
+        "preference_type": "科技",
+        "detail": "能熟练操作智能手机应用，通过视频学习健康管理，自我监控意识较强",
+        "prescription_impact": [
+          "用药"
+        ]
+      },
+      {
+        "preference_type": "其他",
+        "detail": "遵守医嘱为先原则，对中医有一定兴趣，经常关注季节调养知识和空气质量信息发布等.",
+        "prescription_impact": [
+          "用药"
+        ]
+      }
+    ]
+  },
+  "last_behaviour_preferences_update": "2025-10-17T10:26:20.459023",
+  "adherence_history": [],
+  "suggestion_feedback_history": [],
+  "behavior_preference_updates": [],
+  "compliance_task_progress_history": [],
+  "dialogue_history": [
+    {
+      "session_id": "patient_urgent_f28a88766f78_20251017102620_00",
+      "session_date": "2025-10-17",
+      "patient_id": "patient_urgent_f28a88766f78",
+      "conversation_turns": [
+        {
+          "speaker": "system",
+          "reasoning": {
+            "observation": "首次随访，患者表达生活忙碌，遵从用药和监测存在困难。情绪略显焦虑和抵触。",
+            "analysis": "患者存在行为维度的遗忘问题，同时对药物副作用有认知担忧，家庭支持不足带来社会压力。风险为哮喘控制不稳定及血脂管理滞后。",
+            "strategy": "建立信任关系，耐心了解用药和监测障碍，分步引导正确吸入法掌握及监测认识，加强情感支持并识别优先突破点。"
+          },
+          "message": "您好，我是您的健康管理助手贝贝。想了解下您最近使用吸入性哮喘药物的情况怎么样？有没有遇到什么困难？",
+          "timestamp": "2025-10-17T09:00:00",
+          "message_type": "问题",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "哎，说实话，这药我没都按时吸。有时候上班忙，一会儿就忘了。我还担心这激素吸多了身体不好，怕副作用呢。还有那个血脂检查，我觉得我感觉还好，不知道非得去医院干啥，挺麻烦的。",
+          "timestamp": "2025-10-17T09:05:00",
+          "message_type": "回应",
+          "emotional_tone": "困惑"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "observation": "患者反映工作繁忙影响规律用药，对激素副作用存担忧，对定期监测意义理解不足。患者可能有情绪负担且缺乏疾病自我管理认知。",
+            "analysis": "主要问题在于用药行为不规律、认知偏差（副作用担忧）、监测意识弱以及时间管理压力大。这些因素叠加导致依从性低。家人支持态度未知，有潜在社会层面影响风险。",
+            "strategy": "向患者介绍吸入激素的安全性及必要性，用通俗易懂语言缓解副作用焦虑；强调血脂检测的重要性与简便；建议利用手机提醒功能结合个人习惯逐步改善用药规律；询问家庭支持状况准备后续介入。"
+          },
+          "message": "理解您的忙碌，也能体会您对激素副作用的担心。这类吸入激素量很小、局部用药，长期按医嘱使用效果好且副作用很少。同时，血脂检测能帮医生调整治疗，更好保护心血管健康。我建议我们一起找方法，比如利用手机提醒辅助您按时吸药，您觉得怎么样？另外，家里人对这些治疗怎么看呢？",
+          "timestamp": "2025-10-17T09:10:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "手机提醒我试过几次，但老被其他消息盖过，也容易忽略。而且我老伴总说这病没啥大不了，不该太依赖药。他也嫌麻烦，说啥都让我省省劲儿。我自己吧，有时候一想到要天天吃这玩意儿，就烦得慌，好像这病一辈子缠着我一样，让人抑郁啊……",
+          "timestamp": "2025-10-17T09:15:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "observation": "患者受到家庭成员否定态度影响，自我情绪低落，有抗拒依从的情绪表现，同时科技辅助提醒效果有限。风险为持续不规律用药可能诱发哮喘恶化或心血管风险增加。",
+            "analysis": "患者在社会和情感维度均承受压力：丈夫不支持治疗增添心理负担；患者内心有抗拒和郁闷情绪导致行为难以改变；科技工具尚未适配个人习惯造成提醒失效，需要更贴近生活的解决方案。策略需关注情绪疏导与社会支持增强，同时探索替代提醒方式和建立日常仪式感帮助记忆。",
+            "strategy": "建议分享疾病教育信息给家人争取理解；引导表达负面情绪减少心理负担；推荐设置多个分散时间点的小提醒结合固定生活场景形成条件反射，如饭前后做吸入操作；安排逐步练习正确吸入技巧增强自信，并约定后续反馈跟踪调整方法效果。"
+          },
+          "message": "能理解您觉得一辈子带病确实让人烦躁，而且丈夫的态度让您更难坚持。这种情况下，我们可以一起找办法缓解压力，也可以试着让他了解您的病情重要性。如果方便，可以尝试将吸入药物放在固定生活场景附近，比如早晚刷牙时顺手使用，这样慢慢形成习惯。此外，我这里也可以教您一些正确使用粉雾器的小技巧，避免漏服带来的效果不好，这样做起来会更有信心些，您怎么看？",
+          "timestamp": "2025-10-17T09:20:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        }
+      ],
+      "end_time": null,
+      "adherence_outcome": "下降",
+      "system_interventions": [
+        "educational_content",
+        "gentle_reminder"
+      ]
+    },
+    {
+      "session_id": "patient_urgent_f28a88766f78_20251018102620_01",
+      "session_date": "2025-10-18",
+      "patient_id": "patient_urgent_f28a88766f78",
+      "conversation_turns": [
+        {
+          "speaker": "system",
+          "reasoning": {
+            "observation": "第二天随访，继续关注患者昨日表述的不规律用药和心理负担问题，同时探讨饮食运动情况是否影响整体管理。观察到轻微进步迹象但仍存在抵触和顾虑。 ",
+            "analysis": "患者愿意尝试固定生活场景进行吸入，但仍受认知偏差和家庭压力制约，用药依从波动明显。此外饮食方面由于传统口味喜欢咸鲜且有社交餐聚阻碍饮食调整，新陈代谢管理尚未有效推进。 ",
+            "strategy": "继续强化个性化用药指导并解决操作疑惑，通过视频示范提升技能信心；引导饮食调整与地域口味相结合的小改动方案避免强烈抵触；提倡适量运动与哮喘防护措施相配合，以综合提升疾病控制水平并逐步减轻心理负担 。"
+          },
+          "message": "您好！昨天我们提到把吸入剂放在固定地方使用，有尝试吗？另外，我想了解一下您的饮食和运动情况，是不是也有些难坚持呢？方便跟我说说吗？",
+          "timestamp": "2025-10-18T09:00:00",
+          "message_type": "问题",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "嗯，我试着把粉雾剂放在洗手间外面了，每天早晚刷牙时会想起来。但有时候工作太忙或者出门忘带了，就又断掉了。我那视频示范如果能给个链接就好了，我觉得实际看一遍可能帮我熟悉点。我平时爱吃安徽家常菜，那种咸鲜口味不太好改，加上周末家里人喜欢聚餐，我总不好意思特别注意忌口，人家说什么就跟着吃了……运动嘛，我倒是挺喜欢早上快走，但只要空气质量不好或者有点风沙，就忍不住咳嗽了，不敢太拼命，所以跑步就没坚持下来，总觉得这样下去哮喘也难稳定控制啊...  ",
+          "timestamp": "2025-10-18T09:05:00",
+          "message_type": "回应",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "observation": "'患者尝试固定场所使用粉雾剂但执行不稳；期望视频示范辅助手法学习；饮食因地域习惯及社交氛围阻碍调整；运动受到环境影响及哮喘症状限制表现出畏惧与挫败感','分析':'行为维度问题突出，如忘记、携带不便，以及环境因素限制运动。同时认知层面对设备操作不足导致技术掌握欠佳；社交压力妨碍饮食控制，对运动安全感缺乏足够知识支撑','策略':'提供简短实操视频指导加强技术掌握；建议饮食微调原则结合本地喜好减轻抵触感，与家人沟通寻求协助支持特殊聚餐选择；鼓励依据空气质量选择适宜活动，并尝试室内呼吸训练作为替代，提高安全感与自我效能'},",
+            "analysis": "",
+            "strategy": ""
+          },
+          "message": "",
+          "timestamp": "2025-10-18T09:10:00",
+          "message_type": null,
+          "emotional_tone": null
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "observation": "观察到患者愿意分享困难且对实际教学内容表现期待，有一定开放态度但仍显顾虑",
+            "analysis": "认知层面对技术细节需求高，但实际操作因生活忙碌受限较多; 社交行为复杂干扰健康行为执行; 情感层面存在无力感但尚未彻底放弃",
+            "strategy": "发送相关操作视频链接，并建议制作简单操作卡片贴于粉雾剂旁; 引导分步骤小目标达成并鼓励每天记录自己表现; 探讨家人参与或轮流准备部分聚餐食物减轻压力; 教授室内呼吸训练基本方法, 建议空气不好时优先室内锻炼保证安全"
+          },
+          "message": "非常感谢您的坦诚分享！这是一个帮助正确使用布地奈德粉雾剂的短视频链接，请查收。同时建议您可以将关键步骤写下来贴在瓶子旁边帮助记忆。另外，如果家里聚餐实在难以控制，可以考虑先吃些清淡主菜，再适当搭配其他食品，以免过于紧张影响情绪。在运动方面，可选择空气质量好的时间段快走或做一些简单室内呼吸训练，有利于控制哮喘症状。我会陪伴您一步步来改善，一起加油！",
+          "timestamp": "2025-10-18T09:15:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "谢谢你给的视频链接，看着简单明了，我回头仔细学学。不过说实话，每天下班回来累得慌，还得照顾家里老人孩子，这些琐事真挤满一天时间。有时候想，就算努力点，是不是也没啥变化啊……不过我还是会努力按照你的建议尽量去做吧，就是怕万一这病突然严重发作，到时候闹得全家慌乱就不好了…",
+          "timestamp": "2025-10-18T09:20:00",
+          "message_type": "回应",
+          "emotional_tone": "困惑"
+        }
+      ],
+      "end_time": null,
+      "adherence_outcome": "维持",
+      "system_interventions": [
+        "educational_content"
+      ]
+    },
+    {
+      "session_id": "patient_urgent_f28a88766f78_20251019102620_02",
+      "session_date": "2025-10-19",
+      "patient_id": "patient_urgent_f28a88766f78",
+      "conversation_turns": [
+        {
+          "speaker": "system",
+          "reasoning": {
+            "observation": "第三天随访发现患者主动表示按照提示开始尝试新习惯，但依从仍不稳定且存在疲劳和怀疑心理；反复出现因工作家庭双重压力导致暂时倒退现象.",
+            "analysis": "患者已初步接受部分干预措施，但受疲劳、经济及社会支持不足影响严重，多维度障碍叠加导致进展波动明显，需要针对挫折进行心理疏导和灵活调整方案.",
+            "strategy": "重点鼓励小步改进认可已有努力，通过协商设定可实现目标减少负担，同时探讨更多亲友或社区资源支援缓解压力; 提醒继续规范使用布地奈德与沙美特罗替卡松双重疗法的重要性，并预告未来血脂检测安排以促使积极准备."
+          },
+          "message": "您好！听说您最近开始把粉雾剂放在固定位置并观看视频学习，非常棒！感觉实际操作怎么样？有没有遇到新的困难呢？同时，上次提到的血脂检测预约是否考虑安排起来呢？我们也关心您的饮食和运动有没有新的变化，希望了解您的最新情况。 ",
+          "timestamp": "2025-10-19T09:00:00",
+          "message_type": "问题",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "谢谢你的鼓励！其实我开始照你说的做了，但是昨儿个那天实在累死了，下班回家赶着准备晚饭，一急就忘了晚上那次粉雾剂，也没去散步。有时候还老想着这个病是不是治不好，光靠吃这些东西真能管用吗？老伴又催着别总花钱买检查，说他觉得没那么严重。但想到万一发作严重，那该怎么办呢？唉，就是矛盾纠结着……还有那个阿托伐他汀钙片晚上服用，我偶尔也忘记，总感觉身体没啥异样，不像吃那两种感觉那么明显……至于运动，我还是挑天气好的早晨快走，不过次数比之前少了一半，因为咳嗽还是让我害怕出事… ",
+          "timestamp": "2025-10-19T09:05:00",
+          "message_type": "回应",
+          "emotional_tone": "焦虑"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "observation": "'患者出现疲劳导致执行中断、部分遗忘，以及伴随的消极怀疑态度，对家庭经济负担敏感且缺乏持续动力','analysis':'综合多维障碍，包括行为习惯未完全建立、认知误区（疗效怀疑）、情绪低落、家庭经济顾虑等影响依从，多因素交织造成波动式进展','strategy':'确认并肯定已有努力减少挫败感，引导设定合理小目标强化成功体验，加强服药目的正向反馈说明必需双重疗法协同稳定气道功能，同时探讨经济合理途径安排季度检查，引导陪伴型家庭沟通促进支持'}),",
+            "analysis": "",
+            "strategy": ""
+          },
+          "message": "",
+          "timestamp": "2025-10-19T09:10:00",
+          "message_type": null,
+          "emotional_tone": null
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "observation": "'基于上述分析，加强正反馈以改善动力，同时提出具体改进措施应对疲劳遗忘','analysis':'通过调节期待值减少完美主义焦虑，用具体日常场景提示补充手机提醒等多渠道手段降低漏服风险','strategy':'推荐每晚睡前整理第二天所需所有药物至显眼处，并利用闹钟或智能助手重复提醒，尤其注意布地奈德与沙美特罗替卡松双管齐下的重要性','outcome_estimate':'本次交流预计略见改善趋势，但波动仍较大，需要后续持续跟进'}},  {",
+            "analysis": "",
+            "strategy": ""
+          },
+          "message": "+非常理解您的辛苦与矛盾，这是很多慢病朋友都会经历的过程。我很佩服您已经尽力做到最好啦！可以考虑晚上睡觉前，把第二天要用的所有粉雾剂和阿托伐他汀片整理好放一个地方，再设置几个闹钟分时提醒，这样即使忙或者累，也能减少遗漏。同时布地奈德和沙美特罗替卡松是一起发挥治疗效果的，请务必坚持两者配合使用，共同稳定气道。当然关于季度检查，如果费用或时间上有困难，我们可以一起找更方便经济的方法安排，不必过于焦虑。\n\n关于运动，只要注意空气质量和症状感觉，可以先轻柔地活动保持体力，不急于求成哦，我们一起慢慢来！有什么新问题随时告诉我~  ",
+          "timestamp": "2025-10-19T09:15:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "I appreciate your understanding and suggestions. I'll try to set up the reminders as you said. Sometimes I just worry too much if these efforts will really make a difference. But I guess little steps count. And about the family gatherings, maybe I'll try to talk to my husband again and explain better. Thank you for being patient with me.",
+          "timestamp": "2025-10-19T09:20:00",
+          "message_type": "回应",
+          "emotional_tone": "合作"
+        }
+      ],
+      "end_time": null,
+      "adherence_outcome": "改善",
+      "system_interventions": [
+        "educational_content"
+      ]
+    }
+  ],
+  "memory_created_at": "2025-10-17T10:26:20.459023",
+  "last_updated": "2025-10-17T10:26:20.471220",
+  "total_dialogues_processed": 3
+}

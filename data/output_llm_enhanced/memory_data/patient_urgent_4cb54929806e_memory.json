@@ -1,0 +1,543 @@
+{
+  "patient_id": "patient_urgent_4cb54929806e",
+  "basic_info": {
+    "patient_id": "patient_urgent_4cb54929806e",
+    "name": null,
+    "age": 72,
+    "sex": "男",
+    "marital_status": "已婚",
+    "occupation": "退休人员",
+    "location": "安徽省芜湖市",
+    "education": "初中",
+    "income_bracket": "中",
+    "living_situation": "与家人同住",
+    "contact_phone": "138-1234-5678"
+  },
+  "last_basic_info_update": "2025-10-16T23:49:14.417276",
+  "disease_info": {
+    "primary_diseases": [
+      {
+        "disease_name": "肛周瘘管伴脓肿",
+        "icd10_code": "K60.3",
+        "years_since_diagnosis": 5.0,
+        "current_severity": "中度"
+      },
+      {
+        "disease_name": "冠状动脉疾病（CAD）",
+        "icd10_code": "I25.10",
+        "years_since_diagnosis": 10.0,
+        "current_severity": "可控"
+      },
+      {
+        "disease_name": "充血性心力衰竭（CHF）",
+        "icd10_code": "I50.9",
+        "years_since_diagnosis": 3.0,
+        "current_severity": "中度"
+      },
+      {
+        "disease_name": "脑卒中后遗症",
+        "icd10_code": "I69.398",
+        "years_since_diagnosis": 6.0,
+        "current_severity": "轻度"
+      }
+    ],
+    "comorbidities": [
+      {
+        "disease_name": "高脂血症(HLD)",
+        "icd10_code": "E78.5",
+        "years_since_diagnosis": 12.0,
+        "current_severity": "可控"
+      }
+    ],
+    "family_history": {
+      "父亲": "",
+      "母亲": null
+    },
+    "allergies": [
+      "利辛普利"
+    ],
+    "last_checkup_date": "2024-05-15"
+  },
+  "last_disease_info_update": "2025-10-16T23:49:14.417276",
+  "prescription": {
+    "medications": [
+      {
+        "drug_name": "阿司匹林(81mg)片剂",
+        "dose": "81毫克/日一次口服，随餐服用。",
+        "frequency": "每日一次口服。 ",
+        "route": "口服"
+      },
+      {
+        "drug_name": "美托洛尔缓释片（25mg） ",
+        "dose": "",
+        "frequency": "",
+        "route": ""
+      },
+      {
+        "drug_name": "",
+        "dose": "",
+        "frequency": "",
+        "route": ""
+      }
+    ],
+    "lifestyle": [
+      {
+        "recommendation_type": "饮食",
+        "description": "+低盐低脂，限油腻，忌烟酒，多吃蔬果、粗粮。"
+      },
+      {
+        "recommendation_type": "运动",
+        "description": "+适度缓步走，每日30分钟，避免剧烈运动。"
+      },
+      {
+        "recommendation_type": "睡眠",
+        "description": "+保持7-8小时规律睡眠，注意床铺舒适。"
+      },
+      {
+        "recommendation_type": "压力",
+        "description": "+避免情绪波动，采用放松方法减压。"
+      }
+    ],
+    "next_followup_date": "2024-07-01",
+    "physician_notes": "患者肛周瘘反复发作，需监测局部感染和心功能变化。建议严格药物依从及生活方式调整。",
+    "compliance_tasks": [
+      {
+        "task": "服用阿司匹林与美托洛尔",
+        "frequency": "每日一次",
+        "instructions": "遵医嘱定时服用，不自行停药或改药"
+      },
+      {
+        "task": "伤口护理和引流管维护",
+        "frequency": "每日一次清洁检查 ",
+        "instructions": "保持创面干净，引流管无阻塞"
+      },
+      {
+        "task": "体温及疼痛监测 ",
+        "frequency": "每日三至四次 ",
+        "instructions": "发现发热或疼痛加重及时就医 "
+      }
+    ]
+  },
+  "last_prescription_update": "2025-10-16T23:49:14.417276",
+  "behaviour_preferences": {
+    "preferences": [
+      {
+        "preference_type": "饮食",
+        "detail": "偏好安徽本地家常菜，以清淡微辣为主，戒辛辣油腻。",
+        "prescription_impact": [
+          "饮食"
+        ]
+      },
+      {
+        "preference_type": "运动",
+        "detail": "喜欢室内太极，偶尔户外散步。",
+        "prescription_impact": [
+          "运动"
+        ]
+      },
+      {
+        "preference_type": "休闲",
+        "detail": "习惯阅读报刊和与老友聊家常。",
+        "prescription_impact": [
+          "监测"
+        ]
+      },
+      {
+        "preference_type": "科技",
+        "detail": "会使用智能手机查看健康信息。",
+        "prescription_impact": [
+          "用药"
+        ]
+      }
+    ]
+  },
+  "last_behaviour_preferences_update": "2025-10-16T23:49:14.417276",
+  "adherence_history": [
+    {
+      "date": "2025-10-16",
+      "category": "用药",
+      "overall_status": "不遵从",
+      "reason": "患者因担心头晕及副作用，有时自行停服美托洛尔，且家人缺乏支持，影响用药坚持。",
+      "details": "患者反映有时因头晕不敢服用美托洛尔，老伴认为药物无效且担心副作用，导致患者用药不稳定。",
+      "dialogue_date": "2025-10-16"
+    },
+    {
+      "date": "2025-10-16",
+      "category": "饮食",
+      "overall_status": "部分遵从",
+      "reason": "患者饮食中存在辣椒油等不利于健康的调料摄入，且难以与家人沟通忌口要求。",
+      "details": "患者喜欢微辣饮食，但意识到需逐步减少盐油摄入，且饮食调整受家庭环境影响较大。",
+      "dialogue_date": "2025-10-16"
+    },
+    {
+      "date": "2025-10-17",
+      "category": "用药",
+      "overall_status": "部分遵从",
+      "reason": "患者昨晚未按时服用美托洛尔，存在忘记服药的情况，且因社交应酬担心饮酒影响用药效果。",
+      "details": "患者因头晕未按时服用美托洛尔，忘记设闹钟提醒，且在邻居串门喝酒时担心对病情和用药效果不利。",
+      "dialogue_date": "2025-10-17"
+    },
+    {
+      "date": "2025-10-17",
+      "category": "饮食",
+      "overall_status": "部分遵从",
+      "reason": "患者在社交应酬中喝酒，担心影响病情，但未明确拒绝饮酒。",
+      "details": "邻居串门应酬时患者喝酒，虽意识到可能影响病情，但难以推辞。",
+      "dialogue_date": "2025-10-17"
+    },
+    {
+      "date": "2025-10-18",
+      "category": "用药",
+      "overall_status": "部分遵从",
+      "reason": "患者未能完全按时服药，因忘记设手机提醒导致美托洛尔差点未服用。",
+      "details": "患者提到忘记设手机提醒，导致美托洛尔差点没吃成，但比以前有所改善。",
+      "dialogue_date": "2025-10-18"
+    },
+    {
+      "date": "2025-10-18",
+      "category": "饮食",
+      "overall_status": "完全遵从",
+      "reason": null,
+      "details": "患者在邻居聚会中坚持未喝酒，仅喝茶，体现良好饮食禁忌控制。",
+      "dialogue_date": "2025-10-18"
+    },
+    {
+      "date": "2025-10-18",
+      "category": "运动",
+      "overall_status": "部分遵从",
+      "reason": "患者运动量较少，仅步行十几分钟且感疲劳，尚未形成规律运动习惯。",
+      "details": "患者当天仅走了十几分钟路，感觉累；系统建议结合室内太极逐渐增加运动时间。",
+      "dialogue_date": "2025-10-18"
+    },
+    {
+      "date": "2025-10-18",
+      "category": "监测",
+      "overall_status": "部分遵从",
+      "reason": "患者对伤口护理操作不熟练，有手忙脚乱情况，存在一定风险。",
+      "details": "患者清理引流管时手忙脚乱，担心弄坏伤口；系统建议借助视频教学及家人帮助。",
+      "dialogue_date": "2025-10-18"
+    }
+  ],
+  "suggestion_feedback_history": [
+    {
+      "date": "2025-10-16",
+      "suggestion_content": "坚持按时服用阿司匹林和美托洛尔，注意药物可能导致头晕，但停药可能加重心脏负担。建议与家人一起了解治疗情况，争取家人支持。",
+      "suggestion_category": "用药",
+      "effectiveness_feedback": "未尝试",
+      "patient_response": "患者因头晕有时不敢服药，家人反对服药，患者表达了顾虑和犹豫。",
+      "dialogue_date": "2025-10-16"
+    },
+    {
+      "date": "2025-10-16",
+      "suggestion_content": "饮食方面尝试安徽家常菜的微辣但低盐少油做法，如用姜蒜提味，同时努力让家人理解患者的饮食需要。",
+      "suggestion_category": "饮食",
+      "effectiveness_feedback": "未尝试",
+      "patient_response": "患者喜欢微辣，但对减盐减油持谨慎态度，表示要慢慢来，不敢指望别人快速改变，倾向先自己多注意。",
+      "dialogue_date": "2025-10-16"
+    },
+    {
+      "date": "2025-10-17",
+      "suggestion_content": "把阿司匹林、美托洛尔放在固定地方，比如餐桌旁边，这样每次吃饭的时候就不会忘了。并且将复杂的信息分成小块来记，一步步来。",
+      "suggestion_category": "用药",
+      "effectiveness_feedback": "未尝试",
+      "patient_response": "患者表示自己粗心且紧张时容易忘事，尚未明确执行建议，但对建议表示有点道理，态度较为接受。",
+      "dialogue_date": "2025-10-17"
+    },
+    {
+      "date": "2025-10-17",
+      "suggestion_content": "针对社交应酬喝酒问题，建议使用简单话术如‘医生嘱咐暂时不能喝’来拒绝酒精饮料，同时尽量选择无酒精饮料替代。遇到难处可随时沟通共同解决。",
+      "suggestion_category": "饮食",
+      "effectiveness_feedback": "未尝试",
+      "patient_response": "患者表达了应酬难以避免的困扰，尚未执行建议，对建议态度未明确拒绝，存在一定接受可能。",
+      "dialogue_date": "2025-10-17"
+    },
+    {
+      "date": "2025-10-18",
+      "suggestion_content": "避免喝酒的小技巧，服药打卡，监测创面情况",
+      "suggestion_category": "用药",
+      "effectiveness_feedback": "部分有效",
+      "patient_response": "患者表示聚会时没有喝酒，但忘记设手机提醒导致差点没按时服药，整体比以前好些。",
+      "dialogue_date": "2025-10-18"
+    },
+    {
+      "date": "2025-10-18",
+      "suggestion_content": "结合喜欢的室内太极动作，每天逐渐增加运动时间，不必一下子要求太高，同时观察疼痛或疲劳，有异常及时告知",
+      "suggestion_category": "运动",
+      "effectiveness_feedback": "未尝试",
+      "patient_response": "患者表示太极可以一试，态度接受，但尚未开始执行。",
+      "dialogue_date": "2025-10-18"
+    },
+    {
+      "date": "2025-10-18",
+      "suggestion_content": "伤口护理建议：让孩子帮忙或推荐简单易懂的视频教学，通过手机学习反复练习，保持清洁干燥，不必过于紧张",
+      "suggestion_category": "监测",
+      "effectiveness_feedback": "未尝试",
+      "patient_response": "患者表达了对伤口操作的担忧和害怕，但对建议持开放态度。",
+      "dialogue_date": "2025-10-18"
+    }
+  ],
+  "behavior_preference_updates": [
+    {
+      "date": "2025-10-16",
+      "preference_type": "饮食",
+      "prescription_impact": [
+        "用药",
+        "饮食"
+      ],
+      "old_preference": null,
+      "new_preference": "喜欢微辣口味，但希望逐渐减少盐和油的摄入，尝试低盐少油的做法。",
+      "update_reason": "患者因担心药物副作用和身体状况，希望通过调整饮食来配合治疗，同时面临家庭饮食习惯的压力，决定慢慢改变饮食习惯，尤其是减盐减油。",
+      "dialogue_date": "2025-10-16"
+    },
+    {
+      "date": "2025-10-17",
+      "preference_type": "饮酒",
+      "prescription_impact": [
+        "用药",
+        "饮食"
+      ],
+      "old_preference": null,
+      "new_preference": "在社交应酬中会喝酒，难以拒绝，考虑尝试用话术拒绝或选择无酒精饮料替代",
+      "update_reason": "患者因社交应酬压力难以拒绝饮酒，担心影响病情和用药效果，表达了希望调整饮酒习惯的意愿",
+      "dialogue_date": "2025-10-17"
+    },
+    {
+      "date": "2025-10-18",
+      "preference_type": "饮酒",
+      "prescription_impact": [
+        "用药"
+      ],
+      "old_preference": "以前有喝酒习惯",
+      "new_preference": "聚会时坚持不喝酒，只喝茶",
+      "update_reason": "患者在邻居聚会中成功避免饮酒，尝试戒酒行为",
+      "dialogue_date": "2025-10-18"
+    },
+    {
+      "date": "2025-10-18",
+      "preference_type": "运动",
+      "prescription_impact": [
+        "运动"
+      ],
+      "old_preference": "无明确运动偏好，体力较差",
+      "new_preference": "尝试每天进行室内太极运动，逐渐增加运动时间",
+      "update_reason": "身体状况限制导致步行时间短，接受系统建议尝试适合的室内运动方式",
+      "dialogue_date": "2025-10-18"
+    },
+    {
+      "date": "2025-10-18",
+      "preference_type": "休闲",
+      "prescription_impact": [
+        "运动"
+      ],
+      "old_preference": null,
+      "new_preference": "喜欢看报纸聊天作为主要休闲活动，不热衷于运动",
+      "update_reason": "表达喜欢看报纸聊天，且对运动兴趣不大，体力有限导致偏好休闲活动为主",
+      "dialogue_date": "2025-10-18"
+    }
+  ],
+  "dialogue_history": [
+    {
+      "session_id": "patient_urgent_4cb54929806e_20251016234914_00",
+      "session_date": "2025-10-16",
+      "patient_id": "patient_urgent_4cb54929806e",
+      "conversation_turns": [
+        {
+          "speaker": "system",
+          "reasoning": {
+            "observation": "患者年龄较大，慢性多病共存，存在多种不良生活习惯和用药疑虑。",
+            "analysis": "患者可能因担忧副作用及生活习惯难改，出现用药和饮食依从性问题，同时有一定的情绪抵触和认知偏差。",
+            "strategy": "初步建立信任关系，耐心询问日常用药及饮食状况，重点识别认知与情感障碍。"
+          },
+          "message": "您好，我想了解一下您最近服药的情况怎么样？阿司匹林和美托洛尔您能坚持按时服用吗？",
+          "timestamp": "2025-10-16T09:00:00",
+          "message_type": "问题",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "哎，说实话吧，我这药啊，有时候觉得头晕了就不敢吃了。特别是美托洛尔那个，我怕它影响我平时走路呢。老伴也说这药吃着没啥用，还怕副作用大。",
+          "timestamp": "2025-10-16T09:05:00",
+          "message_type": "回应",
+          "emotional_tone": "抗拒"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "observation": "患者表现出对美托洛尔副作用的担忧，并受到家庭影响，存在停药风险。",
+            "analysis": "这是典型的认知误区和社会压力影响，用药依从性受阻，同时有潜在的行为维度风险（随意停药）。",
+            "strategy": "给予针对性的教育，缓解对副作用的焦虑，并探讨家庭支持状况。"
+          },
+          "message": "理解您的顾虑，美托洛尔有可能会让人感觉头晕，但停药反而可能加重心脏负担。您平时有没有和老伴一起了解这些情况呢？家人的支持对治疗很重要。",
+          "timestamp": "2025-10-16T09:10:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "家里那口子嘛，也就嘴上说说，她总觉得吃一堆药没啥用。我这把年纪了，总想少吃点儿，但又怕身体撑不住，真是难办啊。饭桌上她们也老爱放辣椒油，我都不好意思跟他们讲忌口。你说这咋整？",
+          "timestamp": "2025-10-16T09:15:00",
+          "message_type": "回应",
+          "emotional_tone": "困惑"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "observation": "患者表达饮食控制困难，尤其面对家庭成员不同饮食习惯且不易拒绝，显示出社会和行为层面障碍。",
+            "analysis": "饮食依从受家庭环境影响明显，患者感到无奈且缺乏沟通支持。同时饮食习惯根深蒂固，是重要阻碍因素。",
+            "strategy": "建议逐步调整饮食结构，同时提供实际操作建议如适度减盐技巧及如何委婉沟通饮食需求。"
+          },
+          "message": "听起来您在饮食方面压力挺大的。在安徽家常菜里可以尝试一些微辣但低盐少油的做法，比如用姜蒜提味，这样既合口味又健康。同时，我们可以一起想办法，让家人更理解您的需要，好不好？您觉得哪些方法比较容易开始尝试？",
+          "timestamp": "2025-10-16T09:20:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "嗯，说实话我喜欢微辣，不过要真减盐减油，那我得慢慢来。这些事儿还真不好跟别人直说，总怕他们觉得我啰嗦或者怪我太挑剔。我看还是先盯着自己多注意点儿吧，不敢指望别人改变那么快。谢谢你耐心听我唠叨！",
+          "timestamp": "2025-10-16T09:25:00",
+          "message_type": "回应",
+          "emotional_tone": "合作"
+        }
+      ],
+      "end_time": null,
+      "adherence_outcome": "下降",
+      "system_interventions": [
+        "educational_content"
+      ]
+    },
+    {
+      "session_id": "patient_urgent_4cb54929806e_20251017234914_01",
+      "session_date": "2025-10-17",
+      "patient_id": "patient_urgent_4cb54929806e",
+      "conversation_turns": [
+        {
+          "speaker": "system",
+          "reasoning": {
+            "observation": "第二天继续跟进患者用药和生活习惯状况，关注是否采取行动及情绪波动情况。",
+            "analysis": "",
+            "strategy": ""
+          },
+          "message": "+早上好！昨天我们聊到了一些关于您吃药和饮食的问题，请问今天您的服药情况怎么样？有没有遇到什么新的困难？ ",
+          "timestamp": "2025-10-17T09:00:00",
+          "message_type": "问题",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "+哎，说实话昨晚没按时吃美托洛尔，那会儿头晕得厉害，也忘记带手机设闹钟了，这两天忙着看报纸聊天，脑子有点乱套了。有时候真觉着医生说的太复杂，我记不住那么多规矩了，还有就是怕麻烦家里人，一想到这些事儿就烦。 ",
+          "timestamp": "2025-10-17T09:05:00",
+          "message_type": "回应",
+          "emotional_tone": "困惑"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "observation": "+患者表示因为头晕、忘记及认知负担较重导致用药不规律，同时对生活细节管理感到厌烦和压力大，对技术辅助工具接受度低。 ",
+            "analysis": "+存在认知过载、行为依从障碍及情绪挫败感，应寻找简化策略并缓解焦虑情绪以提高依从率。 ",
+            "strategy": "+建议使用简单有效的提醒方式，例如固定放置药物位置提醒服药；并通过分步骤方法降低认知负担，同时关注情绪疏导避免进一步抗拒。"
+          },
+          "message": "+能理解您的辛苦，每天记这么多事情确实不容易。不如试试把阿司匹林、美托洛尔放在固定地方，比如餐桌旁边，这样每次吃饭的时候就不会忘了。而且，我们可以一起慢慢把复杂的信息分成小块来记，不着急，一步步来，好吗？ ",
+          "timestamp": "2025-10-17T09:10:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "+听你这么一说倒有点道理。不过我这人就是粗心，一紧张就更忘东忘西。而且昨晚家里串门来的邻居让我喝酒，我也不好意思推辞，这下又担心对病情不好。这年纪了，这种应酬也难躲开啊，你说怎么办好？",
+          "timestamp": "2025-10-17T09:15:00",
+          "message_type": "回应",
+          "emotional_tone": "困惑"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "observation": "+社交场合喝酒影响健康与用药效果，是社会环境带来的挑战；患者表现出无奈与压力，需要指导应对策略。",
+            "analysis": "+若不能避免，应教会患者合理表达拒绝理由，以及选择低风险社交行为以保障健康。",
+            "strategy": "+引导患者提前准备简单礼貌的话语，以减少被迫饮酒的频率；并强调遵医嘱的重要性，同时关注心理疏导提升自我效能感。"
+          },
+          "message": "+社交应酬确实难免让人头疼，要是喝酒会影响您的病情和用药效果，我们可以帮您想一些简单的话术，比如‘医生嘱咐暂时不能喝’这样既能拒绝又不会尴尬。另外，也可以尽量选择喝些无酒精饮料替代。如果遇到难处，可以随时告诉我，我们一起想办法解决，好吗？",
+          "timestamp": "2025-10-17T09:20:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        }
+      ],
+      "end_time": null,
+      "adherence_outcome": "下降",
+      "system_interventions": [
+        "educational_content"
+      ]
+    },
+    {
+      "session_id": "patient_urgent_4cb54929806e_20251018234914_02",
+      "session_date": "2025-10-18",
+      "patient_id": "patient_urgent_4cb54929806e",
+      "conversation_turns": [
+        {
+          "speaker": "system",
+          "reasoning": {
+            "observation": "+第三天随访重点观察前两日建议执行情况及患者态度变化，有无积极尝试或反复情况。",
+            "analysis": "+鉴于之前多次反复，应鼓励小步改善并肯定尝试，同时准备应对挫折。",
+            "strategy": "+采用正向反馈激励机制，加强简化提示工具使用，引导持续努力并允许偶尔失误，不气馁。"
+          },
+          "message": "+您好！昨天我们聊过避免喝酒的小技巧，不知道今天您有没有机会尝试呢？同时您服药打卡或者监测创面情况怎么样？有什么感觉吗？",
+          "timestamp": "2025-10-18T09:00:00",
+          "message_type": "问题",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "+哎，说实话吧，上回邻居聚会我硬是没喝，只喝了茶，不过忘记给自己设手机提醒了，所以美托洛尔还是差点没吃成。不过好歹比以前强点儿。我太喜欢看报纸聊天了，有时候都忙活不过来，更别提运动什么的。我今天才走了十几分钟路，都嫌累，这身体是真不中用了呀！",
+          "timestamp": "2025-10-18T09:05:00",
+          "message_type": "回应",
+          "emotional_tone": "中性"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "observation": "+运动耐力不足是充血性心衰后遗症常见表现，需要循序渐进恢复锻炼。",
+            "analysis": "+运动意愿虽有，但体力限制与疲劳感成为主要障碍。",
+            "strategy": "+鼓励适量缓步走，并结合太极等喜好运动形式，可分散注意力减少疲劳感，更易坚持。同时建议监测症状变化及时调整活动强度."
+          },
+          "message": "+听您这样说，十几分钟已经不错啦！考虑到您的身体状况，可以结合喜欢的室内太极动作，每天逐渐增加运动时间，不必一下子要求太高，这样身体适应起来也轻松些。同时保持观察疼痛或疲劳，如果有异常及时告知哦！",
+          "timestamp": "2025-10-18T09:10:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        },
+        {
+          "speaker": "patient",
+          "reasoning": null,
+          "message": "+嗯，那太极倒是可以一试。我这孩子教过几招，就是嫌老人动作慢，我也懒得计较这个。不过就是昨天清理引流管时手忙脚乱的，有点怕弄坏伤口，又不知道该怎么更仔细地操作。",
+          "timestamp": "2025-10-18T09:15:00",
+          "message_type": "回应",
+          "emotional_tone": "困惑"
+        },
+        {
+          "speaker": "system",
+          "reasoning": {
+            "observation": "",
+            "analysis": "",
+            "strategy": "+针对伤口护理部分，可以安排家属协助或演示具体操作步骤视频；强调创面清洁的重要性同时减轻操作焦虑；可通过手机APP视频学习辅助自学护理技巧，提高信心。"
+          },
+          "message": "+伤口护理确实要小心谨慎，如果感觉手忙脚乱，不妨让孩子帮忙或者我们给您推荐几个简单易懂的视频教学，通过手机看着学，也方便反复练习。同时保持清洁干燥最关键，不必过于紧张哦。",
+          "timestamp": "2025-10-18T09:20:00",
+          "message_type": "教育",
+          "emotional_tone": "合作"
+        }
+      ],
+      "end_time": null,
+      "adherence_outcome": "改善",
+      "system_interventions": [
+        "educational_content"
+      ]
+    }
+  ],
+  "memory_created_at": "2025-10-16T23:49:14.417276",
+  "last_updated": "2025-10-16T23:49:55.398471",
+  "total_dialogues_processed": 3
+}

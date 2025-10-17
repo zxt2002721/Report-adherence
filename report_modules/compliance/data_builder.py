@@ -3,6 +3,7 @@
 数据构建器 - 构建各种业务数据结构
 """
 
+import re
 from collections import defaultdict
 from .prompt_manager import prompt_manager
 
@@ -147,3 +148,37 @@ def build_adherence_stats(memory: dict) -> dict:
             "rate": rate
         }
     }
+
+
+def _clean_task_text(value) -> str:
+    """清洗遵从任务文本，去除多余符号。"""
+
+    if value is None:
+        return ""
+    text = str(value).strip()
+    text = re.sub(r"^[\s\+\-•·]+", "", text)
+    return text.strip()
+
+
+def build_compliance_tasks(memory: dict) -> list:
+    """整理重点遵从任务列表。"""
+
+    tasks = []
+    raw_tasks = (memory.get("prescription", {}) or {}).get("compliance_tasks", []) or []
+    for item in raw_tasks:
+        if not isinstance(item, dict):
+            continue
+        task = _clean_task_text(item.get("task"))
+        frequency = _clean_task_text(item.get("frequency"))
+        instructions = _clean_task_text(item.get("instructions"))
+
+        if not any([task, frequency, instructions]):
+            continue
+
+        tasks.append({
+            "task": task or "（未命名任务）",
+            "frequency": frequency or "—",
+            "instructions": instructions or "—",
+        })
+
+    return tasks

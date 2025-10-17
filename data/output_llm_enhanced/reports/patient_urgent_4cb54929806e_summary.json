@@ -1,0 +1,98 @@
+{
+  "patient_id": "patient_urgent_4cb54929806e",
+  "generation_time": "2025-10-16T23:49:55.404444",
+  "basic_info": {
+    "age": 72,
+    "sex": "男",
+    "location": "安徽省芜湖市"
+  },
+  "llm_analysis_summary": {
+    "admission_reason": "肛周瘘管伴脓肿",
+    "is_urgent": true,
+    "risk_level": "高风险",
+    "follow_up_frequency": "每月一次",
+    "disease_count": 4
+  },
+  "diseases": [
+    {
+      "name": "肛周瘘管伴脓肿",
+      "severity": "中度",
+      "reasoning": "反复发作伴局部疼痛加重，需多次手术引流。",
+      "symptoms": [
+        "肛门区疼痛",
+        "肿块触及",
+        "排便困难"
+      ],
+      "complications": [
+        "感染扩散"
+      ]
+    },
+    {
+      "name": "冠状动脉疾病（CAD）",
+      "severity": "可控",
+      "reasoning": "患者既往PCI支架置入，服用阿司匹林，心功能稳定。",
+      "symptoms": [
+        "既往心肌梗死史",
+        "心绞痛症状控制良好"
+      ],
+      "complications": [
+        "心力衰竭"
+      ]
+    },
+    {
+      "name": "充血性心力衰竭（CHF）",
+      "severity": "中度",
+      "reasoning": "近期因肺水肿住院，使用利尿剂治疗，有活动受限。",
+      "symptoms": [
+        "呼吸困难",
+        "下肢水肿"
+      ],
+      "complications": [
+        "肺水肿"
+      ]
+    },
+    {
+      "name": "脑卒中后遗症",
+      "severity": "轻度",
+      "reasoning": "既往卒中史，现无急性神经症状表现。",
+      "symptoms": [
+        "运动障碍残留"
+      ],
+      "complications": []
+    }
+  ],
+  "doctor_recommendations": [
+    "定期复诊评估病情变化。",
+    "保持伤口清洁，防止感染。",
+    "遵医嘱按时服药和进行检查。"
+  ],
+  "adherence_concerns": [
+    "患者有多种慢性病，药物依从性可能下降。",
+    "疼痛影响日常生活可能影响治疗配合。"
+  ],
+  "compliance_tasks": [
+    {
+      "task": "服用阿司匹林与美托洛尔",
+      "frequency": "每日一次",
+      "instructions": "遵医嘱定时服用，不自行停药或改药"
+    },
+    {
+      "task": "伤口护理和引流管维护",
+      "frequency": "每日一次清洁检查 ",
+      "instructions": "保持创面干净，引流管无阻塞"
+    },
+    {
+      "task": "体温及疼痛监测 ",
+      "frequency": "每日三至四次 ",
+      "instructions": "发现发热或疼痛加重及时就医 "
+    }
+  ],
+  "dialogue_stats": {
+    "total_days": 3,
+    "total_turns": 16
+  },
+  "memory_stats": {
+    "adherence_records": 8,
+    "preference_updates": 5
+  }
+}

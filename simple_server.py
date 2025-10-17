@@ -240,6 +240,72 @@ def get_report(patient_id, filename):
         print(f"❌ 获取报告文件失败: {e}")
         return jsonify({'error': str(e)}), 500
 
+@app.route('/api/reports/<report_id>/urgency', methods=['PATCH'])
+def adjust_urgency(report_id):
+    """医生手动调整紧迫程度"""
+    try:
+        data = request.get_json()
+        patient_id = data.get('patient_id')
+        new_level = data.get('new_level')
+        reason = data.get('reason')
+        adjusted_by = data.get('adjusted_by', 'doctor')
+        adjusted_at = data.get('adjusted_at')
+        
+        # 验证参数
+        if not all([patient_id, new_level, reason]):
+            return jsonify({'error': '缺少必需参数'}), 400
+        
+        if new_level not in ['urgent', 'attention', 'stable']:
+            return jsonify({'error': '无效的紧迫程度级别'}), 400
+        
+        # 这里应该保存到数据库，目前只是返回确认
+        # TODO: 实现数据持久化
+        
+        print(f"✓ 紧迫程度调整: 患者={patient_id}, 报告={report_id}, 新级别={new_level}")
+        print(f"  理由: {reason}")
+        print(f"  操作者: {adjusted_by}, 时间: {adjusted_at}")
+        
+        response = {
+            'success': True,
+            'message': '紧迫程度已调整',
+            'data': {
+                'report_id': report_id,
+                'patient_id': patient_id,
+                'old_level': 'attention',  # 示例，应该从数据库读取
+                'new_level': new_level,
+                'reason': reason,
+                'adjusted_by': adjusted_by,
+                'adjusted_at': adjusted_at
+            }
+        }
+        
+        return jsonify(response)
+        
+    except Exception as e:
+        print(f"❌ 调整紧迫程度失败: {e}")
+        traceback.print_exc()
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/urgency/stats', methods=['GET'])
+def get_urgency_stats():
+    """获取紧迫程度统计"""
+    try:
+        # TODO: 从实际报告数据中统计
+        # 这里返回示例数据
+        stats = {
+            'urgent': 2,
+            'attention': 5,
+            'stable': 8,
+            'total': 15,
+            'last_updated': '2025-10-16T10:00:00'
+        }
+        
+        return jsonify(stats)
+        
+    except Exception as e:
+        print(f"❌ 获取统计失败: {e}")
+        return jsonify({'error': str(e)}), 500
+
 @app.route('/api/health', methods=['GET'])
 def health_check():
     """健康检查"""

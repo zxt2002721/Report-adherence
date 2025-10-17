@@ -7,6 +7,7 @@
 ### 核心功能
 - **智能报告生成**: 基于AI分析的个性化患者报告
 - **多种报告类型**: 支持服药依从性评估和分诊评估
+- **🆕 紧迫程度分级**: AI自动判断患者情况是否需要医生立即介入（三级分类）
 - **实时数据处理**: 从真实患者对话数据中提取关键信息
 - **可视化图表**: 自动生成健康趋势图表和统计图
 - **Web界面**: 简洁易用的前端操作界面
@@ -15,7 +16,7 @@
 ### 技术架构
 - **后端**: Python Flask + 模块化报告生成器
 - **前端**: 现代HTML5 + JavaScript (无框架依赖)
-- **AI分析**: 集成智能分析引擎
+- **AI分析**: 集成智能分析引擎（含紧迫程度评估）
 - **数据可视化**: Matplotlib图表生成
 - **报告格式**: HTML格式，支持打印和分享
 
@@ -344,7 +345,83 @@ MIT License - 详见 LICENSE 文件
 4. 运行测试
 5. 提交 Pull Request
 
-## 📞 支持
+## 🆕 新功能：紧迫程度分级
+
+### 概述
+自动判断患者情况是否需要医生立即介入决策的智能分级系统。
+
+### 三级分类
+- **� 紧急级 (urgent)**: 需要医生立即介入决策
+  - 生理指标严重异常、危险药物漏服、多重高危因素
+  - 风险评分：70-100分，建议3-7天随访
+  
+- **🟡 关注级 (attention)**: 需要医生定期审阅  
+  - 指标轻中度异常、依从性不稳定、生活方式问题
+  - 风险评分：40-69分，建议7-14天随访
+  
+- **🟢 稳定级 (stable)**: AI建议即可
+  - 所有指标达标、依从性良好、病情稳定
+  - 风险评分：0-39分，建议14-30天随访
+
+### 核心特性
+- ✅ **LLM智能评估**: 基于患者数据的AI判断
+- ✅ **规则引擎校验**: 防止LLM误判的二次验证
+- ✅ **医生手动调整**: 支持医生修正AI判断
+- ✅ **不确定处理**: 判断不确定统一为关注级
+
+### 快速使用
+
+#### Python API
+```python
+from report_modules.compliance import urgency_classifier
+from report_modules.common import data_loader
+
+# 加载数据
+memory, dialogues, df_patient = data_loader.load_patient_data(patient_id)
+
+# 快速评估
+assessment = urgency_classifier.quick_classify(
+    patient_id="P001",
+    memory=memory,
+    df_patient=df_patient
+)
+
+print(f"级别: {assessment.get_level_text()}")
+print(f"评分: {assessment.risk_score}")
+print(f"理由: {assessment.reasoning}")
+```
+
+#### 测试功能
+```bash
+# 完整测试
+python test_urgency_classifier.py
+
+# 快速测试
+python test_urgency_classifier.py --quick
+```
+
+#### API端点
+```bash
+# 医生手动调整紧迫程度
+PATCH http://localhost:5000/api/reports/{report_id}/urgency
+Content-Type: application/json
+{
+    "patient_id": "P001",
+    "new_level": "urgent",
+    "reason": "患者出现新症状"
+}
+
+# 获取紧迫程度统计
+GET http://localhost:5000/api/urgency/stats
+```
+
+### 详细文档
+- 📖 [功能使用文档](URGENCY_FEATURE.md)
+- 📖 [技术实现文档](URGENCY_IMPLEMENTATION.md)
+
+---
+
+## �📞 支持
 
 如有问题，请：
 1. 查看本 README 的故障排除部分
@@ -354,6 +431,6 @@ MIT License - 详见 LICENSE 文件
 
 ---
 
-**最后更新**: 2025年10月13日
-**版本**: 2.0.0
+**最后更新**: 2025年10月16日
+**版本**: 2.1.0 (新增紧迫程度分级功能)
 **作者**: 慢性病管理系统团队

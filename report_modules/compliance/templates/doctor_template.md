@@ -1,5 +1,56 @@
 # 慢病阶段管理月报（医生版）
 
+## 🚨 紧迫程度评估
+
+<div class="urgency-banner urgency-{{ urgency.level }}">
+    <div class="urgency-header">
+        <span class="urgency-icon">
+            {% if urgency.level == "urgent" %}🔴
+            {% elif urgency.level == "attention" %}🟡
+            {% else %}🟢
+            {% endif %}
+        </span>
+        <div>
+            <h3>{{ urgency.get_level_text() }}</h3>
+            <span class="risk-score">风险评分：{{ urgency.risk_score }}/100</span>
+        </div>
+    </div>
+    
+    <p class="reasoning"><strong>判断理由：</strong>{{ urgency.reasoning }}</p>
+    
+    <div class="key-concerns">
+        <strong>关键关注点：</strong>
+        <ul>
+            {% for concern in urgency.key_concerns %}
+            <li>{{ concern }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    
+    <div class="action-row">
+        <div class="action-item">
+            <strong>建议行动：</strong>
+            <span>{{ urgency.suggested_action }}</span>
+        </div>
+        <div class="action-item">
+            <strong>建议随访间隔：</strong>
+            <span>{{ urgency.follow_up_days }} 天</span>
+        </div>
+        <div class="action-item">
+            <strong>需要医生介入：</strong>
+            <span>{% if urgency.doctor_intervention_needed %}是 ✓{% else %}否{% endif %}</span>
+        </div>
+    </div>
+    
+    {% if not urgency.verification_passed %}
+    <div class="verification-note failed">
+        ⚠️ 规则校验调整：{{ urgency.verification_notes }}
+    </div>
+    {% endif %}
+</div>
+
+---
+
 ## 一、基本信息
 
 - 姓名：{{ patient.name }}
@@ -81,7 +132,21 @@
 
 ---
 
-## 六、健康管理提示（来源：{{ tips_source }}）
+## 六、重点遵从任务清单
+
+{% if compliance_tasks %}
+| 任务 | 执行频率 | 核心说明 |
+| ---- | -------- | -------- |
+{%- for item in compliance_tasks %}
+| {{ item.task }} | {{ item.frequency }} | {{ item.instructions }} |
+{%- endfor %}
+{% else %}
+- 当前暂无重点遵从任务记录，建议结合随访完善关键任务。
+{% endif %}
+
+---
+
+## 七、健康管理提示（来源：{{ tips_source }}）
 
 ### 1. 用药管理
 
@@ -120,7 +185,7 @@
 
 ---
 
-## 七、AI 综合分析
+## 八、AI 综合分析
 
 - 总结：{{ ai.summary }}
 - 风险评估：{{ ai.risk_assessment }}
@@ -128,7 +193,7 @@
 
 ---
 
-## 八、参考文献
+## 九、参考文献
 
 {% for ref in references %}
 

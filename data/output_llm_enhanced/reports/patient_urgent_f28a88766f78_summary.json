@@ -1,0 +1,71 @@
+{
+  "patient_id": "patient_urgent_f28a88766f78",
+  "generation_time": "2025-10-17T10:26:20.474217",
+  "basic_info": {
+    "age": 45,
+    "sex": "女",
+    "location": "安徽省淮南市"
+  },
+  "llm_analysis_summary": {
+    "admission_reason": "哮喘急性发作",
+    "is_urgent": true,
+    "risk_level": "中风险",
+    "follow_up_frequency": "每月一次",
+    "disease_count": 2
+  },
+  "diseases": [
+    {
+      "name": "哮喘",
+      "severity": "中度",
+      "reasoning": "病情需长期管理，存在反复发作风险。",
+      "symptoms": [
+        "呼吸困难",
+        "喘息",
+        "咳嗽"
+      ],
+      "complications": [
+        "呼吸衰竭"
+      ]
+    },
+    {
+      "name": "高脂血症",
+      "severity": "轻度",
+      "reasoning": "需控制血脂防止心血管并发症。",
+      "symptoms": [
+        "血脂异常"
+      ],
+      "complications": [
+        "动脉粥样硬化"
+      ]
+    }
+  ],
+  "doctor_recommendations": [
+    "坚持按医嘱使用吸入性激素。",
+    "定期监测肺功能和血脂水平。",
+    "保持健康生活方式，避免诱发因素。"
+  ],
+  "adherence_concerns": [
+    "用药依从性不足可能导致哮喘加重。",
+    "缺乏定期随访影响病情评估。"
+  ],
+  "compliance_tasks": [
+    {
+      "task": "+每日按时使用吸入性激素等哮喘药物 ",
+      "frequency": "+每日两次医学指导下使用粉雾剂有效预防发作 ",
+      "instructions": "+认真掌握正确器械使用方法避免漏服致加重"
+    },
+    {
+      "task": "+每3个月监测血脂指数 ：保持长期达标调整方剂 。 ",
+      "frequency": "+每季度一次实验室检查必不可少 。 ",
+      "instructions": null
+    }
+  ],
+  "dialogue_stats": {
+    "total_days": 3,
+    "total_turns": 15
+  },
+  "memory_stats": {
+    "adherence_records": 0,
+    "preference_updates": 0
+  }
+}
